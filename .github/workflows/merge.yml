@@ -17,6 +17,7 @@ jobs:
       - run: bun run build-capture
       - name: Commit changes
         run: |
+          git add ./generated
           git config --local user.name norbert [bot]
           git config --local user.email ndelangen@me.com
           git commit -a -m "generate new assets [merge] by ${{ github.actor }} [skip ci]"
