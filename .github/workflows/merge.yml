@@ -7,12 +7,12 @@ on:
 jobs:
   merge:
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright:v1.42.1-jammy
+    # container:
+    #   image: mcr.microsoft.com/playwright:v1.42.1-jammy
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v1
-      - uses: denoland/setup-deno@v1
+      - run: npx playwright install chromium
       - run: bun install
       - run: bun run build-capture
       - name: Commit changes
