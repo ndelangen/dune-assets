@@ -1,14 +1,9 @@
-import { FC } from "react";
-import { z } from "zod";
+import { FC } from 'react';
+import { z } from 'zod';
 
-import { Troop } from "../data/objects";
+import { Troop } from '../data/objects';
 
-export const TroopToken: FC<z.infer<typeof Troop>> = ({
-  background,
-  id,
-  modifiers,
-  back,
-}) => (
+export const TroopToken: FC<z.infer<typeof Troop>> = ({ background, id, modifiers, back }) => (
   <pre>
     {JSON.stringify(
       {
@@ -18,7 +13,7 @@ export const TroopToken: FC<z.infer<typeof Troop>> = ({
         back,
       },
       null,
-      2
+      2,
     )}
   </pre>
 );

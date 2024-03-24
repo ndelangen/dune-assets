@@ -1,0 +1,26 @@
+name: Update assets
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.42.1-jammy
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - uses: denoland/setup-deno@v1
+      - run: bun install
+      - run: bun run capture
+      - name: Commit changes
+        run: |
+          git config --local user.name norbert [bot]
+          git config --local user.email ndelangen@me.com
+          git commit -a -m "generate new assets [merge] by ${{ github.actor }} [skip ci]"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

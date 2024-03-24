@@ -1,13 +1,6 @@
-import { z } from "zod";
+import { z } from 'zod';
 
-import {
-  CARD_HEAD,
-  CARD_ICON,
-  CARD_TYPE,
-  DECAL,
-  TROOP,
-  TROOP_MODIFIER,
-} from "./generated";
+import { CARD_HEAD, CARD_ICON, CARD_TYPE, DECAL, TROOP, TROOP_MODIFIER } from './generated';
 
 const STRENGTH = z.union([z.number().int(), z.string().length(1)]);
 const OFFSET = z.tuple([z.number(), z.number()]);
@@ -73,7 +66,7 @@ export const Troop = z.intersection(
   TROOP_SIDE,
   z.strictObject({
     back: TROOP_SIDE.optional(),
-  })
+  }),
 );
 
 export const Sheet = z.strictObject({
@@ -84,7 +77,7 @@ export const Sheet = z.strictObject({
       image: URL,
       name: z.string(),
       description: z.string(),
-    })
+    }),
   ),
   leaders: z.array(URL),
   start: z.string(),
