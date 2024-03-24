@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build-storybook": "storybook build",
-    "build-capture": "storybook build && bun run ./scripts/capture.ts",
+    "build-storybook": "sb build",
+    "build-capture": "sb build && bun run ./scripts/capture.ts",
     "capture": "bun run ./scripts/capture.ts",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "sb dev -p 6006"
   },
   "dependencies": {
     "@storybook/addon-essentials": "^8.0.4",
