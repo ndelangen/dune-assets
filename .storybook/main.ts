@@ -7,6 +7,9 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
+  },
   docs: {
     autodocs: "tag",
   },
