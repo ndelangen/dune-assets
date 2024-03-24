@@ -14,7 +14,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
       - uses: denoland/setup-deno@v1
       - run: bun install
-      - run: bun run capture
+      - run: bun run build-capture
       - name: Commit changes
         run: |
           git config --local user.name norbert [bot]
