@@ -26,12 +26,15 @@ jobs:
       - run: bun run build-storybook
       - run: bun run capture
       - name: Commit changes
+        continue-on-error: true
+        id: commit
         run: |
           git add ./generated
           git config --local user.name norbert [bot]
           git config --local user.email ndelangen@me.com
           git commit --no-verify -m "generate new assets [merge] by ${{ github.actor }} [skip ci]"
       - name: Push changes
+        if: ${{ steps.commit.outcome == 'success' }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ steps.generate-token.outputs.token }}
