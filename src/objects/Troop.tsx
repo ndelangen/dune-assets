@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { Troop } from '../data/objects';
 
 export const TroopToken: FC<z.infer<typeof Troop>> = ({ background, id, modifiers, back }) => (
-  <pre>
+  <pre style={{ color: 'orange' }}>
     {JSON.stringify(
       {
         background,
