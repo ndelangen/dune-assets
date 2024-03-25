@@ -1,0 +1,4 @@
+#!/bin/sh
+
+find generated -type f | xargs git reset
+git restore --source=HEAD --staged --worktree ./generated

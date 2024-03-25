@@ -1,4 +1,5 @@
 import { serve } from 'bun';
+import cliProgress from 'cli-progress';
 import { chromium } from 'playwright';
 
 const BASE_PATH = './storybook-static';
@@ -21,13 +22,28 @@ const entries = Object.keys(index.entries);
 const browser = await chromium.launch({ headless: !process.env.DEBUG });
 const page = await browser.newPage();
 
+const bar1 = new cliProgress.SingleBar(
+  {
+    clearOnComplete: true,
+    format: 'Generating {bar} | {entry} | {value}/{total}',
+  },
+  cliProgress.Presets.shades_classic,
+);
+let count = 0;
+bar1.start(entries.length, count);
+
 for (const entry of entries) {
   const path = `generated/${entry}.png`;
+  count++;
+
+  bar1.update(count, { entry });
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
   await page.locator('#storybook-root').screenshot({ type: 'png', path, scale: 'css' });
 }
+
+bar1.stop();
 
 await browser.close();
 await server.stop();
