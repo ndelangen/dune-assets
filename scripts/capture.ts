@@ -20,7 +20,12 @@ const index = await fetch(`${server.url}/index.json`).then((res) => res.json());
 const entries = Object.keys(index.entries);
 
 const browser = await chromium.launch({ headless: !process.env.DEBUG });
-const page = await browser.newPage();
+const context = await browser.newContext({
+  deviceScaleFactor: 2,
+  locale: 'en-US',
+  timezoneId: 'UTC',
+});
+const page = await context.newPage();
 
 const bar1 = new cliProgress.SingleBar(
   {
@@ -40,7 +45,7 @@ for (const entry of entries) {
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
-  await page.locator('#storybook-root').screenshot({ type: 'png', path, scale: 'css' });
+  await page.locator('#storybook-root').screenshot({ type: 'png', path, scale: 'device' });
 }
 
 bar1.stop();
