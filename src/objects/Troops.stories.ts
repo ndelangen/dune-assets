@@ -4,7 +4,7 @@ import { TroopToken } from './Troop';
 const meta = {
   component: TroopToken,
   argTypes: {
-    id: {
+    image: {
       control: {
         type: 'select',
       },
@@ -18,31 +18,27 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     background: 'true',
-    id: 'A',
-    modifiers: ['A'],
+    image: 'vector/troop/atreides.svg',
   },
 };
 
 export const Secondary: Story = {
   args: {
     background: 'true',
-    id: 'A',
-    modifiers: ['A'],
+    image: 'vector/troop/bg.svg',
   },
 };
 
 export const Large: Story = {
   args: {
     background: 'true',
-    id: 'A',
-    modifiers: ['A'],
+    image: 'vector/troop/blaster.svg',
   },
 };
 
 export const Small: Story = {
   args: {
     background: 'true',
-    id: 'A',
-    modifiers: ['A'],
+    image: 'vector/troop/bt.svg',
   },
 };

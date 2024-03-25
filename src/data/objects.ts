@@ -1,11 +1,12 @@
 import { z } from 'zod';
 
-import { CARD_HEAD, CARD_ICON, CARD_TYPE, DECAL, TROOP, TROOP_MODIFIER } from './generated';
+import { ALL, LEADERS, TROOP, TROOP_MODIFIER } from './generated';
 
 const STRENGTH = z.union([z.number().int(), z.string().length(1)]);
 const OFFSET = z.tuple([z.number(), z.number()]);
 const SCALE = z.number().min(0).max(1);
 const URL = z.string().url();
+const COLOR = z.string().regex(/^#[0-9a-f]{6}$/i);
 
 const RULE = z.strictObject({
   title: z.string(),
@@ -16,8 +17,8 @@ const RULE = z.strictObject({
 export const Leader = z.strictObject({
   name: z.string(),
   strength: STRENGTH,
-  image: URL,
-  logo: URL,
+  image: LEADERS.or(URL),
+  logo: ALL,
   background: URL,
 });
 
@@ -25,14 +26,14 @@ export const Shield = z.strictObject({
   name: z.string(),
   leader: z.strictObject({
     name: z.string(),
-    image: URL,
+    image: LEADERS.or(URL),
   }),
-  logo: URL,
+  logo: ALL,
   background: URL,
 });
 
 export const Decal = z.strictObject({
-  id: DECAL,
+  id: ALL,
   muted: z.boolean(),
   outline: z.boolean(),
   scale: SCALE,
@@ -41,8 +42,8 @@ export const Decal = z.strictObject({
 
 export const Alliance = z.strictObject({
   name: z.string(),
-  troop: URL,
-  logo: URL,
+  troop: TROOP,
+  logo: ALL,
   decals: z.array(Decal),
   text: z.string(),
   background: URL,
@@ -50,16 +51,18 @@ export const Alliance = z.strictObject({
 
 export const Treachery = z.strictObject({
   name: z.string(),
-  head: CARD_HEAD,
-  icon: z.tuple([CARD_TYPE, CARD_ICON]),
+  subName: z.string(),
+  color: COLOR,
+  icon: z.tuple([COLOR, ALL]),
   decals: z.array(Decal),
   text: z.string(),
 });
 
 const TROOP_SIDE = z.strictObject({
-  id: TROOP,
+  image: TROOP,
   background: URL,
-  modifiers: z.array(TROOP_MODIFIER),
+  star: TROOP_MODIFIER.optional(),
+  striped: z.boolean().optional(),
 });
 
 export const Troop = z.intersection(

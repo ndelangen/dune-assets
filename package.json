@@ -16,6 +16,7 @@
     "build-capture": "sb build && bun run ./scripts/capture.ts",
     "build-storybook": "sb build",
     "capture": "bun run ./scripts/capture.ts",
+    "generate": "bun run ./scripts/generate.ts",
     "hooks": "cp scripts/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",
     "storybook": "sb dev -p 6006"
   },
