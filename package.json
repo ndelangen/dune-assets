@@ -2,10 +2,19 @@
   "name": "asset-generator",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://github.com/ndelangen/dune-assets",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ndelangen/dune-assets.git"
+  },
+  "author": {
+    "name": "Norbert de Langen",
+    "email": "ndelangen@me.com"
+  },
   "type": "module",
   "scripts": {
-    "build-storybook": "sb build",
     "build-capture": "sb build && bun run ./scripts/capture.ts",
+    "build-storybook": "sb build",
     "capture": "bun run ./scripts/capture.ts",
     "hooks": "cp scripts/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",
     "storybook": "sb dev -p 6006"

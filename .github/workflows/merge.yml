@@ -23,7 +23,8 @@ jobs:
       - uses: oven-sh/setup-bun@v1
       - run: npx playwright install chromium
       - run: bun install
-      - run: bun run build-capture
+      - run: bun run build-storybook
+      - run: bun run capture
       - name: Commit changes
         run: |
           git add ./generated
