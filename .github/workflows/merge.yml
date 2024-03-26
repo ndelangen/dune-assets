@@ -25,10 +25,6 @@ jobs:
       - run: bun install
       - run: bun run build-storybook --test
       - run: bun run capture
-      - uses: clydedz/compress-images@v1
-        with:
-          input-directory: ./generated
-          output-directory: ./generated
       - name: Commit changes
         continue-on-error: true
         id: commit
