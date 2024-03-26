@@ -31,7 +31,7 @@ export const Secondary: Story = {
 
 export const Large: Story = {
   args: {
-    background: 'pink',
+    background: `url('/generated/utils/background/duo-3.jpg')`,
     image: 'vector/troop/blaster.svg',
   },
 };

@@ -37,12 +37,10 @@ export const Background: FC<z.infer<typeof BackGroundType>> = ({
           if (data.type === 'linear') {
             const { angle, stops } = data;
 
-            // Calculate coordinates based on angle
-            const radians = (angle * Math.PI) / 180; // Convert angle to radians
+            const radians = (angle * Math.PI) / 180;
             const cos = Math.cos(radians);
             const sin = Math.sin(radians);
 
-            // Calculate x1, y1, x2, y2 based on angle and center (0.5, 0.5)
             const x1 = 0.5 - cos / 2;
             const y1 = 0.5 + sin / 2;
             const x2 = 0.5 + cos / 2;

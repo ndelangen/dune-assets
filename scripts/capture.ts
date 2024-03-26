@@ -35,17 +35,90 @@ const bar1 = new cliProgress.SingleBar(
   cliProgress.Presets.shades_classic,
 );
 let count = 0;
+
+const mapToPath = (entry: string) => {
+  return (
+    index.entries[entry].importPath
+      .replace('./src/', '')
+      .replace(/\.stories\..*$/, '')
+      .toLowerCase() +
+    '/' +
+    entry.replace(/^.*--/, '')
+  );
+};
+
 bar1.start(entries.length, count);
 
-for (const entry of entries) {
-  const path = `generated/${entry.replace('--', '/').replace('objects-', '')}.png`;
+for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
   count++;
 
   bar1.update(count, { entry });
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
-  await page.locator('#storybook-root').screenshot({ type: 'png', path, scale: 'device' });
+  await page.waitForLoadState('networkidle');
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
+  count++;
+
+  bar1.update(count, { entry });
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector('#storybook-root');
+  await page.waitForLoadState('networkidle');
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
+  count++;
+
+  bar1.update(count, { entry });
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector('#storybook-root');
+  await page.waitForLoadState('networkidle');
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
+  const path = `generated/${mapToPath(entry)}.pdf`;
+  count++;
+
+  bar1.update(count, { entry });
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector('#storybook-root');
+  await page.waitForLoadState('networkidle');
+  await page.pdf({
+    path,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 },
+    preferCSSPageSize: true,
+    displayHeaderFooter: false,
+    printBackground: true,
+  });
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith('book'))) {
+  const path = `generated/${mapToPath(entry)}.pdf`;
+  count++;
+
+  bar1.update(count, { entry });
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector('#storybook-root');
+  await page.waitForLoadState('networkidle');
+  await page.pdf({
+    path,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 },
+    preferCSSPageSize: true,
+    displayHeaderFooter: false,
+    printBackground: true,
+  });
 }
 
 bar1.stop();
