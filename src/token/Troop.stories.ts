@@ -17,28 +17,28 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    background: 'red',
+    background: `url('/generated/utils/background/atreides.jpg')`,
     image: 'vector/troop/atreides.svg',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    background: 'yellow',
+    background: `url('/generated/utils/background/bene-gesserit.jpg')`,
     image: 'vector/troop/bg.svg',
   },
 };
 
 export const Large: Story = {
   args: {
-    background: `url('/generated/utils/background/duo-3.jpg')`,
+    background: `url('/generated/utils/background/choam.jpg')`,
     image: 'vector/troop/blaster.svg',
   },
 };
 
 export const Small: Story = {
   args: {
-    background: 'green',
-    image: 'vector/troop/bt.svg',
+    background: `url('/generated/utils/background/guild.jpg')`,
+    image: 'vector/troop/guild.svg',
   },
 };
