@@ -38,7 +38,7 @@ let count = 0;
 bar1.start(entries.length, count);
 
 for (const entry of entries) {
-  const path = `generated/${entry}.png`;
+  const path = `generated/${entry.replace('--', '/').replace('objects-', '')}.png`;
   count++;
 
   bar1.update(count, { entry });
