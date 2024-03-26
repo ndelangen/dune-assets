@@ -58,7 +58,7 @@ export const Treachery = z.strictObject({
   text: z.string(),
 });
 
-const TROOP_SIDE = z.strictObject({
+export const TroopSide = z.strictObject({
   image: TROOP,
   background: URL,
   star: TROOP_MODIFIER.optional(),
@@ -66,11 +66,35 @@ const TROOP_SIDE = z.strictObject({
 });
 
 export const Troop = z.intersection(
-  TROOP_SIDE,
+  TroopSide,
   z.strictObject({
-    back: TROOP_SIDE.optional(),
+    back: TroopSide.optional(),
   }),
 );
+
+export const GRADIENT = z.discriminatedUnion('type', [
+  z.strictObject({
+    type: z.literal('linear'),
+    angle: z.number().int().min(0).max(360),
+    stops: z.array(z.tuple([COLOR, SCALE])),
+  }),
+  z.strictObject({
+    type: z.literal('radial'),
+    x: z.number().optional(),
+    y: z.number().optional(),
+    r: z.number().optional(),
+    stops: z.array(z.tuple([COLOR, SCALE])),
+  }),
+]);
+
+const K = z.union([COLOR, GRADIENT]);
+
+export const Background = z.strictObject({
+  image: URL,
+  colors: z.tuple([K, K]),
+  strength: SCALE,
+  opacity: SCALE,
+});
 
 export const Sheet = z.strictObject({
   name: z.string(),

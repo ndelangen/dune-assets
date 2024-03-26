@@ -1,11 +1,14 @@
 import { FC } from 'react';
 import { z } from 'zod';
 
-import { Troop } from '../data/objects';
+import { TroopSide } from '../data/objects';
 import * as styles from './Troop.module.css';
 
-export const TroopToken: FC<z.infer<typeof Troop>> = ({ background, image, star, striped, back }) => (
+export const TroopToken: FC<z.infer<typeof TroopSide>> = ({ background, image, star, striped }) => (
   <div className={styles.disc} style={{ background }}>
-    <img src={image} alt="troop" />
+    <div className={styles.content}>
+      <img src={image} alt="troop" />
+      {star && <img src={star} alt="star" />}
+    </div>
   </div>
 );
