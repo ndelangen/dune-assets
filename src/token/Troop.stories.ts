@@ -17,28 +17,28 @@ type Story = StoryObj<typeof meta>;
 
 export const Atreides: Story = {
   args: {
-    background: `url('/generated/utils/background/atreides.jpg')`,
+    background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'vector/troop/atreides.svg',
   },
 };
 
 export const Ixian: Story = {
   args: {
-    background: `url('/generated/utils/background/ixian.jpg')`,
+    background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'vector/troop/ixian.svg',
   },
 };
 
 export const BeneGesserit: Story = {
   args: {
-    background: `url('/generated/utils/background/bene-gesserit.jpg')`,
+    background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'vector/troop/bene-gesserit.svg',
   },
 };
 
 export const Advisors: Story = {
   args: {
-    background: `url('/generated/utils/background/bene-gesserit.jpg')`,
+    background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'vector/troop/bene-gesserit.svg',
     striped: true,
   },
