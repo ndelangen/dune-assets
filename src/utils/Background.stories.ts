@@ -284,3 +284,79 @@ export const CHOAM: Story = {
     strength: 0,
   },
 };
+
+export const Discovery: Story = {
+  args: {
+    image: 'image/texture/052.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#A57B37', 0.35],
+          ['#392C1A', 0.35],
+          ['#392C1A', 1],
+        ],
+      },
+    ],
+    opacity: 40,
+    strength: -100,
+  },
+};
+
+export const Hiereg: Story = {
+  args: {
+    image: 'image/texture/052.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#392C1A', 0.35],
+          ['#A57B37', 0.35],
+          ['#A57B37', 1],
+        ],
+      },
+    ],
+    opacity: 40,
+    strength: -100,
+  },
+};
+
+export const Terror: Story = {
+  args: {
+    image: 'image/texture/038.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#24577A', 0.35],
+          ['#418CB1', 0.35],
+          ['#66C0EB', 1],
+        ],
+      },
+    ],
+    opacity: 40,
+    strength: 0,
+  },
+};
+
+export const Spice: Story = {
+  args: {
+    image: 'image/texture/001.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#DE9E31', 0.35],
+          ['#DE9E31', 0.35],
+          ['#FCFAAD', 1],
+        ],
+      },
+    ],
+    opacity: 40,
+    strength: 0,
+  },
+};

@@ -31,9 +31,9 @@ export const TroopToken: FC<z.infer<typeof TroopSide>> = ({ background, image, s
             />
             {striped && (
               <>
-                <rect fill="black" height="5" width="100" y="25" />
-                <rect fill="black" height="5" width="100" y="42.5" />
-                <rect fill="black" height="5" width="100" y="57.5" />
+                <rect fill="black" height="5" width="100" y="27" />
+                <rect fill="black" height="5" width="100" y="43.5" />
+                <rect fill="black" height="5" width="100" y="59" />
                 <rect fill="black" height="5" width="100" y="75" />
               </>
             )}

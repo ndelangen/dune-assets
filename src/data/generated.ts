@@ -1,4 +1,6 @@
+
 import { z } from 'zod';
+
 
 export const GENERIC = z.enum([
   'vector/generic/6star.svg',
@@ -217,7 +219,7 @@ export const GENERIC = z.enum([
   'vector/generic/vulcan.svg',
   'vector/generic/waiku.svg',
   'vector/generic/why.svg',
-  'vector/generic/wuurm.svg',
+  'vector/generic/wuurm.svg'
 ]);
 
 export const LOGO = z.enum([
@@ -234,7 +236,7 @@ export const LOGO = z.enum([
   'vector/logo/iduali.svg',
   'vector/logo/ix.svg',
   'vector/logo/moritani.svg',
-  'vector/logo/richese.svg',
+  'vector/logo/richese.svg'
 ]);
 
 export const DECAL = z.enum([
@@ -320,10 +322,11 @@ export const DECAL = z.enum([
   'vector/decal/wateroflife.svg',
   'vector/decal/weathercontrol.svg',
   'vector/decal/wire.svg',
-  'vector/decal/zenobia.svg',
+  'vector/decal/zenobia.svg'
 ]);
 
 export const ICON = z.enum([
+  'vector/icon/ambassador.svg',
   'vector/icon/balance.svg',
   'vector/icon/city.svg',
   'vector/icon/diamond.svg',
@@ -343,7 +346,7 @@ export const ICON = z.enum([
   'vector/icon/up.svg',
   'vector/icon/water.svg',
   'vector/icon/waves.svg',
-  'vector/icon/worthless.svg',
+  'vector/icon/worthless.svg'
 ]);
 
 export const LEADERS = z.enum([
@@ -444,7 +447,7 @@ export const LEADERS = z.enum([
   'image/leader/zaaf.png',
   'image/leader/zenzi.png',
   'image/leader/zirut.png',
-  'image/leader/zoal.png',
+  'image/leader/zoal.png'
 ]);
 
 export const TROOP = z.enum([
@@ -452,7 +455,9 @@ export const TROOP = z.enum([
   'vector/troop/bg.svg',
   'vector/troop/blaster.svg',
   'vector/troop/bt.svg',
+  'vector/troop/choam.svg',
   'vector/troop/cymecs.svg',
+  'vector/troop/ecaz.svg',
   'vector/troop/emperor.svg',
   'vector/troop/fat.svg',
   'vector/troop/fremen.svg',
@@ -464,15 +469,25 @@ export const TROOP = z.enum([
   'vector/troop/ix.svg',
   'vector/troop/juggernaut.svg',
   'vector/troop/landsraad.svg',
+  'vector/troop/moritani.svg',
   'vector/troop/morritani.svg',
   'vector/troop/oldix.svg',
   'vector/troop/peddlers.svg',
-  'vector/troop/smugglers.svg',
+  'vector/troop/richese.svg',
+  'vector/troop/smugglers.svg'
 ]);
 
 export const TROOP_MODIFIER = z.enum([
   'vector/troop_modifier/star-left.svg',
-  'vector/troop_modifier/star-right.svg',
+  'vector/troop_modifier/star-right.svg'
 ]);
 
-export const ALL = z.union([GENERIC, LOGO, DECAL, ICON, LEADERS, TROOP, TROOP_MODIFIER]);
+export const ALL = z.union([
+  GENERIC,
+  LOGO,
+  DECAL,
+  ICON,
+  LEADERS,
+  TROOP,
+  TROOP_MODIFIER
+]);

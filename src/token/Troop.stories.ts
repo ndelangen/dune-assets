@@ -105,7 +105,7 @@ export const Harkonnen: Story = {
 export const Moritani: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'vector/troop/fat.svg',
+    image: 'vector/troop/moritani.svg',
   },
 };
 
@@ -134,20 +134,20 @@ export const Landsraad: Story = {
 export const Richese: Story = {
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
-    image: 'vector/troop/landsraad.svg',
+    image: 'vector/troop/richese.svg',
   },
 };
 
 export const Ecaz: Story = {
   args: {
     background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
-    image: 'vector/troop/landsraad.svg',
+    image: 'vector/troop/ecaz.svg',
   },
 };
 
 export const CHOAM: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'vector/troop/landsraad.svg',
+    image: 'vector/troop/choam.svg',
   },
 };
