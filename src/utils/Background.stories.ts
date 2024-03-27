@@ -360,3 +360,183 @@ export const Spice: Story = {
     strength: 0,
   },
 };
+
+export const TechTeal: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#C1C091', 0.3],
+          ['#8A8B56', 0.3],
+          ['#7D7D49', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechPurple: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#79529F', 0.3],
+          ['#4F207D', 0.3],
+          ['#36165E', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechYellow: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      '#5E3C16',
+      {
+        type: 'radial',
+        stops: [
+          ['#E6B05D', 0.3],
+          ['#E5A22A', 0.3],
+          ['#A46E26', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechRed: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#8D272B', 0.3],
+          ['#7E0002', 0.3],
+          ['#620003', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechMaroon: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#612A2A', 0.3],
+          ['#4C0002', 0.3],
+          ['#2E0002', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechOrange: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#D83C13', 0.3],
+          ['#B41C0C', 0.3],
+          ['#B41C0C', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechBlue: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#3A4491', 0.3],
+          ['#101D65', 0.3],
+          ['#101D65', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechPink: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#520E2D', 0.3],
+          ['#410D25', 0.3],
+          ['#410D25', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const TechWhite: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#888888', 0.3],
+          ['#333333', 0.3],
+          ['#444444', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
+export const Moss: Story = {
+  args: {
+    image: 'image/texture/009.jpg',
+    colors: ['#4E431D', '#31260D'],
+    opacity: 200,
+    strength: 0,
+  },
+};

@@ -11,15 +11,15 @@ export const globals = {
 
 export const globalTypes = {
   disc: {
-    name: 'Disc',
+    name: 'Shape',
     description: 'Show as a disc',
     defaultValue: false,
     toolbar: {
       icon: 'circlehollow',
-      title: 'Disc',
+      title: 'Shape',
       items: [
         { value: false, icon: 'stopalt', title: 'Normal' },
-        { value: true, icon: 'circle', title: 'Make circle' },
+        { value: true, icon: 'circle', title: 'Circle' },
       ],
     },
   },
