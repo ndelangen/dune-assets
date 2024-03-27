@@ -25,21 +25,21 @@ export const Atreides: Story = {
 export const Ixian: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg')`,
-    image: 'vector/troop/ix.svg',
+    image: 'vector/troop/ixian.svg',
   },
 };
 
 export const BeneGesserit: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg')`,
-    image: 'vector/troop/bg.svg',
+    image: 'vector/troop/bene-gesserit.svg',
   },
 };
 
 export const Advisors: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg')`,
-    image: 'vector/troop/bg.svg',
+    image: 'vector/troop/bene-gesserit.svg',
     striped: true,
   },
 };
@@ -47,7 +47,7 @@ export const Advisors: Story = {
 export const BeneTleilaxu: Story = {
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
-    image: 'vector/troop/bt.svg',
+    image: 'vector/troop/bene-tleilaxu.svg',
   },
 };
 

@@ -60,7 +60,7 @@ export const BeneTleilax: Story = {
 export const Ixian: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
-    image: 'vector/logo/ix.svg',
+    image: 'vector/logo/ixian.svg',
   },
 };
 

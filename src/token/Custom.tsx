@@ -15,7 +15,7 @@ export const CustomToken: FC<
     size?: { width: number; height: number };
   }
 > = ({ background, image, circle, top, bottom, size }) => {
-  const iconSize = { width: size?.width || 180, height: size?.width || 180 };
+  const iconSize = { width: size?.width || 100, height: size?.width || 100 };
   const iconLocation = { x: 150 - iconSize.width / 2, y: 150 - iconSize.height / 2 };
   return (
     <div className={styles.disc} style={{ background }}>
@@ -26,7 +26,6 @@ export const CustomToken: FC<
             <>
               <path id="bottom-text-1" d="M 60 150 m 0 0 a 90 90 0 0 0 180 0" />
               <path id="bottom-text-2" d="M 45 150 m 0 0 a 105 105 0 0 0 210 0" />
-              <path id="bottom-text-3" d="M 30 150 m 0 0 a 120 120 0 0 0 240 0" />
             </>
           )}
         </defs>
