@@ -31,10 +31,10 @@ export const TroopToken: FC<z.infer<typeof TroopSide>> = ({ background, image, s
             />
             {striped && (
               <>
-                <rect fill="black" height="2" width="100" y="20" />
-                <rect fill="black" height="2" width="100" y="40" />
-                <rect fill="black" height="2" width="100" y="60" />
-                <rect fill="black" height="2" width="100" y="80" />
+                <rect fill="black" height="5" width="100" y="25" />
+                <rect fill="black" height="5" width="100" y="42.5" />
+                <rect fill="black" height="5" width="100" y="57.5" />
+                <rect fill="black" height="5" width="100" y="75" />
               </>
             )}
           </mask>
@@ -52,20 +52,25 @@ export const TroopToken: FC<z.infer<typeof TroopSide>> = ({ background, image, s
 
         {star && (
           <circle
-            cx="450"
-            cy="450"
+            cx="50"
+            cy="50"
             fill={`${foreGroundColor}77`}
             id="mainCircle"
             opacity={0.5}
-            r="280"
+            r="34"
             stroke={foreGroundColor}
-            strokeWidth={24}
+            strokeWidth={4}
           />
         )}
 
         <rect fill="rgba(0,0,0,0.4)" width="100" height="100" mask={`url(#${shadeMask})`} />
         <rect fill={foreGroundColor} width="100" height="100" mask={`url(#${stripedMask})`} />
       </svg>
+      {star && (
+        <div className={styles.content}>
+          <img src={star} alt="star" />
+        </div>
+      )}
     </div>
   );
 };

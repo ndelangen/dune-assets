@@ -36,6 +36,14 @@ export const BeneGesserit: Story = {
   },
 };
 
+export const Advisors: Story = {
+  args: {
+    background: `url('/generated/utils/background/bene-gesserit.jpg')`,
+    image: 'vector/troop/bg.svg',
+    striped: true,
+  },
+};
+
 export const BeneTleilaxu: Story = {
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
@@ -50,10 +58,26 @@ export const Emperor: Story = {
   },
 };
 
+export const Sardaukar: Story = {
+  args: {
+    background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
+    image: 'vector/troop/emperor.svg',
+    star: 'vector/troop_modifier/star-right.svg',
+  },
+};
+
 export const Fremen: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'vector/troop/fremen.svg',
+  },
+};
+
+export const Fedaykin: Story = {
+  args: {
+    background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
+    image: 'vector/troop/fremen.svg',
+    star: 'vector/troop_modifier/star-right.svg',
   },
 };
 
@@ -89,6 +113,14 @@ export const Ginaz: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'vector/troop/ginaz.svg',
+  },
+};
+
+export const HoneredGaurd: Story = {
+  args: {
+    background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
+    image: 'vector/troop/ginaz.svg',
+    star: 'vector/troop_modifier/star-right.svg',
   },
 };
 
