@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { ALL, LEADERS, TROOP, TROOP_MODIFIER } from './generated';
+import { ALL, LEADERS, LOGO, TROOP, TROOP_MODIFIER } from './generated';
 
 const STRENGTH = z.union([z.number().int(), z.string().length(1)]);
 const OFFSET = z.tuple([z.number(), z.number()]);
@@ -17,8 +17,8 @@ const RULE = z.strictObject({
 export const Leader = z.strictObject({
   name: z.string(),
   strength: STRENGTH,
-  image: LEADERS.or(URL),
-  logo: ALL,
+  image: LEADERS,
+  logo: LOGO,
   background: URL,
 });
 

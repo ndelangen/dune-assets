@@ -1,0 +1,22 @@
+.disc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.name {
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 29px;
+}
+
+.strength {
+  font-family: 'C_Advokat_Modern';
+  font-size: 126px;
+}

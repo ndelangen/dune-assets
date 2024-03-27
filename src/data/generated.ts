@@ -226,8 +226,8 @@ export const GENERIC = z.enum([
 
 export const LOGO = z.enum([
   'vector/logo/atreides.svg',
-  'vector/logo/bg.svg',
-  'vector/logo/bt.svg',
+  'vector/logo/bene-gesserit.svg',
+  'vector/logo/bene-tleilaxu.svg',
   'vector/logo/choam.svg',
   'vector/logo/ecaz.svg',
   'vector/logo/emperor.svg',
