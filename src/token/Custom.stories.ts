@@ -71,10 +71,11 @@ export const All: Story = {
 export const AxlotlTanks: Story = {
   args: {
     background: `url('/generated/utils/background/tech-purple.jpg') top left / cover no-repeat`,
-    image: 'vector/generic/reman.svg',
+    image: 'vector/icon/revival_standalone.svg',
     circle: false,
     top: 'Axlotl Tanks',
     bottom: 'revival phase\nTleilaxu does not trigger',
+    size: { width: 100, height: 100 },
   },
 };
 

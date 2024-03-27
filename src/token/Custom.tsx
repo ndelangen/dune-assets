@@ -5,13 +5,18 @@ import { FactionSide } from '../data/objects';
 import * as styles from './Custom.module.css';
 import { StrokedUse } from '../utils/StrokedUse';
 
-const foreGroundColor = '#e3dbb3';
-const iconSize = { width: 180, height: 180 };
-const iconLocation = { x: 150 - iconSize.width / 2, y: 150 - iconSize.height / 2 };
+const foreGroundColor = '#ffffff';
 
 export const CustomToken: FC<
-  z.infer<typeof FactionSide> & { circle: boolean; top?: string; bottom?: string }
-> = ({ background, image, circle, top, bottom }) => {
+  z.infer<typeof FactionSide> & {
+    circle: boolean;
+    top?: string;
+    bottom?: string;
+    size?: { width: number; height: number };
+  }
+> = ({ background, image, circle, top, bottom, size }) => {
+  const iconSize = { width: size?.width || 180, height: size?.width || 180 };
+  const iconLocation = { x: 150 - iconSize.width / 2, y: 150 - iconSize.height / 2 };
   return (
     <div className={styles.disc} style={{ background }}>
       <svg viewBox="0 0 300 300">
