@@ -22,10 +22,17 @@ export const Atreides: Story = {
   },
 };
 
-export const Ixian: Story = {
+export const Suboid: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'vector/troop/ixian.svg',
+  },
+};
+export const Cyborg: Story = {
+  args: {
+    background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
+    image: 'vector/troop/ixian.svg',
+    star: 'vector/troop_modifier/star-left.svg',
   },
 };
 
