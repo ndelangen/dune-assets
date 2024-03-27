@@ -65,6 +65,11 @@ export const TroopSide = z.strictObject({
   striped: z.boolean().optional(),
 });
 
+export const FactionSide = z.strictObject({
+  image: ALL,
+  background: URL,
+});
+
 export const Troop = z.intersection(
   TroopSide,
   z.strictObject({
