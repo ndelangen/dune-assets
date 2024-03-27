@@ -130,6 +130,16 @@ export const SpiceProduction: Story = {
     size: { width: 120, height: 120 },
   },
 };
+export const Kanly: Story = {
+  args: {
+    background: `url('/generated/utils/background/tech-pink.jpg') top left / cover no-repeat`,
+    image: 'vector/icon/combat_disc.svg',
+    circle: false,
+    top: 'Kanly',
+    bottom: 'Once per turn\nWhen you contest a win',
+    size: { width: 120, height: 120 },
+  },
+};
 
 export const TechToken: Story = {
   args: {
