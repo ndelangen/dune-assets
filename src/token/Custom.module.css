@@ -18,19 +18,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  
 }
 
-.content > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.h1 {
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 28px;
+  fill: white;
+  text-transform: uppercase;
 }
-
-.image {
-  mix-blend-mode: lighten;
-  filter: invert(0.9);
+.h2 {
+  font-family: 'C_Copperplate_Gothic_Heavy';
+  font-size: 12px;
+  fill: white;
+  text-transform: uppercase;
 }

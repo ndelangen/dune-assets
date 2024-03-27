@@ -9,14 +9,23 @@ const foreGroundColor = '#e3dbb3';
 const iconSize = { width: 180, height: 180 };
 const iconLocation = { x: 150 - iconSize.width / 2, y: 150 - iconSize.height / 2 };
 
-export const CustomToken: FC<z.infer<typeof FactionSide> & { circle: boolean }> = ({
-  background,
-  image,
-  circle,
-}) => {
+export const CustomToken: FC<
+  z.infer<typeof FactionSide> & { circle: boolean; top?: string; bottom?: string }
+> = ({ background, image, circle, top, bottom }) => {
   return (
     <div className={styles.disc} style={{ background }}>
       <svg viewBox="0 0 300 300">
+        <defs>
+          {top && <path id="top-text" d="M 50 150 m 0 0 a 100 100 0 0 1 200 0" />}
+          {bottom && (
+            <>
+              <path id="bottom-text-1" d="M 60 150 m 0 0 a 90 90 0 0 0 180 0" />
+              <path id="bottom-text-2" d="M 45 150 m 0 0 a 105 105 0 0 0 210 0" />
+              <path id="bottom-text-3" d="M 30 150 m 0 0 a 120 120 0 0 0 240 0" />
+            </>
+          )}
+        </defs>
+
         <g filter={'drop-shadow( 0 0 9px rgba(0, 0, 0, 0.6))'}>
           <StrokedUse xlinkHref={`${image}#root`} {...iconLocation} {...iconSize} fill={foreGroundColor} />
         </g>
@@ -50,20 +59,44 @@ export const CustomToken: FC<z.infer<typeof FactionSide> & { circle: boolean }> 
           </>
         )}
 
-        <defs>
-          <path id="aaa" d="M 50 150 m 0 0 a 100 100 0 0 1 200 0" />
-          <path id="bbb" d="M 50 150 m 0 0 a 100 100 0 0 0 200 0" />
-        </defs>
-        <text>
-          <textPath startOffset="50%" dominant-baseline="middle" text-anchor="middle" xlinkHref="#aaa">
-            zzzzz zzzzzz
-          </textPath>
-        </text>
-        <text>
-          <textPath startOffset="50%" dominant-baseline="middle" text-anchor="middle" xlinkHref="#bbb">
-            aaaa aaaa
-          </textPath>
-        </text>
+        {top && (
+          <g filter="drop-shadow(0 0 5px rgb(0 0 0 / 1))">
+            <text className={styles.h1}>
+              <textPath
+                startOffset="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                xlinkHref="#top-text"
+              >
+                {top}
+              </textPath>
+            </text>
+          </g>
+        )}
+        {bottom && (
+          <g filter="drop-shadow(0 0 5px rgb(0 0 0 / 1))">
+            <text className={styles.h2}>
+              <textPath
+                startOffset="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                xlinkHref="#bottom-text-1"
+              >
+                {bottom.split('\n')[0]}
+              </textPath>
+            </text>
+            <text className={styles.h2}>
+              <textPath
+                startOffset="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                xlinkHref="#bottom-text-2"
+              >
+                {bottom.split('\n')[1]}
+              </textPath>
+            </text>
+          </g>
+        )}
       </svg>
     </div>
   );

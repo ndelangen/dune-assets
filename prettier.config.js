@@ -4,6 +4,12 @@ const config = {
   singleQuote: true,
   printWidth: 110,
   plugins: ['./node_modules/prettier-plugin-jsdoc/dist/index.js'],
+  overrides: [
+    {
+      files: '*.svg',
+      options: { parser: 'html' },
+    },
+  ],
 };
 
 export default config;
