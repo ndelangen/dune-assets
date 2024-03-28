@@ -68,7 +68,18 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
       <div className={styles.title}>{name}</div>
       <div className={styles.subtitle}>Alliance</div>
       <div className={unique.ring} />
-      <img className={unique.logo} src={logo} />
+      <svg className={unique.logo} viewBox="0 0 300 300">
+        <StrokedUse
+          width="280"
+          height="280"
+          x="10"
+          y="10"
+          xlinkHref={`${logo}#root`}
+          fill={foreGroundColor}
+          stroke={'black'}
+          strokeWidth="7%"
+        />
+      </svg>
 
       <div className={styles.body}>
         <MarkdownContent value={text} />

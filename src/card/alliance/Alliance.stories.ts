@@ -8,21 +8,28 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Example: Story = {
+export const Atreides: Story = {
   args: {
-    background: `/generated/utils/background/richese.jpg`,
-    logo: 'vector/logo/richese.svg',
-    name: 'Richese',
+    background: `/generated/utils/background/atreides.jpg`,
+    logo: 'vector/logo/atreides.svg',
+    name: 'Atreides',
     decals: [
       {
-        id: 'vector/generic/8point.svg',
-        muted: false,
-        offset: [0, 0],
-        outline: true,
-        scale: 1,
+        id: 'vector/icon/eye.svg',
+        muted: true,
+        offset: [-90, -60],
+        outline: false,
+        scale: 0.5,
+      },
+      {
+        id: 'vector/icon/kwisatz.svg',
+        muted: true,
+        offset: [190, 50],
+        outline: false,
+        scale: 0.8,
       },
     ],
     text: 'Text goes here',
-    troop: 'vector/troop/richese.svg',
+    troop: 'vector/troop/atreides.svg',
   },
 };

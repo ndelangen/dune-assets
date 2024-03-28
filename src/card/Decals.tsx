@@ -7,7 +7,7 @@ import { StrokedUse } from '../utils/StrokedUse';
 const foreGroundColor = '#e3dbb3';
 const middleColor = '#847954';
 
-const size = {
+export const size = {
   width: 900,
   height: 1263,
 };
