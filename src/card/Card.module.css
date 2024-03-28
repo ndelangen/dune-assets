@@ -213,3 +213,32 @@
   height: 0;
   border-bottom: 1px solid silver;
 }
+
+.type {
+  position: absolute;
+  top: 94px;
+  right: 101px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: url('/generated//utils/background/striped-special.jpg') top center / cover no-repeat;
+  box-shadow: inset 0 0 4px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeOverlay {
+  width: 91px;
+  height: 91px;
+  mix-blend-mode: overlay;
+}
+.typeShade {
+  width: 91px;
+  height: 91px;
+  position: absolute;
+  top: 17.9px;
+  left: 16.5px;
+  opacity: 0.5;
+}

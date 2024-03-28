@@ -621,3 +621,142 @@ export const Worthless: Story = {
     strength: -100,
   },
 };
+
+export const Fate: Story = {
+  args: {
+    image: 'image/texture/075.jpg',
+    colors: ['#7E275A', '#C54E90'],
+    opacity: 80,
+    strength: -100,
+  },
+};
+
+export const StripedWeapon: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#CB8E4A', 0],
+          ['#F3E086', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#CD7B38', 0.3],
+          ['#E9CA70', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};
+
+export const StripedDefense: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#757DAC', 0],
+          ['#CEDDF0', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#58608F', 0.3],
+          ['#B8BFDB', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};
+
+export const StripedSpecial: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#9A9256', 0],
+          ['#EEECA6', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#827E43', 0.3],
+          ['#DEDB91', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};
+
+export const StripedWorthless: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#A9945D', 0],
+          ['#F5EFB4', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#997E45', 0.3],
+          ['#D9CC91', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};
+
+export const StripedFate: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#C25489', 0],
+          ['#FB82CE', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#721D48', 0.3],
+          ['#DE6BAD', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};

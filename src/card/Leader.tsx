@@ -16,11 +16,14 @@ export const LeaderCard: FC<z.infer<typeof Leader> & { owner: string; background
 }) => {
   return (
     <div className={styles.card}>
-      <svg viewBox="0 0 900 1263"></svg>
       <div className={styles.decal_bg_1}></div>
       <div className={styles.head_green}></div>
       <div className={styles.head_shade}></div>
       <div className={styles.leader}></div>
+      <div className={styles.type}>
+        <img src="/vector/icon/traitor.svg" className={styles.typeOverlay} />
+        <img src="/vector/icon/traitor.svg" className={styles.typeShade} />
+      </div>
       <div className={styles.title}>{name}</div>
       <div className={styles.subtitle}>Traitor - {owner}</div>
       <div className={styles.face} style={{ backgroundImage: `url('${image}')` }}></div>
