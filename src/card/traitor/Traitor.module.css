@@ -1,3 +1,6 @@
+.head {
+  background: url('/generated/utils/background/traitor.jpg') top center / cover no-repeat;
+}
 
 .face {
   position: absolute;

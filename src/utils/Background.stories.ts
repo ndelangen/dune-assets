@@ -760,3 +760,29 @@ export const StripedFate: Story = {
     strength: 0,
   },
 };
+
+export const StripedAlliance: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#CBB955', 0],
+          ['#F8F1A4', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#B2A03F', 0.3],
+          ['#E9E175', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};

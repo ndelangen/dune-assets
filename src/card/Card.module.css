@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.leader {
+.shape {
   background: url('/image/card/base-decal.png');
   position: absolute;
   top: 0;
@@ -24,7 +24,6 @@
   left: 0;
   width: 100%;
   height: 200px;
-  background: url('/generated/utils/background/traitor.jpg') top center / cover no-repeat;
 }
 
 .head_shade {
@@ -74,7 +73,6 @@
   line-height: 67px;
   opacity: 0.937;
 }
-
 
 .body {
   top: 704px;
