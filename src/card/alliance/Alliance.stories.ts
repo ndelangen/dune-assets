@@ -149,3 +149,138 @@ export const Ixian: Story = {
     troop: 'vector/troop/ixian.svg',
   },
 };
+
+export const BeneGesserit: Story = {
+  args: {
+    background: `/generated/utils/background/bene-gesserit.jpg`,
+    logo: 'vector/logo/bene-gesserit.svg',
+    name: 'Bene Gesserit',
+    decals: [
+      {
+        id: 'vector/decal/gom-jabbar.svg',
+        muted: true,
+        offset: [0, 50],
+        outline: false,
+        scale: 0.8,
+      },
+      {
+        id: 'vector/icon/diamond.svg',
+        muted: true,
+        offset: [50, -130],
+        outline: false,
+        scale: 0.3,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/bene-gesserit.svg',
+  },
+};
+
+export const BeneTleilaxu: Story = {
+  args: {
+    background: `/generated/utils/background/bene-tleilaxu.jpg`,
+    logo: 'vector/logo/bene-tleilaxu.svg',
+    name: 'Bene Tleilaxu',
+    decals: [
+      {
+        id: 'vector/icon/revival_standalone.svg',
+        muted: true,
+        offset: [0, 0],
+        outline: false,
+        scale: 0.5,
+      },
+      {
+        id: 'vector/decal/tleilaxu-ghola.svg',
+        muted: true,
+        offset: [420, 20],
+        outline: false,
+        scale: 1,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/bene-tleilaxu.svg',
+  },
+};
+
+export const Choam: Story = {
+  args: {
+    background: `/generated/utils/background/choam.jpg`,
+    logo: 'vector/logo/choam.svg',
+    name: 'CHOAM',
+    decals: [
+      {
+        id: 'vector/icon/revival_standalone.svg',
+        muted: true,
+        offset: [0, 0],
+        outline: false,
+        scale: 0.5,
+      },
+      {
+        id: 'vector/decal/tleilaxu-ghola.svg',
+        muted: true,
+        offset: [420, 20],
+        outline: false,
+        scale: 1,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/choam.svg',
+  },
+};
+
+export const Richese: Story = {
+  args: {
+    background: `/generated/utils/background/richese.jpg`,
+    logo: 'vector/logo/richese.svg',
+    name: 'richese',
+    decals: [
+      {
+        id: 'vector/generic/box.svg',
+        muted: true,
+        offset: [0, 0],
+        outline: false,
+        scale: 0.5,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/richese.svg',
+  },
+};
+
+export const Moritani: Story = {
+  args: {
+    background: `/generated/utils/background/moritani.jpg`,
+    logo: 'vector/logo/moritani.svg',
+    name: 'Moritani',
+    decals: [
+      {
+        id: 'vector/generic/box.svg',
+        muted: true,
+        offset: [0, 0],
+        outline: false,
+        scale: 0.5,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/moritani.svg',
+  },
+};
+
+export const Ecaz: Story = {
+  args: {
+    background: `/generated/utils/background/ecaz.jpg`,
+    logo: 'vector/logo/ecaz.svg',
+    name: 'Ecaz',
+    decals: [
+      {
+        id: 'vector/generic/box.svg',
+        muted: true,
+        offset: [0, 0],
+        outline: false,
+        scale: 0.5,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/ecaz.svg',
+  },
+};

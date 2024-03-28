@@ -55,7 +55,7 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
           </mask>
         </defs>
 
-        <image height={300} width={300} mask={`url(#${discMask})`} x={0} xlinkHref={background} y={0} />
+        <image height={190} width={190} mask={`url(#${discMask})`} x={0} xlinkHref={background} y={0} />
       </svg>
 
       <div className={`${styles.head} ${unique.head}`} />
