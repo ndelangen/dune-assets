@@ -1,0 +1,205 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 1263px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.leader {
+  background: url('image/card/base-decal.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.head_green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: url('generated/utils/background/harkonnen.jpg') top center / cover no-repeat;
+}
+
+.decal_bg_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('image/card/front-decal-bg.jpg') top center / cover no-repeat;
+}
+
+.title {
+  left: 95px;
+  top: 73px;
+  width: 640px;
+  height: 86px;
+  overflow: hidden;
+  position: absolute;
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 60px;
+  color: white;
+  line-height: 86px;
+  opacity: 0.937;
+}
+
+.subtitle {
+  left: 93px;
+  top: 176px;
+  width: 470px;
+  height: 67px;
+  overflow: hidden;
+  position: absolute;
+  font-family: 'C_Trebuchet';
+  font-weight: bold;
+  font-size: 40px;
+  color: #0b0503;
+  line-height: 67px;
+  opacity: 0.937;
+}
+
+.face {
+  position: absolute;
+  top: 285px;
+  left: 266px;
+  width: 370px;
+  height: 370px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 7px solid #7f7548;
+  box-sizing: border-box;
+}
+
+.face::after {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: -28px;
+  right: -28px;
+  bottom: -28px;
+  border-radius: 50%;
+  border: 7px solid #7f7548;
+}
+
+.logo {
+  position: absolute;
+  top: 510px;
+  left: 105px;
+  width: 140px;
+  height: 140px;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  right: -17px;
+  bottom: -17px;
+  border-radius: 50%;
+  border: 7px solid #7f7548;
+}
+
+.logo > * {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.strength {
+  position: absolute;
+  top: 450px;
+  font-kerning: -5;
+  right: 130px;
+  width: 640px;
+  height: 140px;
+  text-align: right;
+  font-family: 'C_Caladea';
+  letter-spacing: -20px;
+  font-size: 200px;
+}
+
+.body {
+  top: 704px;
+  height: 499px;
+  width: 734px;
+  left: 89px;
+  overflow: hidden;
+  position: absolute;
+  font-family: 'C_Candara';
+  font-size: 40px;
+  color: #0b0503;
+  opacity: 0.937;
+  white-space: pre-wrap;
+  line-height: 1.25em;
+}
+
+.body h1,
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6,
+.body p,
+.body img,
+.body hr,
+.body ul,
+.body ol,
+.body li {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.body h1 + *,
+.body h2 + *,
+.body h3 + *,
+.body h4 + *,
+.body h5 + *,
+.body h6 + *,
+.body p + *,
+.body img + *,
+.body hr + *,
+.body ul + *,
+.body ol + *,
+.body li + * {
+  margin-top: 0.3em;
+}
+
+.body h1 {
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 35px;
+}
+
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6 {
+  font-family: 'C_Trebuchet';
+}
+
+.body hr {
+  margin: 0;
+  padding: 0;
+  border-top: 0 none;
+  border-left: 0 none;
+  border-right: 0 none;
+  height: 0;
+  border-bottom: 1px solid silver;
+}
