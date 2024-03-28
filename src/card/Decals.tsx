@@ -7,23 +7,11 @@ import { StrokedUse } from '../utils/StrokedUse';
 const foreGroundColor = '#e3dbb3';
 const middleColor = '#847954';
 
-export const size = {
+const size = {
   width: 900,
   height: 1263,
 };
 const decalSize = { width: 763, height: 439 };
-interface Size {
-  width: number;
-  height: number;
-}
-type Scale = number;
-const times = (p1: Size, s: Scale | undefined): Size =>
-  s
-    ? {
-        width: p1.width * s,
-        height: p1.height * s,
-      }
-    : p1;
 const stroked = { stroke: foreGroundColor, strokeWidth: '4.5%' };
 const empty = {};
 
@@ -46,7 +34,8 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
             <mask id={decalsMask} maskUnits="userSpaceOnUse">
               <rect fill="black" {...size} x={0} y={0} />
               {fadedDecals.map((d, i) => {
-                const { width, height } = times(decalSize, d.scale);
+                const width = decalSize.width * d.scale;
+                const height = decalSize.height * d.scale;
                 return (
                   <image
                     key={i}
@@ -66,7 +55,8 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
       )}
 
       {nonFadedDecals.map((d, i) => {
-        const { width, height } = times(decalSize, d.scale);
+        const width = decalSize.width * d.scale;
+        const height = decalSize.height * d.scale;
         return (
           <StrokedUse
             key={i}
