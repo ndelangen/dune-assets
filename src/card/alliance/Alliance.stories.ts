@@ -85,3 +85,67 @@ export const Fremen: Story = {
     troop: 'vector/troop/fremen.svg',
   },
 };
+
+export const Emperor: Story = {
+  args: {
+    background: `/generated/utils/background/emperor.jpg`,
+    logo: 'vector/logo/emperor.svg',
+    name: 'Emperor',
+    decals: [
+      {
+        id: 'vector/decal/harvester1.svg',
+        muted: true,
+        offset: [-80, 20],
+        outline: false,
+        scale: 1.2,
+      },
+      {
+        id: 'vector/icon/spice_standalone.svg',
+        muted: true,
+        offset: [250, -80],
+        outline: false,
+        scale: 0.5,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/emperor.svg',
+  },
+};
+
+export const SpacingGuild: Story = {
+  args: {
+    background: `/generated/utils/background/guild.jpg`,
+    logo: 'vector/logo/guild.svg',
+    name: 'Spacing Guild',
+    decals: [
+      {
+        id: 'vector/decal/trip.svg',
+        muted: true,
+        offset: [-80, 20],
+        outline: false,
+        scale: 1.2,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/guild.svg',
+  },
+};
+
+export const Ixian: Story = {
+  args: {
+    background: `/generated/utils/background/ixian.jpg`,
+    logo: 'vector/logo/ixian.svg',
+    name: 'Ixian',
+    decals: [
+      {
+        id: 'vector/decal/hms.svg',
+        muted: true,
+        offset: [20, -20],
+        outline: false,
+        scale: 1.1,
+      },
+    ],
+    text: 'Text goes here',
+    troop: 'vector/troop/ixian.svg',
+  },
+};
