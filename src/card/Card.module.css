@@ -18,7 +18,7 @@
   height: 100%;
 }
 
-.head_green {
+.head {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,73 +75,6 @@
   opacity: 0.937;
 }
 
-.face {
-  position: absolute;
-  top: 285px;
-  left: 266px;
-  width: 370px;
-  height: 370px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  border: 7px solid #7f7548;
-  box-sizing: border-box;
-}
-
-.face::after {
-  content: '';
-  position: absolute;
-  top: -28px;
-  left: -28px;
-  right: -28px;
-  bottom: -28px;
-  border-radius: 50%;
-  border: 7px solid #7f7548;
-}
-
-.logo {
-  position: absolute;
-  top: 510px;
-  left: 105px;
-  width: 140px;
-  height: 140px;
-}
-
-.logo::after {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  right: -17px;
-  bottom: -17px;
-  border-radius: 50%;
-  border: 7px solid #7f7548;
-}
-
-.logo > * {
-  width: 100% !important;
-  height: 100% !important;
-  overflow: hidden;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.strength {
-  position: absolute;
-  top: 450px;
-  font-kerning: -5;
-  right: 130px;
-  width: 640px;
-  height: 140px;
-  text-align: right;
-  font-family: 'C_Caladea';
-  letter-spacing: -20px;
-  font-size: 200px;
-}
 
 .body {
   top: 704px;

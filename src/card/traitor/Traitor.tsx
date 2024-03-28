@@ -1,12 +1,13 @@
 import { type FC } from 'react';
 import { z } from 'zod';
 
-import { Leader } from '../data/objects';
-import * as styles from './Card.module.css';
-import { FactionToken } from '../token/Faction';
-import { MarkdownContent } from '../utils/MarkdownContent';
+import { Leader } from '../../data/objects';
+import * as styles from '../Card.module.css';
+import * as unique from './Traitor.module.css';
+import { FactionToken } from '../../token/Faction';
+import { MarkdownContent } from '../../utils/MarkdownContent';
 
-export const LeaderCard: FC<z.infer<typeof Leader> & { owner: string; background: string }> = ({
+export const TraitorCard: FC<z.infer<typeof Leader> & { owner: string; background: string }> = ({
   background,
   image,
   logo,
@@ -17,7 +18,7 @@ export const LeaderCard: FC<z.infer<typeof Leader> & { owner: string; background
   return (
     <div className={styles.card}>
       <div className={styles.decal_bg_1}></div>
-      <div className={styles.head_green}></div>
+      <div className={styles.head}></div>
       <div className={styles.head_shade}></div>
       <div className={styles.leader}></div>
       <div className={styles.type}>
@@ -26,9 +27,9 @@ export const LeaderCard: FC<z.infer<typeof Leader> & { owner: string; background
       </div>
       <div className={styles.title}>{name}</div>
       <div className={styles.subtitle}>Traitor - {owner}</div>
-      <div className={styles.face} style={{ backgroundImage: `url('${image}')` }}></div>
-      <div className={styles.strength}>{strength}</div>
-      <div className={styles.logo}>
+      <div className={unique.face} style={{ backgroundImage: `url('${image}')` }}></div>
+      <div className={unique.strength}>{strength}</div>
+      <div className={unique.logo}>
         <FactionToken image={logo} background={background} />
       </div>
 
