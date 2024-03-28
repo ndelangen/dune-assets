@@ -13,7 +13,15 @@ export const Example: Story = {
     background: `/generated/utils/background/richese.jpg`,
     logo: 'vector/logo/richese.svg',
     name: 'Richese',
-    decals: [],
+    decals: [
+      {
+        id: 'vector/generic/8point.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: true,
+        scale: 1,
+      },
+    ],
     text: 'Text goes here',
     troop: 'vector/troop/richese.svg',
   },

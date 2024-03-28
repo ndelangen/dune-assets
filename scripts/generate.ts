@@ -45,9 +45,7 @@ export const ${name.toUpperCase()} = z.enum([
   .join('\n')}
 
 export const ALL = z.union([
-  ${Object.keys(enums)
-    .map((e) => e.toUpperCase())
-    .join(',\n  ')}
+  ${['GENERIC', 'LOGO', 'DECAL', 'ICON', 'TROOP'].join(',\n  ')}
 ]);
 `,
 );

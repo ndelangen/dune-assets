@@ -4,10 +4,10 @@ import { z } from 'zod';
 import { Alliance } from '../../data/objects';
 import * as styles from '../Card.module.css';
 import * as unique from './Alliance.module.css';
-import { FactionToken } from '../../token/Faction';
 import { MarkdownContent } from '../../utils/MarkdownContent';
 import { useCountId } from '../../utils/useCountId';
 import { StrokedUse } from '../../utils/StrokedUse';
+import { size, FrontDecals } from '../Decals';
 
 const foreGroundColor = '#e3dbb3';
 
@@ -26,6 +26,15 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
   return (
     <div className={styles.card}>
       <div className={styles.decal_bg_1} />
+
+      {/* decals */}
+      {decals.length > 0 && (
+        <svg {...size} viewBox="0 0 900 1263" className={unique.overlay}>
+          <FrontDecals {...{ decals, prefix }} />
+        </svg>
+      )}
+
+      {/* troop */}
       <svg className={unique.troop} viewBox="0 0 300 300">
         <StrokedUse
           width="300"
@@ -36,6 +45,8 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
           strokeWidth="3%"
         />
       </svg>
+
+      {/* curve */}
       <svg viewBox="0 0 300 300" className={unique.overlay}>
         <defs>
           <mask id={discMask} maskUnits="userSpaceOnUse">
@@ -46,6 +57,7 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
 
         <image height={300} width={300} mask={`url(#${discMask})`} x={0} xlinkHref={background} y={0} />
       </svg>
+
       <div className={`${styles.head} ${unique.head}`} />
       <div className={styles.head_shade} />
       <div className={styles.shape} />

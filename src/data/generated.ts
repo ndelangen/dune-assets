@@ -327,6 +327,7 @@ export const DECAL = z.enum([
 ]);
 
 export const ICON = z.enum([
+  'vector/icon/alliance.svg',
   'vector/icon/ambassador.svg',
   'vector/icon/balance.svg',
   'vector/icon/bidding_disc.svg',
@@ -501,4 +502,4 @@ export const TROOP_MODIFIER = z.enum([
   'vector/troop_modifier/star-right.svg',
 ]);
 
-export const ALL = z.union([GENERIC, LOGO, DECAL, ICON, LEADERS, TROOP, TROOP_MODIFIER]);
+export const ALL = z.union([GENERIC, LOGO, DECAL, ICON, TROOP]);
