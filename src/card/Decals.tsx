@@ -51,7 +51,7 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
                   <image
                     key={i}
                     x={size.width / 2 - width / 2 + d.offset[0]}
-                    y={940 / 2 - height / 2 + d.offset[0]}
+                    y={940 / 2 - height / 2 + d.offset[1]}
                     width={width}
                     height={height}
                     filter="invert(100%)"
