@@ -10,7 +10,7 @@
 }
 
 .leader {
-  background: url('image/card/base-decal.png');
+  background: url('/image/card/base-decal.png');
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 200px;
-  background: url('generated/utils/background/harkonnen.jpg') top center / cover no-repeat;
+  background: url('/generated/utils/background/harkonnen.jpg') top center / cover no-repeat;
 }
 
 .decal_bg_1 {
@@ -33,7 +33,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('image/card/front-decal-bg.jpg') top center / cover no-repeat;
+  background: url('/image/card/front-decal-bg.jpg') top center / cover no-repeat;
 }
 
 .title {
