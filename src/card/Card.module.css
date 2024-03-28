@@ -24,7 +24,17 @@
   left: 0;
   width: 100%;
   height: 200px;
-  background: url('/generated/utils/background/harkonnen.jpg') top center / cover no-repeat;
+  background: url('/generated/utils/background/traitor.jpg') top center / cover no-repeat;
+}
+
+.head_shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/image/card/head-shade.png');
+  mix-blend-mode: soft-light;
 }
 
 .decal_bg_1 {
