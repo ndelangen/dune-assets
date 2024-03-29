@@ -67,14 +67,14 @@ export const Fremen: Story = {
     name: 'Fremen',
     decals: [
       {
-        id: 'vector/decal/shai-halud1.svg',
+        id: 'vector/decal/shai-halud.svg',
         muted: true,
         offset: [50, 40],
         outline: false,
         scale: 1,
       },
       {
-        id: 'vector/decal/herb.svg',
+        id: 'vector/icon/herb.svg',
         muted: true,
         offset: [280, 0],
         outline: false,
@@ -138,7 +138,7 @@ export const Ixian: Story = {
     name: 'Ixian',
     decals: [
       {
-        id: 'vector/decal/hms.svg',
+        id: 'vector/icon/hms.svg',
         muted: true,
         offset: [20, -20],
         outline: false,
@@ -273,7 +273,7 @@ export const Ecaz: Story = {
     name: 'Ecaz',
     decals: [
       {
-        id: 'vector/generic/box.svg',
+        id: 'vector/icon/karama.svg',
         muted: true,
         offset: [0, 0],
         outline: false,
