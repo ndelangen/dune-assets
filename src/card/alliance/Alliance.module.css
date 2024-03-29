@@ -23,9 +23,8 @@
   mix-blend-mode: soft-light;
 }
 
-.type{
+.type {
   background: url('/generated//utils/background/striped-alliance.jpg') top center / cover no-repeat;
-
 }
 
 .typeOverlay {
