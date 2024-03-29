@@ -7,7 +7,7 @@ import { StrokedUse } from '../utils/StrokedUse';
 import { useCountId } from '../utils/useCountId';
 
 const foreGroundColor = '#e3dbb3';
-const iconSize = { width: 100, height: 100 };
+const iconSize = { width: 73, height: 73 };
 const iconLocation = { x: 50 - iconSize.width / 2, y: 50 - iconSize.height / 2 };
 
 export const TroopToken: FC<z.infer<typeof TroopSide>> = ({ background, image, star, striped }) => {
