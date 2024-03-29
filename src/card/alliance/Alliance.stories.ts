@@ -100,7 +100,7 @@ export const Emperor: Story = {
         scale: 0.6,
       },
       {
-        id: 'vector/icon/spice_standalone.svg',
+        id: 'vector/icon/spice.svg',
         muted: true,
         offset: [250, -80],
         outline: false,
