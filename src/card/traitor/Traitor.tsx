@@ -21,7 +21,7 @@ export const TraitorCard: FC<z.infer<typeof Leader> & { owner: string; backgroun
       <div className={`${styles.head} ${unique.head}`}></div>
       <div className={styles.head_shade}></div>
       <div className={styles.shape}></div>
-      <div className={styles.type}>
+      <div className={`${styles.type} ${unique.type}`}>
         <img src="/vector/icon/traitor.svg" className={styles.typeOverlay} />
         <img src="/vector/icon/traitor.svg" className={styles.typeShade} />
       </div>

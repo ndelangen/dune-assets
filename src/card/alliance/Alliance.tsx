@@ -61,7 +61,7 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
       <div className={`${styles.head} ${unique.head}`} />
       <div className={styles.head_shade} />
       <div className={styles.shape} />
-      <div className={styles.type}>
+      <div className={`${styles.type} ${unique.type}`}>
         <img src="/vector/icon/alliance.svg" className={unique.typeOverlay} />
         <img src="/vector/icon/alliance.svg" className={unique.typeShade} />
       </div>

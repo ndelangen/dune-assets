@@ -69,3 +69,8 @@
   letter-spacing: -20px;
   font-size: 200px;
 }
+
+.type {
+  background: url('/generated/utils/background/striped-special.jpg') top center / cover no-repeat;
+
+}
