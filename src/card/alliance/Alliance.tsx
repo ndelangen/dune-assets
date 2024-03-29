@@ -37,8 +37,10 @@ export const AllianceCard: FC<z.infer<typeof Alliance>> = ({
       {/* troop */}
       <svg className={unique.troop} viewBox="0 0 300 300">
         <StrokedUse
-          width="300"
-          height="300"
+          x="50"
+          y="50"
+          width="200"
+          height="200"
           xlinkHref={`${troop}#root`}
           fill="black"
           stroke={foreGroundColor}

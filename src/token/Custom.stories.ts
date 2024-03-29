@@ -20,7 +20,7 @@ export const Decal: Story = {
     background: `url('/generated/utils/background/tech-red.jpg') top left / cover no-repeat`,
     image: 'vector/decal/amal.svg',
     circle: false,
-    size: { width: 300, height: 300 },
+    size: { width: 150, height: 150 },
   },
 };
 
@@ -66,14 +66,14 @@ export const All: Story = {
     circle: false,
     top: 'Pew Pew',
     bottom: 'pew pew\nTeam Sparlock!',
-    size: { width: 210, height: 210 },
+    size: { width: 160, height: 160 },
   },
 };
 
 export const AxlotlTanks: Story = {
   args: {
     background: `url('/generated/utils/background/tech-purple.jpg') top left / cover no-repeat`,
-    image: 'vector/icon/revival_standalone.svg',
+    image: 'vector/icon/revival.svg',
     circle: false,
     top: 'Axlotl Tanks',
     bottom: 'revival phase\nTleilaxu does not trigger',
@@ -83,7 +83,7 @@ export const AxlotlTanks: Story = {
 export const ChoamCharity: Story = {
   args: {
     background: `url('/generated/utils/background/tech-yellow.jpg') top left / cover no-repeat`,
-    image: 'vector/icon/spice_standalone.svg',
+    image: 'vector/icon/spice.svg',
     circle: false,
     top: 'CHOAM Charity',
     bottom: 'choam charity phase\nBene Gesserit does not trigger',
@@ -113,7 +113,7 @@ export const ImperialSupplies: Story = {
 export const Customs: Story = {
   args: {
     background: `url('/generated/utils/background/tech-blue.jpg') top left / cover no-repeat`,
-    image: 'vector/icon/spice.svg',
+    image: 'vector/icon/spice-alt.svg',
     circle: false,
     top: 'Customs',
     bottom: 'Once per turn\nWhen a bribe is paid',

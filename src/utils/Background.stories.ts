@@ -155,7 +155,7 @@ export const BeneGesserit: Story = {
   args: {
     image: 'image/texture/020.jpg',
     colors: ['#3A4491', '#101D65'],
-    opacity: 120,
+    opacity: 150,
     strength: -100,
   },
 };
@@ -173,7 +173,7 @@ export const Emperor: Story = {
   args: {
     image: 'image/texture/030.jpg',
     colors: ['#A40008', '#8D0006'],
-    opacity: -50,
+    opacity: -150,
     strength: 0,
   },
 };
@@ -182,7 +182,7 @@ export const Fremen: Story = {
   args: {
     image: 'image/texture/054.jpg',
     colors: ['#F6A834', '#CF7317'],
-    opacity: 20,
+    opacity: 120,
     strength: -100,
   },
 };
@@ -191,7 +191,7 @@ export const Guild: Story = {
   args: {
     image: 'image/texture/007.jpg',
     colors: ['#D83C13', '#B41C0C'],
-    opacity: 100,
+    opacity: 400,
     strength: -100,
   },
 };
@@ -200,7 +200,7 @@ export const Iduali: Story = {
   args: {
     image: 'image/texture/009.jpg',
     colors: ['#5B2802', '#470200'],
-    opacity: 200,
+    opacity: 100,
     strength: -100,
   },
 };
@@ -209,7 +209,7 @@ export const Harkonnen: Story = {
   args: {
     image: 'image/texture/059.jpg',
     colors: ['#191311', '#000000'],
-    opacity: 40,
+    opacity: 140,
     strength: -10,
   },
 };
@@ -219,7 +219,7 @@ export const Moritani: Story = {
     image: 'image/texture/057.jpg',
     colors: ['#0B4D64', '#05333D'],
     opacity: 1040,
-    strength: -60,
+    strength: -67,
   },
 };
 
@@ -228,7 +228,7 @@ export const Ginaz: Story = {
     image: 'image/texture/056.jpg',
     colors: ['#425A61', '#273739'],
     opacity: 1400,
-    strength: -30,
+    strength: -10,
   },
 };
 
@@ -246,7 +246,7 @@ export const Richese: Story = {
     image: 'image/texture/029.jpg',
     colors: ['#B5B0A5', '#7C786D'],
     opacity: 200,
-    strength: -65,
+    strength: -77,
   },
 };
 
@@ -254,14 +254,14 @@ export const Ecaz: Story = {
   args: {
     image: 'image/texture/044.jpg',
     colors: ['#7F3D81', '#581858'],
-    opacity: 300,
-    strength: -75,
+    opacity: 250,
+    strength: -85,
   },
 };
 
 export const CHOAM: Story = {
   args: {
-    image: 'image/texture/021.jpg',
+    image: 'image/texture/075.jpg',
     colors: [
       {
         type: 'linear',
@@ -280,7 +280,7 @@ export const CHOAM: Story = {
         ],
       },
     ],
-    opacity: 0,
+    opacity: 100,
     strength: 0,
   },
 };

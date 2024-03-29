@@ -1,7 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "dictionaries": ["en_US", "softwareTerms", "typescript"],
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "typescript"
+  ],
   "words": [
     "amal",
     "Atreides",
@@ -22,6 +26,7 @@
     "hagal",
     "Harkonnen",
     "heighliners",
+    "Hiereg",
     "Iduali",
     "immer",
     "Ixian",
@@ -37,7 +42,14 @@
     "Richese",
     "Tleilaxu"
   ],
-  "ignoreWords": ["lockb"],
-  "ignorePaths": [".vscode", "*.lock", "*.lockb", ".github"],
+  "ignoreWords": [
+    "lockb"
+  ],
+  "ignorePaths": [
+    ".vscode",
+    "*.lock",
+    "*.lockb",
+    ".github"
+  ],
   "useGitignore": true
 }

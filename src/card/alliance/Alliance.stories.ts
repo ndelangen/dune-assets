@@ -183,7 +183,7 @@ export const BeneTleilaxu: Story = {
     name: 'Bene Tleilaxu',
     decals: [
       {
-        id: 'vector/icon/revival_standalone.svg',
+        id: 'vector/icon/revival.svg',
         muted: true,
         offset: [0, 0],
         outline: false,
