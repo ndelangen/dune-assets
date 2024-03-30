@@ -292,3 +292,41 @@ export const Stunner: Story = {
     subName: 'Weapon - Projectile',
   },
 };
+
+export const StoneBurner: Story = {
+  args: {
+    head: `/generated/utils/background/weapon.jpg`,
+    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
+    name: 'Stone Burner',
+    decals: [
+      {
+        id: 'vector/decal/stone-burner-expansion-multicolor.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: false,
+        scale: 1.05,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Weapon - Special',
+  },
+};
+
+export const MirrorWeapon: Story = {
+  args: {
+    head: `/generated/utils/background/weapon.jpg`,
+    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
+    name: 'Mirror Weapon',
+    decals: [
+      {
+        id: 'vector/decal/mirror-weapon.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: true,
+        scale: 1,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Weapon - Special',
+  },
+};

@@ -11,8 +11,8 @@ type Story = StoryObj<typeof meta>;
 export const Karama: Story = {
   args: {
     head: `/generated/utils/background/storm.jpg`,
-    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/karama.svg'],
-    iconOffset: [0, 1],
+    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/logo/richese.svg'],
+    iconOffset: [0, -5],
     name: 'Richese Karama',
     decals: [
       {
@@ -31,12 +31,12 @@ export const Karama: Story = {
 export const SignetRing: Story = {
   args: {
     head: `/generated/utils/background/worthless.jpg`,
-    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/worthless.svg'],
-    iconOffset: [0, 1],
+    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/logo/richese.svg'],
+    iconOffset: [0, -5],
     name: 'Signet Ring',
     decals: [
       {
-        id: 'vector/generic/nobles.svg',
+        id: 'vector/decal/signet.svg',
         muted: false,
         offset: [0, 0],
         outline: true,
@@ -51,12 +51,12 @@ export const SignetRing: Story = {
 export const TruthOrDare: Story = {
   args: {
     head: `/generated/utils/background/storm.jpg`,
-    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/karama.svg'],
-    iconOffset: [0, 1],
+    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/logo/richese.svg'],
+    iconOffset: [0, -5],
     name: 'Truth or Dare',
     decals: [
       {
-        id: 'vector/icon/karama.svg',
+        id: 'vector/decal/truth-trance.svg',
         muted: false,
         offset: [0, 0],
         outline: true,

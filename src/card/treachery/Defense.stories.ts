@@ -48,6 +48,26 @@ export const Snooper: Story = {
   },
 };
 
+export const PortableSnooper: Story = {
+  args: {
+    head: `/generated/utils/background/defense.jpg`,
+    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
+    iconOffset: [0, 8],
+    name: 'Snooper',
+    decals: [
+      {
+        id: 'vector/decal/portable-snooper.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: true,
+        scale: 0.6,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Defense - Poison - Special',
+  },
+};
+
 export const Chemistry: Story = {
   args: {
     head: `/generated/utils/background/defense.jpg`,
