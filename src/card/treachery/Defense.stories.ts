@@ -44,7 +44,7 @@ export const Snooper: Story = {
       },
     ],
     text: 'Text goes here',
-    subName: 'Defense - Projectile',
+    subName: 'Defense - Poison',
   },
 };
 
@@ -64,6 +64,26 @@ export const Chemistry: Story = {
       },
     ],
     text: 'Text goes here',
-    subName: 'Defense - Projectile',
+    subName: 'Defense - Poison - Special',
+  },
+};
+
+export const ShieldSnooper: Story = {
+  args: {
+    head: `/generated/utils/background/defense.jpg`,
+    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
+    iconOffset: [0, 0],
+    name: 'ShieldSnooper',
+    decals: [
+      {
+        id: 'vector/decal/shield-snooper.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: true,
+        scale: 0.7,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Defense - Special',
   },
 };

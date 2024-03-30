@@ -1,7 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "dictionaries": ["en_US", "softwareTerms", "typescript"],
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "typescript"
+  ],
   "words": [
     "amal",
     "Atreides",
@@ -18,6 +22,7 @@
     "Ecaz",
     "Ellaca",
     "Fremen",
+    "Gamond",
     "Gesserit",
     "ghola",
     "Ginaz",
@@ -29,8 +34,11 @@
     "immer",
     "Ixian",
     "jabbar",
+    "Jubba",
     "karama",
     "knip",
+    "Kull",
+    "Kulon",
     "kwisatz",
     "landsraad",
     "Lasgun",
@@ -40,9 +48,17 @@
     "Nomic",
     "Richese",
     "Tleilaxu",
+    "Wahad",
     "Weirding"
   ],
-  "ignoreWords": ["lockb"],
-  "ignorePaths": [".vscode", "*.lock", "*.lockb", ".github"],
+  "ignoreWords": [
+    "lockb"
+  ],
+  "ignorePaths": [
+    ".vscode",
+    "*.lock",
+    "*.lockb",
+    ".github"
+  ],
   "useGitignore": true
 }
