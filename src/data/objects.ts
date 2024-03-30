@@ -52,8 +52,8 @@ export const Alliance = z.strictObject({
 export const Treachery = z.strictObject({
   name: z.string(),
   subName: z.string(),
-  color: COLOR,
-  icon: z.tuple([COLOR, ALL]),
+  head: URL,
+  icon: z.tuple([URL, ALL]),
   decals: z.array(Decal),
   text: z.string(),
 });
