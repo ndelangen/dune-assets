@@ -20,17 +20,17 @@
 }
 
 .typeOverlay {
-  width: 125px;
-  height: 125px;
+  width: 85px;
+  height: 85px;
   mix-blend-mode: overlay;
 }
 
 .typeShade {
-  width: 125px;
-  height: 125px;
+  width: 85px;
+  height: 85px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
   opacity: 0.5;
 }
 

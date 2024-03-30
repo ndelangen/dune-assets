@@ -54,6 +54,7 @@ export const Treachery = z.strictObject({
   subName: z.string(),
   head: URL,
   icon: z.tuple([URL, ALL]),
+  iconOffset: z.tuple([z.number(), z.number()]).optional(),
   decals: z.array(Decal),
   text: z.string(),
 });

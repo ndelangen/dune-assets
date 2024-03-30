@@ -11,9 +11,20 @@ import { size, FrontDecals } from '../Decals';
 
 const foreGroundColor = '#e3dbb3';
 
-export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({ name, decals, text, head, icon, subName }) => {
+export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
+  name,
+  decals,
+  text,
+  head,
+  icon,
+  subName,
+  iconOffset,
+}) => {
   const cid = useCountId();
   const prefix = useMemo(() => `${cid}_`, [cid]);
+
+  const iconMarginLeft = iconOffset?.[0] || 0;
+  const iconMarginTop = iconOffset?.[1] || 0;
 
   return (
     <div className={styles.card}>
@@ -38,8 +49,16 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({ name, decals, tex
           background: `url('${icon[0]}') top center / cover no-repeat`,
         }}
       >
-        <img src={icon[1]} className={styles.typeOverlay} />
-        <img src={icon[1]} className={styles.typeShade} />
+        <img
+          src={icon[1]}
+          className={unique.typeOverlay}
+          style={{ marginLeft: iconMarginLeft * 2, marginTop: iconMarginTop * 2 }}
+        />
+        <img
+          src={icon[1]}
+          className={unique.typeShade}
+          style={{ marginLeft: iconMarginLeft, marginTop: iconMarginTop }}
+        />
       </div>
       <div className={styles.title}>{name}</div>
       <div className={styles.subtitle}>{subName}</div>

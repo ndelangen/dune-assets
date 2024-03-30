@@ -36,7 +36,8 @@
     "ndelangen",
     "Nomic",
     "Richese",
-    "Tleilaxu"
+    "Tleilaxu",
+    "Weirding"
   ],
   "ignoreWords": ["lockb"],
   "ignorePaths": [".vscode", "*.lock", "*.lockb", ".github"],
