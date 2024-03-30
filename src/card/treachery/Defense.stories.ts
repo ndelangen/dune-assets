@@ -8,25 +8,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Lasgun: Story = {
-  args: {
-    head: `/generated/utils/background/weapon.jpg`,
-    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
-    name: 'Lasgun',
-    decals: [
-      {
-        id: 'vector/decal/lasgun.svg',
-        muted: false,
-        offset: [0, 0],
-        outline: true,
-        scale: 0.7,
-      },
-    ],
-    text: 'Text goes here',
-    subName: 'Weapon - Special',
-  },
-};
-
 export const Shield: Story = {
   args: {
     head: `/generated/utils/background/defense.jpg`,
@@ -84,43 +65,5 @@ export const Chemistry: Story = {
     ],
     text: 'Text goes here',
     subName: 'Defense - Projectile',
-  },
-};
-
-export const WeirdingWay: Story = {
-  args: {
-    head: `/generated/utils/background/weapon.jpg`,
-    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
-    name: 'Weirding Way',
-    decals: [
-      {
-        id: 'vector/decal/weirdingway-multicolor.svg',
-        muted: false,
-        offset: [0, 0],
-        outline: false,
-        scale: 1.05,
-      },
-    ],
-    text: 'Text goes here',
-    subName: 'Weapon - Special',
-  },
-};
-
-export const BasiliaWeapon: Story = {
-  args: {
-    head: `/generated/utils/background/weapon.jpg`,
-    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
-    name: 'Weirding Way',
-    decals: [
-      {
-        id: 'vector/decal/basilia.svg',
-        muted: false,
-        offset: [0, 0],
-        outline: true,
-        scale: 0.7,
-      },
-    ],
-    text: 'Text goes here',
-    subName: 'Weapon - Poison',
   },
 };
