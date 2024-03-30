@@ -407,7 +407,7 @@ export const ICON = z.enum([
   'vector/icon/down.svg',
   'vector/icon/eye.svg',
   'vector/icon/fate.svg',
-  'vector/icon/hand 2.svg',
+  'vector/icon/hand-alt.svg',
   'vector/icon/hand.svg',
   'vector/icon/heighliners.svg',
   'vector/icon/herb.svg',
