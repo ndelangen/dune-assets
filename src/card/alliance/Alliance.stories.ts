@@ -48,7 +48,7 @@ export const Harkonnen: Story = {
         scale: 1.2,
       },
       {
-        id: 'vector/decal/shive.svg',
+        id: 'vector/decal/slip-tip.svg',
         muted: true,
         offset: [260, -80],
         outline: false,
@@ -76,9 +76,9 @@ export const Fremen: Story = {
       {
         id: 'vector/icon/herb.svg',
         muted: true,
-        offset: [280, 0],
+        offset: [310, -110],
         outline: false,
-        scale: 1.3,
+        scale: 0.4,
       },
     ],
     text: 'Text goes here',
@@ -95,9 +95,9 @@ export const Emperor: Story = {
       {
         id: 'vector/decal/choam-share.svg',
         muted: true,
-        offset: [-60, 80],
+        offset: [-60, 110],
         outline: false,
-        scale: 0.6,
+        scale: 0.5,
       },
       {
         id: 'vector/icon/spice.svg',

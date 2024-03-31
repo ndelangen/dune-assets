@@ -11,7 +11,7 @@ export const size = {
   height: 1263,
 };
 
-const StrokedUse: FC<SVGProps<SVGUseElement>> = ({ stroke, strokeWidth, filter, ...rest }) => (
+const StrokedUse: FC<SVGProps<SVGUseElement>> = ({ filter, ...rest }) => (
   <>
     <use {...{ filter }} {...rest} />
     <use {...rest} />
@@ -28,7 +28,7 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
     [decals],
   );
   const decalsMask = `${prefix}decals-mask`;
-  const decalsFilter = `${prefix}decals-mask`;
+  const decalsFilter = `${prefix}decals-filter`;
 
   const decalSize = { width: 763, height: 439 };
   const stroked = { filter: `url(#${decalsFilter})` };
@@ -36,8 +36,8 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
 
   return (
     <>
-      {nonFadedDecals.length > 0 && (
-        <defs>
+      <defs>
+        {nonFadedDecals.length > 0 && (
           <filter id={decalsFilter}>
             <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="6"></feMorphology>
             <feFlood flood-color={foreGroundColor} flood-opacity="1" result="PINK"></feFlood>
@@ -47,11 +47,9 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
-        </defs>
-      )}
-      {fadedDecals.length > 0 && (
-        <>
-          <defs>
+        )}
+        {fadedDecals.length > 0 && (
+          <>
             <mask id={decalsMask} maskUnits="userSpaceOnUse">
               <rect fill="black" {...size} x={0} y={0} />
               {fadedDecals.map((d, i) => {
@@ -70,10 +68,10 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
                 );
               })}
             </mask>
-          </defs>
-          <rect fill={middleColor} {...size} mask={`url(#${decalsMask})`} />
-        </>
-      )}
+          </>
+        )}
+      </defs>
+      {fadedDecals.length > 0 && <rect fill={middleColor} {...size} mask={`url(#${decalsMask})`} />}
 
       {nonFadedDecals.map((d, i) => {
         const width = decalSize.width * d.scale;

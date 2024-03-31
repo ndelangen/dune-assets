@@ -56,7 +56,7 @@ export const ConeOfSilence: Story = {
     name: 'Cone of Silence',
     decals: [
       {
-        id: 'vector/decal/cone.svg',
+        id: 'vector/decal/cone-of-silence.svg',
         muted: false,
         offset: [0, 0],
         outline: true,
