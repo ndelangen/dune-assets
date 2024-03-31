@@ -1,8 +1,7 @@
-import { useMemo } from 'react';
+import { FC, SVGProps, useMemo } from 'react';
 import { z } from 'zod';
 
 import { Decal } from '../data/objects';
-import { StrokedUse } from '../utils/StrokedUse';
 
 const foreGroundColor = '#e3dbb3';
 const middleColor = '#847954';
@@ -11,9 +10,13 @@ export const size = {
   width: 900,
   height: 1263,
 };
-const decalSize = { width: 763, height: 439 };
-const stroked = { stroke: foreGroundColor, strokeWidth: '3%' };
-const empty = {};
+
+const StrokedUse: FC<SVGProps<SVGUseElement>> = ({ stroke, strokeWidth, filter, ...rest }) => (
+  <>
+    <use {...{ filter }} {...rest} />
+    <use {...rest} />
+  </>
+);
 
 export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[]; prefix: string }) {
   const fadedDecals = useMemo(
@@ -25,9 +28,27 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
     [decals],
   );
   const decalsMask = `${prefix}decals-mask`;
+  const decalsFilter = `${prefix}decals-mask`;
+
+  const decalSize = { width: 763, height: 439 };
+  const stroked = { filter: `url(#${decalsFilter})` };
+  const empty = {};
 
   return (
     <>
+      {nonFadedDecals.length > 0 && (
+        <defs>
+          <filter id={decalsFilter}>
+            <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="6"></feMorphology>
+            <feFlood flood-color={foreGroundColor} flood-opacity="1" result="PINK"></feFlood>
+            <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
+            <feMerge>
+              <feMergeNode in="OUTLINE" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+      )}
       {fadedDecals.length > 0 && (
         <>
           <defs>

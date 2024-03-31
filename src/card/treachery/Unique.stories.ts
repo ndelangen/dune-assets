@@ -159,7 +159,7 @@ export const Harvester: Story = {
         id: 'vector/decal/harvester-alt-multicolor.svg',
         muted: false,
         offset: [0, 0],
-        outline: true,
+        outline: false,
         scale: 1,
       },
     ],
@@ -336,7 +336,7 @@ export const JuiceOfSaphoAlt: Story = {
     name: 'Juice of Sapho',
     decals: [
       {
-        id: 'vector/decal/juiceofsapho-multicolor.svg',
+        id: 'vector/decal/juice-of-sapho-multicolor.svg',
         muted: false,
         offset: [0, 0],
         outline: false,
@@ -416,7 +416,7 @@ export const SemutaDrug: Story = {
     name: 'Semuta Drug',
     decals: [
       {
-        id: 'vector/decal/semuta.svg',
+        id: 'vector/decal/semuta-drug.svg',
         muted: false,
         offset: [0, 0],
         outline: true,
