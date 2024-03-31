@@ -1,13 +1,13 @@
 import { useMemo, type FC } from 'react';
 import { z } from 'zod';
 
-import { Alliance } from '../../data/objects';
-import * as styles from '../Card.module.css';
+import { Alliance } from '../data/objects';
+import * as styles from './Card.module.css';
 import * as unique from './Alliance.module.css';
-import { MarkdownContent } from '../../utils/MarkdownContent';
-import { useCountId } from '../../utils/useCountId';
-import { StrokedUse } from '../../utils/StrokedUse';
-import { size, FrontDecals } from '../Decals';
+import { MarkdownContent } from '../utils/MarkdownContent';
+import { useCountId } from '../utils/useCountId';
+import { StrokedUse } from '../utils/StrokedUse';
+import { size, FrontDecals } from './Decals';
 
 const foreGroundColor = '#e3dbb3';
 
