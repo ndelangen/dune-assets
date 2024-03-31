@@ -53,7 +53,7 @@ export const PortableSnooper: Story = {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
     iconOffset: [0, 8],
-    name: 'Snooper',
+    name: 'Portable Snooper',
     decals: [
       {
         id: 'vector/decal/portable-snooper.svg',
@@ -101,6 +101,46 @@ export const ShieldSnooper: Story = {
         offset: [0, 0],
         outline: true,
         scale: 0.7,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Defense - Special',
+  },
+};
+
+export const SandtroutMembrane: Story = {
+  args: {
+    head: `/generated/utils/background/defense.jpg`,
+    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
+    iconOffset: [0, 0],
+    name: 'Sandtrout Membrane',
+    decals: [
+      {
+        id: 'vector/decal/membrane.svg',
+        muted: false,
+        offset: [0, 40],
+        outline: true,
+        scale: 0.9,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Defense - Special',
+  },
+};
+
+export const DeflectiveShield: Story = {
+  args: {
+    head: `/generated/utils/background/defense.jpg`,
+    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/shield.svg'],
+    iconOffset: [0, 8],
+    name: 'Deflective Shield',
+    decals: [
+      {
+        id: 'vector/decal/deflective-shield.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: true,
+        scale: 0.8,
       },
     ],
     text: 'Text goes here',

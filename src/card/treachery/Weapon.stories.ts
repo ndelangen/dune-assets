@@ -330,3 +330,22 @@ export const MirrorWeapon: Story = {
     subName: 'Weapon - Special',
   },
 };
+
+export const SlowDart: Story = {
+  args: {
+    head: `/generated/utils/background/weapon.jpg`,
+    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
+    name: 'Slow Dart',
+    decals: [
+      {
+        id: 'vector/decal/cutter-ray.svg',
+        muted: false,
+        offset: [0, 0],
+        outline: true,
+        scale: 0.7,
+      },
+    ],
+    text: 'Text goes here',
+    subName: 'Weapon - Special',
+  },
+};

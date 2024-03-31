@@ -24,7 +24,7 @@ export const Karama: Story = {
       },
     ],
     text: 'Text goes here',
-    subName: 'Special',
+    subName: 'Special - Instant',
   },
 };
 
@@ -44,7 +44,7 @@ export const SignetRing: Story = {
       },
     ],
     text: 'Text goes here',
-    subName: 'Special',
+    subName: 'Worthless - Special',
   },
 };
 
@@ -64,6 +64,6 @@ export const TruthOrDare: Story = {
       },
     ],
     text: 'Text goes here',
-    subName: 'Special',
+    subName: 'Special - Instant',
   },
 };
