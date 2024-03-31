@@ -12,7 +12,7 @@ export const size = {
   height: 1263,
 };
 const decalSize = { width: 763, height: 439 };
-const stroked = { stroke: foreGroundColor, strokeWidth: '4.5%' };
+const stroked = { stroke: foreGroundColor, strokeWidth: '130px' };
 const empty = {};
 
 export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[]; prefix: string }) {
