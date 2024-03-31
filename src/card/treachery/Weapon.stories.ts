@@ -41,7 +41,7 @@ export const WeirdingWay: Story = {
     name: 'Weirding Way',
     decals: [
       {
-        id: 'vector/decal/weirdingway-multicolor.svg',
+        id: 'vector/decal/weirding-way-multicolor.svg',
         muted: false,
         offset: [0, 0],
         outline: false,
@@ -193,7 +193,7 @@ export const ArtilleryStrike: Story = {
     name: 'Artillery Strike',
     decals: [
       {
-        id: 'vector/decal/artillery-multicolor.svg',
+        id: 'vector/decal/artillery-strike-multicolor.svg',
         muted: false,
         offset: [0, 0],
         outline: false,
@@ -307,7 +307,7 @@ export const StoneBurner: Story = {
     name: 'Stone Burner',
     decals: [
       {
-        id: 'vector/decal/stone-burner-expansion-multicolor.svg',
+        id: 'vector/decal/stone-burner-alt-multicolor.svg',
         muted: false,
         offset: [0, 0],
         outline: false,
