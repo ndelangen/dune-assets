@@ -15,9 +15,16 @@ export const Lasgun: Story = {
     name: 'Lasgun',
     decals: [
       {
+        id: 'vector/decal/lasgun-extra.svg',
+        muted: false,
+        offset: [0, 100],
+        outline: false,
+        scale: 0.7,
+      },
+      {
         id: 'vector/decal/lasgun.svg',
         muted: false,
-        offset: [0, 0],
+        offset: [0, -50],
         outline: true,
         scale: 0.7,
       },
