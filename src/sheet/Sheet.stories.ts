@@ -20,10 +20,7 @@ export const Atreides: Story = {
     color: '#4B4C0D',
     alliance: {
       karama: 'Karama',
-      text: `You may assist your ally by forcing their
-      opponent to show 1 element of their battle-
-      plan, see the "battle prescience"
-      -advantage.`,
+      text: `You may assist your ally by forcing their opponent to show 1 element of their battle-plan, see the "battle prescience"-advantage.`,
     },
     fate: {
       text: 'todo',
