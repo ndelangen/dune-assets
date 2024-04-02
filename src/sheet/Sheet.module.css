@@ -1,0 +1,232 @@
+.container {
+  background-color: #fffdf1;
+}
+
+.page {
+  position: relative;
+  padding-top: 100%;
+
+  font-size: 3vw;
+  border-bottom: 0.3vw dashed #dedede;
+
+  & * {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+.page_title {
+  position: absolute;
+  top: 3vw;
+  padding-right: 0.5vw;
+  left: 3vw;
+  right: 3vw;
+  height: 6vw;
+  background-color: red;
+}
+
+.page_subtitle {
+  position: absolute;
+  top: 3vw;
+  padding-right: 0.5vw;
+  left: 3vw;
+  right: 3vw;
+  height: 4vw;
+}
+
+.title {
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 4.5vw;
+  text-transform: uppercase;
+
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+
+  text-align: center;
+  line-height: 6vw;
+}
+
+.subtitle {
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 2.5vw;
+  text-transform: uppercase;
+
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+
+  text-align: center;
+  line-height: 4vw;
+}
+
+.start {
+  position: absolute;
+  top: 10vw;
+  left: 14vw;
+  right: 3vw;
+  height: 3vw;
+  font-size: 2vw;
+  color: #0b0503;
+  line-height: 2.2vw;
+  font-family: 'C_Caladea';
+
+  & > .head {
+    text-transform: uppercase;
+  }
+}
+
+.revival {
+  position: absolute;
+  top: 13vw;
+  left: 14vw;
+  right: 3vw;
+  height: 3vw;
+  font-size: 2vw;
+  color: #0b0503;
+  line-height: 2.2vw;
+  font-family: 'C_Caladea';
+
+  & > .head {
+    text-transform: uppercase;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  border: 0.5vw solid #e3dbb3;
+
+  & > img {
+    position: relative;
+    left: -5%;
+    top: -5%;
+    width: 110%;
+    height: 110%;
+  }
+}
+
+.rules {
+  position: absolute;
+  top: 17vw;
+  left: 3vw;
+  right: 3vw;
+  bottom: 3vw;
+  columns: 3vw 2;
+  column-gap: 3vw;
+  flex: 1;
+
+  & > * + * {
+    margin-top: 2vw;
+  }
+}
+
+.rule {
+  break-inside: 'avoid-column';
+  font-size: 2vw;
+  color: #0b0503;
+  line-height: 2.2vw;
+  font-family: 'C_Caladea';
+
+  & > .head {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  & > .text {
+    overflow: hidden;
+  }
+}
+
+.details {
+  position: absolute;
+  top: 9vw;
+  left: 3vw;
+  right: 3vw;
+  bottom: 3vw;
+  font-family: 'C_Copperplate_Gothic';
+  font-size: 2vw;
+  color: #0b0503;
+  line-height: 2.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.karama {
+  columns: 3vw 2;
+  column-gap: 3vw;
+  flex: 1;
+
+  & > * + * {
+    margin-top: 2vw;
+  }
+}
+
+.troops {
+  display: flex;
+  flex-direction: column;
+}
+
+.troop {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  align-items: center;
+
+  & > img {
+    max-width: 6vw;
+    border-radius: 50%;
+  }
+
+  font-family: 'C_Caladea';
+  font-size: 2vw;
+  color: #0b0503;
+  line-height: 2.2vw;
+
+  & .head {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  & + & {
+    margin-top: 2vw;
+  }
+
+  & section {
+    flex: 1;
+  }
+
+  .icon {
+    border-radius: 0;
+    max-height: 3vw;
+  }
+}
+
+.leaders {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  & > * {
+    max-width: 20vw;
+    border-radius: 50%;
+  }
+}
+
+@media print {
+  @page {
+    size: 150mm 150mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    border-bottom: 0;
+    page-break-after: always;
+  }
+}

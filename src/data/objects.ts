@@ -9,9 +9,9 @@ const URL = z.string().url();
 const COLOR = z.string().regex(/^#[0-9a-f]{6}$/i);
 
 const RULE = z.strictObject({
-  title: z.string(),
+  title: z.string().optional(),
   text: z.string(),
-  karama: z.string(),
+  karama: z.string().optional(),
 });
 
 export const Leader = z.strictObject({
@@ -104,12 +104,20 @@ export const Background = z.strictObject({
 
 export const Sheet = z.strictObject({
   name: z.string(),
-  background: URL,
+  logo: URL,
+  color: COLOR,
   troops: z.array(
     z.strictObject({
       image: URL,
       name: z.string(),
       description: z.string(),
+      back: z
+        .strictObject({
+          image: URL,
+          name: z.string(),
+          description: z.string(),
+        })
+        .optional(),
     }),
   ),
   leaders: z.array(URL),
