@@ -11,7 +11,6 @@
 
   & * {
     box-sizing: border-box;
-    overflow: hidden;
   }
 }
 
@@ -22,7 +21,6 @@
   left: 3vw;
   right: 3vw;
   height: 6vw;
-  background-color: red;
 }
 
 .page_subtitle {
@@ -97,6 +95,7 @@
   width: 12vw;
   height: 12vw;
   border-radius: 50%;
+  overflow: hidden;
   border: 0.5vw solid #e3dbb3;
 
   & > img {
@@ -120,14 +119,15 @@
 
   & > * + * {
     margin-top: 2vw;
+    break-inside: avoid-column;
   }
 }
 
 .rule {
-  break-inside: 'avoid-column';
+  break-inside: avoid-column;
   font-size: 2vw;
   color: #0b0503;
-  line-height: 2.2vw;
+  line-height: 2.4vw;
   font-family: 'C_Caladea';
 
   & > .head {
@@ -137,7 +137,7 @@
   }
 
   & > .text {
-    overflow: hidden;
+    break-inside: avoid-column;
   }
 }
 
@@ -213,8 +213,13 @@
   gap: 2vw;
 
   & > * {
-    max-width: 20vw;
+    flex: 1;
+  }
+
+  & img {
+    max-width: 100%;
     border-radius: 50%;
+    overflow: hidden;
   }
 }
 

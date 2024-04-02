@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 import { Sheet } from '../data/objects';
 import { isLight } from '../utils/contrast';
+import { MarkdownContent } from '../utils/MarkdownContent';
 import styles from './Sheet.module.css';
 
 export const FactionSheet = ({
@@ -46,10 +47,10 @@ export const FactionSheet = ({
             <img src={logo} />
           </div>
           <div className={styles.start}>
-            <strong className={styles.head}>At start:</strong> {start}
+            <strong className={styles.head}>At start:</strong> <MarkdownContent>{start}</MarkdownContent>
           </div>
           <div className={styles.revival}>
-            <strong className={styles.head}>Revival:</strong> {revival}
+            <strong className={styles.head}>Revival:</strong> <MarkdownContent>{revival}</MarkdownContent>
           </div>
           <div className={styles.rules}>
             <div className={styles.subtitle}>Advantages</div>
@@ -61,7 +62,9 @@ export const FactionSheet = ({
                     {rule.karama && '*'}:&nbsp;
                   </div>
                 )}
-                <div className={styles.text}>{rule.text}</div>
+                <div className={styles.text}>
+                  <MarkdownContent>{rule.text}</MarkdownContent>
+                </div>
               </div>
             ))}
             <div className={styles.subtitle}>Alliance</div>
@@ -72,7 +75,9 @@ export const FactionSheet = ({
                   {alliance.karama && '*'}:&nbsp;
                 </div>
               )}
-              <div className={styles.text}>{alliance.text}</div>
+              <div className={styles.text}>
+                <MarkdownContent>{alliance.text}</MarkdownContent>
+              </div>
             </div>
             <div className={styles.subtitle}>Fate</div>
             <div className={styles.rule}>
@@ -82,7 +87,9 @@ export const FactionSheet = ({
                   {fate.karama && '*'}:&nbsp;
                 </div>
               )}
-              <div className={styles.text}>{fate.text}</div>
+              <div className={styles.text}>
+                <MarkdownContent>{fate.text}</MarkdownContent>
+              </div>
             </div>
           </div>
         </div>
@@ -95,13 +102,17 @@ export const FactionSheet = ({
                   {rulesWithKarama.map((rule) => (
                     <div className={styles.rule}>
                       <div className={styles.head}>{rule.title}:&nbsp;</div>
-                      <div className={styles.text}>{rule.karama}</div>
+                      <div className={styles.text}>
+                        <MarkdownContent>{rule.karama}</MarkdownContent>
+                      </div>
                     </div>
                   ))}
                   {alliance.karama && (
                     <div className={styles.rule}>
                       <div className={styles.head}>{alliance.title || 'Alliance'}:&nbsp;</div>
-                      <div className={styles.text}>{alliance.karama}</div>
+                      <div className={styles.text}>
+                        <MarkdownContent>{alliance.karama}</MarkdownContent>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -115,7 +126,9 @@ export const FactionSheet = ({
                             <img src={t.image} />
                             <section>
                               <div className={styles.head}>{t.name}</div>
-                              <div className={styles.text}>{t.description}</div>
+                              <div className={styles.text}>
+                                <MarkdownContent>{t.description}</MarkdownContent>
+                              </div>
                             </section>
 
                             {t.back && (
@@ -125,7 +138,9 @@ export const FactionSheet = ({
                                 <img src={t.back.image} />
                                 <section>
                                   <div className={styles.head}>{t.back.name}</div>
-                                  <div className={styles.text}>{t.back.description}</div>
+                                  <div className={styles.text}>
+                                    <MarkdownContent>{t.back.description}</MarkdownContent>
+                                  </div>
                                 </section>
                               </>
                             )}
@@ -140,7 +155,9 @@ export const FactionSheet = ({
                     <div className={styles.subtitle}>Leaders</div>
                     <div className={styles.leaders}>
                       {leaders.map((l) => (
-                        <img src={l} />
+                        <div>
+                          <img src={l} />
+                        </div>
                       ))}
                     </div>
                   </>
