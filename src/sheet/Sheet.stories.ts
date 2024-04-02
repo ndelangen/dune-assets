@@ -11,7 +11,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Duo1: Story = {
+export const Atreides: Story = {
   args: {
     alliance: {
       karama: 'Karama',
