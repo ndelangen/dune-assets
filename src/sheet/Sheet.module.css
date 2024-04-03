@@ -61,13 +61,6 @@
 
   text-align: center;
   line-height: 4vw;
-
-  -webkit-font-smoothing: antialiased;
-  font-optical-sizing: auto;
-  font-stretch: normal;
-  text-rendering: auto;
-  letter-spacing: auto;
-  font-kerning: normal;
 }
 
 .start {
