@@ -41,9 +41,14 @@
   color: var(--header-text-color);
 
   text-align: center;
-  line-height: 4.5vw;
-  padding-top: 0.75vw;
-  padding-bottom: 0.75vw;
+  line-height: 6vw;
+
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+  font-stretch: normal;
+  text-rendering: auto;
+  letter-spacing: auto;
+  font-kerning: normal;
 }
 
 .subtitle {
@@ -55,9 +60,14 @@
   color: var(--header-text-color);
 
   text-align: center;
-  line-height: 2.5vw;
-  padding-top: 0.75vw;
-  padding-bottom: 0.75vw;
+  line-height: 4vw;
+
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+  font-stretch: normal;
+  text-rendering: auto;
+  letter-spacing: auto;
+  font-kerning: normal;
 }
 
 .start {
