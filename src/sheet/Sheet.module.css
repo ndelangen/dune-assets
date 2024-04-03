@@ -4,7 +4,7 @@
 
 .page {
   position: relative;
-  padding-top: 100%;
+  padding-top: 130%;
 
   font-size: 3vw;
   border-bottom: 0.3vw dashed #dedede;
@@ -232,7 +232,7 @@
 
 @media print {
   @page {
-    size: 150mm 150mm;
+    size: 150mm 195mm;
     margin: 0;
     padding: 0;
   }
