@@ -65,7 +65,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.2vw;
-  font-family: 'C_Caladea';
+  font-family: 'Caladea';
 
   & > .head {
     text-transform: uppercase;
@@ -81,7 +81,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.2vw;
-  font-family: 'C_Caladea';
+  font-family: 'Caladea';
 
   & > .head {
     text-transform: uppercase;
@@ -128,7 +128,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.4vw;
-  font-family: 'C_Caladea';
+  font-family: 'Caladea';
 
   & > .head {
     float: left;
@@ -183,7 +183,7 @@
     border-radius: 50%;
   }
 
-  font-family: 'C_Caladea';
+  font-family: 'Caladea';
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.2vw;
