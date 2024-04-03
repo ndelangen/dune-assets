@@ -41,7 +41,9 @@
   color: var(--header-text-color);
 
   text-align: center;
-  line-height: 6vw;
+  line-height: 4.5vw;
+  padding-top: 0.75vw;
+  padding-bottom: 0.75vw;
 }
 
 .subtitle {
@@ -53,7 +55,9 @@
   color: var(--header-text-color);
 
   text-align: center;
-  line-height: 4vw;
+  line-height: 2.5vw;
+  padding-top: 0.75vw;
+  padding-bottom: 0.75vw;
 }
 
 .start {
