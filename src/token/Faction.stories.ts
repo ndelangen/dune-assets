@@ -46,14 +46,14 @@ export const Fremen: Story = {
 export const BeneGesserit: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
-    image: 'vector/logo/bg.svg',
+    image: 'vector/logo/bene-gesserit.svg',
   },
 };
 
 export const BeneTleilax: Story = {
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
-    image: 'vector/logo/bt.svg',
+    image: 'vector/logo/bene-tleilaxu.svg',
   },
 };
 

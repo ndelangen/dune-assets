@@ -67,7 +67,7 @@ export const Fremen: Story = {
     name: 'Fremen',
     decals: [
       {
-        id: 'vector/decal/shai-halud.svg',
+        id: 'vector/decal/shai-hulud.svg',
         muted: true,
         offset: [20, 70],
         outline: false,

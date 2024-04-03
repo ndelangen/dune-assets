@@ -29,7 +29,7 @@ export const Representative: Story = {
 export const SooSooSook: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/soosoosook.png',
+    image: 'image/leader/soo-soo-sook.png',
     logo: 'vector/logo/guild.svg',
     name: 'Soo Soo Sook',
     strength: '2',

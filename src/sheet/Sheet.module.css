@@ -1,5 +1,12 @@
 .container {
   background-color: #fffdf1;
+
+  & p {
+    margin: 0;
+  }
+  & p + p {
+    margin-top: 2vw;
+  }
 }
 
 .page {

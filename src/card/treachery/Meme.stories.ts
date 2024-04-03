@@ -35,12 +35,12 @@ export const HaHaHa: Story = {
   },
 };
 
-export const FlyingShaiHalud: Story = {
+export const FlyingShaiHulud: Story = {
   args: {
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/lightning.svg'],
     iconOffset: [0, 2],
-    name: 'Flying Shai-Halud',
+    name: 'Flying Shai-Hulud',
     decals: [
       {
         id: 'vector/decal/gamond.svg',
@@ -50,7 +50,7 @@ export const FlyingShaiHalud: Story = {
         scale: 0.8,
       },
       {
-        id: 'vector/decal/shai-halud.svg',
+        id: 'vector/decal/shai-hulud.svg',
         muted: false,
         offset: [0, -40],
         outline: true,

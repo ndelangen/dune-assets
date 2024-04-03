@@ -43,7 +43,7 @@ export const BeneGesserit: Story = {
   },
 };
 
-export const Advisors: Story = {
+export const Advisor: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'vector/troop/bene-gesserit.svg',

@@ -35,12 +35,12 @@ export const WannaYueh: Story = {
   },
 };
 
-export const MotherRamolla: Story = {
+export const MotherRamallo: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/ramallo.png',
     logo: 'vector/logo/bene-gesserit.svg',
-    name: 'Mother Ramollo',
+    name: 'Mother Ramallo',
     strength: '5',
   },
 };
@@ -58,7 +58,7 @@ export const PrincesIrulan: Story = {
 export const LadyFenring: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
-    image: 'image/leader/ladyfenring.png',
+    image: 'image/leader/lady-fenring.png',
     logo: 'vector/logo/bene-gesserit.svg',
     name: 'Lady Fenring',
     strength: '5',

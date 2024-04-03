@@ -42,7 +42,7 @@ export const MotherRamolla: Story = {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/ramallo.png',
     logo: 'vector/logo/bene-gesserit.svg',
-    name: 'Mother Ramollo',
+    name: 'Mother Ramallo',
     strength: '5',
     owner: 'Bene Gesserit',
   },
@@ -62,7 +62,7 @@ export const PrincesIrulan: Story = {
 export const LadyFenring: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
-    image: 'image/leader/ladyfenring.png',
+    image: 'image/leader/lady-fenring.png',
     logo: 'vector/logo/bene-gesserit.svg',
     name: 'Lady Fenring',
     strength: '5',
