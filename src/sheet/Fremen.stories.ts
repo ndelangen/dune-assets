@@ -61,7 +61,7 @@ export const Fremen: Story = {
         title: 'THUMPERS',
         text: [
           `You start the game with two thumper-tokens.`,
-          `During the spice blow phase you may discard one token to summon a riding worm in any sand territory *(or the polar sink)* where you have forces.`,
+          `During the spice blow phase you may discard one token to summon a riding worm in any sand territory *(or the polar sink)* where you have troops.`,
           `Riding worms don't cause a nexus and cannot eat troops; They always count as the first worm to appear in the phase *(so you can move other worms with thumpers using your* **WORM RIDING** *advantage)*.`,
           ,
         ].join('\n\n'),
@@ -69,18 +69,18 @@ export const Fremen: Story = {
       },
       {
         title: 'HALF STORM LOSSES',
-        text: `If your forces are caught in storm only half of them are killed *(all fractions rounded up)*. You may ship and move into/through storm by taking half losses.`,
+        text: `If your troops are caught in storm only half of them are killed *(all fractions rounded up)*. You may ship and move into/through storm by taking half losses.`,
         karama: `When the storm moves over fremen troops, all of them are killed.`,
       },
       {
         title: 'FEDAYKIN',
-        text: `Your three starred forces are double combat strength. Only one Fedaykin may be revived per turn.`,
-        karama: `Your three starred forces are normal strength.`,
+        text: `Your three starred troops are double combat strength. Only one Fedaykin may be revived per turn.`,
+        karama: `Your three starred troops are normal strength.`,
       },
       {
         title: 'FREE SPICE DIALING',
-        text: `Your forces do not require spice to count at their full strength.`,
-        karama: `Your forces require spice to count at their full strength.`,
+        text: `Your troops do not require spice to count at their full strength.`,
+        karama: `Your troops require spice to count at their full strength.`,
       },
       {
         title: 'FANATICAL TACTICS',
@@ -103,7 +103,7 @@ export const Fremen: Story = {
       {
         image: '/generated/token/troop/fremen.jpg',
         description: '1 strength.',
-        name: 'Normal force',
+        name: 'Normal troop',
       },
       {
         image: '/generated/token/troop/fedaykin.jpg',

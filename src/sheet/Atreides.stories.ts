@@ -88,7 +88,7 @@ export const Atreides: Story = {
       {
         image: '/generated/token/troop/atreides.jpg',
         description: '0.5 strength normally, 1 strength in when 1 spice is added.',
-        name: 'Normal force',
+        name: 'Normal troop',
       },
     ],
     leaders: [

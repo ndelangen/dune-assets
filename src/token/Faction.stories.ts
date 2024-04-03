@@ -50,7 +50,7 @@ export const BeneGesserit: Story = {
   },
 };
 
-export const BeneTleilax: Story = {
+export const BeneTleilaxu: Story = {
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'vector/logo/bene-tleilaxu.svg',

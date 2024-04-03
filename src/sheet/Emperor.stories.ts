@@ -70,7 +70,7 @@ export const Emperor: Story = {
       {
         image: '/generated/token/troop/emperor.jpg',
         description: '0.5 strength normally, 1 strength in when 1 spice is added.',
-        name: 'Normal force',
+        name: 'Normal troop',
       },
       {
         image: '/generated/token/troop/sardaukar.jpg',

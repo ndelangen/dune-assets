@@ -61,13 +61,13 @@ export const BeneGesserit: Story = {
         title: 'SPIRITUAL ADVISORS',
         text: [
           `Your troops have two sides: fighters and advisors. Fighters act like normal troops. Advisors may be moved but otherwise have no effect on the game.`,
-          `The state of your troops is tracked on a per territory basis. *(Ex. If advisors move to a territory with fighters they become fighters. If forces move to a territory with no other Bene Gesserit troops you choose what they become.)*`,
-          `You may ship forces as fighters or advisors.`,
+          `The state of your troops is tracked on a per territory basis. *(Ex. If advisors move to a territory with fighters they become fighters. If troops move to a territory with no other Bene Gesserit troops you choose what they become.)*`,
+          `You may ship troops as fighters or advisors.`,
           `At the beginning of Ship & Move phase you may flip any advisors to fighter, they automatically become fighters if no other factions are present.`,
           `If a faction moves into a territory where you have fighters you may flip those fighters to advisors if that faction wasn't already in that territory. *(Fighters can't become advisors when a faction reinforces a territory.)*`,
           `When a faction ships from off planet you may put an advisors at their destination of a fighter in the polar sink.`,
         ].join('\n\n'),
-        karama: `When the storm moves over fremen troops, all of them are killed.`,
+        karama: `todo.`,
       },
     ],
     troops: [

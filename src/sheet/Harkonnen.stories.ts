@@ -60,7 +60,7 @@ export const Harkonnen: Story = {
       {
         image: '/generated/token/troop/harkonnen.jpg',
         description: '0.5 strength normally, 1 strength in when 1 spice is added.',
-        name: 'Normal force',
+        name: 'Normal troop',
       },
     ],
     leaders: [

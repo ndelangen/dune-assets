@@ -78,7 +78,7 @@ export const SpacingGuild: Story = {
           `Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying spice for each equal to your leader's strength.`,
           `If your leader would've been killed in combat they die. Spice you use to spice dial and retreat is paid to the spice bank.`,
           `You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
-          `If you retreat your opponent wins the battle, losing 0 forces, losing 0 spice, their leader is not killed.`,
+          `If you retreat your opponent wins the battle, losing 0 troops, losing 0 spice, their leader is not killed.`,
         ].join('\n\n'),
       },
     ],
@@ -86,7 +86,7 @@ export const SpacingGuild: Story = {
       {
         image: '/generated/token/troop/guild.jpg',
         description: '0.5 strength normally, 1 strength in when 1 spice is added.',
-        name: 'Normal force',
+        name: 'Normal troop',
       },
     ],
     leaders: [
