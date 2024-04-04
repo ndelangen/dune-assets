@@ -64,3 +64,13 @@ export const ThufirHawat: Story = {
     strength: '5',
   },
 };
+
+export const KwisatzHaderach: Story = {
+  args: {
+    background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
+    image: 'image/leader/paul.jpg',
+    logo: 'vector/logo/atreides.svg',
+    name: 'Kwisatz Haderach',
+    strength: '+2',
+  },
+};

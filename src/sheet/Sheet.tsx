@@ -16,6 +16,7 @@ export const FactionSheet = ({
   troops,
   leaders,
   color,
+  extras,
 }: z.infer<typeof Sheet>) => {
   const rulesWithKarama = rules.filter((r) => !!r.karama);
   const hasKarama = rulesWithKarama.length > 0 || !!alliance.karama;
@@ -166,6 +167,30 @@ export const FactionSheet = ({
             </div>
           </>
         ) : null}
+        {extras && extras.length > 0 && (
+          <div className={styles.page_dynamic}>
+            {extras.map((extra) => (
+              <>
+                <div className={styles.subtitle}>{extra.name}</div>
+                <div className={styles.text}>
+                  <MarkdownContent>{extra.description}</MarkdownContent>
+                </div>
+                <div className={styles.extra}>
+                  {extra.items.map((item) => (
+                    <div>
+                      <img src={item.url} />
+                      {item?.description && (
+                        <div className={styles.text}>
+                          <MarkdownContent>{item.description}</MarkdownContent>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

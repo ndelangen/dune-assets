@@ -1,11 +1,24 @@
 .container {
   background-color: #fffdf1;
 
+  & ul,
+  & ol {
+    margin: 0;
+    padding: 0 0 0 2.2vw;
+  }
+
   & p {
     margin: 0;
   }
-  & p + p {
+
+  & p + *,
+  & ul + *,
+  & ol + * {
     margin-top: 2vw;
+  }
+
+  & ul {
+    list-style: disc;
   }
 }
 
@@ -20,6 +33,26 @@
     box-sizing: border-box;
   }
 }
+
+.page_dynamic {
+  position: relative;
+  font-size: 3vw;
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  
+  font-size: 2vw;
+  color: #0b0503;
+  line-height: 3vw;
+  font-family: 'Caladea';
+}
+
 
 .page_title {
   position: absolute;
@@ -233,6 +266,23 @@
   & img {
     max-width: 100%;
     border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  & > * {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+  }
+
+  & img {
+    max-width: 100%;
     overflow: hidden;
   }
 }

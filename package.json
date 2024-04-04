@@ -13,7 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "build-capture": "sb build && bun run ./scripts/capture.ts",
+    "local-capture": "sb build && LOCAL=true bun run ./scripts/capture.ts",
     "build-storybook": "sb build",
     "capture": "bun run ./scripts/capture.ts",
     "format": "prettier --write .",

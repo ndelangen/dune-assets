@@ -64,3 +64,93 @@ export const Javid: Story = {
     strength: '5',
   },
 };
+
+export const KorbaAlt: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/korba.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Korba',
+    strength: '0',
+  },
+};
+
+export const Majorca: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/smuggler.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Smuggler',
+    strength: '3',
+  },
+};
+
+export const MajorcaAlt: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/smuggler.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Smuggler',
+    strength: '1',
+  },
+};
+
+export const Minorca: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/smuggler.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Smuggler',
+    strength: '4',
+  },
+};
+
+export const MinorcaAlt: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/smuggler.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Smuggler',
+    strength: '2',
+  },
+};
+
+export const SabihaStrong: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/sabiha.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Sabiha',
+    strength: '6',
+  },
+};
+
+export const SabihaAlt: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/sabiha.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Sabiha',
+    strength: '3',
+  },
+};
+
+export const JavidStrong: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/javid.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Javid',
+    strength: '6',
+  },
+};
+
+export const JavidAlt: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/javid.png',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Javid',
+    strength: '4',
+  },
+};

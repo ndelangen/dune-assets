@@ -52,8 +52,14 @@ bar1.start(entries.length, count);
 for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
   const path = `generated/${mapToPath(entry)}.jpg`;
   count++;
-
   bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
@@ -67,8 +73,14 @@ for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
 for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
   const path = `generated/${mapToPath(entry)}.jpg`;
   count++;
-
   bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
@@ -82,8 +94,14 @@ for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
 for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
   const path = `generated/${mapToPath(entry)}.jpg`;
   count++;
-
   bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
@@ -97,8 +115,14 @@ for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
 for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
   const path = `generated/${mapToPath(entry)}.pdf`;
   count++;
-
   bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
@@ -115,8 +139,14 @@ for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
 for (const entry of entries.filter((entry) => entry.startsWith('book'))) {
   const path = `generated/${mapToPath(entry)}.pdf`;
   count++;
-
   bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');

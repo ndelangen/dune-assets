@@ -532,6 +532,25 @@ export const TechWhite: Story = {
   },
 };
 
+export const TechGreen: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      'black',
+      {
+        type: 'radial',
+        stops: [
+          ['#75A255', 0.3],
+          ['#47682C', 0.3],
+          ['#4D802F', 1],
+        ],
+      },
+    ],
+    opacity: 100,
+    strength: 0,
+  },
+};
+
 export const Moss: Story = {
   args: {
     image: 'image/texture/009.jpg',

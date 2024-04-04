@@ -36,7 +36,9 @@
     "Haderach",
     "hagal",
     "hajr",
+    "Halleck",
     "Harkonnen",
+    "Hawat",
     "heighliners",
     "Hiereg",
     "Hulud",
@@ -71,11 +73,13 @@
     "Shai",
     "Sietch",
     "Tabr",
+    "Thufir",
     "Tleilaxu",
     "traitored",
     "Trishula",
     "Wahad",
-    "Weirding"
+    "Weirding",
+    "Yueh"
   ],
   "ignoreWords": [
     "lockb"

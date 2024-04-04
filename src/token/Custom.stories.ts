@@ -130,6 +130,18 @@ export const SpiceProduction: Story = {
     size: { width: 120, height: 120 },
   },
 };
+
+export const Carryalls: Story = {
+  args: {
+    background: `url('/generated/utils/background/tech-green.jpg') top left / cover no-repeat`,
+    image: 'vector/icon/spice-mine.svg',
+    circle: false,
+    top: 'Carryalls',
+    bottom: 'Storm phase\nWhen troops are rescued',
+    size: { width: 120, height: 120 },
+  },
+};
+
 export const Kanly: Story = {
   args: {
     background: `url('/generated/utils/background/tech-pink.jpg') top left / cover no-repeat`,
@@ -144,8 +156,17 @@ export const Kanly: Story = {
 export const TechToken: Story = {
   args: {
     background: `url('/generated/utils/background/moss.jpg') top left / cover no-repeat`,
-    image: 'vector/generic/reman.svg',
+    image: 'vector/generic/gear.svg',
     circle: false,
     top: 'Tech Token',
   },
 };
+
+// export const KwisatzHaderach: Story = {
+//   args: {
+//     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
+//     image: 'vector/icon/kwisatz.svg',
+//     circle: true,
+//     top: '+2',
+//   },
+// };

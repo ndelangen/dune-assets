@@ -126,6 +126,15 @@ export const Sheet = z.strictObject({
   rules: z.array(RULE),
   fate: RULE,
   alliance: RULE,
+  extras: z
+    .array(
+      z.object({
+        name: z.string(),
+        description: z.string().optional(),
+        items: z.array(z.object({ url: URL, description: z.string().optional() })),
+      }),
+    )
+    .optional(),
 });
 
 export const Faction = z.strictObject({
