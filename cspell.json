@@ -1,11 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "dictionaries": [
-    "en_US",
-    "softwareTerms",
-    "typescript"
-  ],
+  "dictionaries": ["en_US", "softwareTerms", "typescript"],
   "words": [
     "amal",
     "Arrakeen",
@@ -81,14 +77,7 @@
     "Weirding",
     "Yueh"
   ],
-  "ignoreWords": [
-    "lockb"
-  ],
-  "ignorePaths": [
-    ".vscode",
-    "*.lock",
-    "*.lockb",
-    ".github"
-  ],
+  "ignoreWords": ["lockb"],
+  "ignorePaths": [".vscode", "*.lock", "*.lockb", ".github"],
   "useGitignore": true
 }
