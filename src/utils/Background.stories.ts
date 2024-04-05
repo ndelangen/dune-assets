@@ -562,7 +562,7 @@ export const Moss: Story = {
 
 export const Traitor: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#3D3438', '#040404'],
     opacity: 0,
     strength: -100,
@@ -571,7 +571,7 @@ export const Traitor: Story = {
 
 export const Alliance: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#4D4724', '#302B16'],
     opacity: 50,
     strength: -100,
@@ -580,7 +580,7 @@ export const Alliance: Story = {
 
 export const Weapon: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#8F2C1C', '#621D1A'],
     opacity: 50,
     strength: -100,
@@ -589,7 +589,7 @@ export const Weapon: Story = {
 
 export const Defense: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#29335E', '#0A153C'],
     opacity: 60,
     strength: -100,
@@ -598,7 +598,7 @@ export const Defense: Story = {
 
 export const Storm: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#582705', '#875818'],
     opacity: 50,
     strength: 0,
@@ -607,7 +607,7 @@ export const Storm: Story = {
 
 export const Spice2: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#7E6238', '#593D16'],
     opacity: 30,
     strength: -100,
@@ -616,7 +616,7 @@ export const Spice2: Story = {
 
 export const Spice3: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#3C6066', '#2A4046'],
     opacity: 80,
     strength: -100,
@@ -625,7 +625,7 @@ export const Spice3: Story = {
 
 export const Special: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#474620', '#27260C'],
     opacity: 60,
     strength: -100,
@@ -634,7 +634,7 @@ export const Special: Story = {
 
 export const Worthless: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#887849', '#6F6034'],
     opacity: 80,
     strength: -100,
@@ -643,7 +643,7 @@ export const Worthless: Story = {
 
 export const Fate: Story = {
   args: {
-    image: 'image/texture/075.jpg',
+    image: 'image/texture/082.jpg',
     colors: ['#7E275A', '#C54E90'],
     opacity: 80,
     strength: -100,
@@ -798,6 +798,32 @@ export const StripedAlliance: Story = {
         stops: [
           ['#B2A03F', 0.3],
           ['#E9E175', 1],
+        ],
+      },
+    ],
+    opacity: 220,
+    strength: 0,
+  },
+};
+
+export const StripedSpice: Story = {
+  args: {
+    image: 'image/texture/076.jpg',
+    colors: [
+      {
+        type: 'linear',
+        angle: 90,
+        stops: [
+          ['#E9A85C', 0],
+          ['#FEF1A8', 1],
+        ],
+      },
+      {
+        type: 'linear',
+        angle: 120,
+        stops: [
+          ['#D69348', 0.3],
+          ['#FFCF86', 1],
         ],
       },
     ],

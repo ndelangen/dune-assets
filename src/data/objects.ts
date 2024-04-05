@@ -49,6 +49,72 @@ export const Alliance = z.strictObject({
   background: URL,
 });
 
+export const Spice = z.strictObject({
+  name: z.string(),
+  subName: z.string(),
+  icon: z.enum(['spice-mine', 'spice']),
+  highlights: z.array(
+    z.enum([
+      //sand
+      'imperial-basin',
+      'bight-of-the-cliff',
+      'habbanya-ridge-flat',
+      'arsunt',
+      'ceilago-depression',
+      'hagga-basin',
+      'ceilago-east',
+      'rock-outcroppings',
+      'habbanya-erg',
+      'funeral-plain',
+      'wind-pass-north',
+      'ceilago-west',
+      'meridian',
+      'ceilago-south',
+      'ceilago-north',
+      'harg-pass',
+      'wind-pass',
+      'the-minor-erg',
+      'south-mesa',
+      'the-great-flat',
+      'gara-kulon',
+      'hole-in-the-rock',
+      'basin',
+      'tsimpo',
+      'old-gap',
+      'broken-land',
+      'the-greater-flat',
+      'red-chasm',
+      'sihaya-ridge',
+
+      //rock
+      'false-wall-west',
+      'false-wall-south',
+      'shield-wall',
+      'false-wall-east',
+      'pasty-mesa',
+      'rim-wall-west',
+      'plastic-basin',
+
+      //stronghold
+      'arrakeen',
+      'carthag',
+      'tueks',
+      'tabr',
+      'habbanya',
+
+      //special
+      'polar',
+
+      //category
+      'rock',
+      'strongholds',
+      'sand',
+    ]),
+  ),
+  text: z.string().optional(),
+  amount: z.number().int().positive(),
+});
+
 export const Treachery = z.strictObject({
   name: z.string(),
   subName: z.string(),
