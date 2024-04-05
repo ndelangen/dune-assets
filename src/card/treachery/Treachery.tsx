@@ -19,6 +19,7 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
   icon,
   subName,
   iconOffset,
+  iconScale,
 }) => {
   const cid = useCountId();
   const prefix = useMemo(() => `${cid}_`, [cid]);
@@ -44,7 +45,7 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
       <div className={styles.head_shade} />
       <div className={styles.shape} />
       <div
-        className={`${styles.type}`}
+        className={styles.type}
         style={{
           background: `url('${icon[0]}') top center / cover no-repeat`,
         }}
@@ -52,12 +53,24 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
         <img
           src={icon[1]}
           className={unique.typeOverlay}
-          style={{ marginLeft: iconMarginLeft * 2, marginTop: iconMarginTop * 2 }}
+          style={{
+            marginLeft: iconMarginLeft * 2,
+            marginTop: iconMarginTop * 2,
+            width: (iconScale || 1) * 85,
+            height: (iconScale || 1) * 85,
+          }}
         />
         <img
           src={icon[1]}
           className={unique.typeShade}
-          style={{ marginLeft: iconMarginLeft, marginTop: iconMarginTop }}
+          style={{
+            marginLeft: iconMarginLeft,
+            marginTop: iconMarginTop,
+            width: (iconScale || 1) * 85,
+            height: (iconScale || 1) * 85,
+            top: (125 - 85 * (iconScale || 1)) / 2,
+            left: (125 - 85 * (iconScale || 1)) / 2,
+          }}
         />
       </div>
       <div className={styles.title}>{name}</div>

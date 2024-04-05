@@ -121,6 +121,7 @@ export const Treachery = z.strictObject({
   head: URL,
   icon: z.tuple([URL, ALL]),
   iconOffset: z.tuple([z.number(), z.number()]).optional(),
+  iconScale: SCALE.optional(),
   decals: z.array(Decal),
   text: z.string(),
 });

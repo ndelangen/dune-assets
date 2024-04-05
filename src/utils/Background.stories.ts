@@ -608,7 +608,7 @@ export const Storm: Story = {
 export const Spice2: Story = {
   args: {
     image: 'image/texture/082.jpg',
-    colors: ['#7E6238', '#593D16'],
+    colors: ['#7A4421', '#56210B'],
     opacity: 30,
     strength: -100,
   },
@@ -814,16 +814,16 @@ export const StripedSpice: Story = {
         type: 'linear',
         angle: 90,
         stops: [
-          ['#E9A85C', 0],
-          ['#FEF1A8', 1],
+          ['#AD8E49', 0],
+          ['#C3AB77', 1],
         ],
       },
       {
         type: 'linear',
         angle: 120,
         stops: [
-          ['#D69348', 0.3],
-          ['#FFCF86', 1],
+          ['#A28046', 0.3],
+          ['#BAA26D', 1],
         ],
       },
     ],
