@@ -89,21 +89,5 @@ export const Choam: Story = {
       '/generated/token/leader/choam/lady-jalma.jpg',
       '/generated/token/leader/choam/auditor.jpg',
     ],
-    // extras: [
-    //   {
-    //     name: 'Unique items',
-    //     description: 'Unique faction items',
-    //     items: [
-    //       {
-    //         url: '/generated/token/custom/carryalls.jpg',
-    //         description: 'A Tech-Token that cannot be lost.\nGained when playing your fate.',
-    //       },
-    //       {
-    //         url: '/generated/token/leader/atreides/kwisatz-haderach.jpg',
-    //         description: 'Kwisatz Haderach token.\nGained when you have lost 7 troops in battle.',
-    //       },
-    //     ],
-    //   },
-    // ],
   },
 };
