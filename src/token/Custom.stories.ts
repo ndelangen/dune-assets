@@ -162,11 +162,11 @@ export const TechToken: Story = {
   },
 };
 
-// export const KwisatzHaderach: Story = {
-//   args: {
-//     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-//     image: 'vector/icon/kwisatz.svg',
-//     circle: true,
-//     top: '+2',
-//   },
-// };
+export const Spice: Story = {
+  args: {
+    background: `url('/generated/utils/background/spice.jpg') top left / cover no-repeat`,
+    image: 'vector/icon/spice.svg',
+    circle: false,
+    size: { width: 190, height: 190 },
+  },
+};

@@ -13,8 +13,11 @@ export const CustomToken: FC<
     top?: string;
     bottom?: string;
     size?: { width: number; height: number };
+    fill?: string;
+    stroke?: string;
+    strokeWidth?: number;
   }
-> = ({ background, image, circle, top, bottom, size }) => {
+> = ({ background, image, circle, top, bottom, size, fill, stroke, strokeWidth }) => {
   const iconSize = { width: size?.width || 100, height: size?.width || 100 };
   const iconLocation = { x: 150 - iconSize.width / 2, y: 150 - iconSize.height / 2 };
   return (
@@ -31,10 +34,24 @@ export const CustomToken: FC<
         </defs>
 
         <g filter={'drop-shadow( 0 0 9px rgba(0, 0, 0, 0.6))'}>
-          <StrokedUse xlinkHref={`${image}#root`} {...iconLocation} {...iconSize} fill={foreGroundColor} />
+          <StrokedUse
+            xlinkHref={`${image}#root`}
+            {...iconLocation}
+            {...iconSize}
+            fill={fill || foreGroundColor}
+            stroke={stroke}
+            strokeWidth={strokeWidth}
+          />
         </g>
         <g filter={'drop-shadow( 0 0 24px rgba(0, 0, 0, 0.6))'}>
-          <StrokedUse xlinkHref={`${image}#root`} {...iconLocation} {...iconSize} fill={foreGroundColor} />
+          <StrokedUse
+            xlinkHref={`${image}#root`}
+            {...iconLocation}
+            {...iconSize}
+            fill={fill || foreGroundColor}
+            stroke={stroke}
+            strokeWidth={strokeWidth}
+          />
         </g>
         {circle && (
           <>
