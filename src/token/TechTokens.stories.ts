@@ -90,7 +90,7 @@ export const Carryalls: Story = {
 export const Kanly: Story = {
   args: {
     background: `url('/generated/utils/background/tech-pink.jpg') top left / cover no-repeat`,
-    image: 'vector/icon/combat_disc.svg',
+    image: 'vector/decal/kanly.svg',
     circle: false,
     top: 'Kanly',
     bottom: 'Once per turn\nWhen you contest a win',
