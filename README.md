@@ -41,6 +41,24 @@ Which will happen the moment your pull request is merged.
 
 From that moment on the assets will be available in the `generated` directory.
 
+## Generating `src/data/generated.ts`
+
+This file contains enums of all possible vectors that can be used in assets.
+
+This file is generated for convience, and should not be edited manually.
+
+To regenerate this file, run `bun run generate`.
+
+It is important to regenerate this file after adding/renaming vectors.
+
+## Utility scripts
+
+- `bun run generate` - Regenerates `src/data/generated.ts`.
+- `bun run local-capture` - Captures missing assets locally.
+- `bun run build-storybook` - Builds the storybook.
+- `bun run storybook` - Starts the storybook server.
+- `bun run format` - Formats the code, including vectors.
+
 ## Useful links:
 
 - https://svgcrop.com/
