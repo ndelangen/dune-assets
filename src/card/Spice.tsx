@@ -11,7 +11,15 @@ const edgeColor = '#000';
 const foreGroundColor = '#F8F6E2';
 const highLightColor = '#9E5F00';
 
-export const SpiceCard: FC<z.infer<typeof Spice>> = ({ name, subName, icon, text, amount, highlights }) => {
+export const SpiceCard: FC<z.infer<typeof Spice>> = ({
+  name,
+  subName,
+  icon,
+  text,
+  amount,
+  highlights,
+  overlays,
+}) => {
   const prefix = useCountId();
   const decalsFilter = `${prefix}decals-filter`;
 
@@ -82,15 +90,25 @@ export const SpiceCard: FC<z.infer<typeof Spice>> = ({ name, subName, icon, text
         </g>
 
         <use xlinkHref={'/vector/background/map.svg#sectors'}></use>
+        {overlays?.map((overlay) => (
+          <image
+            href={overlay.image}
+            x={overlay.offset[0]}
+            y={overlay.offset[1]}
+            width={overlay.scale}
+            height={overlay.scale}
+          />
+        ))}
       </svg>
 
       <div className={unique.body}>
         <div>
           <MarkdownContent
             value={
-              text || icon === 'spice-mine'
+              text ||
+              (icon === 'spice-mine'
                 ? `Place a **spice mine** of ${amount} on\n${name}`
-                : `Add **${amount} spice** to\n${name}`
+                : `Add **${amount} spice** to\n${name}`)
             }
           />
         </div>

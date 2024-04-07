@@ -30,20 +30,20 @@ export const GaraKulon: Story = {
 
 export const CielagoEast: Story = {
   args: {
-    name: 'Ciélago East',
+    name: 'Cielago East',
     subName: 'Spice mine',
     icon: 'spice-mine',
-    highlights: ['ceilago-east'],
+    highlights: ['cielago-east'],
     amount: 5,
   },
 };
 
 export const CielagoWest: Story = {
   args: {
-    name: 'Ciélago West',
+    name: 'Cielago West',
     subName: 'Spice mine',
     icon: 'spice-mine',
-    highlights: ['ceilago-west'],
+    highlights: ['cielago-west'],
     amount: 4,
   },
 };
@@ -70,22 +70,22 @@ export const BrokenLand: Story = {
   },
 };
 
-export const CeilagoNorth: Story = {
+export const CielagoNorth: Story = {
   args: {
-    name: 'Ceilago North',
+    name: 'Cielago North',
     subName: 'Spice blow',
     icon: 'spice',
-    highlights: ['ceilago-north'],
+    highlights: ['cielago-north'],
     amount: 8,
   },
 };
 
-export const CeilagoSouth: Story = {
+export const CielagoSouth: Story = {
   args: {
-    name: 'Ceilago South',
+    name: 'Cielago South',
     subName: 'Spice blow',
     icon: 'spice',
-    highlights: ['ceilago-south'],
+    highlights: ['cielago-south'],
     amount: 12,
   },
 };
@@ -100,7 +100,7 @@ export const FuneralPlain: Story = {
   },
 };
 
-export const HabanyaErg: Story = {
+export const HabbanyaErg: Story = {
   args: {
     name: 'Habbanya Erg',
     subName: 'Spice blow',
@@ -110,7 +110,7 @@ export const HabanyaErg: Story = {
   },
 };
 
-export const HabanyaRidgeFlat: Story = {
+export const HabbanyaRidgeFlat: Story = {
   args: {
     name: 'Habbanya Ridge Flat',
     subName: 'Spice blow',
@@ -207,5 +207,78 @@ export const WindPassNorth: Story = {
     icon: 'spice',
     highlights: ['wind-pass-north'],
     amount: 6,
+  },
+};
+
+export const DiscoveryFuneralPlain: Story = {
+  args: {
+    name: 'Funeral Plain',
+    subName: 'Spice blow - Discovery',
+    icon: 'spice',
+    highlights: ['funeral-plain', 'pasty-mesa'],
+    amount: 6,
+    text: `**Smuggler token** on Pasty Mesa\n+\n**6 spice** on Funeral Plain`,
+  },
+};
+
+export const DiscoveryHaggaBasin: Story = {
+  args: {
+    name: 'Hagga Basin',
+    subName: 'Spice blow - Discovery',
+    icon: 'spice',
+    highlights: ['hagga-basin', 'gara-kulon'],
+    amount: 6,
+    text: `**Hiereg token** on Gara Kulon\n+\n**6 spice** on Hagga Basin`,
+  },
+};
+
+export const DiscoveryOldGap: Story = {
+  args: {
+    name: 'Old Gap',
+    subName: 'Spice blow - Discovery',
+    icon: 'spice',
+    highlights: ['old-gap', 'false-wall-west'],
+    amount: 6,
+    text: `**Smuggler token** on False Wall West\n+\n**6 spice** on Hagga Basin`,
+  },
+};
+
+export const DiscoveryRockOutcroppings: Story = {
+  args: {
+    name: 'Rock Outcroppings',
+    subName: 'Spice blow - Discovery',
+    icon: 'spice',
+    highlights: ['rock-outcroppings', 'meridian'],
+    amount: 6,
+    text: `**Hiereg token** on Meridian\n+\n**6 spice** on Hagga Basin`,
+  },
+};
+
+export const DiscoverySihayaRidge: Story = {
+  args: {
+    name: 'Sihaya Ridge',
+    subName: 'Spice blow - Discovery',
+    icon: 'spice',
+    highlights: ['sihaya-ridge', 'cielago-east'],
+    amount: 6,
+    text: `**Hiereg token** on Cielago East\n+\n**6 spice** on Sihaya Ridge`,
+  },
+};
+
+export const DiscoveryWindPassNorth: Story = {
+  args: {
+    name: 'Wind Pass North',
+    subName: 'Spice blow - Discovery',
+    icon: 'spice',
+    highlights: ['wind-pass-north', 'plastic-basin'],
+    amount: 6,
+    text: `**Smuggler token** on Plastic Basin\n+\n**6 spice** on Wind Pass North`,
+    overlays: [
+      {
+        image: 'image/token/hiereg.jpg',
+        offset: [105, 80],
+        scale: 30,
+      },
+    ],
   },
 };

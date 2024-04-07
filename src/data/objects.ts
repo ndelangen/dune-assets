@@ -60,17 +60,17 @@ export const Spice = z.strictObject({
       'bight-of-the-cliff',
       'habbanya-ridge-flat',
       'arsunt',
-      'ceilago-depression',
+      'cielago-depression',
       'hagga-basin',
-      'ceilago-east',
+      'cielago-east',
       'rock-outcroppings',
       'habbanya-erg',
       'funeral-plain',
       'wind-pass-north',
-      'ceilago-west',
+      'cielago-west',
       'meridian',
-      'ceilago-south',
-      'ceilago-north',
+      'cielago-south',
+      'cielago-north',
       'harg-pass',
       'wind-pass',
       'the-minor-erg',
@@ -111,6 +111,15 @@ export const Spice = z.strictObject({
       'sand',
     ]),
   ),
+  overlays: z
+    .array(
+      z.strictObject({
+        image: URL,
+        offset: OFFSET,
+        scale: SCALE,
+      }),
+    )
+    .optional(),
   text: z.string().optional(),
   amount: z.number().int().positive(),
 });

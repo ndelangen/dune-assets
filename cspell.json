@@ -1,7 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "dictionaries": ["en_US", "softwareTerms", "typescript"],
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "typescript"
+  ],
   "words": [
     "amal",
     "Arrakeen",
@@ -14,9 +18,11 @@
     "basilia",
     "breakconditioning",
     "bundu",
+    "carthag",
     "chaumas",
     "chaumurky",
     "CHOAM",
+    "Cielago",
     "Crysknife",
     "decipherer",
     "Deno",
@@ -27,13 +33,17 @@
     "Fedaykin",
     "Fremen",
     "Gamond",
+    "Gara",
     "Gesserit",
     "ghola",
     "Ginaz",
+    "habbanya",
     "Haderach",
     "hagal",
+    "Hagga",
     "hajr",
     "Halleck",
+    "harg",
     "Harkonnen",
     "Hawat",
     "heighliners",
@@ -59,6 +69,7 @@
     "Nomic",
     "Nullentropy",
     "ornithopters",
+    "Outcropppings",
     "Phrine",
     "Ramallo",
     "Richese",
@@ -70,16 +81,26 @@
     "SHADDAM'S",
     "Shai",
     "Sietch",
+    "sihaya",
     "Tabr",
     "Thufir",
     "Tleilaxu",
     "traitored",
     "Trishula",
+    "tsimpo",
+    "tueks",
     "Wahad",
     "Weirding",
     "Yueh"
   ],
-  "ignoreWords": ["lockb"],
-  "ignorePaths": [".vscode", "*.lock", "*.lockb", ".github"],
+  "ignoreWords": [
+    "lockb"
+  ],
+  "ignorePaths": [
+    ".vscode",
+    "*.lock",
+    "*.lockb",
+    ".github"
+  ],
   "useGitignore": true
 }
