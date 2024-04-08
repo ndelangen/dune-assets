@@ -230,7 +230,7 @@ export const Choam: Story = {
         scale: 0.5,
       },
     ],
-    text: 'Text goes here',
+    text: 'You may allow your ally to use any contracts instead of yourself this turn. You and your ally may help pay when one of you pays for a contract.',
     troop: 'vector/troop/choam.svg',
   },
 };
