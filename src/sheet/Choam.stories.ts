@@ -15,7 +15,8 @@ export const Choam: Story = {
   args: {
     name: 'Choam',
     logo: '/generated/token/faction/choam.jpg',
-    start: '10 forces in reserves. 10 forces in an unoccupied territory or the polar sink (setup before BG). Start with 10 spice.',
+    start:
+      '10 forces in reserves. 10 forces in an unoccupied territory or the polar sink (setup before BG). Start with 10 spice.',
     revival: '1 troop free.',
     color: '#e3dbb3',
     alliance: {
@@ -34,7 +35,7 @@ export const Choam: Story = {
         title: 'CONTRACTS:',
         text: `Each contract is once per turn. You may use contracts at any time unless otherwise specified. To use a contract, pay 2 spice to the spice bank.`,
         karama:
-          'You cannot pay to use any contracts this phase (except fate). If this ability is karama\'ed, you can still use the contract in a next phase if possible. If any other contract is karama’ed, it’s once per turn is used. Return the spice paid when this or any contract is karama’ed.',
+          "You cannot pay to use any contracts this phase (except fate). If this ability is karama'ed, you can still use the contract in a next phase if possible. If any other contract is karama’ed, it’s once per turn is used. Return the spice paid when this or any contract is karama’ed.",
       },
       {
         title: 'CHOAM CONTRACT:',
@@ -89,7 +90,7 @@ export const Choam: Story = {
       '/generated/token/leader/choam/lady-jalma.jpg',
       '/generated/token/leader/choam/duke-verdun.jpg',
       '/generated/token/leader/choam/rajiv-londine.jpg',
-      '/generated/token/leader/choam/viscount-tull.jpg'
+      '/generated/token/leader/choam/viscount-tull.jpg',
     ],
   },
 };
