@@ -14,7 +14,7 @@ export const Choam: Story = {
   args: {
     name: 'Choam',
     logo: '/generated/token/faction/choam.jpg',
-    start: '20 troops in reserve *(off planet)*. Start with 5 spice.',
+    start: '10 forces in reserves. 10 forces in an unoccupied territory or the polar sink (setup before BG). Start with 10 spice.',
     revival: '1 troop free.',
     color: '#e3dbb3',
     alliance: {
@@ -84,12 +84,11 @@ export const Choam: Story = {
       },
     ],
     leaders: [
-      '/generated/token/leader/choam/viscount-tull.jpg',
       '/generated/token/leader/choam/frankos-aru.jpg',
+      '/generated/token/leader/choam/lady-jalma.jpg',
       '/generated/token/leader/choam/duke-verdun.jpg',
       '/generated/token/leader/choam/rajiv-londine.jpg',
-      '/generated/token/leader/choam/lady-jalma.jpg',
-      '/generated/token/leader/choam/auditor.jpg',
+      '/generated/token/leader/choam/viscount-tull.jpg'
     ],
   },
 };
