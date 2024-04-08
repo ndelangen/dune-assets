@@ -10,7 +10,6 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
 export const Choam: Story = {
   args: {
     name: 'Choam',
@@ -19,59 +18,62 @@ export const Choam: Story = {
     revival: '1 troop free.',
     color: '#e3dbb3',
     alliance: {
-      text: `CHOAM may use Trade Monopoly with their ally at the end of any phase *(still once per turn)*.`,
-      karama: `Lauren has yet to write these.`,
+      text: `You may allow your ally to use any contracts instead of yourself this turn. You and your ally may help pay when one of you pays for a contract.`,
+      karama: `No interaction.`,
     },
     fate: {
-      title: 'Coerced Acquisition',
-      text: `Play during combat. Your opponent locks in their battle plan, then you draw 1 item out. This item is now yours. *(leader or treachery card, if you draw something else redo)* *(step is after Harkonnen fate, if Harkonnen plays their fate you have to lock in your battle plan first)*`,
+      title: 'Landsraad Contract',
+      text: `Play at the start of any phase. This contract can copy any other contract’s ability for an additional use each turn.`,
     },
     rules: [
       {
         text: 'You are an economic powerhouse funding an army of mercenaries.',
       },
       {
-        title: 'Collective Aid',
-        text: `At the start of the CHOAM Charity Phase, collect 2 spice for each faction in the game. If another faction claims CHOAM Charity, it is paid to them from your spice. You may allow other factions to claim CHOAM Charity (1 or 2 spice) even if they have 2 or more spice.`,
+        title: 'Contracts:',
+        text: `Each contract is once per turn. You may use contracts at any time unless otherwise specified. To use a contract, pay 2 spice to the spice bank.`,
         karama:
-          'CHOAM does not get their normal income. Factions claiming CHOAM Charity get spice from the spice bank instead. CHOAM cannot allow other factions to claim CHOAM Charity if they have 2 or more spice.',
+          'You cannot pay to use any contracts this phase (except fate). If this ability is karama\'ed, you can still use the contract in a next phase if possible. If any other contract is karama’ed, it’s once per turn is used. Return the spice paid when this or any contract is karama’ed.',
       },
       {
-        title: 'Imperial Supplier',
-        text: [
-          `In the CHOAM Charity Phase, once per faction that claims CHOAM Charity, you may add a treachery card from your hand or leader from behind your hidden area *(both face up)* to this turn’s Bidding Phase. Treachery cards are added and shuffled into the cards up for bid this turn. Leaders are bid on last and in the order CHOAM added them. Spice paid for leaders goes to the spice bank. When adding an asset you gain one of the following:`,
-          `- 3 spice from the spice bank.`,
-          `- Revive 2 of your forces for free.`,
-          `- A blank tech token that gets removed at the start of the next CHOAM Charity phase. If adding a worthless card you gain the chosen effect twice instead of once.`,
-        ].join('\n\n'),
-        karama: `CHOAM cannot add cards and leaders. (If CHOAM does this more than once, the Karama must be played immediately after the first to count for both.)`,
+        title: 'CHOAM Contract:',
+        text: `You may trade a treachery card with another faction. The trade must be two-way (each faction giving and receiving a card).`,
+        karama: 'You cannot trade.',
       },
       {
-        title: 'Trade Monopoly',
-        text: `Once per turn, at the end of any phase except the Shipping and Movement Phase, you may buy one treachery card or leader from another faction, and/or sell one to another faction. (face down) Leaders sold belong to the faction that bought them unless sold again.`,
-        karama: `CHOAM cannot buy and sell.`,
+        title: 'Emperor Contract:',
+        text: `Discard a worthless or duplicate card to gain 7 spice.`,
+        karama: 'You cannot discard. Undo the discard and spice gain.',
       },
       {
-        title: 'Reinforced Portfolio',
-        text: `Your treachery card capacity is 5.`,
-        karama: `Tech Tokens do not count towards combat strength. (Must be played before battle plans are revealed, prescience may be re-answered if it is dial.)`,
+        title: 'Tleilaxu Contract:',
+        text: `Revive 2 of your forces for free.`,
+        karama: 'You cannot revive 2 forces for free.',
       },
       {
-        title: 'Industrial Reinforcement',
-        text: `When you own a tech token, instead of generating spice, it adds +1 to your battle strength.`,
+        title: 'Atreides Contract:',
+        text: `When a stack of your forces is about to be killed by the storm or a worm, you may pay 1 spice per force to send them to the polar sink.`,
+        karama: 'You cannot pay to save their forces.',
       },
       {
-        title: 'Auditor',
-        text: `If the Auditor is used in battle and not called traitor, look at 2 random treachery cards in your opponent's hand that were not played in the battle. The Auditor cannot be sold or stolen. You start the game with the ability to revive the Auditor in the Revival Phase.`,
-        karama: `CHOAM cannot look at cards. CHOAM cannot revive the Auditor.`,
+        title: 'Ixian Contract:',
+        text: `When a card is up for bid, before anyone bids on it, you may swap it with a worthless or duplicate card. Atreides looks. Ixians decide if they Technology before you do.`,
+        karama: 'You cannot swap with the card up for bid.',
       },
       {
-        title: 'KWISATZ HADERACH',
-        text: [
-          `Once you have lost 7 or more total troops in battles you gain a token that can be played alongside one leader per turn to add +2 strength to that leader and that leader cannot be called traitor.`,
-          `The token can only be lost in a lasgun-shield explosion, and can be revived like a normal leader.`,
-        ].join('\n\n'),
-        karama: `You are not allowed to add the Kwisatz Haderach token to a leader. This lasts until the end of the turn.`,
+        title: 'Spacing Guild Contract:',
+        text: `On your shipment turn, you may ship an additional time directly to a spice blow at stronghold rates.`,
+        karama: 'You cannot ship an additional time.',
+      },
+      {
+        title: 'Bene Gesserit Contract:',
+        text: `In combat (step after the Voice), you may force your opponent to answer a yes or no question about the treachery cards they have.`,
+        karama: 'You cannot ask a question.',
+      },
+      {
+        title: 'Harkonnen Contract:',
+        text: `When you collect spice from a spice blow or spice mine you may kill the forces needed to collect it to gain the same amount again from the spice bank.`,
+        karama: 'You cannot kill forces to collect more spice.',
       },
     ],
     troops: [
