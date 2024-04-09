@@ -83,7 +83,7 @@ export const BreakConditioning: Story = {
         scale: 0.6,
       },
     ],
-    text: 'You may always play this after revealing your battle plan.\n\nIf you\'re not called traitor, win the battle and your total battle strength is twice or more of your opponent\'s you win as if by traitor.\n\nIf you\'re called traitor after playing this card you may return it to your hand to your hand.',
+    text: 'You may always play this after revealing your battle plan.\nIf you\'re not called traitor, win the battle and your total battle strength is twice or more of your opponent\'s: none of your forces die, any spice you dialed is returned and you kill your opponents leader.\nIf you\'re called traitor after playing this card you may return it to your hand.',
     subName: 'Special - Combat',
   },
 };
