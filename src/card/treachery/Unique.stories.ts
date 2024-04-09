@@ -23,7 +23,7 @@ export const Supplies: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play during a Combat Phase.\n\nUntil the end of his Combat Phase, you get the Supplies! tokens. These may be used as treachery cards of corresponding types.',
     subName: 'Special - Instant',
   },
 };
@@ -43,7 +43,7 @@ export const Mercenaries: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play in your Battle Plan besides weapons or defenses. You may play only 1 Mercenaries per Battle Plan.\n\nAdd +1 to your number dialed and win ties regardless of Storm Order (if both players play Mercenaries Storm Order tiebreaker reverts back to normal).\n\nYou may keep this card if you win the battle.',
     subName: 'Special - Combat',
   },
 };
@@ -83,7 +83,7 @@ export const BreakConditioning: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Text goes here',
+    text: 'You may always play this after revealing your battle plan.\n\nIf you\'re not called traitor, win the battle and your total battle strength is twice or more of your opponent\'s you win as if by traitor.',
     subName: 'Special - Combat',
   },
 };
@@ -103,7 +103,7 @@ export const Amal: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Text goes here',
+    text: 'At the beginning of any phase, cause all players to discard half of the spice behind their shields, rounded up, to the Spice Bank.',
     subName: 'Special - Instant',
   },
 };
@@ -123,7 +123,7 @@ export const FamilyAtomics: Story = {
         scale: 0.9,
       },
     ],
-    text: 'Text goes here',
+    text: 'You may play this after turn 1, when the storm has been calculated and before it is moved, if you have forces on or adjacent to the Shield Wall (with no storm inbetween).\n\nAll forces on the Shield Wall are killed. Place the Destroyed Shield Wall token on the Shield Wall. The Imperial Basin, Arrakeen and Carthag are no longer protected from the Storm.',
     subName: 'Special - Storm phase',
   },
 };
@@ -143,7 +143,7 @@ export const Hajr: Story = {
         scale: 0.8,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play during Movement Phase.\n\nMake an extra on-planet force movement subject to normal movement rules.\n\nThe forces you move may be a group you\'ve already moved this phase or another group.',
     subName: 'Special - Movement',
   },
 };
@@ -163,7 +163,7 @@ export const Harvester: Story = {
         scale: 1,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play just after a spice blow comes up. Doubles the spice blow. Place double the amount of spice in the territory.',
     subName: 'Special - Spice blow',
   },
 };
@@ -183,7 +183,7 @@ export const Karama: Story = {
         scale: 0.9,
       },
     ],
-    text: 'Text goes here',
+    text: 'After factions complete their "At Start" actions and after game set-up, use this card to stop a player from using one of their faction advantages when they attempt to use it. Stops the use of that advantage during one game phase.Or, this card may be used to do either of these things when appropriate:• Purchase a shipment of forces onto the planet at Guild rates(1/2 normal) paid to the Spice Bank,or• Purchase a Treachery Card without paying spice for itCannot be used to stop a win condition advantage. Discard after use.',
     subName: 'Special - Instant',
   },
 };

@@ -29,7 +29,7 @@ export const Atreides: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Atreides may use Battle Prescience in their ally\'s battles.',
     troop: 'vector/troop/atreides.svg',
   },
 };
@@ -55,7 +55,7 @@ export const Harkonnen: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Text goes here',
+    text: 'Harkonnen may call traitor and use their fate in their ally\'s battles.',
     troop: 'vector/troop/harkonnen.svg',
   },
 };
@@ -81,7 +81,7 @@ export const Fremen: Story = {
         scale: 0.4,
       },
     ],
-    text: 'Text goes here',
+    text: 'Fremen may protect their ally from Shai-Hulud. Any spice you pay for spice dialing goes to your bribes.',
     troop: 'vector/troop/fremen.svg',
   },
 };
@@ -107,7 +107,7 @@ export const Emperor: Story = {
         scale: 0.5,
       },
     ],
-    text: 'Text goes here',
+    text: 'Emperor may instantly give spice to their ally at any time.',
     troop: 'vector/troop/emperor.svg',
   },
 };
@@ -126,7 +126,7 @@ export const SpacingGuild: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Spacing Guild may allow their ally to use Three Types Of Shipment. Spacing Guild may reveal spice from their hidden to pay for their ally\'s shipment. You may use Discount Shipping.',
     troop: 'vector/troop/guild.svg',
   },
 };
@@ -145,7 +145,7 @@ export const Ixian: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Text goes here',
+    text: 'Once per turn, you and Ixians may swap or transfer a treachery card. You cannot swap in combat after The Voice step.',
     troop: 'vector/troop/ixian.svg',
   },
 };
@@ -171,7 +171,7 @@ export const BeneGesserit: Story = {
         scale: 0.3,
       },
     ],
-    text: 'Text goes here',
+    text: 'Bene Gesserit may use The Voice in their ally\'s battles.',
     troop: 'vector/troop/bene-gesserit.svg',
   },
 };
@@ -197,7 +197,7 @@ export const BeneTleilaxu: Story = {
         scale: 1,
       },
     ],
-    text: 'Text goes here',
+    text: 'You may revive your forces and leaders at half price.',
     troop: 'vector/troop/bene-tleilaxu.svg',
   },
 };

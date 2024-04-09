@@ -43,7 +43,7 @@ export const DominicVernius: Story = {
     image: 'image/leader/dominic.png',
     logo: 'vector/logo/ixian.svg',
     name: 'Dominic Vernius',
-    strength: '4',
+    strength: '3',
     owner: 'Ixian',
   },
 };

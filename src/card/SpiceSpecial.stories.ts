@@ -32,7 +32,7 @@ export const ShaiHulud: Story = {
       },
     ],
     head: '/generated/utils/background/spice-2.jpg',
-    text: `lalala`,
+    text: `Place a Shai-Hulud in the territory on top of this spice blow discard pile. At the end of the Spice Blow Phase, this Shai-Hulud kills all forces and destroys all spice in its territory. Keep drawing spice blow cards until until there spice blow or mine card on top of both discard piles, then a nexus occurs.`,
   },
 };
 
@@ -53,7 +53,7 @@ export const SandTrout: Story = {
       },
     ],
     head: '/generated/utils/background/spice-2.jpg',
-    text: `lalala`,
+    text: `Cancel all current alliances. Set this card aside and draw a replacement card.\nThe next time a Shai-Hulud card is drawn (either this turn or subsequent turn), it is discarded without effect, and a new Spice Card is drawn, doubling any Spice Blow.`,
   },
 };
 
@@ -74,6 +74,6 @@ export const GreatMaker: Story = {
       },
     ],
     head: '/generated/utils/background/spice-2.jpg',
-    text: `lalala`,
+    text: `Treat the Great Maker as a Shai-Hulud card, with the following exceptions:\n• All players vote (in storm order) to determine if a Nexus occurs. The majority wins. A tie means no Nexus.\n• Fremen may use any number of their reserves to Ride the Worm.`,
   },
 };
