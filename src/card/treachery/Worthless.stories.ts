@@ -23,7 +23,7 @@ export const Baliset: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
 };
@@ -43,7 +43,7 @@ export const JubbaCloak: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
 };
@@ -63,7 +63,7 @@ export const KullWahad: Story = {
         scale: 0.9,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
 };
@@ -83,7 +83,7 @@ export const Kulon: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
 };
@@ -103,7 +103,7 @@ export const LaLaLa: Story = {
         scale: 1,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
 };
@@ -123,7 +123,7 @@ export const TripToGamond: Story = {
         scale: 0.8,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
 };
@@ -143,7 +143,7 @@ export const OrangeCatholicBible: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan, in place of a weapon, defence or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.\nAt the start of bidding phase, before or after the amount of card up for bid is calculated, you may gift this card to any other player with room for it in their hand.',
     subName: 'Worthless - Special',
   },
 };

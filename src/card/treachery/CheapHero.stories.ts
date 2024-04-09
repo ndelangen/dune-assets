@@ -23,7 +23,7 @@ export const MaleCheapHero: Story = {
         scale: 0.9,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as a leader with zero strength on your Battle Plan and discard after the battle.\n\nYou may also play a weapon and a defense. The cheap hero may be played in place of a leader or when you have no leaders available.',
     subName: 'Special - Leader',
   },
 };
@@ -43,7 +43,7 @@ export const FemaleCheapHero: Story = {
         scale: 0.9,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as a leader with zero strength on your Battle Plan and discard after the battle.\n\nYou may also play a weapon and a defense. The cheap hero may be played in place of a leader or when you have no leaders available.',
     subName: 'Special - Leader',
   },
 };

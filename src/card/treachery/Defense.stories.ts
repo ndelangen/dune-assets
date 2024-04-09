@@ -23,7 +23,7 @@ export const Shield: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan.\n\nProtects your leader from a projectile weapon in this battle.\n\nYou may keep this card if you win this battle.',
     subName: 'Defense - Projectile',
   },
 };
@@ -43,7 +43,7 @@ export const Snooper: Story = {
         scale: 0.5,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan.\n\nProtects your leader from a poison weapon in this battle.\n\nYou may keep this card if you win this battle.',
     subName: 'Defense - Poison',
   },
 };
@@ -83,7 +83,7 @@ export const Chemistry: Story = {
         scale: 1.05,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan.\n\nCounts as a poison defense, unless played with another defense. In that case, it counts as a poison weapon.\n\nYou may keep this card if you win this battle.',
     subName: 'Defense - Poison - Special',
   },
 };
@@ -103,7 +103,7 @@ export const ShieldSnooper: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play as part of your Battle Plan.\nCounts as both a Shield (projectile defense) and Snooper (poison defense).\nYou may keep this card if you win this battle.',
     subName: 'Defense - Special',
   },
 };
