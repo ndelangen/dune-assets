@@ -83,7 +83,7 @@ export const BreakConditioning: Story = {
         scale: 0.6,
       },
     ],
-    text: 'You may always play this after revealing your battle plan.\nIf you\'re not called traitor, win the battle and your total battle strength is twice or more of your opponent\'s: none of your forces die, any spice you dialed is returned and you kill your opponents leader.\nIf you\'re called traitor after playing this card you may return it to your hand.',
+    text: "You may always play this after revealing your battle plan.\nIf you're not called traitor, win the battle and your total battle strength is twice or more of your opponent's: none of your forces die, any spice you dialed is returned and you kill your opponents leader.\nIf you're called traitor after playing this card you may return it to your hand.",
     subName: 'Special - Combat',
   },
 };
@@ -143,7 +143,7 @@ export const Hajr: Story = {
         scale: 0.8,
       },
     ],
-    text: 'Play during Movement Phase.\n\nMake an extra on-planet force movement subject to normal movement rules.\n\nThe forces you move may be a group you\'ve already moved this phase or another group.',
+    text: "Play during Movement Phase.\n\nMake an extra on-planet force movement subject to normal movement rules.\n\nThe forces you move may be a group you've already moved this phase or another group.",
     subName: 'Special - Movement',
   },
 };
@@ -183,7 +183,7 @@ export const Karama: Story = {
         scale: 0.9,
       },
     ],
-    text: 'Play this card to do one of the following:\n• Disable a faction advantage for the rest of the phase. May be played as a faction advantage is being used.,\n• Pay Guild rates (half price) when you or your ally ships forces onto the planet.\n• If your hand is not full and it\'s your turn to bid, purchase the treachery card now up for bid without paying spice.',
+    text: "Play this card to do one of the following:\n• Disable a faction advantage for the rest of the phase. May be played as a faction advantage is being used.,\n• Pay Guild rates (half price) when you or your ally ships forces onto the planet.\n• If your hand is not full and it's your turn to bid, purchase the treachery card now up for bid without paying spice.",
     subName: 'Special - Instant',
   },
 };
@@ -206,7 +206,7 @@ export const Thumper: Story = {
     text: 'Play at beginning of Spice Blow Phase instead of revealing the next Spice Blow card. Causes a Sandworm to appear.\n\nPlay proceeds as though Shai-Hulud has been revealed.',
     subName: 'Special - Spice blow',
   },
-}; 
+};
 
 export const TleilaxuGhola: Story = {
   args: {
@@ -463,7 +463,7 @@ export const Distrance: Story = {
         scale: 1,
       },
     ],
-    text: 'Give another player a Treachery Card from your hand (if that player\'s hand is not full). Play at any time (other than during a bid). Discard after use.',
+    text: "Give another player a Treachery Card from your hand (if that player's hand is not full). Play at any time (other than during a bid). Discard after use.",
     subName: 'Special - Instant',
   },
 };

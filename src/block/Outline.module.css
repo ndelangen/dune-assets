@@ -1,0 +1,15 @@
+.normal {
+  padding: 2vw;
+  background: #f1e3b8;
+}
+.example {
+  padding: 2vw;
+  color: white;
+  background: #af9b61;
+}
+
+.center {
+  & h1 {
+    text-align: center;
+  }
+}

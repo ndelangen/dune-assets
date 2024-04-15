@@ -1,0 +1,17 @@
+.base {
+  display: flex;
+  background: #f1e3b8;
+  height: 18vw;
+}
+
+.flipped {
+  padding: 2vw 9vw 2vw 2vw;
+  margin-right: -4vw;
+  border-radius: 10vw 0 0 10vw;
+}
+
+.unflipped {
+  padding: 2vw 2vw 2vw 9vw;
+  margin-left: -4vw;
+  border-radius: 0 10vw 10vw 0;
+}

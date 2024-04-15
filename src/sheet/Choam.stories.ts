@@ -15,8 +15,7 @@ export const Choam: Story = {
   args: {
     name: 'Choam',
     logo: '/generated/token/faction/choam.jpg',
-    start:
-      '10 forces in reserves. 10 forces in an unoccupied territory or the polar sink.',
+    start: '10 forces in reserves. 10 forces in an unoccupied territory or the polar sink.',
     revival: '1 troop free. Start with 10 spice.',
     color: '#e3dbb3',
     alliance: {
