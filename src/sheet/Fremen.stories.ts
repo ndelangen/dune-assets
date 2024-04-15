@@ -19,16 +19,8 @@ export const Fremen: Story = {
     revival: '3 troop free revival. Start with 3 spice.',
     color: '#BE761F',
     alliance: {
-      text: [
-        `You may allow your ally to use your **DISCOUNT SHIPPING** as well as your **THREE TYPES OF SHIPMENT** ability.`,
-        `You may also reveal spice from your hidden area to pay for an ally's shipment. *(You don't lose the spice)*`,
-      ].join('\n\n'),
-      karama: [
-        [
-          `When your **DISCOUNT SHIPPING** ability is karama'd, this alliance ability is disabled until the end of the turn.`,
-          `When your **THREE TYPES OF SHIPMENT** ability is karama'd, this alliance ability is disabled until the end of the turn.`,
-        ].join('\n\n'),
-      ].join('\n\n'),
+      text: [`Your ally can use your **FREE SPICE DIALING** ability.`].join('\n\n'),
+      karama: `When your **FREE SPICE DIALING** ability is karama'd, this alliance ability is disabled until the end of the turn.`,
     },
     fate: {
       title: 'BATTLE TRAINING',
