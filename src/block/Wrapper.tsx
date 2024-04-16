@@ -18,7 +18,7 @@ export const Wrapper: FC<PropsWithChildren<{ size: Size }> & React.SVGProps<SVGS
   size,
   ...props
 }) => (
-  <Svg {...props} {...size} viewBox={`0 0 ${size.width} ${size.height}`}>
+  <Svg {...props} viewBox={`0 0 ${size.width} ${size.height}`}>
     <foreignObject x="0" y="0" {...size}>
       {children}
     </foreignObject>

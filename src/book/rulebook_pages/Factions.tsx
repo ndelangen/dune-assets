@@ -64,18 +64,107 @@ export function Factions1() {
           </Definitions>
           <p>All block of each player set have the same color for easy identification.</p>
         </Text>
-        <div style={{ display: 'flex', gap: '1vw' }}>
-          {Object.entries(factions).map(([k, v]) => (
-            <Fragment key={k}>
-              <Wrapper key={k} isCircle={true} size={discSize} style={{ flex: 1, maxWidth: '100%' }}>
-                <FactionToken
-                  color={v.sheet.assets.color}
-                  logo={v.sheet.assets.logo}
-                  pattern={v.sheet.assets.pattern}
-                />
-              </Wrapper>
-            </Fragment>
-          ))}
+        <div style={{ display: 'flex', gap: '0.5vw' }}>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/emperor.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/guild.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/fremen.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/ixian.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/atreides.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/bene-gesserit.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/bene-tleilaxu.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/harkonnen.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+        </div>
+
+        <Text>
+          <p>And the following factions are available in the expansion:</p>
+        </Text>
+
+        <div style={{ display: 'flex', gap: '2vw' }}>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/ginaz.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/choam.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/ecaz.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/iduali.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/richese.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/landsraad.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
+          <Wrapper size={{ width: 1200, height: 1200 }}>
+            <img
+              src="/generated/token/faction/moritani.jpg"
+              style={{ borderRadius: '50%', boxShadow: '0 0 2vw #00000088', flex: 1, height: 'auto' }}
+            />
+          </Wrapper>
         </div>
       </Spaced>
     </Fragment>
