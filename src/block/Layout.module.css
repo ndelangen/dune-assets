@@ -1,5 +1,5 @@
 .withBottom {
-  display: 'flex';
+  display: flex;
   flex-direction: column;
   flex: 1;
 
@@ -9,9 +9,9 @@
 }
 
 .sideBySide {
-  display: 'flex';
+  display: flex;
   flex-direction: row;
-  gap: '2vw';
+  gap: 2vw;
 
   & > * {
     flex: 1;

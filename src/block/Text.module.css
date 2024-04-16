@@ -1,5 +1,5 @@
 .main {
-  font-family: 'C_Caladea';
+  font-family: 'Caladea';
   color: #0b0503;
 
   & > * {
@@ -96,4 +96,8 @@
       text-align: left;
     }
   }
+}
+
+.nonBreaking {
+  break-inside: 'avoid-column';
 }
