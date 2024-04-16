@@ -9,7 +9,6 @@ import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
 import { Wrapper } from '../../block/Wrapper';
 import { card as cardSize } from '../../data/sizes';
-// import * as card from '../../presets/treachery_cards';
 import * as colors from '../../utils/colors';
 
 export function Cards_Intro() {
@@ -89,16 +88,26 @@ export function Cards_Intro() {
         </Text>
         <Text columns={3} size={1.8}>
           <div style={{ padding: '1vw 4vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
             </Fan>
           </div>
           <ul>
@@ -138,26 +147,42 @@ export function TreacheryCards1() {
           Worthless
         </Title>
         <SideBySide>
-          <div style={{ padding: '2vw 6vw', width: '20vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.baliset}
-              </Wrapper>
+          <div style={{ padding: '2vw 6vw', width: '20vw', flex: 'none' }}>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/worthless/baliset.jpg"
+                alt="baliset"
+              />
             </Fan>
           </div>
           <Text style={{ flex: 1 }}>
@@ -177,23 +202,37 @@ export function TreacheryCards1() {
           Weapons
         </Title>
         <SideBySide>
-          <div style={{ padding: '2vw 6vw', width: '20vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maula_pistol}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maula_pistol}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maula_pistol}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maula_pistol}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maula_pistol}
-              </Wrapper>
+          <div style={{ padding: '2vw 6vw', width: '20vw', flex: 'none' }}>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/weapon/maula-pistol.jpg"
+                alt="maula-pistol"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/weapon/maula-pistol.jpg"
+                alt="maula-pistol"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/weapon/maula-pistol.jpg"
+                alt="maula-pistol"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/weapon/maula-pistol.jpg"
+                alt="maula-pistol"
+              />
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/weapon/maula-pistol.jpg"
+                alt="maula-pistol"
+              />
             </Fan>
           </div>
           <Text style={{ flex: 1 }}>
@@ -216,23 +255,17 @@ export function TreacheryCards1() {
           </Text>
         </SideBySide>
         <SideBySide>
-          <div style={{ padding: '2vw 6vw', width: '20vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.chaumas}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.chaumas}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.chaumas}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.chaumas}
-              </Wrapper>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.chaumas}
-              </Wrapper>
+          <div style={{ padding: '2vw 6vw', width: '20vw', flex: 'none' }}>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img width={cardSize.width} src="/generated/card/treachery/weapon/chaumas.jpg" alt="chaumas" />
+              <img width={cardSize.width} src="/generated/card/treachery/weapon/chaumas.jpg" alt="chaumas" />
+              <img width={cardSize.width} src="/generated/card/treachery/weapon/chaumas.jpg" alt="chaumas" />
+              <img width={cardSize.width} src="/generated/card/treachery/weapon/chaumas.jpg" alt="chaumas" />
+              <img width={cardSize.width} src="/generated/card/treachery/weapon/chaumas.jpg" alt="chaumas" />
             </Fan>
           </div>
           <Text style={{ flex: 1 }}>
@@ -268,11 +301,17 @@ export function TreacheryCards2() {
         </Title>
 
         <SideBySide>
-          <div style={{ width: '24vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.weirding_way}
-              </Wrapper>
+          <div style={{ width: '24vw', flex: 'none' }}>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/weapon/weirding-way.jpg"
+                alt="weirding-way"
+              />
             </Fan>
           </div>
           <Text style={{ flex: 1 }}>
@@ -295,11 +334,13 @@ export function TreacheryCards2() {
         </SideBySide>
 
         <SideBySide>
-          <div style={{ width: '24vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.lasgun}
-              </Wrapper>
+          <div style={{ width: '24vw', flex: 'none' }}>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img width={cardSize.width} src="/generated/card/treachery/weapon/lasgun.jpg" alt="lasgun" />
             </Fan>
           </div>
           <Text style={{ flex: 1 }}>
@@ -321,11 +362,17 @@ export function TreacheryCards2() {
           </Text>
         </SideBySide>
         <SideBySide>
-          <div style={{ width: '24vw' }}>
-            <Fan size={cardSize} spacing={-3}>
-              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.chemistry}
-              </Wrapper>
+          <div style={{ width: '24vw', flex: 'none' }}>
+            <Fan
+              size={cardSize}
+              spacing={-3}
+              style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+            >
+              <img
+                width={cardSize.width}
+                src="/generated/card/treachery/defense/chemistry.jpg"
+                alt="chemistry"
+              />
             </Fan>
           </div>
           <Text style={{ flex: 1 }}>

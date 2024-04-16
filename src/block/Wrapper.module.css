@@ -1,4 +1,4 @@
 .svg {
-  display: block;
+  display: block!important;
   overflow: hidden;
 }

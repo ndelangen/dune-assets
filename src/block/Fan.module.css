@@ -21,10 +21,12 @@
   transition: transform 0.2s ease-out;
   will-change: transform;
   width: 100%;
+  overflow: hidden;
   flex: 1;
 }
 .itemAbsolute {
   z-index: 1;
+  overflow: hidden;
   position: absolute;
   transform-origin: center 200%;
   transition: transform 0.2s ease-out;
