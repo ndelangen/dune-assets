@@ -11,11 +11,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Empty = {
-  args: {
-    pages: [],
-  },
-} satisfies Story;
+// export const Empty = {
+//   args: {
+//     pages: [],
+//   },
+// } satisfies Story;
 
 export const Rulebook = {
   args: {
