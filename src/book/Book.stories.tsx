@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Book } from './Book';
 
-import * as rulebook from './rulesbook';
+import * as rulebook from './Rulebook';
 
 const meta = {
   component: Book,
@@ -19,6 +19,8 @@ export const Empty = {
 
 export const Rulebook = {
   args: {
-    pages: [rulebook.pages[0]],
+    cover: rulebook.cover,
+    pages: rulebook.pages.slice(0, 4),
+    ratio: rulebook.ratio,
   },
 } satisfies Story;

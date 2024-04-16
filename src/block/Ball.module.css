@@ -10,6 +10,7 @@
   background-color: currentColor;
   font-family: C_Copperplate_Gothic;
   font-size: 1.6vw;
+  flex: none;
 }
 
 .borderA {
@@ -24,6 +25,7 @@
   border-width: 1px;
   border-color: currentColor;
 }
+
 .borderB {
   box-sizing: border-box;
   border-radius: 50%;

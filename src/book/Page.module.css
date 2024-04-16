@@ -21,6 +21,5 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-size: 200% auto;
-  background-Image: url('/page/bottom.svg');
-
+  background-image: url('/page/bottom.svg');
 }

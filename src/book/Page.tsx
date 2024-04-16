@@ -10,15 +10,13 @@ export const Page: FC<PropsWithChildren<{ pageNumber: number; background: boolea
 }) => (
   <div className={styles.page} style={{ height: `calc(100vw * ${ratio})` }}>
     {children}
-    <div
-      className={styles.footer}
-      style={
-        background
-          ? {
-              backgroundPosition: `bottom ${pageNumber % 2 ? 'left' : 'right'}`,
-            }
-          : {}
-      }
-    ></div>
+    {background && (
+      <div
+        className={styles.footer}
+        style={{
+          backgroundPosition: `bottom ${pageNumber % 2 ? 'left' : 'right'}`,
+        }}
+      ></div>
+    )}
   </div>
 );

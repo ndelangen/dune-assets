@@ -1,16 +1,13 @@
-import { Fragment } from 'react';
+import { FC, Fragment } from 'react';
 
-import arrakis from '../../../public/vector/background/map.svg';
 import { Ball } from '../../block/Ball';
 import { Definitions } from '../../block/Definitions';
 import { SideBySide } from '../../block/Layout';
 import { Spaced } from '../../block/Spaced';
 import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
-import { Wrapper } from '../../block/Wrapper';
 import * as colors from '../../utils/colors';
-
-const mapSize = { width: 487.06, height: 487.06 };
+import styles from './Custom.module.css';
 
 export function Intro() {
   return (
@@ -100,17 +97,16 @@ export function Intro() {
         </Text>
         <div style={{ position: 'relative', width: '100%' }}>
           <div style={{ position: 'absolute', width: '100%' }}>
-            <Wrapper isCircle={true} size={mapSize} style={{ flex: 1, maxWidth: '100%' }}>
-              <svg
-                {...mapSize}
-                viewBox="0 0 487.06 487.06"
-                xmlSpace="preserve"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <use xlinkHref={arrakis + '#root'}></use>
-              </svg>
-            </Wrapper>
+            <svg
+              style={{ borderRadius: '50%', boxShadow: '0 0 4vw 0 rgba(0, 0, 0, 0.5)' }}
+              width={'100%'}
+              viewBox="0 0 487.06 487.06"
+              xmlSpace="preserve"
+              fillRule="evenodd"
+              clipRule="evenodd"
+            >
+              <use xlinkHref={'/page/map.svg#root'}></use>
+            </svg>
           </div>
         </div>
       </Spaced>
@@ -140,53 +136,49 @@ export function Sectors() {
             </ol>
           </NonBreaking>
 
-          <Wrapper isCircle={true} size={mapSize} style={{ flex: 1, maxWidth: '100%' }}>
-            <svg
-              {...mapSize}
-              viewBox="0 0 487.06 487.06"
-              xmlSpace="preserve"
-              fillRule="evenodd"
+          <svg
+            viewBox="0 0 487.06 487.06"
+            xmlSpace="preserve"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            style={{ borderRadius: '50%' }}
+          >
+            <use xlinkHref={'/page/map.svg#root'}></use>
+            <use
+              xlinkHref={'/page/map.svg#sectors'}
+              fill="none"
+              stroke="black"
               clipRule="evenodd"
-            >
-              <use xlinkHref={arrakis + '#root'}></use>
-              <use
-                xlinkHref={arrakis + '#sectors'}
-                fill="none"
-                stroke="black"
-                clipRule="evenodd"
-                display="inline"
-                opacity="1"
-                fillRule="nonzero"
-                strokeWidth="7px"
-              />
-              <use
-                xlinkHref={arrakis + '#sectors'}
-                fill="none"
-                stroke="white"
-                clipRule="evenodd"
-                display="inline"
-                opacity="1"
-                fillRule="nonzero"
-                strokeWidth="4px"
-              />
-            </svg>
-          </Wrapper>
+              display="inline"
+              opacity="1"
+              fillRule="nonzero"
+              strokeWidth="7px"
+            />
+            <use
+              xlinkHref={'/page/map.svg#sectors'}
+              fill="none"
+              stroke="white"
+              clipRule="evenodd"
+              display="inline"
+              opacity="1"
+              fillRule="nonzero"
+              strokeWidth="4px"
+            />
+          </svg>
         </Text>
         <Text>
           <hr />
         </Text>
         <Text columns={2}>
-          <Wrapper isCircle={true} size={mapSize} style={{ flex: 1, maxWidth: '100%' }}>
-            <svg
-              {...mapSize}
-              viewBox="0 0 487.06 487.06"
-              xmlSpace="preserve"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            >
-              <use xlinkHref={arrakis + '#root'}></use>
-            </svg>
-          </Wrapper>
+          <svg
+            style={{ borderRadius: '50%' }}
+            viewBox="0 0 487.06 487.06"
+            xmlSpace="preserve"
+            fillRule="evenodd"
+            clipRule="evenodd"
+          >
+            <use xlinkHref={'/page/map.svg#root'}></use>
+          </svg>
           <NonBreaking>
             <h1>Spice locations</h1>
             <p>There are a total of 20 locations on the board where Spice can spawn and be collected.</p>
@@ -289,8 +281,90 @@ export function Strongholds() {
             When the Shieldwall territory is partially under storm, only the larger part (upper left) counts
             as the stronghold.
           </p>
+          <StrongholdsMap />
         </Text>
       </Spaced>
     </Fragment>
   );
 }
+const StrongholdsMap: FC = () => (
+  <>
+    <div className={styles.strongholdsMap}>
+      <svg
+        style={{ borderRadius: '50%', opacity: 0.5 }}
+        viewBox="0 0 487.06 487.06"
+        xmlSpace="preserve"
+        fillRule="evenodd"
+        clipRule="evenodd"
+      >
+        <use xlinkHref={'/page/map.svg#root'}></use>
+      </svg>
+      <svg
+        style={{ borderRadius: '50%' }}
+        viewBox="0 0 487.06 487.06"
+        xmlSpace="preserve"
+        fillRule="evenodd"
+        clipRule="evenodd"
+      >
+        <defs>
+          <mask id="arrakeen">
+            <rect width="100%" height="100%" fill="black" />
+            <use xlinkHref={'/page/map.svg#arrakeen'}></use>
+          </mask>
+          <mask id="carthag">
+            <rect width="100%" height="100%" fill="black" />
+            <use xlinkHref={'/page/map.svg#carthag'}></use>
+          </mask>
+          <mask id="tabr">
+            <rect width="100%" height="100%" fill="black" />
+            <use xlinkHref={'/page/map.svg#tabr'}></use>
+          </mask>
+          <mask id="habbanya">
+            <rect width="100%" height="100%" fill="black" />
+            <use xlinkHref={'/page/map.svg#habbanya'}></use>
+          </mask>
+          <mask id="tueks">
+            <rect width="100%" height="100%" fill="black" />
+            <use xlinkHref={'/page/map.svg#tueks'}></use>
+          </mask>
+          <mask id="shield-wall">
+            <rect width="100%" height="100%" fill="black" />
+            <use xlinkHref={'/page/map.svg#shield-wall'}></use>
+          </mask>
+        </defs>
+        <rect width="100%" height="100%" fill="red" mask="url(#arrakeen)" />
+        <rect width="100%" height="100%" fill="orange" mask="url(#carthag)" />
+        <rect width="100%" height="100%" fill="yellow" mask="url(#tabr)" />
+        <rect width="100%" height="100%" fill="green" mask="url(#habbanya)" />
+        <rect width="100%" height="100%" fill="blue" mask="url(#tueks)" />
+        <rect width="100%" height="100%" fill="purple" mask="url(#shield-wall)" />
+      </svg>
+    </div>
+    <Definitions>
+      <dt>Arrakeen</dt>
+      <dd>
+        <Ball style={{ color: '#000', backgroundColor: 'red' }} />
+      </dd>
+      <dt>Carthag</dt>
+      <dd>
+        <Ball style={{ color: '#000', backgroundColor: 'orange' }} />
+      </dd>
+      <dt>Sietch Tabr</dt>
+      <dd>
+        <Ball style={{ color: '#000', backgroundColor: 'yellow' }} />
+      </dd>
+      <dt>Habbanya Sietch</dt>
+      <dd>
+        <Ball style={{ color: '#000', backgroundColor: 'green' }} />
+      </dd>
+      <dt>Tueks Sietch</dt>
+      <dd>
+        <Ball style={{ color: '#000', backgroundColor: 'blue' }} />
+      </dd>
+      <dt>Shield wall</dt>
+      <dd>
+        <Ball style={{ color: '#000', backgroundColor: 'purple' }} />
+      </dd>
+    </Definitions>
+  </>
+);

@@ -1,0 +1,16 @@
+.strongholdsMap {
+  position: relative;
+  box-sizing: border-box;
+
+  & > * {
+    display: block;
+  }
+
+  & > *:not(*:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}

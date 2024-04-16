@@ -36,10 +36,19 @@ import {
 } from './rulebook_pages/Phases';
 import { Setup_1, Setup_2, Setup_3, Setup_4, Setup_5 } from './rulebook_pages/Setup';
 import { TechTokens } from './rulebook_pages/TechTokens';
+import styles from './Rulebook.module.css';
 
 export const ratio = Math.sqrt(2);
-// export const cover = <Cover background={coverE} offset={80} />;
-export const cover = <div></div>;
+
+export const cover = (
+  <div className={styles.cover}>
+    <h1>A GAME OF CONQUEST, DIPLOMACY & BETRAYAL</h1>
+    <img src="/page/dune_logo.svg" />
+    <h2>THE SPICE MUST FLOW</h2>
+    <div></div>
+  </div>
+);
+
 export const pages = [
   <About_Welcome />,
   <Intro />,
