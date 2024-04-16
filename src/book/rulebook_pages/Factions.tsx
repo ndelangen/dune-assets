@@ -181,28 +181,11 @@ export function Factions2() {
         <Text>
           <p>You will play as one of these factions:</p>
         </Text>
-        {Object.values(factions)
-          .slice(0, 5)
-          .map((item, i) => (
-            <FactionSynopsis key={i}>
-              <SideBySide>
-                <Wrapper
-                  isCircle={true}
-                  size={discSize}
-                  style={{ flex: 'none', width: '14vw', height: '14vw' }}
-                >
-                  <FactionToken
-                    color={item.sheet.assets.color}
-                    logo={item.sheet.assets.logo}
-                    pattern={item.sheet.assets.pattern}
-                  />
-                </Wrapper>
-                <Text>
-                  <MarkdownContent>{item.sheet.description}</MarkdownContent>
-                </Text>
-              </SideBySide>
-            </FactionSynopsis>
-          ))}
+        <FactionSynopsis image="/generated/token/faction/emperor.jpg" text="foo" />
+        <FactionSynopsis image="/generated/token/faction/guild.jpg" text="foo" />
+        <FactionSynopsis image="/generated/token/faction/fremen.jpg" text="foo" />
+        <FactionSynopsis image="/generated/token/faction/ixian.jpg" text="foo" />
+        <FactionSynopsis image="/generated/token/faction/atreides.jpg" text="foo" />"
       </Spaced>
     </Fragment>
   );
@@ -213,28 +196,9 @@ export function Factions3() {
     <Fragment>
       <Spaced>
         <Text>Continued list of factions.</Text>
-        {Object.values(factions)
-          .slice(5, 10)
-          .map((item, i) => (
-            <FactionSynopsis key={i}>
-              <SideBySide>
-                <Wrapper
-                  isCircle={true}
-                  size={discSize}
-                  style={{ flex: 'none', width: '14vw', height: '14vw' }}
-                >
-                  <FactionToken
-                    color={item.sheet.assets.color}
-                    logo={item.sheet.assets.logo}
-                    pattern={item.sheet.assets.pattern}
-                  />
-                </Wrapper>
-                <Text>
-                  <MarkdownContent>{item.sheet.description}</MarkdownContent>
-                </Text>
-              </SideBySide>
-            </FactionSynopsis>
-          ))}
+        <FactionSynopsis flip image="/generated/token/faction/bene-gesserit.jpg" text="foo" />"
+        <FactionSynopsis flip image="/generated/token/faction/bene-tleilaxu.jpg" text="foo" />"
+        <FactionSynopsis flip image="/generated/token/faction/harkonnen.jpg" text="foo" />"
         <Text>
           <em>There's room for more factions!</em>
         </Text>
