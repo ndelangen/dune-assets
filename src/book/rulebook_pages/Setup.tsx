@@ -232,7 +232,7 @@ export function Setup_2() {
                 fillRule="evenodd"
                 clipRule="evenodd"
               >
-                <use xlinkHref={'/page/map.svg#root'}></use>
+                <use xlinkHref={'/page/table.svg#root'}></use>
               </svg>
             </Wrapper>
           </div>
@@ -322,19 +322,28 @@ export function Setup_3() {
           </Text>
         </Spaced>
         <div style={{ width: '35vw', marginLeft: '4vw' }}>
-          <Fan size={cardSize}>
-            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              {backs.traitor}
-            </Wrapper>
-            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              {backs.traitor}
-            </Wrapper>
-            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              {backs.traitor}
-            </Wrapper>
-            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              {backs.traitor}
-            </Wrapper>
+          <Fan
+            size={cardSize}
+            spacing={-3}
+            style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+          >
+            <img
+              width={cardSize.width}
+              src="/generated/card/traitor/atreides/dr-yueh.jpg"
+              alt="maula-pistol"
+            />
+            <img
+              width={cardSize.width}
+              src="/generated/card/traitor/guild/representative.jpg"
+              alt="maula-pistol"
+            />
+            <img
+              width={cardSize.width}
+              src="/generated/card/traitor/ixian/cammar-pilru.jpg"
+              alt="maula-pistol"
+            />
+            <img width={cardSize.width} src="/generated/card/traitor/fremen/jamis.jpg" alt="maula-pistol" />
+            <img width={cardSize.width} src="/generated/card/traitor/emperor/bashar.jpg" alt="maula-pistol" />
           </Fan>
         </div>
       </WithBottom>
@@ -377,7 +386,7 @@ export function Setup_4() {
         </Text>
       </Spaced>
       <Text>
-        <div
+        {/* <div
           style={{
             padding: '0 33vw',
             marginTop: '-15vw',
@@ -403,8 +412,8 @@ export function Setup_4() {
               {backs.fate}
             </Wrapper>
           </Fan>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           style={{
             padding: '0 33vw',
             marginTop: '-30vw',
@@ -430,7 +439,7 @@ export function Setup_4() {
               {backs.treachery}
             </Wrapper>
           </Fan>
-        </div>
+        </div> */}
       </Text>
     </WithBottom>
   );

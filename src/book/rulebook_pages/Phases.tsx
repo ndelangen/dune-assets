@@ -179,14 +179,14 @@ export function Phases_Nexus() {
           </NonBreaking>
 
           <div style={{ padding: '0 10vw 4vw 10vw' }}>
-            <Fan size={cardSize} spacing={-20}>
+            {/* <Fan size={cardSize} spacing={-20}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
                 {nexus_1}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
                 {nexus_yes}
               </Wrapper>
-            </Fan>
+            </Fan> */}
           </div>
           <NonBreaking>
             <Text>
@@ -235,7 +235,7 @@ export function Phases_Fate() {
               marginTop: '10vw',
             }}
           >
-            <Fan size={cardSize} spacing={-8}>
+            {/* <Fan size={cardSize} spacing={-8}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
                 {backs.fate}
               </Wrapper>
@@ -254,7 +254,7 @@ export function Phases_Fate() {
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
                 {backs.fate}
               </Wrapper>
-            </Fan>
+            </Fan> */}
           </div>
         </Text>
         <Title color={colors.blue2} size="medium">

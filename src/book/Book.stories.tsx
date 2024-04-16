@@ -20,7 +20,7 @@ export const Empty = {
 export const Rulebook = {
   args: {
     cover: rulebook.cover,
-    pages: rulebook.pages.slice(0, 17),
+    pages: rulebook.pages,
     ratio: rulebook.ratio,
   },
 } satisfies Story;
