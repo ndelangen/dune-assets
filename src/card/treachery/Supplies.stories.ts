@@ -54,7 +54,6 @@ export const PhrinePen: Story = {
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/poison.svg'],
     iconOffset: [0, 8],
     name: 'Snooper!',
-    name: 'Snooper!',
     decals: [
       {
         id: 'vector/decal/injection.svg',
@@ -64,8 +63,6 @@ export const PhrinePen: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Play as part of your Battle Plan.\n\nProtects your leader from a poison weapon in this battle.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Combat phase.',
-    subName: 'Defense - Poison',
     text: 'Play as part of your Battle Plan.\n\nProtects your leader from a poison weapon in this battle.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Combat phase.',
     subName: 'Defense - Poison',
   },
@@ -86,8 +83,6 @@ export const Shield: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Play as part of your Battle Plan.\n\nProtects your leader from a projectile weapon in this battle.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Combat phase.',
-    subName: 'Defense - Shield',
     text: 'Play as part of your Battle Plan.\n\nProtects your leader from a projectile weapon in this battle.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Combat phase.',
     subName: 'Defense - Shield',
   },
