@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
+import { MarkdownContent } from '../block/MarkdownContent';
 import { Sheet } from '../data/objects';
 import { isLight } from '../utils/contrast';
-import { MarkdownContent } from '../utils/MarkdownContent';
 import styles from './Sheet.module.css';
 
 export const FactionSheet = ({

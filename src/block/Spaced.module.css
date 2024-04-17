@@ -1,0 +1,6 @@
+.main {
+  & > * + * {
+    margin-top: 2vw;
+    box-sizing: border-box;
+  }
+}

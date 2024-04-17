@@ -1,0 +1,18 @@
+.main {
+  margin: 0;
+  display: grid;
+  gap: 1vw 2vw;
+  grid-template-columns: auto auto;
+
+  & dt {
+    align-self: flex-start;
+    justify-self: end;
+    text-align: right;
+    font-weight: 700;
+  }
+  & dd {
+    align-self: flex-start;
+    justify-self: start;
+    margin: 0;
+  }
+}

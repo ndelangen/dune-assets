@@ -1,0 +1,38 @@
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('/page/cover-e.svg') center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 14vw;
+  gap: 2vw;
+
+  & img {
+    filter: drop-shadow(0 0 2vw rgba(0, 0, 0, 0.5));
+  }
+
+  & h1 {
+    filter: drop-shadow(0 0 0.5vw rgba(0, 0, 0, 0.7));
+    font-size: 2.2vw;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+  }
+
+  & h2 {
+    filter: drop-shadow(0 0 0.5vw rgba(0, 0, 0, 0.7));
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+  }
+}

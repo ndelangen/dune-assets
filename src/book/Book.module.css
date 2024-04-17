@@ -1,0 +1,14 @@
+code {
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+figure {
+  break-inside: avoid;
+}

@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { Spice } from '../data/objects';
 import * as styles from './Card.module.css';
 import * as unique from './Spice.module.css';
-import { MarkdownContent } from '../utils/MarkdownContent';
+import { MarkdownContent } from '../block/MarkdownContent';
 import { useCountId } from '../utils/useCountId';
 
 const edgeColor = '#000';

@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 import { Leader } from '../../data/objects';
 import * as styles from './Leader.module.css';
-import { StrokedUse } from '../../utils/StrokedUse';
+import { StrokedUse } from '../../block/StrokedUse';
 import { useCountId } from '../../utils/useCountId';
 
 const foreGroundColor = '#ffffff';

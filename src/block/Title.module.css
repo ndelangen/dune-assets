@@ -1,0 +1,25 @@
+.title {
+  overflow: hidden;
+  font-family: 'C_Copperplate_Gothic';
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.large {
+  line-height: 5.1vw;
+  font-size: 5vw;
+  padding: 1vw;
+}
+
+.medium {
+  font-size: 4vw;
+  line-height: 4.1vw;
+  padding: 1vw;
+}
+
+.small {
+  font-size: 2vw;
+  line-height: 2.1vw;
+  padding: 1vw;
+}

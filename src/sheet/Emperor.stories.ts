@@ -63,7 +63,7 @@ export const Emperor: Story = {
           `Only one Sardaukar can be revived per turn.`,
           `Sardaukar are considered normal troops against Fremen.`,
         ].join('\n\n'),
-        karama: `You opponent does not have to reveal a part of their battle-plan early. This lasts until the end of the turn.`,
+        karama: `Your Sardaukar are normal troops until the end of the turn.`,
       },
     ],
     troops: [

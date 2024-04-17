@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 import { FactionSide } from '../data/objects';
 import * as styles from './Custom.module.css';
-import { StrokedUse } from '../utils/StrokedUse';
+import { StrokedUse } from '../block/StrokedUse';
 
 const foreGroundColor = '#ffffff';
 

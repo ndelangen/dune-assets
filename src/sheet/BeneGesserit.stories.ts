@@ -67,7 +67,12 @@ export const BeneGesserit: Story = {
           `If a faction moves into a territory where you have fighters you may flip those fighters to advisors if that faction wasn't already in that territory. *(Fighters can't become advisors when a faction reinforces a territory.)*`,
           `When a faction ships from off planet you may put an advisors at their destination of a fighter in the polar sink.`,
         ].join('\n\n'),
-        karama: `todo.`,
+        karama: [
+          `- Any advisors you have must remain advisors until the end of the turn.`,
+          `- Any fighters you have must remain fighters until the end of the turn.`,
+          `- You may not ship troops as advisors.`,
+          `- You may not put advisors at the destination *(nor in the polar sink)* of a faction shipping from off planet.`,
+        ].join('\n\n'),
       },
     ],
     troops: [

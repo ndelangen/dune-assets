@@ -112,3 +112,10 @@ export const CHOAM: Story = {
     image: 'vector/logo/choam.svg',
   },
 };
+
+export const Moritani: Story = {
+  args: {
+    background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
+    image: 'vector/logo/moritani.svg',
+  },
+};

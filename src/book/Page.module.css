@@ -1,0 +1,25 @@
+.page {
+  padding: 4vw 4vw 9vw 4vw;
+  position: relative;
+  page-break-before: always;
+  width: 100vw;
+  background-color: #fffaee;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.footer {
+  pointer-events: none;
+  z-index: 2;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-image: url('/page/bottom.svg');
+}

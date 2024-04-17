@@ -5,7 +5,7 @@ import { Leader } from '../../data/objects';
 import * as styles from '../Card.module.css';
 import * as unique from './Traitor.module.css';
 import { FactionToken } from '../../token/Faction';
-import { MarkdownContent } from '../../utils/MarkdownContent';
+import { MarkdownContent } from '../../block/MarkdownContent';
 
 export const TraitorCard: FC<z.infer<typeof Leader> & { owner: string; background: string }> = ({
   background,
