@@ -49,7 +49,6 @@ export const WeirdingWay: Story = {
       },
     ],
     text: 'Play as part of your Battle Plan.\nCounts as a projectile weapon, unless played with another weapon. In that case, it counts as a projectile defense.\nYou may keep this card if you win this battle.',
-    text: 'Play as part of your Battle Plan.\nCounts as a projectile weapon, unless played with another weapon. In that case, it counts as a projectile defense.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Special',
   },
 };
@@ -164,7 +163,6 @@ export const PoisonTooth: Story = {
       },
     ],
     text: 'Play as part of your Battle Plan.\nKills both leaders, and is not stopped by a Snooper.\nAfter seeing the battle results, you may choose not to use this weapon.',
-    text: 'Play as part of your Battle Plan.\nKills both leaders, and is not stopped by a Snooper.\nAfter seeing the battle results, you may choose not to use this weapon.',
     subName: 'Weapon - Poison',
   },
 };
@@ -184,7 +182,6 @@ export const PoisonBlade: Story = {
       },
     ],
     text: 'Play as part of your Battle Plan.\nThis weapon counts as both projectile and poison.\nYou may keep this card if you win this battle.',
-    text: 'Play as part of your Battle Plan.\nThis weapon counts as both projectile and poison.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Special',
   },
 };
@@ -203,7 +200,6 @@ export const ArtilleryStrike: Story = {
         scale: 1,
       },
     ],
-    text: 'Play as part of your Battle Plan.\nKills both leaders (no spice is paid for them).\nBoth players may use Shields to protect their leader against the Artillery Strike.\nSurviving (shielded) leaders do not count towards the battle total; the side that dialed higher wins the battle.',
     text: 'Play as part of your Battle Plan.\nKills both leaders (no spice is paid for them).\nBoth players may use Shields to protect their leader against the Artillery Strike.\nSurviving (shielded) leaders do not count towards the battle total; the side that dialed higher wins the battle.',
     subName: 'Weapon - Special',
   },
@@ -318,7 +314,6 @@ export const StoneBurner: Story = {
         scale: 1.05,
       },
     ],
-    text: 'You choose after battle plans are revealed: Both leaders are killed, OR both leaders in this battle do not count their strength if they otherwise survived. In either case, the player with the higher number of undialed force tokens wins the battle. Dialed forces are lost normally. Discard after use.',
     text: 'You choose after battle plans are revealed: Both leaders are killed, OR both leaders in this battle do not count their strength if they otherwise survived. In either case, the player with the higher number of undialed force tokens wins the battle. Dialed forces are lost normally. Discard after use.',
     subName: 'Weapon - Special',
   },
