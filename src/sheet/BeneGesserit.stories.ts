@@ -24,7 +24,7 @@ export const BeneGesserit: Story = {
     },
     fate: {
       title: 'POLITICAL MARRIAGES',
-      text: `Play your fate during combat *(step 2.1)* to use **THE VOICE** on one side in any battles where you have advisors this turn. This Voice cannot be karama'd.`,
+      text: `Play your fate during Battle *(step 2.1)* to use **THE VOICE** on one side in any battles where you have advisors this turn. This Voice cannot be karama'd.`,
     },
     rules: [
       {
@@ -50,8 +50,8 @@ export const BeneGesserit: Story = {
       {
         title: 'THE VOICE',
         text: [
-          `During combat (step 2.1) you may force your opponent to play/not play a Treachery card in their battle plan. (Projectile Weapon, Poison Defense, Mercenaries, etc)`,
-          `Special combat cards like the Lasgun and Weirding Way must be voiced by name.`,
+          `During Battle (step 2.1) you may force your opponent to play/not play a Treachery card in their battle plan. (Projectile Weapon, Poison Defense, Mercenaries, etc)`,
+          `Special battle cards like the Lasgun and Weirding Way must be voiced by name.`,
           `If you force the use of a card the opponent does not have they may silently ignore the voice.`,
           ,
         ].join('\n\n'),
@@ -82,7 +82,7 @@ export const BeneGesserit: Story = {
         name: 'Fighter',
         back: {
           image: '/generated/token/troop/advisor.jpg',
-          description: 'Cannot participate in combat,\ncollect spice, control strongholds.',
+          description: 'Cannot participate in battle,\ncollect spice, control strongholds.',
           name: 'Advisor',
         },
       },

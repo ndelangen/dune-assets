@@ -287,7 +287,7 @@ export function StartingPhases1() {
                 </ol>
                 <blockquote>
                   <p>I have Stilgar as my traitor.</p>
-                  <p style={{ float: 'right' }}>~ DeeDeeMegaDooDoo</p>
+                  <p style={{ float: 'right' }}>~ Aidym</p>
                 </blockquote>
               </Text>
             </NonBreaking>

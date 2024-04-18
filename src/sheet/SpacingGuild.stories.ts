@@ -15,7 +15,7 @@ export const SpacingGuild: Story = {
   args: {
     name: 'The Spacing Guild',
     logo: '/generated/token/faction/guild.jpg',
-    start: `5 troops in Tuek's Seitch, 15 in reserve *(off planet)*. Start with 5 spice.`,
+    start: `5 troops in Tueks Sietch, 15 in reserve *(off planet)*. Start with 5 spice.`,
     revival: '1 troop free.',
     color: '#C72E19',
     alliance: {
@@ -76,7 +76,7 @@ export const SpacingGuild: Story = {
         text: [
           `Once battle plans are revealed *(step 4.3)* you may decide to retreat.`,
           `Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying spice for each equal to your leader's strength.`,
-          `If your leader would've been killed in combat they die. Spice you use to spice dial and retreat is paid to the spice bank.`,
+          `If your leader would've been killed in battle they die. Spice you use to spice dial and retreat is paid to the spice bank.`,
           `You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
           `If you retreat your opponent wins the battle, losing 0 troops, losing 0 spice, their leader is not killed.`,
         ].join('\n\n'),

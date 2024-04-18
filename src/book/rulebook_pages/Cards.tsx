@@ -249,7 +249,7 @@ export function TreacheryCards1() {
             </p>
             <blockquote>
               <p>Fremen might want this one..</p>
-              <p style={{ float: 'right' }}>~ DeeDeeMegaDooDoo</p>
+              <p style={{ float: 'right' }}>~ Aidym</p>
             </blockquote>
           </Text>
         </SideBySide>

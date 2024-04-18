@@ -83,7 +83,7 @@ export function Welcome() {
               </ol>
             </NonBreaking>
             <NonBreaking>
-              <h1>About dreamrules</h1>
+              <h1>About Dreamrules</h1>
               <p>
                 This document consists of the full rules for the Dream Rules variant of Gale Force Nine's
                 reprint of Dune and their Ixian and Tleilaxu expansion.
@@ -110,9 +110,9 @@ export function Welcome() {
                 </dt>
                 <dd>
                   <ul>
+                    <li>Aidym</li>
                     <li>Awpteamoose</li>
-                    <li>central419</li>
-                    <li>DeeDeeMegaDooDoo</li>
+                    <li>Central419</li>
                     <li>DragonJade</li>
                     <li>IhasPineCone</li>
                     <li>Quinn</li>

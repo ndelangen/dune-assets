@@ -23,7 +23,7 @@ export const Supplies: Story = {
         scale: 0.7,
       },
     ],
-    text: 'Play in the Combat Phase, if in combat before The Voice step.\n\nUntil the end of his Combat Phase, you get the Supplies! tokens. These may be used as treachery cards of corresponding types.',
+    text: 'Play in the Battle Phase, if in battle before The Voice step.\n\nUntil the end of his Battle Phase, you get the Supplies! tokens. These may be used as treachery cards of corresponding types.',
     subName: 'Special - Instant',
   },
 };
@@ -44,7 +44,7 @@ export const Mercenaries: Story = {
       },
     ],
     text: 'Play in your Battle Plan. Does not take weapon or defense slot. You may play only 1 Mercenaries per Battle Plan.\n\nAdd +1 to your number dialed and win ties regardless of Storm Order (if both players play Mercenaries Storm Order tiebreaker reverts back to normal).\n\nYou may keep this card if you win the battle.',
-    subName: 'Special - Combat',
+    subName: 'Special - Battle',
   },
 };
 
@@ -84,7 +84,7 @@ export const BreakConditioning: Story = {
       },
     ],
     text: "You may always play this after revealing your battle plan.\nIf you're not called traitor, win the battle and your total battle strength is twice or more of your opponent's: none of your forces die, any spice you dialed is returned and you kill your opponents leader.\nIf you're called traitor after playing this card you may return it to your hand.",
-    subName: 'Special - Combat',
+    subName: 'Special - Battle',
   },
 };
 

@@ -68,7 +68,7 @@ export const Choam: Story = {
       },
       {
         title: 'BENE GESSERIT CONTRACT',
-        text: `In combat (step after the Voice), you may force your opponent to answer a yes or no question about the treachery cards they have.`,
+        text: `In Battle (step after the Voice), you may force your opponent to answer a yes or no question about the treachery cards they have.`,
         karama: 'You cannot ask a question.',
       },
       {

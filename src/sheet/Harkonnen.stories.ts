@@ -23,7 +23,7 @@ export const Harkonnen: Story = {
     },
     fate: {
       title: 'BLACKMAIL',
-      text: `Play your fate card during combat (step 2.3) to force your opponent to reveal their entire battle plan early.`,
+      text: `Play your fate card during battle (step 2.3) to force your opponent to reveal their entire battle plan early.`,
     },
     rules: [
       {

@@ -55,7 +55,7 @@ export const Atreides: Story = {
       },
       {
         title: 'BATTLE PRESCIENCE',
-        text: `During combat *(step 2.2)* you may force your opponent to reveal 1 part of their battle-plan early. *(Weapon, Defense, Leader, or Dial + Mercenaries)*.`,
+        text: `During battle *(step 2.2)* you may force your opponent to reveal 1 part of their battle-plan early. *(Weapon, Defense, Leader, or Dial + Mercenaries)*.`,
         karama: `You opponent does not have to reveal a part of their battle-plan early. This lasts until the end of the turn.`,
       },
       {

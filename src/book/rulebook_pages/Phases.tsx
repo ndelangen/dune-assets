@@ -592,7 +592,7 @@ export function Battle() {
               </p>
               <h2>The aggressors will:</h2>
               <ul>
-                <li>Choose which combat they are in will be resolved next.</li>
+                <li>Choose which battle they are in will be resolved next.</li>
                 <li>Win battle in the case of a tie in battle-strength.</li>
               </ul>
               <p>
