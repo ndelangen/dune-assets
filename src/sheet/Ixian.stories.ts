@@ -76,7 +76,7 @@ export const Ixian: Story = {
         description: '1 strength normally\n2 strength in when 1 spice is added.',
         name: 'Cyborg',
         back: {
-          image: '/generated/token/troop/cyborg.jpg',
+          image: '/generated/token/troop/upgraded-cyborg.jpg',
           description: 'Always at 2 strength.',
           name: 'Patched Cyborg',
         },

@@ -615,7 +615,9 @@ export const TROOP = z.enum([
 ]);
 
 export const TROOP_MODIFIER = z.enum([
+  'vector/troop_modifier/star-left-red.svg',
   'vector/troop_modifier/star-left.svg',
+  'vector/troop_modifier/star-right-red.svg',
   'vector/troop_modifier/star-right.svg',
 ]);
 

@@ -136,7 +136,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
   });
 }
 
-for (const entry of entries.filter((entry) => entry.startsWith('book'))) {
+for (const entry of entries.filter((entry) => entry.startsWith('book') && !entry.includes('page'))) {
   const path = `generated/${mapToPath(entry)}.pdf`;
   count++;
   bar1.update(count, { entry });
