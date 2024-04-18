@@ -145,7 +145,7 @@ export const Ixian: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Once per turn, you and Ixians may swap or transfer a treachery card. You cannot swap in combat after The Voice step.',
+    text: 'Once per turn, you and Ixians may swap or transfer a treachery card. You cannot swap in battle after The Voice step.',
     troop: 'vector/troop/ixian.svg',
   },
 };

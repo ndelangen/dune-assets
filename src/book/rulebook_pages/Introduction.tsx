@@ -9,7 +9,7 @@ import { Title } from '../../block/Title';
 import * as colors from '../../utils/colors';
 import styles from './Custom.module.css';
 
-export function Intro() {
+export function Board() {
   return (
     <Fragment>
       <Spaced>

@@ -36,6 +36,14 @@ export const Cyborg: Story = {
   },
 };
 
+export const UpgradedCyborg: Story = {
+  args: {
+    background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
+    image: 'vector/troop/ixian.svg',
+    star: 'vector/troop_modifier/star-left-red.svg',
+  },
+};
+
 export const BeneGesserit: Story = {
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,

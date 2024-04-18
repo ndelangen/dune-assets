@@ -29,7 +29,7 @@ export const Emperor: Story = {
       title: 'Prison Planet',
       text: [
         `Play your fate card at any time to revive up to 5 of any troops and any single leader for their normal cost *(including for other players)*.`,
-        `There are no limits for starred troops or leaders. *(Cannot be played during combat step 3)*`,
+        `There are no limits for starred troops or leaders. *(Cannot be played during battle step 3)*`,
       ].join('\n\n'),
     },
     rules: [
@@ -59,7 +59,7 @@ export const Emperor: Story = {
       {
         title: 'SARDAUKAR',
         text: [
-          `Your five starred troops are double combat strength.`,
+          `Your five starred troops are double battle strength.`,
           `Only one Sardaukar can be revived per turn.`,
           `Sardaukar are considered normal troops against Fremen.`,
         ].join('\n\n'),

@@ -18,7 +18,7 @@ import * as colors from '../../utils/colors';
 
 export const mapSize = { width: 487.06, height: 487.06 };
 
-export function Setup_1() {
+export function Drafting() {
   return (
     <Fragment>
       <WithBottom>
@@ -103,7 +103,7 @@ export function Setup_1() {
   );
 }
 
-export function Setup_2() {
+export function Layout() {
   return (
     <Fragment>
       <Spaced>
@@ -242,7 +242,7 @@ export function Setup_2() {
   );
 }
 
-export function Setup_3() {
+export function StartingPhases1() {
   return (
     <Fragment>
       <WithBottom>
@@ -287,7 +287,7 @@ export function Setup_3() {
                 </ol>
                 <blockquote>
                   <p>I have Stilgar as my traitor.</p>
-                  <p style={{ float: 'right' }}>~ DeeDeeMegaDooDoo</p>
+                  <p style={{ float: 'right' }}>~ Aidym</p>
                 </blockquote>
               </Text>
             </NonBreaking>
@@ -351,7 +351,7 @@ export function Setup_3() {
   );
 }
 
-export function Setup_4() {
+export function StartingPhases2() {
   return (
     <WithBottom>
       <Spaced>
@@ -445,7 +445,7 @@ export function Setup_4() {
   );
 }
 
-export function Setup_5() {
+export function StartingPhases3() {
   return (
     <Fragment>
       <Spaced>

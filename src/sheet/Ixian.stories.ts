@@ -19,12 +19,12 @@ export const Ixian: Story = {
     revival: '3 troop free revival. Start with 5 spice.',
     color: '#B5A359',
     alliance: {
-      text: `Once per turn you and your Ally may swap or transfer a Treachery Card. *(If during combat: step 1.1)*`,
+      text: `Once per turn you and your Ally may swap or transfer a Treachery Card. *(If during battle: step 1.1)*`,
       karama: `When you attempt to use this ability, the ability is disabled until the end of the turn. You may not transfer or swap a Treachery Card.`,
     },
     fate: {
       title: 'DEFECT',
-      text: `Play your fate card to nullify the effects of a special Treachery Card once it is played. The card is returned to the original faction and may not be used for the rest of the turn. *(Cannot be played during combat step 3)*`,
+      text: `Play your fate card to nullify the effects of a special Treachery Card once it is played. The card is returned to the original faction and may not be used for the rest of the turn. *(Cannot be played during battle step 3)*`,
     },
     rules: [
       {
@@ -47,9 +47,9 @@ export const Ixian: Story = {
       {
         title: 'AUGMENTED TROOPS',
         text: [
-          `Your 9 Cyborgs are double combat strength, can move 2 territories, collect 3 spice each, and cost 3 spice to revive.`,
+          `Your 9 Cyborgs are double battle strength, can move 2 territories, collect 3 spice each, and cost 3 spice to revive.`,
           `Your 11 Suboids can move 2 territories if accompanied by a Cyborg, cost 1 spice to revive, and are always considered half strength because they cannot be spice dialed.`,
-          `If you dial Cyborgs in a battle undialed Suboids can die in their place when calculating battle losses (step 4.4). You get 2 uses out of every suboid because if this happens the dialed Cyborgs flip to Patched Cyborgs.`,
+          `If you dial Cyborgs in a battle undialed Suboids can die in their place when calculating battle losses (step 4.4). You get 2 uses out of every Suboid because if this happens the dialed Cyborgs flip to Patched Cyborgs.`,
           `Patched Cyborgs can be dialed once for free, then they flip back.`,
         ].join('\n\n'),
       },
@@ -76,7 +76,7 @@ export const Ixian: Story = {
         description: '1 strength normally\n2 strength in when 1 spice is added.',
         name: 'Cyborg',
         back: {
-          image: '/generated/token/troop/cyborg.jpg',
+          image: '/generated/token/troop/upgraded-cyborg.jpg',
           description: 'Always at 2 strength.',
           name: 'Patched Cyborg',
         },

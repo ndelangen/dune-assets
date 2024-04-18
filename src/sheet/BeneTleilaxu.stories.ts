@@ -24,7 +24,7 @@ export const BeneTleilaxu: Story = {
     },
     fate: {
       title: 'STONE BURNER',
-      text: `Play your fate card during combat *(before step 3)* to make all forces in a territory unable to fight at full strength. *(They cannot be spice dialed, including Fremen)*`,
+      text: `Play your fate card during Battle *(before step 3)* to make all forces in a territory unable to fight at full strength. *(They cannot be spice dialed, including Fremen)*`,
     },
     rules: [
       {

@@ -64,8 +64,7 @@ export const Choam: Story = {
       },
       {
         title: 'BENE GESSERIT CONTRACT',
-        title: 'BENE GESSERIT CONTRACT',
-        text: `In combat (step after the Voice), you may force your opponent to answer a yes or no question about the treachery cards they have.`,
+        text: `In Battle (step after the Voice), you may force your opponent to answer a yes or no question about the treachery cards they have.`,
         karama: 'You cannot ask a question. Question does not need to be answered.',
       },
       {
@@ -74,7 +73,6 @@ export const Choam: Story = {
         karama: 'You cannot get more spice for each 5+ being collected.',
       },
       {
-        title: 'HARKONNEN CONTRACT',
         title: 'HARKONNEN CONTRACT',
         text: `When you collect spice from a spice blow or spice mine you may kill the forces needed to collect it to gain the same amount again from the spice bank.`,
         karama: 'You cannot kill forces to collect more spice.',

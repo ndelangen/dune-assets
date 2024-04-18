@@ -23,11 +23,8 @@ export const Fremen: Story = {
       karama: `When your **FREE SPICE DIALING** ability is karama'd, this alliance ability is disabled until the end of the turn.`,
     },
     fate: {
-      title: 'BATTLE TRAINING',
-      text: [
-        `Play your fate card at any time before Ship & Move phase to permanently gain the ability to play two leaders per battle.`,
-        `Either leader can be called traitor. If you retreat the lowest leader is used for saving Treachery Cards. Leaders survive/die as one.`,
-      ].join('\n\n'),
+      title: 'PLANETOLOGY',
+      text: `Play your fate card during Storm phase to add or subtract one from the revealed storm card. You may repeat this every turn for the rest of the game.`,
     },
     rules: [
       {
@@ -66,7 +63,7 @@ export const Fremen: Story = {
       },
       {
         title: 'FEDAYKIN',
-        text: `Your three starred troops are double combat strength. Only one Fedaykin may be revived per turn.`,
+        text: `Your three starred troops are double battle strength. Only one Fedaykin may be revived per turn.`,
         karama: `Your three starred troops are normal strength.`,
       },
       {
@@ -77,11 +74,11 @@ export const Fremen: Story = {
       {
         title: 'FANATICAL TACTICS',
         text: [
-          `During combat *(step 3.1)* you may publicly announce you are playing a weapon and /or defense Treachery Card from your hand.`,
-          `These cards cannot be lost unless your leader is called traitor or there is a lasgun-shield explosion.`,
+          `During battle *(step 3.1)* you may publicly announce you are playing a weapon and /or defense Treachery Card from your hand.`,
+          `These cards cannot be lost unless your leader is called traitor or there is a Lasgun-Shield explosion.`,
           `Harkonnen can only replace these with cards of the same type when using **VLADIMIR'S SPITE**.`,
         ].join('\n\n'),
-        karama: `You cannot reveal your weapon and defense cards during combat. Losing the battle causes you to lose all Treachery Cards in your battle plan. **VLADIMIR'S SPITE** can be used to replace any card.`,
+        karama: `You cannot reveal your weapon and defense cards during battle. Losing the battle causes you to lose all Treachery Cards in your battle plan. **VLADIMIR'S SPITE** can be used to replace any card.`,
       },
       {
         title: 'SPECIAL VICTORY CONDITION',
