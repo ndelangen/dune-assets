@@ -29,7 +29,7 @@ export const Lasgun: Story = {
         scale: 0.7,
       },
     ],
-    text: "Play as part of your Battle Plan.\nAutomatically kills opponent's leader regardless of defense card used.\nYou may keep this card if you win this battle.\nIf anyone plays a Shield in this battle, all forces, leaders and spice in the battle's territory die . Any spice dialed and in the battle's territory is lost. Both players lose this battle.",
+    text: 'Play as part of your Battle Plan.\nAutomatically kills opponent\'s leader regardless of defense card used.\nYou may keep this card if you win this battle.\nIf anyone plays a Shield in this battle, all forces, leaders and spice in the battle\'s territory die . Any spice dialed and in the battle\'s territory is lost. Both players lose this battle.',
     subName: 'Weapon - Special',
   },
 };
@@ -67,7 +67,7 @@ export const BasiliaWeapon: Story = {
         scale: 0.7,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Poison',
   },
 };
@@ -86,7 +86,7 @@ export const Chaumas: Story = {
         scale: 0.7,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Poison',
   },
 };
@@ -105,7 +105,7 @@ export const Chaumurky: Story = {
         scale: 0.8,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Poison',
   },
 };
@@ -124,7 +124,7 @@ export const EllacaDrug: Story = {
         scale: 0.8,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Poison',
   },
 };
@@ -143,7 +143,7 @@ export const GomJabbar: Story = {
         scale: 0.8,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Poison',
   },
 };
@@ -219,7 +219,7 @@ export const MaulaPistol: Story = {
         scale: 0.7,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Projectile',
   },
 };
@@ -238,7 +238,7 @@ export const Crysknife: Story = {
         scale: 0.6,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Projectile',
   },
 };
@@ -257,7 +257,7 @@ export const HunterSeeker: Story = {
         scale: 0.7,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Projectile',
   },
 };
@@ -276,7 +276,7 @@ export const SlipTip: Story = {
         scale: 0.7,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Projectile',
   },
 };
@@ -295,7 +295,7 @@ export const Stunner: Story = {
         scale: 0.6,
       },
     ],
-    text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
+    text: 'Play as part of your Battle Plan.\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Projectile',
   },
 };
@@ -333,7 +333,7 @@ export const MirrorWeapon: Story = {
         scale: 1,
       },
     ],
-    text: "Play as part of your Battle Plan.\nCopies your opponent's weapon, if they reveal one (and if their Treachery Card counts as a weapon).\nYou must use your weapon first if order matters. Discard after use.",
+    text: 'Play as part of your Battle Plan.\nCopies your opponent\'s weapon, if they reveal one (and if their Treachery Card counts as a weapon).\nYou must use your weapon first if order matters. Discard after use.',
     subName: 'Weapon - Special',
   },
 };

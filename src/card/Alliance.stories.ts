@@ -29,7 +29,7 @@ export const Atreides: Story = {
         scale: 0.7,
       },
     ],
-    text: "Atreides may use Battle Prescience in their ally's battles.",
+    text: 'Atreides may use Battle Prescience in their ally\'s battles.',
     troop: 'vector/troop/atreides.svg',
   },
 };
@@ -55,7 +55,7 @@ export const Harkonnen: Story = {
         scale: 0.6,
       },
     ],
-    text: "Harkonnen may call traitor and use their fate in their ally's battles.",
+    text: 'Harkonnen may call traitor and use their fate in their ally\'s battles.',
     troop: 'vector/troop/harkonnen.svg',
   },
 };
@@ -126,7 +126,7 @@ export const SpacingGuild: Story = {
         scale: 0.7,
       },
     ],
-    text: "Spacing Guild may allow their ally to use Three Types Of Shipment. Spacing Guild may reveal spice from their hidden to pay for their ally's shipment. You may use Discount Shipping.",
+    text: 'Spacing Guild may allow their ally to use Three Types Of Shipment. Spacing Guild may reveal spice from their hidden to pay for their ally\'s shipment. You may use Discount Shipping.',
     troop: 'vector/troop/guild.svg',
   },
 };
@@ -171,7 +171,7 @@ export const BeneGesserit: Story = {
         scale: 0.3,
       },
     ],
-    text: "Bene Gesserit may use The Voice in their ally's battles.",
+    text: 'Bene Gesserit may use The Voice in their ally\'s battles.',
     troop: 'vector/troop/bene-gesserit.svg',
   },
 };

@@ -15,61 +15,62 @@ export const Choam: Story = {
   args: {
     name: 'Choam',
     logo: '/generated/token/faction/choam.jpg',
-    start: '10 forces in reserves. 10 forces in an unoccupied territory or the polar sink.',
-    revival: '1 troop free. Start with 10 spice.',
+    start:
+      '15 forces in reserves. 5 forces in any unoccupied territory or the polar sink.',
+    revival: '1 troop free. Start with 15 spice.',
     color: '#e3dbb3',
     alliance: {
       text: `You may allow your ally to use any contracts instead of yourself this turn. You and your ally may help pay when one of you pays for a contract.`,
-      karama: `No interaction.`,
+      karama: `If a Contract is Karama'ed for CHOAM it is also Karama'ed for their ally in the same way.`,
     },
     fate: {
       title: 'LANDSRAAD CONTRACT',
-      text: `Play at the start of any phase. This contract can copy any other contract’s ability for an additional use each turn.`,
+      text: `Play at the start of any phase to unlock a new contract called Landsraad Contract that can copy any other contract’s ability once each turn.
+      `,
     },
     rules: [
       {
         text: 'You can manipulate the economy.',
       },
       {
-        title: 'CONTRACTS',
-        text: `Each contract is once per turn. You may use contracts at any time unless otherwise specified. To use a contract, pay 2 spice to the spice bank.`,
+        text: `Each contract is once per turn. To use a contract, pay 2 spice to the spice bank.`,
         karama:
-          "You cannot pay to use any contracts this phase (except fate). If this ability is karama'ed, you can still use the contract in a next phase if possible. If any other contract is karama’ed, it’s once per turn is used. Return the spice paid when this or any contract is karama’ed.",
+          "Any contract can be karama'ed when CHOAM or their ally attempts to use it. Return the 2 spice paid. Undo what the contract has done. The contract that is karama’ed cannot be used for the rest of the turn (unless fate is used to copy it).",
       },
       {
         title: 'CHOAM CONTRACT',
-        text: `You may trade a treachery card with another faction. The trade must be two-way (each faction giving and receiving a card).`,
-        karama: 'You cannot trade.',
+        text: `At the start of any phase, except the Combat Phase, you and another faction may trade or transfer a treachery card.`,
+        karama: 'You cannot trade and transfer. ',
       },
       {
         title: 'EMPEROR CONTRACT',
-        text: `Discard a worthless or duplicate card to gain 7 spice.`,
+        text: `At the start of any phase, discard a worthless or duplicate treachery card to gain 5 spice.`,
         karama: 'You cannot discard.',
       },
       {
+        title: 'IXIAN CONTRACT',
+        text: `When you buy a treachery card, you may swap it with the next card up for bid this turn. Atreides looks. You may use this after Ixians tech (Ixians decide before you).`,
+        karama: 'You cannot swap with the card up for bid. Must be karama’ed before CHOAM looks at the card they swap with.',
+      },
+      {
         title: 'TLEILAXU CONTRACT',
-        text: `Revive 2 of your forces for free.`,
+        text: `In the Revival Phase, revive 2 additional forces, both for free.`,
         karama: 'You cannot revive 2 forces for free.',
       },
       {
-        title: 'ATREIDES CONTRACT',
-        text: `When a stack of your forces is about to be killed by the storm or a worm, you may pay 1 spice per force to send them to the polar sink.`,
-        karama: 'You cannot pay to save their forces.',
-      },
-      {
-        title: 'IXIAN CONTRACT',
-        text: `When a card is up for bid, before anyone bids on it, you may swap it with a worthless or duplicate card. Atreides looks. Ixians decide if they Technology before you do.`,
-        karama: 'You cannot swap with the card up for bid.',
-      },
-      {
         title: 'SPACING GUILD CONTRACT',
-        text: `On your shipment turn, you may ship an additional time directly to a spice blow at stronghold rates.`,
+        text: `On your shipment turn, you may ship an additional time directly to an unoccupied spice blow or mine at stronghold rates.`,
         karama: 'You cannot ship an additional time.',
       },
       {
         title: 'BENE GESSERIT CONTRACT',
         text: `In Battle (step after the Voice), you may force your opponent to answer a yes or no question about the treachery cards they have.`,
-        karama: 'You cannot ask a question.',
+        karama: 'You cannot ask a question. Question does not need to be answered.',
+      },
+      {
+        title: 'ATREIDES CONTRACT',
+        text: `Buy at the start of the Collection Phase. Each time 5 or more spice is collected from a spice blow or mine this turn, you gain 2 spice from the spice bank.`,
+        karama: 'You cannot get more spice for each 5+ being collected.',
       },
       {
         title: 'HARKONNEN CONTRACT',
