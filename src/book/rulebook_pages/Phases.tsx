@@ -28,7 +28,7 @@ const order = [
   'storm',
 ];
 
-export function Phases_Intro() {
+export function About() {
   return (
     <Fragment>
       <Spaced>
@@ -121,7 +121,7 @@ export function Phases_Intro() {
   );
 }
 
-export function Phases_Nexus() {
+export function Nexus() {
   return (
     <Fragment>
       <Spaced>
@@ -213,7 +213,7 @@ export function Phases_Nexus() {
   );
 }
 
-export function Phases_Fate() {
+export function Fate() {
   return (
     <Fragment>
       <Spaced>
@@ -295,7 +295,7 @@ export function Phases_Fate() {
   );
 }
 
-export function Phases_Bidding() {
+export function Bidding() {
   return (
     <Fragment>
       <Spaced>
@@ -371,7 +371,7 @@ export function Phases_Bidding() {
   );
 }
 
-export function Phases_Revival() {
+export function Revival() {
   return (
     <Fragment>
       <Spaced>
@@ -443,7 +443,7 @@ export function Phases_Revival() {
   );
 }
 
-export function Phases_Spice() {
+export function Spice() {
   return (
     <Fragment>
       <Spaced>
@@ -495,7 +495,7 @@ export function Phases_Spice() {
   );
 }
 
-export function Phases_Movement() {
+export function Movement() {
   return (
     <Fragment>
       <Spaced>
@@ -557,7 +557,7 @@ export function Phases_Movement() {
   );
 }
 
-export function Phases_Battle() {
+export function Battle() {
   return (
     <Fragment>
       <Spaced>
@@ -651,7 +651,7 @@ export function Phases_Battle() {
   );
 }
 
-export function Phases_BattleOrder() {
+export function BattleOrder() {
   return (
     <WithBottom>
       <Spaced>
@@ -750,7 +750,7 @@ export function Phases_BattleOrder() {
   );
 }
 
-export function Phases_BattleResolve() {
+export function BattleResolve() {
   return (
     <Fragment>
       <Spaced>
@@ -836,7 +836,7 @@ export function Phases_BattleResolve() {
     </Fragment>
   );
 }
-export function Phases_Mentat() {
+export function Mentat() {
   return (
     <Fragment>
       <Spaced>
@@ -933,7 +933,7 @@ export function Phases_Mentat() {
     </Fragment>
   );
 }
-export function Phases_Storm() {
+export function Storm() {
   return (
     <Fragment>
       <Spaced>

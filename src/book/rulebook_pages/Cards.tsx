@@ -7,11 +7,10 @@ import { Outline } from '../../block/Outline';
 import { Spaced } from '../../block/Spaced';
 import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
-import { Wrapper } from '../../block/Wrapper';
 import { card as cardSize } from '../../data/sizes';
 import * as colors from '../../utils/colors';
 
-export function Cards_Intro() {
+export function Intro() {
   return (
     <Fragment>
       <Spaced>

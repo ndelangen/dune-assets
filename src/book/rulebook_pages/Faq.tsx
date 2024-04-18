@@ -18,7 +18,8 @@ function FloatingInset() {
 
   return <div style={style}></div>;
 }
-export function Faq_1() {
+
+export function P1() {
   return (
     <Fragment>
       <Spaced>

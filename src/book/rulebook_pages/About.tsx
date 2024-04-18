@@ -8,7 +8,7 @@ import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
 import * as colors from '../../utils/colors';
 
-export function About_Dreams() {
+export function Dreams() {
   return (
     <Fragment>
       <Spaced>
@@ -60,7 +60,7 @@ export function About_Dreams() {
     </Fragment>
   );
 }
-export function About_Welcome() {
+export function Welcome() {
   return (
     <Fragment>
       <WithBottom>

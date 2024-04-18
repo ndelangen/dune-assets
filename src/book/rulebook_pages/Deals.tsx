@@ -6,7 +6,7 @@ import { Text } from '../../block/Text';
 import { Title } from '../../block/Title';
 import * as colors from '../../utils/colors';
 
-export function Deals() {
+export function About() {
   return (
     <Fragment>
       <Spaced>

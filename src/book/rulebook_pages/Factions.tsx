@@ -2,14 +2,10 @@ import { Fragment } from 'react';
 
 import { Definitions } from '../../block/Definitions';
 import { FactionSynopsis } from '../../block/FactionSynopsis';
-import { SideBySide } from '../../block/Layout';
-import { MarkdownContent } from '../../block/MarkdownContent';
 import { Spaced } from '../../block/Spaced';
 import { Text } from '../../block/Text';
 import { Title } from '../../block/Title';
 import { Wrapper } from '../../block/Wrapper';
-// import { factions } from '../../presets/factions';
-import { disc as discSize } from '../../data/sizes';
 import * as colors from '../../utils/colors';
 
 export function Factions1() {
