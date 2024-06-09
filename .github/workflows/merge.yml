@@ -21,8 +21,8 @@ jobs:
           persist-credentials: false
           token: ${{ steps.generate-token.outputs.token }}
       - uses: oven-sh/setup-bun@v1
-      - run: npx playwright install chromium
       - run: bun install
+      - run: npx playwright install chromium
       - run: bun run build-storybook --test
       - run: bun run capture
       - name: Compress PDF
