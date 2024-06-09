@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { image } from '../block/FactionSynopsis.module.css';
+import { name } from '../token/leader/Leader.module.css';
 import { ALL, LEADERS, LOGO, TROOP, TROOP_MODIFIER } from './generated';
 
 const STRENGTH = z.union([z.number().int(), z.string().length(1)]);
@@ -145,6 +147,14 @@ export const TroopSide = z.strictObject({
 export const FactionSide = z.strictObject({
   image: ALL,
   background: URL,
+});
+
+export const CardBack = z.strictObject({
+  image: ALL,
+  imageOffset: OFFSET,
+  imageScale: SCALE,
+  background: URL,
+  name: z.string(),
 });
 
 export const Troop = z.intersection(
