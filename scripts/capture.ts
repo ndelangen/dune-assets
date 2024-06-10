@@ -1,5 +1,7 @@
 import { serve } from 'bun';
 import cliProgress from 'cli-progress';
+import { readdir } from 'node:fs/promises';
+import { join } from 'node:path';
 import { chromium } from 'playwright';
 
 const BASE_PATH = './storybook-static';

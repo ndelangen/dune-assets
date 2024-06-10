@@ -27,7 +27,7 @@ const enums = {
   troop_modifier,
 };
 
-Bun.write(
+await Bun.write(
   join(import.meta.dirname, '..', 'src/data/generated.ts'),
   `
 import { z } from 'zod';
@@ -48,4 +48,14 @@ export const ALL = z.union([
   ${['GENERIC', 'LOGO', 'DECAL', 'ICON', 'TROOP'].join(',\n  ')}
 ]);
 `,
+);
+
+const files = await readdir(join(import.meta.dirname, '../src/faction'));
+await Promise.all(
+  files.map(async (file) => {
+    const { default: faction } = await import(`../src/faction/${file}`);
+    const content = JSON.stringify(faction, null, 2);
+    const path = join(import.meta.dirname, '../generated/faction', file.replace(/\.ts$/, '.json'));
+    await Bun.write(path, content);
+  }),
 );

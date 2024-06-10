@@ -147,3 +147,23 @@ export const Nexus: Story = {
     imageScale: 1,
   },
 };
+
+export const Voice: Story = {
+  args: {
+    name: 'Voice',
+    background: '/generated/utils/background/bene-gesserit.jpg',
+    image: 'vector/decal/target.svg',
+    imageOffset: [-10, 0],
+    imageScale: 1.1,
+  },
+};
+
+export const Prescience: Story = {
+  args: {
+    name: 'Prescience',
+    background: '/generated/utils/background/atreides.jpg',
+    image: 'vector/icon/eye.svg',
+    imageOffset: [0, 5],
+    imageScale: 1.1,
+  },
+};
