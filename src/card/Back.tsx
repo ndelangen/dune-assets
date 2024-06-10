@@ -112,7 +112,6 @@ export const CardBack: FC<z.infer<typeof CardBackType>> = ({
           <filter height="300%" id="dropshadow" width="300%" x="-100%" y="-100%">
             <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="8" />
             <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="4" />
-            <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="2" />
           </filter>
         </defs>
         <g filter={`url(#dropshadow)`}>
@@ -139,14 +138,6 @@ export const CardBack: FC<z.infer<typeof CardBackType>> = ({
         />
         <g style={{ mixBlendMode: 'overlay' }}>
           <rect fill="black" y={size.height - 300} {...size} height={100} mask={`url(#${textShadeMask})`} />
-        </g>
-        <g
-          style={{
-            mixBlendMode: 'color-burn',
-            filter: 'invert(100%) saturate(6.2) contrast(22.1) grayscale(1)',
-          }}
-        >
-          <image {...size} mask={`url(#${textMask})`} x={0} xlinkHref={background} y={-80} />
         </g>
       </svg>
     </div>

@@ -77,3 +77,73 @@ export const Alliance: Story = {
     imageScale: 1.35,
   },
 };
+
+export const Stronghold: Story = {
+  args: {
+    name: 'Stronghold',
+    background: '/generated/utils/background/weapon.jpg',
+    image: 'vector/icon/city.svg',
+    imageOffset: [-5, 0],
+    imageScale: 1,
+  },
+};
+
+export const Tracking: Story = {
+  args: {
+    name: 'Tracking',
+    background: '/generated/utils/background/worthless.jpg',
+    image: 'vector/icon/diamond.svg',
+    imageOffset: [-5, 0],
+    imageScale: 1,
+  },
+};
+
+export const LeaderSkill: Story = {
+  args: {
+    name: 'Leader Skill',
+    background: '/generated/utils/background/moritani.jpg',
+    image: 'vector/icon/mentat.svg',
+    imageOffset: [-5, 0],
+    imageScale: 1,
+  },
+};
+
+export const KwisatzHaderach: Story = {
+  args: {
+    name: 'Kwisatz Haderach',
+    background: '/generated/utils/background/atreides.jpg',
+    image: 'vector/icon/kwisatz.svg',
+    imageOffset: [0, 10],
+    imageScale: 1,
+  },
+};
+
+export const Event: Story = {
+  args: {
+    name: 'Event',
+    background: '/generated/utils/background/richese.jpg',
+    image: 'vector/icon/turn.svg',
+    imageOffset: [0, 10],
+    imageScale: 0.8,
+  },
+};
+
+export const Message: Story = {
+  args: {
+    name: 'Message',
+    background: '/generated/utils/background/radial-2.jpg',
+    image: 'vector/icon/balance.svg',
+    imageOffset: [0, 10],
+    imageScale: 1,
+  },
+};
+
+export const Nexus: Story = {
+  args: {
+    name: 'Nexus',
+    background: '/generated/utils/background/moss.jpg',
+    image: 'vector/icon/snake.svg',
+    imageOffset: [0, 10],
+    imageScale: 1,
+  },
+};
