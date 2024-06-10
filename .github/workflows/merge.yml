@@ -23,6 +23,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
       - run: bun install
       - run: npx playwright install chromium
+      - run: bun run generate
       - run: bun run build-storybook --test
       - run: bun run capture
       - name: Compress PDF
