@@ -40,7 +40,7 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
         {nonFadedDecals.length > 0 && (
           <filter id={decalsFilter}>
             <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="6"></feMorphology>
-            <feFlood flood-color={foreGroundColor} flood-opacity="1" result="PINK"></feFlood>
+            <feFlood floodColor={foreGroundColor} floodOpacity="1" result="PINK"></feFlood>
             <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
             <feMerge>
               <feMergeNode in="OUTLINE" />

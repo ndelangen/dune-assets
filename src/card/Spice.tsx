@@ -66,9 +66,9 @@ export const SpiceCard: FC<z.infer<typeof Spice>> = ({
             <feMorphology in="CONTRASTED" result="DILATED0" operator="dilate" radius="5"></feMorphology>
             <feMorphology in="CONTRASTED" result="DILATED1" operator="dilate" radius="3"></feMorphology>
             <feMorphology in="CONTRASTED" result="DILATED2" operator="dilate" radius="1"></feMorphology>
-            <feFlood flood-color={foreGroundColor} flood-opacity="1" result="PINK0"></feFlood>
-            <feFlood flood-color={edgeColor} flood-opacity="1" result="PINK1"></feFlood>
-            <feFlood flood-color={highLightColor} flood-opacity="1" result="PINK2"></feFlood>
+            <feFlood floodColor={foreGroundColor} floodOpacity="1" result="PINK0"></feFlood>
+            <feFlood floodColor={edgeColor} floodOpacity="1" result="PINK1"></feFlood>
+            <feFlood floodColor={highLightColor} floodOpacity="1" result="PINK2"></feFlood>
             <feComposite in="PINK0" in2="DILATED0" operator="in" result="OUTLINE0"></feComposite>
             <feComposite in="PINK1" in2="DILATED1" operator="in" result="OUTLINE1"></feComposite>
             <feComposite in="PINK2" in2="DILATED2" operator="in" result="OUTLINE2"></feComposite>
@@ -80,7 +80,7 @@ export const SpiceCard: FC<z.infer<typeof Spice>> = ({
           </filter>
           <mask id={`${prefix}mask`}>
             {highlights.map((territory) => (
-              <use xlinkHref={`/vector/background/map.svg#${territory}`}></use>
+              <use key={territory} xlinkHref={`/vector/background/map.svg#${territory}`}></use>
             ))}
           </mask>
         </defs>
