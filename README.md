@@ -12,10 +12,10 @@ You can either download the `generated` directory from the repository or direct 
 2. Ensure you can run `git` and `bash` scripts on your system. [helpful guide](https://github.com/git-guides/install-git)
 3. Ensure you have `npm` and `node` installed on your system.
 4. Ensure you have [`VSCode`](https://code.visualstudio.com/) installed on your system. (or any other code editor of your choice).
-5. Install the recommended extensions for `VSCode`.
-6. Install [`Bun`](https://bun.sh/) on your system.
-7. Clone your forked repository to your local system.
-8. Open the cloned repository in `VSCode`.
+5. Install [`Bun`](https://bun.sh/) on your system.
+6. Clone your forked repository to your local system.
+7. Open the cloned repository in `VSCode`.
+8. Install the recommended extensions for `VSCode` suggested by the repository.
 9. Run `bun install` in the terminal to install the required dependencies.
 10. Optionally: Run `npx playwright install chromium` in the terminal to install the headless browser used for capturing.
 11. Run `bun run storybook` in the terminal to start the storybook server. - Your browser should open up with the storybook.
