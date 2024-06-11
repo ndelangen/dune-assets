@@ -634,6 +634,7 @@ export const GENERATED = z.enum([
   'generated/card/alliance/emperor.jpg',
   'generated/card/alliance/fremen.jpg',
   'generated/card/alliance/harkonnen.jpg',
+  'generated/card/alliance/iduali.jpg',
   'generated/card/alliance/ixian.jpg',
   'generated/card/alliance/moritani.jpg',
   'generated/card/alliance/richese.jpg',

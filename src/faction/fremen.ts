@@ -4,7 +4,7 @@ export default {
   logo: 'generated/token/faction/fremen.jpg',
   sheet: 'generated/sheet/fremen/fremen.pdf',
   shield: 'generated/shield/shield/fremen.jpg',
-  spiceCount: 10,
+  spiceCount: 3,
   leaders: [
     'generated/token/leader/fremen/jamis.jpg',
     'generated/token/leader/fremen/shadout-mapes.jpg',

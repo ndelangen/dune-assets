@@ -107,7 +107,7 @@
       "logo": "generated/token/faction/bene-gesserit.jpg",
       "sheet": "generated/sheet/benegesserit/bene-gesserit.pdf",
       "shield": "generated/shield/shield/bene-gesserit.jpg",
-      "spiceCount": 10,
+      "spiceCount": 5,
       "leaders": [
         "generated/token/leader/benegesserit/alia.jpg",
         "generated/token/leader/benegesserit/mother-ramallo.jpg",
@@ -151,7 +151,7 @@
       "logo": "generated/token/faction/iduali.jpg",
       "sheet": "generated/sheet/iduali/iduali.pdf",
       "shield": "generated/shield/shield/iduali.jpg",
-      "spiceCount": 10,
+      "spiceCount": 5,
       "leaders": [
         "generated/token/leader/iduali/rat-runner.jpg",
         "generated/token/leader/iduali/korba.jpg",
@@ -193,7 +193,7 @@
       "logo": "generated/token/faction/fremen.jpg",
       "sheet": "generated/sheet/fremen/fremen.pdf",
       "shield": "generated/shield/shield/fremen.jpg",
-      "spiceCount": 10,
+      "spiceCount": 3,
       "leaders": [
         "generated/token/leader/fremen/jamis.jpg",
         "generated/token/leader/fremen/shadout-mapes.jpg",
@@ -246,7 +246,7 @@
       "logo": "generated/token/faction/guild.jpg",
       "sheet": "generated/sheet/spacingguild/spacing-guild.pdf",
       "shield": "generated/shield/shield/guild.jpg",
-      "spiceCount": 10,
+      "spiceCount": 5,
       "leaders": [
         "generated/token/leader/guild/representative.jpg",
         "generated/token/leader/guild/soo-soo-sook.jpg",

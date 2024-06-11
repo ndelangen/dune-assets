@@ -4,7 +4,7 @@ export default {
   logo: 'generated/token/faction/bene-gesserit.jpg',
   sheet: 'generated/sheet/benegesserit/bene-gesserit.pdf',
   shield: 'generated/shield/shield/bene-gesserit.jpg',
-  spiceCount: 10,
+  spiceCount: 5,
   leaders: [
     'generated/token/leader/benegesserit/alia.jpg',
     'generated/token/leader/benegesserit/mother-ramallo.jpg',

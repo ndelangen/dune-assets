@@ -4,7 +4,7 @@ export default {
   logo: 'generated/token/faction/guild.jpg',
   sheet: 'generated/sheet/spacingguild/spacing-guild.pdf',
   shield: 'generated/shield/shield/guild.jpg',
-  spiceCount: 10,
+  spiceCount: 5,
   leaders: [
     'generated/token/leader/guild/representative.jpg',
     'generated/token/leader/guild/soo-soo-sook.jpg',

@@ -4,7 +4,7 @@ export default {
   logo: 'generated/token/faction/iduali.jpg',
   sheet: 'generated/sheet/iduali/iduali.pdf',
   shield: 'generated/shield/shield/iduali.jpg',
-  spiceCount: 10,
+  spiceCount: 5,
   leaders: [
     'generated/token/leader/iduali/rat-runner.jpg',
     'generated/token/leader/iduali/korba.jpg',
