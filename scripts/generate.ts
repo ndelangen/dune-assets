@@ -1,5 +1,5 @@
 import { readdir } from 'node:fs/promises';
-import { join, relative } from 'node:path';
+import { basename, join, relative } from 'node:path';
 import { recursiveReaddirFiles } from 'recursive-readdir-files';
 
 async function getFiles(path: string) {
@@ -57,11 +57,79 @@ export const ALL = z.union([
 );
 
 const files = await readdir(join(import.meta.dirname, '../src/faction'));
-await Promise.all(
-  files.map(async (file) => {
-    const { default: faction } = await import(`../src/faction/${file}`);
-    const content = JSON.stringify(faction, null, 2);
-    const path = join(import.meta.dirname, '../generated/faction', file.replace(/\.ts$/, '.json'));
-    await Bun.write(path, content);
-  }),
+const factions = Object.fromEntries(
+  await Promise.all(
+    files.map(async (file) => {
+      const { default: faction } = await import(`../src/faction/${file}`);
+
+      return [file.replace('.ts', ''), faction];
+    }),
+  ),
+);
+
+const backs = generated
+  .filter((f) => f.includes('/back/'))
+  .map((f) => f.replace('.ts', ''))
+  .reduce((acc, f) => {
+    const [, name] = f.split('back');
+
+    acc[basename(name, '.jpg')] = f;
+    return acc;
+  }, {});
+
+const spice = generated
+  .filter((f) => f.includes('/spice/'))
+  .map((f) => f.replace('.ts', ''))
+  .reduce((acc, f) => {
+    const [, name] = f.split('spice');
+
+    acc[basename(name, '.jpg')] = f;
+    return acc;
+  }, {});
+
+const spiceSpecial = generated
+  .filter((f) => f.includes('/spicespecial/'))
+  .map((f) => f.replace('.ts', ''))
+  .reduce((acc, f) => {
+    const [, name] = f.split('spice');
+
+    acc[basename(name, '.jpg')] = f;
+    return acc;
+  }, {});
+
+const treachery = generated
+  .filter((f) => f.includes('/treachery/'))
+  .map((f) => f.replace('.ts', ''))
+  .reduce((acc, f) => {
+    const [, name] = f.split('treachery');
+
+    acc[basename(name, '.jpg')] = f;
+    return acc;
+  }, {});
+
+const techTokens = generated
+  .filter((f) => f.includes('/techtokens/'))
+  .map((f) => f.replace('.ts', ''))
+  .reduce((acc, f) => {
+    const [, name] = f.split('techtokens');
+
+    acc[basename(name, '.jpg')] = f;
+    return acc;
+  }, {});
+
+await Bun.write(
+  join(import.meta.dirname, '../generated', 'index.json'),
+  JSON.stringify(
+    {
+      //
+      factions,
+      backs,
+      spice,
+      spiceSpecial,
+      treachery,
+      techTokens,
+    },
+    null,
+    2,
+  ),
 );
