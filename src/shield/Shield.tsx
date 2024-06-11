@@ -33,7 +33,7 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
             <text
               dominantBaseline="middle"
               fill="white"
-              fontFamily="C_Busorama"
+              fontFamily="C_Desdemona"
               fontSize="130"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
@@ -49,7 +49,7 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
             <text
               dominantBaseline="middle"
               fill="white"
-              fontFamily="C_Busorama"
+              fontFamily="C_Desdemona"
               fontSize="130"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
@@ -62,7 +62,7 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
             <text
               dominantBaseline="middle"
               fill="black"
-              fontFamily="C_Busorama"
+              fontFamily="C_Desdemona"
               fontSize="130"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
@@ -84,7 +84,7 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
           <text
             dominantBaseline="middle"
             fill="black"
-            fontFamily="C_Busorama"
+            fontFamily="C_Desdemona"
             fontSize="130"
             letterSpacing="-0.7"
             style={{ textTransform: 'uppercase' }}

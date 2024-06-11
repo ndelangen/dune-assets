@@ -114,6 +114,27 @@ for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
   await Bun.write('storybook-static/' + path, file);
 }
 
+for (const entry of entries.filter((entry) => entry.startsWith('shield'))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
+  count++;
+  bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector('#storybook-root');
+  await page.waitForLoadState('networkidle');
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+
+  const file = Bun.file(path);
+  await Bun.write('storybook-static/' + path, file);
+}
+
 for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
   const path = `generated/${mapToPath(entry)}.pdf`;
   count++;

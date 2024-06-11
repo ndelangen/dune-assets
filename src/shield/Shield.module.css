@@ -23,10 +23,10 @@
 
 .leader {
   position: absolute;
-  left: calc(50% - calc(595px / 2));
-  top: calc(100px + calc(595px / 2));
-  width: 595px;
-  height: 595px;
+  left: calc(50% - calc(575px / 2));
+  top: calc(125px + calc(575px / 2));
+  width: 575px;
+  height: 575px;
   border-radius: 50%;
 }
 
