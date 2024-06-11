@@ -64,3 +64,13 @@ export const CtairPilru: Story = {
     strength: '5',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
+    image: 'image/leader/rhombor.jpg',
+    logo: 'vector/logo/ixian.svg',
+    name: 'Prince Rhombur Vernius',
+    strength: '',
+  },
+};

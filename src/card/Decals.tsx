@@ -2,14 +2,10 @@ import { FC, SVGProps, useMemo } from 'react';
 import { z } from 'zod';
 
 import { Decal } from '../data/objects';
+import { card } from '../data/sizes';
 
 const foreGroundColor = '#e3dbb3';
 const middleColor = '#847954';
-
-export const size = {
-  width: 900,
-  height: 1263,
-};
 
 const StrokedUse: FC<SVGProps<SVGUseElement>> = ({ filter, ...rest }) => (
   <>
@@ -51,14 +47,14 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
         {fadedDecals.length > 0 && (
           <>
             <mask id={decalsMask} maskUnits="userSpaceOnUse">
-              <rect fill="black" {...size} x={0} y={0} />
+              <rect fill="black" {...card} x={0} y={0} />
               {fadedDecals.map((d, i) => {
                 const width = decalSize.width * d.scale;
                 const height = decalSize.height * d.scale;
                 return (
                   <image
                     key={i}
-                    x={size.width / 2 - width / 2 + d.offset[0]}
+                    x={card.width / 2 - width / 2 + d.offset[0]}
                     y={940 / 2 - height / 2 + d.offset[1]}
                     width={width}
                     height={height}
@@ -71,7 +67,7 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
           </>
         )}
       </defs>
-      {fadedDecals.length > 0 && <rect fill={middleColor} {...size} mask={`url(#${decalsMask})`} />}
+      {fadedDecals.length > 0 && <rect fill={middleColor} {...card} mask={`url(#${decalsMask})`} />}
 
       {nonFadedDecals.map((d, i) => {
         const width = decalSize.width * d.scale;
@@ -81,7 +77,7 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
             key={i}
             {...(d.outline !== false ? stroked : empty)}
             xlinkHref={`${d.id}#root`}
-            x={size.width / 2 - width / 2 + d.offset[0]}
+            x={card.width / 2 - width / 2 + d.offset[0]}
             y={940 / 2 - height / 2 + d.offset[1]}
             width={width}
             height={height}

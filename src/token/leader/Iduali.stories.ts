@@ -154,3 +154,13 @@ export const JavidAlt: Story = {
     strength: '4',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
+    image: 'image/leader/namri.jpg',
+    logo: 'vector/logo/iduali.svg',
+    name: 'Namri',
+    strength: '',
+  },
+};

@@ -64,3 +64,13 @@ export const MordCour: Story = {
     strength: '7',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
+    image: 'image/leader/whitemore-bludd.png',
+    logo: 'vector/logo/ginaz.svg',
+    name: 'Whitmore Bludd',
+    strength: '',
+  },
+};

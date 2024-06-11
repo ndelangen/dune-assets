@@ -1,88 +1,61 @@
-import { type FC } from 'react';
+import { FC } from 'react';
 import { z } from 'zod';
 
-import { CardBack as CardBackType } from '../data/objects';
-import * as styles from './Back.module.css';
+import { Shield } from '../data/objects';
+import { shield as size } from '../data/sizes';
 import { useCountId } from '../utils/useCountId';
-import { card } from '../data/sizes';
+import styles from './Shield.module.css';
 
-export const CardBack: FC<z.infer<typeof CardBackType>> = ({
-  image,
-  background,
-  name,
-  imageOffset,
-  imageScale,
-}) => {
+// shield
+
+export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) => {
   const prefix = useCountId();
 
-  const gradient = `${prefix}gradient`;
-  const textMask = `${prefix}text-mask`;
-  const textShadeMask = `${prefix}text-shade-mask`;
+  const textMask = `_${prefix}text-mask`;
+  const textShadeMask = `_${prefix}text-shade-mask`;
+  const gradient = `_${prefix}gradient`;
 
   return (
-    <div className={styles.card}>
-      <div className={styles.bg} style={{ backgroundImage: `url("${background}")`, filter: 'blur(2px)' }} />
-      <div
-        className={styles.decal_bg_1}
-        style={{
-          filter: 'drop-shadow(0 0 3px black) drop-shadow(0 0 8px black)',
-        }}
-      />
-      <div
-        className={styles.decal_bg_2}
-        style={{
-          filter: 'drop-shadow(0 0 3px black) drop-shadow(0 0 8px black)',
-        }}
-      />
+    <div className={styles.shield} style={{ ...size }}>
+      <img src={logo} className={styles.logo_left} />
+      <img src={logo} className={styles.logo_right} />
+      <img src={leader} className={styles.leader} />
+      <div className={styles.overlay} />
 
-      <div
-        className={styles.icon}
-        style={{
-          marginLeft: imageOffset[0] - ((imageScale - 1) / 2) * 220,
-          marginTop: imageOffset[1] - ((imageScale - 1) / 2) * 220,
-          width: imageScale * 220,
-          height: imageScale * 220,
-        }}
-      >
-        <img src={image} />
-        <img src={image} />
-        <img src={image} />
-      </div>
-
-      <svg className={styles.svg}>
+      <svg {...size} className={styles.svg}>
         <defs>
           <linearGradient id={gradient} x1="0" x2="0" y1="0" y2="1">
             <stop offset="0%" stopColor="#faf8eb" />
             <stop offset="100%" stopColor="#cfaf45" />
           </linearGradient>
           <mask id={textMask} maskUnits="userSpaceOnUse">
-            <rect fill="black" {...card} />
+            <rect fill="black" {...size} />
             <text
               dominantBaseline="middle"
               fill="white"
               fontFamily="C_Busorama"
-              fontSize="90"
+              fontSize="130"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
               textAnchor="middle"
               x="50%"
-              y={card.height - 250}
+              y={size.height - 100 - 250}
             >
               {name}
             </text>
           </mask>
           <mask id={textShadeMask} maskUnits="userSpaceOnUse">
-            <rect fill="black" {...card} />
+            <rect fill="black" {...size} />
             <text
               dominantBaseline="middle"
               fill="white"
               fontFamily="C_Busorama"
-              fontSize="90"
+              fontSize="130"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
               textAnchor="middle"
               x="50%"
-              y={card.height - 250}
+              y={size.height - 100 - 250}
             >
               {name}
             </text>
@@ -90,12 +63,12 @@ export const CardBack: FC<z.infer<typeof CardBackType>> = ({
               dominantBaseline="middle"
               fill="black"
               fontFamily="C_Busorama"
-              fontSize="90"
+              fontSize="130"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
               textAnchor="middle"
               x="50%"
-              y={card.height - 254}
+              y={size.height - 100 - 254}
             >
               {name}
             </text>
@@ -104,6 +77,7 @@ export const CardBack: FC<z.infer<typeof CardBackType>> = ({
           <filter height="300%" id="dropshadow" width="300%" x="-100%" y="-100%">
             <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="8" />
             <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="4" />
+            <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="2" />
           </filter>
         </defs>
         <g filter={`url(#dropshadow)`}>
@@ -111,25 +85,45 @@ export const CardBack: FC<z.infer<typeof CardBackType>> = ({
             dominantBaseline="middle"
             fill="black"
             fontFamily="C_Busorama"
-            fontSize="90"
+            fontSize="130"
             letterSpacing="-0.7"
             style={{ textTransform: 'uppercase' }}
             textAnchor="middle"
             x="50%"
-            y={card.height - 250}
+            y={size.height - 100 - 250}
           >
             {name}
           </text>
         </g>
         <rect
           fill={`url(#${gradient})`}
-          y={card.height - 300}
-          {...card}
-          height={100}
+          y={size.height - 110 - 300}
+          {...size}
+          height={140}
           mask={`url(#${textMask})`}
         />
         <g style={{ mixBlendMode: 'overlay' }}>
-          <rect fill="black" y={card.height - 300} {...card} height={100} mask={`url(#${textShadeMask})`} />
+          <rect
+            fill="black"
+            y={size.height - 110 - 300}
+            {...size}
+            height={140}
+            mask={`url(#${textShadeMask})`}
+          />
+        </g>
+        <g
+          style={{
+            mixBlendMode: 'color-burn',
+            filter: 'saturate(16.2) contrast(2) grayscale(1)',
+          }}
+        >
+          <image
+            {...size}
+            mask={`url(#${textMask})`}
+            x={0}
+            xlinkHref="'/image/shield/shield-base.png"
+            y={-80}
+          />
         </g>
       </svg>
     </div>

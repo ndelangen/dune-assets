@@ -5,8 +5,7 @@ import { Leader } from '../../data/objects';
 import * as styles from './Leader.module.css';
 import { StrokedUse } from '../../block/StrokedUse';
 import { useCountId } from '../../utils/useCountId';
-
-const foreGroundColor = '#ffffff';
+import { tint0 } from '../../utils/colors';
 
 export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, logo, name, strength }) => {
   const iconSize = { width: 41, height: 41 };
@@ -27,7 +26,7 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
 
           <mask id={discMask} maskUnits="userSpaceOnUse">
             <rect width="300" height="300" fill="black" />
-            <circle cx="150" cy="131" fill="white" r="115"></circle>
+            <circle cx="150" cy="131" fill={'white'} r="115"></circle>
             <StrokedUse
               xlinkHref={`${logo}#root`}
               {...iconLocation}
@@ -60,18 +59,18 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
           id="mainCircle"
           mask={`url(#${discMask})`}
           r="115"
-          stroke={foreGroundColor}
+          stroke={tint0}
           strokeWidth={6.6}
         />
 
-        <text className={styles.strength} textAnchor="end" fill={foreGroundColor} x="276" y="186">
+        <text className={styles.strength} textAnchor="end" fill={tint0} x="276" y="186">
           {strength}
         </text>
 
         <text>
           <textPath
             className={styles.name}
-            fill={foreGroundColor}
+            fill={tint0}
             filter={'drop-shadow(0 0 1.75rem rgba(0,0,0,0.6))'}
             startOffset="50%"
             dominant-baseline="middle"
@@ -82,7 +81,7 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
           </textPath>
         </text>
 
-        <StrokedUse xlinkHref={`${logo}#root`} {...iconLocation} {...iconSize} fill={foreGroundColor} />
+        <StrokedUse xlinkHref={`${logo}#root`} {...iconLocation} {...iconSize} fill={tint0} />
       </svg>
     </div>
   );

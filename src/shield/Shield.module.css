@@ -1,0 +1,50 @@
+.shield {
+  position: relative;
+}
+
+.logo_left {
+  position: absolute;
+  top: 670px;
+  left: 335px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  transform: rotate(10deg);
+}
+.logo_right {
+  position: absolute;
+  top: 670px;
+  right: 335px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.leader {
+  position: absolute;
+  left: calc(50% - calc(595px / 2));
+  top: calc(100px + calc(595px / 2));
+  width: 595px;
+  height: 595px;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/image/shield/shield-base.png');
+  z-index: 0.9999;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

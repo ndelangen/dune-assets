@@ -74,3 +74,13 @@ export const KwisatzHaderach: Story = {
     strength: '+2',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
+    image: 'image/leader/paul.jpg',
+    logo: 'vector/logo/atreides.svg',
+    name: `Paul Muad'Dib`,
+    strength: '',
+  },
+};

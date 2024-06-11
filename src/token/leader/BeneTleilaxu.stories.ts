@@ -64,3 +64,13 @@ export const HidarFenAjidica: Story = {
     strength: '5',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
+    image: 'image/leader/masters.jpg',
+    logo: 'vector/logo/bene-tleilaxu.svg',
+    name: 'Masters Council',
+    strength: '',
+  },
+};

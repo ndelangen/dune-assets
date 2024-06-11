@@ -64,3 +64,13 @@ export const LadyFenring: Story = {
     strength: '5',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
+    image: 'image/leader/mohiam.jpg',
+    logo: 'vector/logo/bene-gesserit.svg',
+    name: 'Mother Mohiam',
+    strength: '',
+  },
+};

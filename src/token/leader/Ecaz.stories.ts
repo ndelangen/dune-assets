@@ -64,3 +64,13 @@ export const WhitmoreBludd: Story = {
     strength: '4',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
+    image: 'image/leader/tessia.png',
+    logo: 'vector/logo/ecaz.svg',
+    name: 'Archduke Armand Ecaz',
+    strength: '',
+  },
+};

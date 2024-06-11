@@ -64,3 +64,13 @@ export const Stilgar: Story = {
     strength: '7',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
+    image: 'image/leader/liet.jpg',
+    logo: 'vector/logo/fremen.svg',
+    name: 'Liet Kynes',
+    strength: '',
+  },
+};

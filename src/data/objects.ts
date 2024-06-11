@@ -1,7 +1,5 @@
 import { z } from 'zod';
 
-import { image } from '../block/FactionSynopsis.module.css';
-import { name } from '../token/leader/Leader.module.css';
 import { ALL, LEADERS, LOGO, TROOP, TROOP_MODIFIER } from './generated';
 
 const STRENGTH = z.union([z.number().int(), z.string().length(1)]);
@@ -26,11 +24,8 @@ export const Leader = z.strictObject({
 
 export const Shield = z.strictObject({
   name: z.string(),
-  leader: z.strictObject({
-    name: z.string(),
-    image: LEADERS.or(URL),
-  }),
-  logo: ALL,
+  leader: URL,
+  logo: URL,
   background: URL,
 });
 

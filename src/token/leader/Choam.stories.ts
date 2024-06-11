@@ -74,3 +74,13 @@ export const LadyJalma: Story = {
     strength: '4',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
+    image: 'image/leader/lady-yalma.png',
+    logo: 'vector/logo/choam.svg',
+    name: 'Ur-Director Malina Aru',
+    strength: '',
+  },
+};

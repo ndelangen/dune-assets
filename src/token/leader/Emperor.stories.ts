@@ -64,3 +64,13 @@ export const HasimirFenring: Story = {
     strength: '6',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
+    image: 'image/leader/hasimir.png',
+    logo: 'vector/logo/emperor.svg',
+    name: 'Emperor Shadam IV',
+    strength: '',
+  },
+};

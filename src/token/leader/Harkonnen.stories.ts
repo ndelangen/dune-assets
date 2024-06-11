@@ -64,3 +64,13 @@ export const FeydRautha: Story = {
     strength: '6',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
+    image: 'image/leader/baron.jpg',
+    logo: 'vector/logo/harkonnen.svg',
+    name: 'Baron Vladimir Harkonnen',
+    strength: '',
+  },
+};

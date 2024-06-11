@@ -64,3 +64,13 @@ export const LupinoOrd: Story = {
     strength: '5',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
+    image: 'image/leader/hundro.jpg',
+    logo: 'vector/logo/moritani.svg',
+    name: 'Viscount Hundro Moritani',
+    strength: '',
+  },
+};

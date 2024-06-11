@@ -1,11 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Fan } from './Fan';
 import { FC, PropsWithChildren } from 'react';
-
-const defaultSize = {
-  width: 900,
-  height: 1263,
-};
+import { card } from '../data/sizes';
 
 const squareSize = {
   width: 200,
@@ -15,8 +11,8 @@ const squareSize = {
 const DemoBlock: FC<PropsWithChildren<{ color: string; width?: number; height?: number }>> = ({
   children,
   color = 'lightgrey',
-  width = defaultSize.width,
-  height = defaultSize.height,
+  width = card.width,
+  height = card.height,
 }) => (
   <div
     style={{
@@ -39,7 +35,7 @@ const DemoBlock: FC<PropsWithChildren<{ color: string; width?: number; height?: 
 const meta = {
   component: Fan,
   args: {
-    size: defaultSize,
+    size: card,
     children: [],
   },
 } satisfies Meta<typeof Fan>;
@@ -49,14 +45,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Empty = {
   args: {
-    size: defaultSize,
+    size: card,
     children: [],
   },
 } satisfies Story;
 
 export const Default = {
   args: {
-    size: defaultSize,
+    size: card,
     children: [
       <DemoBlock key="1" color="red">
         1

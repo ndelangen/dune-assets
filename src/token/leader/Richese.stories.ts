@@ -64,3 +64,13 @@ export const EinCalimar: Story = {
     strength: '5',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
+    image: 'image/leader/viscount-tull.png',
+    logo: 'vector/logo/richese.svg',
+    name: 'Count Ilban Richese',
+    strength: '',
+  },
+};

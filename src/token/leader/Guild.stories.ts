@@ -64,3 +64,13 @@ export const StabanTuek: Story = {
     strength: '5',
   },
 };
+
+export const Hero: Story = {
+  args: {
+    background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
+    image: 'image/leader/edric.jpg',
+    logo: 'vector/logo/guild.svg',
+    name: 'Edric',
+    strength: '',
+  },
+};
