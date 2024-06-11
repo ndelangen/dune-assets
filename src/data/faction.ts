@@ -3,13 +3,17 @@ interface Troop {
   back: string;
   count: number;
 }
+interface Card {
+  front: string;
+  back: string;
+}
 
 type Collection = 'bribe' | 'income' | 'reserve';
 
 interface Deck {
   name: string;
-  cards: string[];
-  back: string;
+  cards: Card[];
+  placeholder: string;
 }
 
 export interface Faction {

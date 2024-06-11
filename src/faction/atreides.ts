@@ -26,7 +26,7 @@ export default {
       {
         name: 'Traitor',
         cards: [],
-        back: '/generated/card/back/traitor.jpg',
+        placeholder: '/generated/card/back/traitor.jpg',
       },
     ],
     right: [],
