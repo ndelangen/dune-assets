@@ -17,8 +17,12 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
 
   return (
     <div className={styles.shield} style={{ ...size }}>
-      <img src={logo} className={styles.logo_left} />
-      <img src={logo} className={styles.logo_right} />
+      <div className={[styles.logo, styles.left].join(' ')}>
+        <img src={logo} />
+      </div>
+      <div className={[styles.logo, styles.right].join(' ')}>
+        <img src={logo} />
+      </div>
       <img src={leader} className={styles.leader} />
       <div className={styles.overlay} />
 

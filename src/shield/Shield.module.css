@@ -2,23 +2,46 @@
   position: relative;
 }
 
-.logo_left {
+.logo {
   position: absolute;
   top: 670px;
-  left: 335px;
   width: 520px;
   height: 520px;
   border-radius: 50%;
   transform: rotate(10deg);
-}
-.logo_right {
-  position: absolute;
-  top: 670px;
-  right: 335px;
-  width: 520px;
-  height: 520px;
-  border-radius: 50%;
-  transform: rotate(-10deg);
+
+  & > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: calc(calc(100% - 70%) / 2);
+    left: calc(calc(100% - 70%) / 2);
+
+    width: 70%;
+    height: 70%;
+
+    border-radius: 50%;
+    border: 40px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    z-index: 2;
+    mix-blend-mode: soft-light;
+  }
+
+  &.left {
+    left: 335px;
+    transform: rotate(10deg);
+  }
+  &.right {
+    right: 335px;
+    transform: rotate(-10deg);
+  }
 }
 
 .leader {
