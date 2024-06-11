@@ -45,14 +45,9 @@ export default {
   extras: [],
   troops: [
     {
-      front: 'generated/token/troop/benetleilaxu.jpg',
-      back: 'generated/token/troop/benetleilaxu.jpg',
-      count: 17,
-    },
-    {
-      front: 'generated/token/troop/fedaykin.jpg',
-      back: 'generated/token/troop/fedaykin.jpg',
-      count: 3,
+      front: 'generated/token/troop/bene-tleilaxu.jpg',
+      back: 'generated/token/troop/bene-tleilaxu.jpg',
+      count: 20,
     },
   ],
 } satisfies Faction;
