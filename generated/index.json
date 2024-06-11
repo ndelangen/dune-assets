@@ -1,52 +1,44 @@
 {
   "factions": {
-    "bene-tleilaxu": {
-      "logo": "generated/token/faction/bene-tleilaxu.jpg",
-      "sheet": "generated/sheet/benetleilaxu/bene-tleilaxu.pdf",
-      "shield": "generated/shield/shield/bene-tleilaxu.jpg",
-      "spiceCount": 10,
+    "spacing-guild": {
+      "logo": "generated/token/faction/guild.jpg",
+      "sheet": "generated/sheet/spacingguild/spacing-guild.pdf",
+      "shield": "generated/shield/shield/guild.jpg",
+      "spiceCount": 5,
       "leaders": [
-        "generated/token/leader/benetleilaxu/blin.jpg",
-        "generated/token/leader/benetleilaxu/zoal.jpg",
-        "generated/token/leader/benetleilaxu/wykk.jpg",
-        "generated/token/leader/benetleilaxu/master-zaaf.jpg",
-        "generated/token/leader/benetleilaxu/hidar-fen-ajidica.jpg"
+        "generated/token/leader/guild/representative.jpg",
+        "generated/token/leader/guild/soo-soo-sook.jpg",
+        "generated/token/leader/guild/master-bewt.jpg",
+        "generated/token/leader/guild/esmar-tuek.jpg",
+        "generated/token/leader/guild/staban-tuek.jpg"
       ],
-      "alliance": "generated/card/alliance/bene-tleilaxu.jpg",
+      "alliance": "generated/card/alliance/spacing-guild.jpg",
       "traitors": [
-        "generated/card/traitor/benetleilaxu/blin.jpg",
-        "generated/card/traitor/benetleilaxu/zoal.jpg",
-        "generated/card/traitor/benetleilaxu/wykk.jpg",
-        "generated/card/traitor/benetleilaxu/master-zaaf.jpg",
-        "generated/card/traitor/benetleilaxu/hidar-fen-ajidica.jpg"
+        "generated/card/traitor/guild/representative.jpg",
+        "generated/card/traitor/guild/soo-soo-sook.jpg",
+        "generated/card/traitor/guild/master-bewt.jpg",
+        "generated/card/traitor/guild/esmar-tuek.jpg",
+        "generated/card/traitor/guild/staban-tuek.jpg"
       ],
-      "collections": [],
+      "collections": [
+        "bribe",
+        "income"
+      ],
       "decks": {
         "left": [
-          {
-            "name": "Draw",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          },
           {
             "name": "Discard",
             "cards": [],
             "placeholder": "generated/card/back/traitor.jpg"
           }
         ],
-        "right": [
-          {
-            "name": "Traitor",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ]
+        "right": []
       },
       "extras": [],
       "troops": [
         {
-          "front": "generated/token/troop/bene-tleilaxu.jpg",
-          "back": "generated/token/troop/bene-tleilaxu.jpg",
+          "front": "generated/token/troop/guild.jpg",
+          "back": "generated/token/troop/guild.jpg",
           "count": 20
         }
       ]
@@ -147,6 +139,84 @@
         }
       ]
     },
+    "harkonnen": {
+      "logo": "generated/token/faction/harkonnen.jpg",
+      "sheet": "generated/sheet/harkonnen/harkonnen.pdf",
+      "shield": "generated/shield/shield/harkonnen.jpg",
+      "spiceCount": 10,
+      "leaders": [
+        "generated/token/leader/harkonnen/uman-kudu.jpg",
+        "generated/token/leader/harkonnen/captain-iakin-nefud.jpg",
+        "generated/token/leader/harkonnen/piter-de-vries.jpg",
+        "generated/token/leader/harkonnen/beast-rabban.jpg",
+        "generated/token/leader/harkonnen/feyd-rautha.jpg"
+      ],
+      "alliance": "generated/card/alliance/harkonnen.jpg",
+      "traitors": [
+        "generated/card/traitor/harkonnen/uman-kudu.jpg",
+        "generated/card/traitor/harkonnen/captain-iakin-nefud.jpg",
+        "generated/card/traitor/harkonnen/piter-de-vries.jpg",
+        "generated/card/traitor/harkonnen/beast-rabban.jpg",
+        "generated/card/traitor/harkonnen/feyd-rautha.jpg"
+      ],
+      "collections": [
+        "bribe"
+      ],
+      "decks": {
+        "left": [],
+        "right": []
+      },
+      "extras": [],
+      "troops": [
+        {
+          "front": "generated/token/troop/harkonnen.jpg",
+          "back": "generated/token/troop/harkonnen.jpg",
+          "count": 20
+        }
+      ]
+    },
+    "atreides": {
+      "logo": "generated/token/faction/atreides.jpg",
+      "sheet": "generated/sheet/atreides/atreides.pdf",
+      "shield": "generated/shield/shield/atreides.jpg",
+      "spiceCount": 10,
+      "leaders": [
+        "generated/token/leader/atreides/dr-yueh.jpg",
+        "generated/token/leader/atreides/duncan-idaho.jpg",
+        "generated/token/leader/atreides/gurney-halleck.jpg",
+        "generated/token/leader/atreides/lady-jessica.jpg",
+        "generated/token/leader/atreides/thufir-hawat.jpg"
+      ],
+      "alliance": "generated/card/alliance/atreides.jpg",
+      "traitors": [
+        "generated/card/traitor/atreides/dr-yueh.jpg",
+        "generated/card/traitor/atreides/duncan-idaho.jpg",
+        "generated/card/traitor/atreides/gurney-halleck.jpg",
+        "generated/card/traitor/atreides/lady-jessica.jpg",
+        "generated/card/traitor/atreides/thufir-hawat.jpg"
+      ],
+      "collections": [
+        "bribe"
+      ],
+      "decks": {
+        "left": [
+          {
+            "name": "Discard",
+            "cards": [],
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "troops": [
+        {
+          "front": "generated/token/troop/atreides.jpg",
+          "back": "generated/token/troop/atreides.jpg",
+          "count": 20
+        }
+      ]
+    },
     "iduali": {
       "logo": "generated/token/faction/iduali.jpg",
       "sheet": "generated/sheet/iduali/iduali.pdf",
@@ -185,6 +255,50 @@
         {
           "front": "generated/token/troop/iduali.jpg",
           "back": "generated/token/troop/iduali.jpg",
+          "count": 20
+        }
+      ]
+    },
+    "emperor": {
+      "logo": "generated/token/faction/emperor.jpg",
+      "sheet": "generated/sheet/emperor/emperor.pdf",
+      "shield": "generated/shield/shield/emperor.jpg",
+      "spiceCount": 10,
+      "leaders": [
+        "generated/token/leader/emperor/bashar.jpg",
+        "generated/token/leader/emperor/burseg.jpg",
+        "generated/token/leader/emperor/caid.jpg",
+        "generated/token/leader/emperor/captain-aramsham.jpg",
+        "generated/token/leader/emperor/hasimir-fenring.jpg"
+      ],
+      "alliance": "generated/card/alliance/emperor.jpg",
+      "traitors": [
+        "generated/card/traitor/emperor/bashar.jpg",
+        "generated/card/traitor/emperor/burseg.jpg",
+        "generated/card/traitor/emperor/caid.jpg",
+        "generated/card/traitor/emperor/captain-aramsham.jpg",
+        "generated/card/traitor/emperor/hasimir-fenring.jpg"
+      ],
+      "collections": [
+        "bribe",
+        "income",
+        "reserve"
+      ],
+      "decks": {
+        "left": [
+          {
+            "name": "Discard",
+            "cards": [],
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "troops": [
+        {
+          "front": "generated/token/troop/emperor.jpg",
+          "back": "generated/token/troop/emperor.jpg",
           "count": 20
         }
       ]
@@ -242,167 +356,53 @@
         }
       ]
     },
-    "spacing-guild": {
-      "logo": "generated/token/faction/guild.jpg",
-      "sheet": "generated/sheet/spacingguild/spacing-guild.pdf",
-      "shield": "generated/shield/shield/guild.jpg",
-      "spiceCount": 5,
+    "bene-tleilaxu": {
+      "logo": "generated/token/faction/bene-tleilaxu.jpg",
+      "sheet": "generated/sheet/benetleilaxu/bene-tleilaxu.pdf",
+      "shield": "generated/shield/shield/bene-tleilaxu.jpg",
+      "spiceCount": 10,
       "leaders": [
-        "generated/token/leader/guild/representative.jpg",
-        "generated/token/leader/guild/soo-soo-sook.jpg",
-        "generated/token/leader/guild/master-bewt.jpg",
-        "generated/token/leader/guild/esmar-tuek.jpg",
-        "generated/token/leader/guild/staban-tuek.jpg"
+        "generated/token/leader/benetleilaxu/blin.jpg",
+        "generated/token/leader/benetleilaxu/zoal.jpg",
+        "generated/token/leader/benetleilaxu/wykk.jpg",
+        "generated/token/leader/benetleilaxu/master-zaaf.jpg",
+        "generated/token/leader/benetleilaxu/hidar-fen-ajidica.jpg"
       ],
-      "alliance": "generated/card/alliance/spacing-guild.jpg",
+      "alliance": "generated/card/alliance/bene-tleilaxu.jpg",
       "traitors": [
-        "generated/card/traitor/guild/representative.jpg",
-        "generated/card/traitor/guild/soo-soo-sook.jpg",
-        "generated/card/traitor/guild/master-bewt.jpg",
-        "generated/card/traitor/guild/esmar-tuek.jpg",
-        "generated/card/traitor/guild/staban-tuek.jpg"
+        "generated/card/traitor/benetleilaxu/blin.jpg",
+        "generated/card/traitor/benetleilaxu/zoal.jpg",
+        "generated/card/traitor/benetleilaxu/wykk.jpg",
+        "generated/card/traitor/benetleilaxu/master-zaaf.jpg",
+        "generated/card/traitor/benetleilaxu/hidar-fen-ajidica.jpg"
       ],
-      "collections": [
-        "bribe",
-        "income"
-      ],
+      "collections": [],
       "decks": {
         "left": [
+          {
+            "name": "Draw",
+            "cards": [],
+            "placeholder": "generated/card/back/traitor.jpg"
+          },
           {
             "name": "Discard",
             "cards": [],
             "placeholder": "generated/card/back/traitor.jpg"
           }
         ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/guild.jpg",
-          "back": "generated/token/troop/guild.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "atreides": {
-      "logo": "generated/token/faction/atreides.jpg",
-      "sheet": "generated/sheet/atreides/atreides.pdf",
-      "shield": "generated/shield/shield/atreides.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/atreides/dr-yueh.jpg",
-        "generated/token/leader/atreides/duncan-idaho.jpg",
-        "generated/token/leader/atreides/gurney-halleck.jpg",
-        "generated/token/leader/atreides/lady-jessica.jpg",
-        "generated/token/leader/atreides/thufir-hawat.jpg"
-      ],
-      "alliance": "generated/card/alliance/atreides.jpg",
-      "traitors": [
-        "generated/card/traitor/atreides/dr-yueh.jpg",
-        "generated/card/traitor/atreides/duncan-idaho.jpg",
-        "generated/card/traitor/atreides/gurney-halleck.jpg",
-        "generated/card/traitor/atreides/lady-jessica.jpg",
-        "generated/card/traitor/atreides/thufir-hawat.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [
+        "right": [
           {
-            "name": "Discard",
+            "name": "Traitor",
             "cards": [],
             "placeholder": "generated/card/back/traitor.jpg"
           }
-        ],
-        "right": []
+        ]
       },
       "extras": [],
       "troops": [
         {
-          "front": "generated/token/troop/atreides.jpg",
-          "back": "generated/token/troop/atreides.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "emperor": {
-      "logo": "generated/token/faction/emperor.jpg",
-      "sheet": "generated/sheet/emperor/emperor.pdf",
-      "shield": "generated/shield/shield/emperor.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/emperor/bashar.jpg",
-        "generated/token/leader/emperor/burseg.jpg",
-        "generated/token/leader/emperor/caid.jpg",
-        "generated/token/leader/emperor/captain-aramsham.jpg",
-        "generated/token/leader/emperor/hasimir-fenring.jpg"
-      ],
-      "alliance": "generated/card/alliance/emperor.jpg",
-      "traitors": [
-        "generated/card/traitor/emperor/bashar.jpg",
-        "generated/card/traitor/emperor/burseg.jpg",
-        "generated/card/traitor/emperor/caid.jpg",
-        "generated/card/traitor/emperor/captain-aramsham.jpg",
-        "generated/card/traitor/emperor/hasimir-fenring.jpg"
-      ],
-      "collections": [
-        "bribe",
-        "income",
-        "reserve"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/emperor.jpg",
-          "back": "generated/token/troop/emperor.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "harkonnen": {
-      "logo": "generated/token/faction/harkonnen.jpg",
-      "sheet": "generated/sheet/harkonnen/harkonnen.pdf",
-      "shield": "generated/shield/shield/harkonnen.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/harkonnen/uman-kudu.jpg",
-        "generated/token/leader/harkonnen/captain-iakin-nefud.jpg",
-        "generated/token/leader/harkonnen/piter-de-vries.jpg",
-        "generated/token/leader/harkonnen/beast-rabban.jpg",
-        "generated/token/leader/harkonnen/feyd-rautha.jpg"
-      ],
-      "alliance": "generated/card/alliance/harkonnen.jpg",
-      "traitors": [
-        "generated/card/traitor/harkonnen/uman-kudu.jpg",
-        "generated/card/traitor/harkonnen/captain-iakin-nefud.jpg",
-        "generated/card/traitor/harkonnen/piter-de-vries.jpg",
-        "generated/card/traitor/harkonnen/beast-rabban.jpg",
-        "generated/card/traitor/harkonnen/feyd-rautha.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/harkonnen.jpg",
-          "back": "generated/token/troop/harkonnen.jpg",
+          "front": "generated/token/troop/bene-tleilaxu.jpg",
+          "back": "generated/token/troop/bene-tleilaxu.jpg",
           "count": 20
         }
       ]
