@@ -24,6 +24,7 @@
   "dependencies": {
     "@storybook/addon-essentials": "^8.1.6",
     "@storybook/blocks": "^8.1.6",
+    "recursive-readdir-files": "^2.3.1",
     "@storybook/cli": "^8.1.6",
     "@storybook/react": "^8.1.6",
     "@storybook/react-vite": "^8.1.6",

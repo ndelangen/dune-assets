@@ -1,11 +1,11 @@
 import { z } from 'zod';
 
-import { ALL, LEADERS, LOGO, TROOP, TROOP_MODIFIER } from './generated';
+import { ALL, GENERATED, LEADERS, LOGO, TROOP, TROOP_MODIFIER } from './generated';
 
 const STRENGTH = z.union([z.number().int(), z.string().length(1)]);
 const OFFSET = z.tuple([z.number(), z.number()]);
 const SCALE = z.number().min(0).max(1);
-const URL = z.string().url();
+const URL = GENERATED.or(z.string().url());
 const COLOR = z.string().regex(/^#[0-9a-f]{6}$/i);
 
 const RULE = z.strictObject({

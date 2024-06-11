@@ -1,11 +1,15 @@
+import { z } from 'zod';
+
+import { GENERATED } from './generated';
+
 interface Troop {
-  front: string;
-  back: string;
+  front: z.infer<typeof GENERATED>;
+  back: z.infer<typeof GENERATED>;
   count: number;
 }
 interface Card {
-  front: string;
-  back: string;
+  front: z.infer<typeof GENERATED>;
+  back: z.infer<typeof GENERATED>;
 }
 
 type Collection = 'bribe' | 'income' | 'reserve';
@@ -13,24 +17,24 @@ type Collection = 'bribe' | 'income' | 'reserve';
 interface Deck {
   name: string;
   cards: Card[];
-  placeholder: string;
+  placeholder: z.infer<typeof GENERATED>;
 }
 
 export interface Faction {
-  sheet: string;
-  leaders: string[];
-  traitors: string[];
+  sheet: z.infer<typeof GENERATED>;
+  leaders: z.infer<typeof GENERATED>[];
+  traitors: z.infer<typeof GENERATED>[];
   troops: Troop[];
-  alliance: string;
+  alliance: z.infer<typeof GENERATED>;
   collections: Collection[];
   decks: {
     left: Deck[];
     right: Deck[];
   };
-  planet?: string;
-  planetCard?: string;
-  shield: string;
+  planet?: z.infer<typeof GENERATED>;
+  planetCard?: z.infer<typeof GENERATED>;
+  shield: z.infer<typeof GENERATED>;
   spiceCount: number;
-  logo: string;
+  logo: z.infer<typeof GENERATED>;
   extras: any[];
 }

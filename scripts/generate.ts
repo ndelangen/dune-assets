@@ -1,5 +1,6 @@
 import { readdir } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
+import { recursiveReaddirFiles } from 'recursive-readdir-files';
 
 async function getFiles(path: string) {
   const files = await readdir(join(import.meta.dirname, '..', 'public', path));
@@ -17,6 +18,10 @@ const logo = await getFiles('vector/logo');
 const troop = await getFiles('vector/troop');
 const troop_modifier = await getFiles('vector/troop_modifier');
 
+const generated = (await recursiveReaddirFiles(join(import.meta.dirname, '..', 'generated')))
+  .map((f) => relative(join(import.meta.dirname, '..'), f.path))
+  .filter((f) => f.match(/\.(png|jpg|pdf)$/));
+
 const enums = {
   generic,
   logo,
@@ -25,6 +30,7 @@ const enums = {
   leaders,
   troop,
   troop_modifier,
+  generated,
 };
 
 await Bun.write(
