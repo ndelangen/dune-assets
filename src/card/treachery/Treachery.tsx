@@ -6,11 +6,8 @@ import * as styles from '../Card.module.css';
 import * as unique from './Treachery.module.css';
 import { MarkdownContent } from '../../block/MarkdownContent';
 import { useCountId } from '../../utils/useCountId';
-import { StrokedUse } from '../../block/StrokedUse';
-import { size, FrontDecals } from '../Decals';
+import { FrontDecals } from '../Decals';
 import { card } from '../../data/sizes';
-
-const foreGroundColor = '#e3dbb3';
 
 export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
   name,
@@ -34,7 +31,7 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
 
       {/* decals */}
       {decals.length > 0 && (
-        <svg {...size} viewBox={`0 0 ${card.width} ${card.height}`} className={unique.overlay}>
+        <svg {...card} viewBox={`0 0 ${card.width} ${card.height}`} className={unique.overlay}>
           <FrontDecals {...{ decals, prefix }} />
         </svg>
       )}
