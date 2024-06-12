@@ -89,7 +89,7 @@ export const Carryalls: Story = {
 
 export const Kanly: Story = {
   args: {
-    background: `url('/generated/utils/background/tech-pink.jpg') top left / cover no-repeat`,
+    background: `url('/generated/utils/background/tech-white.jpg') top left / cover no-repeat`,
     image: 'vector/decal/kanly.svg',
     circle: false,
     top: 'Kanly',
