@@ -4,10 +4,9 @@
 
 .logo {
   position: absolute;
-  top: 670px;
-  width: 520px;
-  height: 520px;
-  border-radius: 50%;
+  top: calc(670px / 2);
+  width: calc(520px / 2);
+  height: calc(520px / 2);
   transform: rotate(10deg);
 
   & > img {
@@ -28,29 +27,28 @@
     height: 70%;
 
     border-radius: 50%;
-    border: 40px solid rgba(255, 255, 255, 0.4);
+    border: 20px solid rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
     z-index: 2;
     mix-blend-mode: soft-light;
   }
 
   &.left {
-    left: 335px;
+    left: calc(335px / 2);
     transform: rotate(10deg);
   }
   &.right {
-    right: 335px;
+    right: calc(335px / 2);
     transform: rotate(-10deg);
   }
 }
 
 .leader {
   position: absolute;
-  left: calc(50% - calc(575px / 2));
-  top: calc(125px + calc(575px / 2));
-  width: 575px;
-  height: 575px;
-  border-radius: 50%;
+  left: calc(50% - calc(575px / 4));
+  top: calc(calc(125px / 2) + calc(575px / 4));
+  width: calc(575px / 2);
+  height: calc(575px / 2);
 }
 
 .overlay {
@@ -59,7 +57,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/image/shield/shield-base.png');
+  background: url('/image/shield/shield-base.png') top center / cover no-repeat;
   z-index: 0.9999;
 }
 

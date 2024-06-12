@@ -38,12 +38,12 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
               dominantBaseline="middle"
               fill="white"
               fontFamily="C_Desdemona"
-              fontSize="130"
+              fontSize="65"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
               textAnchor="middle"
               x="50%"
-              y={size.height - 100 - 250}
+              y={size.height - 50 - 125}
             >
               {name}
             </text>
@@ -54,12 +54,12 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
               dominantBaseline="middle"
               fill="white"
               fontFamily="C_Desdemona"
-              fontSize="130"
+              fontSize="65"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
               textAnchor="middle"
               x="50%"
-              y={size.height - 100 - 250}
+              y={size.height - 50 - 125}
             >
               {name}
             </text>
@@ -67,12 +67,12 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
               dominantBaseline="middle"
               fill="black"
               fontFamily="C_Desdemona"
-              fontSize="130"
+              fontSize="65"
               letterSpacing="-0.7"
               style={{ textTransform: 'uppercase' }}
               textAnchor="middle"
               x="50%"
-              y={size.height - 100 - 254}
+              y={size.height - 50 - 254 / 2}
             >
               {name}
             </text>
@@ -89,29 +89,29 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
             dominantBaseline="middle"
             fill="black"
             fontFamily="C_Desdemona"
-            fontSize="130"
+            fontSize="75"
             letterSpacing="-0.7"
             style={{ textTransform: 'uppercase' }}
             textAnchor="middle"
             x="50%"
-            y={size.height - 100 - 250}
+            y={size.height - 50 - 125}
           >
             {name}
           </text>
         </g>
         <rect
           fill={`url(#${gradient})`}
-          y={size.height - 110 - 300}
+          y={size.height - 55 - 150}
           {...size}
-          height={140}
+          height={70}
           mask={`url(#${textMask})`}
         />
         <g style={{ mixBlendMode: 'overlay' }}>
           <rect
             fill="black"
-            y={size.height - 110 - 300}
+            y={size.height - 55 - 150}
             {...size}
-            height={140}
+            height={70}
             mask={`url(#${textShadeMask})`}
           />
         </g>
@@ -126,7 +126,7 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
             mask={`url(#${textMask})`}
             x={0}
             xlinkHref="'/image/shield/shield-base.png"
-            y={-80}
+            y={-40}
           />
         </g>
       </svg>

@@ -66,7 +66,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
   await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
   await Bun.write('storybook-static/' + path, file);
@@ -87,7 +87,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
   await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
   await Bun.write('storybook-static/' + path, file);
@@ -108,7 +108,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
   await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device' });
+  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
   await Bun.write('storybook-static/' + path, file);
@@ -129,7 +129,9 @@ for (const entry of entries.filter((entry) => entry.startsWith('shield'))) {
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
   await page.waitForSelector('#storybook-root');
   await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root > *:first-child').screenshot({ type: 'jpeg', path, scale: 'device' });
+  await page
+    .locator('#storybook-root > *:first-child')
+    .screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
   await Bun.write('storybook-static/' + path, file);

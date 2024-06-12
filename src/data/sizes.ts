@@ -9,8 +9,8 @@ export const disc: Size = {
 };
 
 export const shield: Size = {
-  width: 3216,
-  height: 1611,
+  width: 3216 / 2,
+  height: 1610 / 2,
 };
 
 interface Size {

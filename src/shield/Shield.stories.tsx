@@ -3,9 +3,6 @@ import { ShieldAsset } from './Shield';
 
 const meta = {
   component: ShieldAsset,
-  parameters: {
-    layout: 'fullscreen',
-  },
 } satisfies Meta<typeof ShieldAsset>;
 
 export default meta;
