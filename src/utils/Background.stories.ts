@@ -418,6 +418,25 @@ export const TechYellow: Story = {
   },
 };
 
+export const TechBlood: Story = {
+  args: {
+    image: 'image/texture/003.jpg',
+    colors: [
+      '#7E0002',
+      {
+        type: 'radial',
+        stops: [
+          ['#DE9E31', 0.35],
+          ['#FCFAAD', 0.35],
+          ['#DE9E31', 1],
+        ],
+      },
+    ],
+    opacity: 300,
+    strength: 200,
+  },
+};
+
 export const TechRed: Story = {
   args: {
     image: 'image/texture/003.jpg',

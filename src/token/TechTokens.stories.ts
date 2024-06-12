@@ -97,3 +97,14 @@ export const Kanly: Story = {
     size: { width: 120, height: 120 },
   },
 };
+
+export const WaterStealing: Story = {
+  args: {
+    background: `url('/generated/utils/background/tech-blood.jpg') top left / cover no-repeat`,
+    image: 'vector/decal/drops.svg',
+    circle: false,
+    top: 'Water Stealing',
+    bottom: 'When a leader is killed\nFremen leaders do not trigger',
+    size: { width: 120, height: 120 },
+  },
+};
