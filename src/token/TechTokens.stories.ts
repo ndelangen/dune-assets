@@ -100,7 +100,7 @@ export const Kanly: Story = {
 
 export const WaterStealing: Story = {
   args: {
-    background: `url('/generated/utils/background/tech-blood.jpg') top left / cover no-repeat`,
+    background: `url('/generated/utils/background/tech-maroon.jpg') top left / cover no-repeat`,
     image: 'vector/decal/drops.svg',
     circle: false,
     top: 'Water Stealing',

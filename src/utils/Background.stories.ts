@@ -418,7 +418,7 @@ export const TechYellow: Story = {
   },
 };
 
-export const TechBlood: Story = {
+export const TechSun: Story = {
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -470,8 +470,8 @@ export const TechMaroon: Story = {
         ],
       },
     ],
-    opacity: 100,
-    strength: 0,
+    opacity: 500,
+    strength: 50,
   },
 };
 
