@@ -1,3 +1,4 @@
+import { sort } from '@tamtamchik/json-deep-sort';
 import { readdir } from 'node:fs/promises';
 import { basename, join, relative } from 'node:path';
 import { recursiveReaddirFiles } from 'recursive-readdir-files';
@@ -120,7 +121,7 @@ const techTokens = generated
 await Bun.write(
   join(import.meta.dirname, '../generated', 'index.json'),
   JSON.stringify(
-    {
+    sort({
       //
       factions,
       backs,
@@ -128,7 +129,7 @@ await Bun.write(
       spiceSpecial,
       treachery,
       techTokens,
-    },
+    }),
     null,
     2,
   ),

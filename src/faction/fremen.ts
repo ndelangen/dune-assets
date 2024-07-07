@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/fremen/chani.jpg',
     'generated/token/leader/fremen/stilgar.jpg',
   ],
+  colors: ['Yellow', 'Brown', 'Orange', 'White'],
   alliance: 'generated/card/alliance/fremen.jpg',
   traitors: [
     'generated/card/traitor/fremen/jamis.jpg',

@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/iduali/smuggler.jpg',
     'generated/token/leader/iduali/sabiha.jpg',
   ],
+  colors: ['Brown', 'Orange'],
   alliance: 'generated/card/alliance/iduali.jpg',
   traitors: [
     'generated/card/traitor/iduali/rat-runner.jpg',

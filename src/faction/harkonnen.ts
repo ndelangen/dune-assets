@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/harkonnen/beast-rabban.jpg',
     'generated/token/leader/harkonnen/feyd-rautha.jpg',
   ],
+  colors: ['White', 'Brown'],
   alliance: 'generated/card/alliance/harkonnen.jpg',
   traitors: [
     'generated/card/traitor/harkonnen/uman-kudu.jpg',

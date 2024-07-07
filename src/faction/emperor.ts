@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/emperor/captain-aramsham.jpg',
     'generated/token/leader/emperor/hasimir-fenring.jpg',
   ],
+  colors: ['Red', 'Orange', 'Brown'],
   alliance: 'generated/card/alliance/emperor.jpg',
   traitors: [
     'generated/card/traitor/emperor/bashar.jpg',

@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/benegesserit/princes-irulan.jpg',
     'generated/token/leader/benegesserit/lady-fenring.jpg',
   ],
+  colors: ['Blue', 'Teal', 'Pink'],
   alliance: 'generated/card/alliance/bene-gesserit.jpg',
   traitors: [
     'generated/card/traitor/benegesserit/alia.jpg',

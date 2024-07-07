@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/guild/esmar-tuek.jpg',
     'generated/token/leader/guild/staban-tuek.jpg',
   ],
+  colors: ['Orange', 'Brown', 'Red', 'Pink', 'Yellow'],
   alliance: 'generated/card/alliance/spacing-guild.jpg',
   traitors: [
     'generated/card/traitor/guild/representative.jpg',

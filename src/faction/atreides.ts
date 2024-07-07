@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/atreides/lady-jessica.jpg',
     'generated/token/leader/atreides/thufir-hawat.jpg',
   ],
+  colors: ['Green', 'Teal', 'Brown', 'Yellow'],
   alliance: 'generated/card/alliance/atreides.jpg',
   traitors: [
     'generated/card/traitor/atreides/dr-yueh.jpg',

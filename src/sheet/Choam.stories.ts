@@ -15,8 +15,7 @@ export const Choam: Story = {
   args: {
     name: 'Choam',
     logo: '/generated/token/faction/choam.jpg',
-    start:
-      '15 forces in reserves. 5 forces in any unoccupied territory or the polar sink.',
+    start: '15 forces in reserves. 5 forces in any unoccupied territory or the polar sink.',
     revival: '1 troop free. Start with 15 spice.',
     color: '#e3dbb3',
     alliance: {
@@ -50,7 +49,8 @@ export const Choam: Story = {
       {
         title: 'IXIAN CONTRACT',
         text: `When you buy a treachery card, you may swap it with the next card up for bid this turn. Atreides looks. You may use this after Ixians tech (Ixians decide before you).`,
-        karama: 'You cannot swap with the card up for bid. Must be karama’ed before CHOAM looks at the card they swap with.',
+        karama:
+          'You cannot swap with the card up for bid. Must be karama’ed before CHOAM looks at the card they swap with.',
       },
       {
         title: 'TLEILAXU CONTRACT',

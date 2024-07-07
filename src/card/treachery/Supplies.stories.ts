@@ -23,7 +23,7 @@ export const ErnocSeed: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Play as part of your Battle Plan.\n\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Snooper.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Combat phase.',
+    text: "Play as part of your Battle Plan.\n\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Combat phase.",
     subName: 'Weapon - Poison',
   },
 };
@@ -43,7 +43,7 @@ export const Trishula: Story = {
         scale: 0.6,
       },
     ],
-    text: 'Play as part of your Battle Plan.\n\nKills opponent\'s leader before battle is resolved. Opponent may protect leader with a Shield.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Battle phase.',
+    text: "Play as part of your Battle Plan.\n\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\n\nYou may keep this card if you win this battle.\n\nReturn this card to the Supplies! cache when it is lost, or at the end of the Battle phase.",
     subName: 'Weapon - Projectile',
   },
 };

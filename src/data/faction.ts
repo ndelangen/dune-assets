@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 import { GENERATED } from './generated';
 
+type Color = 'White' | 'Brown' | 'Red' | 'Orange' | 'Yellow' | 'Green' | 'Teal' | 'Blue' | 'Purple' | 'Pink';
 interface Troop {
   front: z.infer<typeof GENERATED>;
   back: z.infer<typeof GENERATED>;
@@ -21,6 +22,7 @@ interface Deck {
 }
 
 export interface Faction {
+  colors: Color[];
   sheet: z.infer<typeof GENERATED>;
   leaders: z.infer<typeof GENERATED>[];
   traitors: z.infer<typeof GENERATED>[];

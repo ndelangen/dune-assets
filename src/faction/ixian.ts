@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/ixian/tessia-vernius.jpg',
     'generated/token/leader/ixian/ctair-pilru.jpg',
   ],
+  colors: ['Teal', 'Blue', 'Green', 'White'],
   alliance: 'generated/card/alliance/ixian.jpg',
   traitors: [
     'generated/card/traitor/ixian/cammar-pilru.jpg',

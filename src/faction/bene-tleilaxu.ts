@@ -12,6 +12,7 @@ export default {
     'generated/token/leader/benetleilaxu/master-zaaf.jpg',
     'generated/token/leader/benetleilaxu/hidar-fen-ajidica.jpg',
   ],
+  colors: ['Purple', 'Pink'],
   alliance: 'generated/card/alliance/bene-tleilaxu.jpg',
   traitors: [
     'generated/card/traitor/benetleilaxu/blin.jpg',
