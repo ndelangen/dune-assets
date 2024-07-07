@@ -1,413 +1,4 @@
 {
-  "factions": {
-    "spacing-guild": {
-      "logo": "generated/token/faction/guild.jpg",
-      "sheet": "generated/sheet/spacingguild/spacing-guild.pdf",
-      "shield": "generated/shield/shield/guild.jpg",
-      "spiceCount": 5,
-      "leaders": [
-        "generated/token/leader/guild/representative.jpg",
-        "generated/token/leader/guild/soo-soo-sook.jpg",
-        "generated/token/leader/guild/master-bewt.jpg",
-        "generated/token/leader/guild/esmar-tuek.jpg",
-        "generated/token/leader/guild/staban-tuek.jpg"
-      ],
-      "alliance": "generated/card/alliance/spacing-guild.jpg",
-      "traitors": [
-        "generated/card/traitor/guild/representative.jpg",
-        "generated/card/traitor/guild/soo-soo-sook.jpg",
-        "generated/card/traitor/guild/master-bewt.jpg",
-        "generated/card/traitor/guild/esmar-tuek.jpg",
-        "generated/card/traitor/guild/staban-tuek.jpg"
-      ],
-      "collections": [
-        "bribe",
-        "income"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/guild.jpg",
-          "back": "generated/token/troop/guild.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "ixian": {
-      "logo": "generated/token/faction/ixian.jpg",
-      "sheet": "generated/sheet/ixian/ixian.pdf",
-      "shield": "generated/shield/shield/ixian.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/ixian/cammar-pilru.jpg",
-        "generated/token/leader/ixian/kailia-vernius.jpg",
-        "generated/token/leader/ixian/dominic-vernius.jpg",
-        "generated/token/leader/ixian/tessia-vernius.jpg",
-        "generated/token/leader/ixian/ctair-pilru.jpg"
-      ],
-      "alliance": "generated/card/alliance/ixian.jpg",
-      "traitors": [
-        "generated/card/traitor/ixian/cammar-pilru.jpg",
-        "generated/card/traitor/ixian/kailia-vernius.jpg",
-        "generated/card/traitor/ixian/dominic-vernius.jpg",
-        "generated/card/traitor/ixian/tessia-vernius.jpg",
-        "generated/card/traitor/ixian/ctair-pilru.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/cyborg.jpg",
-          "back": "generated/token/troop/cyborg.jpg",
-          "count": 9
-        },
-        {
-          "front": "generated/token/troop/upgraded-cyborg.jpg",
-          "back": "generated/token/troop/upgraded-cyborg.jpg",
-          "count": 9
-        },
-        {
-          "front": "generated/token/troop/suboid.jpg",
-          "back": "generated/token/troop/suboid.jpg",
-          "count": 11
-        }
-      ]
-    },
-    "bene-gesserit": {
-      "logo": "generated/token/faction/bene-gesserit.jpg",
-      "sheet": "generated/sheet/benegesserit/bene-gesserit.pdf",
-      "shield": "generated/shield/shield/bene-gesserit.jpg",
-      "spiceCount": 5,
-      "leaders": [
-        "generated/token/leader/benegesserit/alia.jpg",
-        "generated/token/leader/benegesserit/mother-ramallo.jpg",
-        "generated/token/leader/benegesserit/wanna-yueh.jpg",
-        "generated/token/leader/benegesserit/princes-irulan.jpg",
-        "generated/token/leader/benegesserit/lady-fenring.jpg"
-      ],
-      "alliance": "generated/card/alliance/bene-gesserit.jpg",
-      "traitors": [
-        "generated/card/traitor/benegesserit/alia.jpg",
-        "generated/card/traitor/benegesserit/mother-ramolla.jpg",
-        "generated/card/traitor/benegesserit/wanna-yueh.jpg",
-        "generated/card/traitor/benegesserit/princes-irulan.jpg",
-        "generated/card/traitor/benegesserit/lady-fenring.jpg"
-      ],
-      "collections": [
-        "bribe",
-        "income",
-        "reserve"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/bene-gesserit.jpg",
-          "back": "generated/token/troop/advisor.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "harkonnen": {
-      "logo": "generated/token/faction/harkonnen.jpg",
-      "sheet": "generated/sheet/harkonnen/harkonnen.pdf",
-      "shield": "generated/shield/shield/harkonnen.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/harkonnen/uman-kudu.jpg",
-        "generated/token/leader/harkonnen/captain-iakin-nefud.jpg",
-        "generated/token/leader/harkonnen/piter-de-vries.jpg",
-        "generated/token/leader/harkonnen/beast-rabban.jpg",
-        "generated/token/leader/harkonnen/feyd-rautha.jpg"
-      ],
-      "alliance": "generated/card/alliance/harkonnen.jpg",
-      "traitors": [
-        "generated/card/traitor/harkonnen/uman-kudu.jpg",
-        "generated/card/traitor/harkonnen/captain-iakin-nefud.jpg",
-        "generated/card/traitor/harkonnen/piter-de-vries.jpg",
-        "generated/card/traitor/harkonnen/beast-rabban.jpg",
-        "generated/card/traitor/harkonnen/feyd-rautha.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/harkonnen.jpg",
-          "back": "generated/token/troop/harkonnen.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "atreides": {
-      "logo": "generated/token/faction/atreides.jpg",
-      "sheet": "generated/sheet/atreides/atreides.pdf",
-      "shield": "generated/shield/shield/atreides.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/atreides/dr-yueh.jpg",
-        "generated/token/leader/atreides/duncan-idaho.jpg",
-        "generated/token/leader/atreides/gurney-halleck.jpg",
-        "generated/token/leader/atreides/lady-jessica.jpg",
-        "generated/token/leader/atreides/thufir-hawat.jpg"
-      ],
-      "alliance": "generated/card/alliance/atreides.jpg",
-      "traitors": [
-        "generated/card/traitor/atreides/dr-yueh.jpg",
-        "generated/card/traitor/atreides/duncan-idaho.jpg",
-        "generated/card/traitor/atreides/gurney-halleck.jpg",
-        "generated/card/traitor/atreides/lady-jessica.jpg",
-        "generated/card/traitor/atreides/thufir-hawat.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/atreides.jpg",
-          "back": "generated/token/troop/atreides.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "iduali": {
-      "logo": "generated/token/faction/iduali.jpg",
-      "sheet": "generated/sheet/iduali/iduali.pdf",
-      "shield": "generated/shield/shield/iduali.jpg",
-      "spiceCount": 5,
-      "leaders": [
-        "generated/token/leader/iduali/rat-runner.jpg",
-        "generated/token/leader/iduali/korba.jpg",
-        "generated/token/leader/iduali/javid.jpg",
-        "generated/token/leader/iduali/smuggler.jpg",
-        "generated/token/leader/iduali/sabiha.jpg"
-      ],
-      "alliance": "generated/card/alliance/iduali.jpg",
-      "traitors": [
-        "generated/card/traitor/iduali/rat-runner.jpg",
-        "generated/card/traitor/iduali/korba.jpg",
-        "generated/card/traitor/iduali/javid.jpg",
-        "generated/card/traitor/iduali/smuggler.jpg",
-        "generated/card/traitor/iduali/sabiha.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/iduali.jpg",
-          "back": "generated/token/troop/iduali.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "emperor": {
-      "logo": "generated/token/faction/emperor.jpg",
-      "sheet": "generated/sheet/emperor/emperor.pdf",
-      "shield": "generated/shield/shield/emperor.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/emperor/bashar.jpg",
-        "generated/token/leader/emperor/burseg.jpg",
-        "generated/token/leader/emperor/caid.jpg",
-        "generated/token/leader/emperor/captain-aramsham.jpg",
-        "generated/token/leader/emperor/hasimir-fenring.jpg"
-      ],
-      "alliance": "generated/card/alliance/emperor.jpg",
-      "traitors": [
-        "generated/card/traitor/emperor/bashar.jpg",
-        "generated/card/traitor/emperor/burseg.jpg",
-        "generated/card/traitor/emperor/caid.jpg",
-        "generated/card/traitor/emperor/captain-aramsham.jpg",
-        "generated/card/traitor/emperor/hasimir-fenring.jpg"
-      ],
-      "collections": [
-        "bribe",
-        "income",
-        "reserve"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": []
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/emperor.jpg",
-          "back": "generated/token/troop/emperor.jpg",
-          "count": 20
-        }
-      ]
-    },
-    "fremen": {
-      "logo": "generated/token/faction/fremen.jpg",
-      "sheet": "generated/sheet/fremen/fremen.pdf",
-      "shield": "generated/shield/shield/fremen.jpg",
-      "spiceCount": 3,
-      "leaders": [
-        "generated/token/leader/fremen/jamis.jpg",
-        "generated/token/leader/fremen/shadout-mapes.jpg",
-        "generated/token/leader/fremen/otheym.jpg",
-        "generated/token/leader/fremen/chani.jpg",
-        "generated/token/leader/fremen/stilgar.jpg"
-      ],
-      "alliance": "generated/card/alliance/fremen.jpg",
-      "traitors": [
-        "generated/card/traitor/fremen/jamis.jpg",
-        "generated/card/traitor/fremen/shadout-mapes.jpg",
-        "generated/card/traitor/fremen/otheym.jpg",
-        "generated/card/traitor/fremen/chani.jpg",
-        "generated/card/traitor/fremen/stilgar.jpg"
-      ],
-      "collections": [
-        "bribe"
-      ],
-      "decks": {
-        "left": [
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": [
-          {
-            "name": "Storm",
-            "cards": [],
-            "placeholder": "generated/card/back/storm.jpg"
-          }
-        ]
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/fremen.jpg",
-          "back": "generated/token/troop/fremen.jpg",
-          "count": 17
-        },
-        {
-          "front": "generated/token/troop/fedaykin.jpg",
-          "back": "generated/token/troop/fedaykin.jpg",
-          "count": 3
-        }
-      ]
-    },
-    "bene-tleilaxu": {
-      "logo": "generated/token/faction/bene-tleilaxu.jpg",
-      "sheet": "generated/sheet/benetleilaxu/bene-tleilaxu.pdf",
-      "shield": "generated/shield/shield/bene-tleilaxu.jpg",
-      "spiceCount": 10,
-      "leaders": [
-        "generated/token/leader/benetleilaxu/blin.jpg",
-        "generated/token/leader/benetleilaxu/zoal.jpg",
-        "generated/token/leader/benetleilaxu/wykk.jpg",
-        "generated/token/leader/benetleilaxu/master-zaaf.jpg",
-        "generated/token/leader/benetleilaxu/hidar-fen-ajidica.jpg"
-      ],
-      "alliance": "generated/card/alliance/bene-tleilaxu.jpg",
-      "traitors": [
-        "generated/card/traitor/benetleilaxu/blin.jpg",
-        "generated/card/traitor/benetleilaxu/zoal.jpg",
-        "generated/card/traitor/benetleilaxu/wykk.jpg",
-        "generated/card/traitor/benetleilaxu/master-zaaf.jpg",
-        "generated/card/traitor/benetleilaxu/hidar-fen-ajidica.jpg"
-      ],
-      "collections": [],
-      "decks": {
-        "left": [
-          {
-            "name": "Draw",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          },
-          {
-            "name": "Discard",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ],
-        "right": [
-          {
-            "name": "Traitor",
-            "cards": [],
-            "placeholder": "generated/card/back/traitor.jpg"
-          }
-        ]
-      },
-      "extras": [],
-      "troops": [
-        {
-          "front": "generated/token/troop/bene-tleilaxu.jpg",
-          "back": "generated/token/troop/bene-tleilaxu.jpg",
-          "count": 20
-        }
-      ]
-    }
-  },
   "backs": {
     "alliance": "generated/card/back/alliance.jpg",
     "event": "generated/card/back/event.jpg",
@@ -425,6 +16,462 @@
     "traitor": "generated/card/back/traitor.jpg",
     "treachery": "generated/card/back/treachery.jpg",
     "voice": "generated/card/back/voice.jpg"
+  },
+  "factions": {
+    "atreides": {
+      "alliance": "generated/card/alliance/atreides.jpg",
+      "collections": [
+        "bribe"
+      ],
+      "colors": [
+        "Green",
+        "Teal",
+        "Brown",
+        "Yellow"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/atreides/dr-yueh.jpg",
+        "generated/token/leader/atreides/duncan-idaho.jpg",
+        "generated/token/leader/atreides/gurney-halleck.jpg",
+        "generated/token/leader/atreides/lady-jessica.jpg",
+        "generated/token/leader/atreides/thufir-hawat.jpg"
+      ],
+      "logo": "generated/token/faction/atreides.jpg",
+      "sheet": "generated/sheet/atreides/atreides.pdf",
+      "shield": "generated/shield/shield/atreides.jpg",
+      "spiceCount": 10,
+      "traitors": [
+        "generated/card/traitor/atreides/dr-yueh.jpg",
+        "generated/card/traitor/atreides/duncan-idaho.jpg",
+        "generated/card/traitor/atreides/gurney-halleck.jpg",
+        "generated/card/traitor/atreides/lady-jessica.jpg",
+        "generated/card/traitor/atreides/thufir-hawat.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/atreides.jpg",
+          "count": 20,
+          "front": "generated/token/troop/atreides.jpg"
+        }
+      ]
+    },
+    "bene-gesserit": {
+      "alliance": "generated/card/alliance/bene-gesserit.jpg",
+      "collections": [
+        "bribe",
+        "income",
+        "reserve"
+      ],
+      "colors": [
+        "Blue",
+        "Teal",
+        "Pink"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/benegesserit/alia.jpg",
+        "generated/token/leader/benegesserit/mother-ramallo.jpg",
+        "generated/token/leader/benegesserit/wanna-yueh.jpg",
+        "generated/token/leader/benegesserit/princes-irulan.jpg",
+        "generated/token/leader/benegesserit/lady-fenring.jpg"
+      ],
+      "logo": "generated/token/faction/bene-gesserit.jpg",
+      "sheet": "generated/sheet/benegesserit/bene-gesserit.pdf",
+      "shield": "generated/shield/shield/bene-gesserit.jpg",
+      "spiceCount": 5,
+      "traitors": [
+        "generated/card/traitor/benegesserit/alia.jpg",
+        "generated/card/traitor/benegesserit/mother-ramolla.jpg",
+        "generated/card/traitor/benegesserit/wanna-yueh.jpg",
+        "generated/card/traitor/benegesserit/princes-irulan.jpg",
+        "generated/card/traitor/benegesserit/lady-fenring.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/advisor.jpg",
+          "count": 20,
+          "front": "generated/token/troop/bene-gesserit.jpg"
+        }
+      ]
+    },
+    "bene-tleilaxu": {
+      "alliance": "generated/card/alliance/bene-tleilaxu.jpg",
+      "collections": [],
+      "colors": [
+        "Purple",
+        "Pink"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Draw",
+            "placeholder": "generated/card/back/traitor.jpg"
+          },
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": [
+          {
+            "cards": [],
+            "name": "Traitor",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ]
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/benetleilaxu/blin.jpg",
+        "generated/token/leader/benetleilaxu/zoal.jpg",
+        "generated/token/leader/benetleilaxu/wykk.jpg",
+        "generated/token/leader/benetleilaxu/master-zaaf.jpg",
+        "generated/token/leader/benetleilaxu/hidar-fen-ajidica.jpg"
+      ],
+      "logo": "generated/token/faction/bene-tleilaxu.jpg",
+      "sheet": "generated/sheet/benetleilaxu/bene-tleilaxu.pdf",
+      "shield": "generated/shield/shield/bene-tleilaxu.jpg",
+      "spiceCount": 10,
+      "traitors": [
+        "generated/card/traitor/benetleilaxu/blin.jpg",
+        "generated/card/traitor/benetleilaxu/zoal.jpg",
+        "generated/card/traitor/benetleilaxu/wykk.jpg",
+        "generated/card/traitor/benetleilaxu/master-zaaf.jpg",
+        "generated/card/traitor/benetleilaxu/hidar-fen-ajidica.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/bene-tleilaxu.jpg",
+          "count": 20,
+          "front": "generated/token/troop/bene-tleilaxu.jpg"
+        }
+      ]
+    },
+    "emperor": {
+      "alliance": "generated/card/alliance/emperor.jpg",
+      "collections": [
+        "bribe",
+        "income",
+        "reserve"
+      ],
+      "colors": [
+        "Red",
+        "Orange",
+        "Brown"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/emperor/bashar.jpg",
+        "generated/token/leader/emperor/burseg.jpg",
+        "generated/token/leader/emperor/caid.jpg",
+        "generated/token/leader/emperor/captain-aramsham.jpg",
+        "generated/token/leader/emperor/hasimir-fenring.jpg"
+      ],
+      "logo": "generated/token/faction/emperor.jpg",
+      "sheet": "generated/sheet/emperor/emperor.pdf",
+      "shield": "generated/shield/shield/emperor.jpg",
+      "spiceCount": 10,
+      "traitors": [
+        "generated/card/traitor/emperor/bashar.jpg",
+        "generated/card/traitor/emperor/burseg.jpg",
+        "generated/card/traitor/emperor/caid.jpg",
+        "generated/card/traitor/emperor/captain-aramsham.jpg",
+        "generated/card/traitor/emperor/hasimir-fenring.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/emperor.jpg",
+          "count": 20,
+          "front": "generated/token/troop/emperor.jpg"
+        }
+      ]
+    },
+    "fremen": {
+      "alliance": "generated/card/alliance/fremen.jpg",
+      "collections": [
+        "bribe"
+      ],
+      "colors": [
+        "Yellow",
+        "Brown",
+        "Orange",
+        "White"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": [
+          {
+            "cards": [],
+            "name": "Storm",
+            "placeholder": "generated/card/back/storm.jpg"
+          }
+        ]
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/fremen/jamis.jpg",
+        "generated/token/leader/fremen/shadout-mapes.jpg",
+        "generated/token/leader/fremen/otheym.jpg",
+        "generated/token/leader/fremen/chani.jpg",
+        "generated/token/leader/fremen/stilgar.jpg"
+      ],
+      "logo": "generated/token/faction/fremen.jpg",
+      "sheet": "generated/sheet/fremen/fremen.pdf",
+      "shield": "generated/shield/shield/fremen.jpg",
+      "spiceCount": 3,
+      "traitors": [
+        "generated/card/traitor/fremen/jamis.jpg",
+        "generated/card/traitor/fremen/shadout-mapes.jpg",
+        "generated/card/traitor/fremen/otheym.jpg",
+        "generated/card/traitor/fremen/chani.jpg",
+        "generated/card/traitor/fremen/stilgar.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/fremen.jpg",
+          "count": 17,
+          "front": "generated/token/troop/fremen.jpg"
+        },
+        {
+          "back": "generated/token/troop/fedaykin.jpg",
+          "count": 3,
+          "front": "generated/token/troop/fedaykin.jpg"
+        }
+      ]
+    },
+    "harkonnen": {
+      "alliance": "generated/card/alliance/harkonnen.jpg",
+      "collections": [
+        "bribe"
+      ],
+      "colors": [
+        "White",
+        "Brown"
+      ],
+      "decks": {
+        "left": [],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/harkonnen/uman-kudu.jpg",
+        "generated/token/leader/harkonnen/captain-iakin-nefud.jpg",
+        "generated/token/leader/harkonnen/piter-de-vries.jpg",
+        "generated/token/leader/harkonnen/beast-rabban.jpg",
+        "generated/token/leader/harkonnen/feyd-rautha.jpg"
+      ],
+      "logo": "generated/token/faction/harkonnen.jpg",
+      "sheet": "generated/sheet/harkonnen/harkonnen.pdf",
+      "shield": "generated/shield/shield/harkonnen.jpg",
+      "spiceCount": 10,
+      "traitors": [
+        "generated/card/traitor/harkonnen/uman-kudu.jpg",
+        "generated/card/traitor/harkonnen/captain-iakin-nefud.jpg",
+        "generated/card/traitor/harkonnen/piter-de-vries.jpg",
+        "generated/card/traitor/harkonnen/beast-rabban.jpg",
+        "generated/card/traitor/harkonnen/feyd-rautha.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/harkonnen.jpg",
+          "count": 20,
+          "front": "generated/token/troop/harkonnen.jpg"
+        }
+      ]
+    },
+    "iduali": {
+      "alliance": "generated/card/alliance/iduali.jpg",
+      "collections": [
+        "bribe"
+      ],
+      "colors": [
+        "Brown",
+        "Orange"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/iduali/rat-runner.jpg",
+        "generated/token/leader/iduali/korba.jpg",
+        "generated/token/leader/iduali/javid.jpg",
+        "generated/token/leader/iduali/smuggler.jpg",
+        "generated/token/leader/iduali/sabiha.jpg"
+      ],
+      "logo": "generated/token/faction/iduali.jpg",
+      "sheet": "generated/sheet/iduali/iduali.pdf",
+      "shield": "generated/shield/shield/iduali.jpg",
+      "spiceCount": 5,
+      "traitors": [
+        "generated/card/traitor/iduali/rat-runner.jpg",
+        "generated/card/traitor/iduali/korba.jpg",
+        "generated/card/traitor/iduali/javid.jpg",
+        "generated/card/traitor/iduali/smuggler.jpg",
+        "generated/card/traitor/iduali/sabiha.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/iduali.jpg",
+          "count": 20,
+          "front": "generated/token/troop/iduali.jpg"
+        }
+      ]
+    },
+    "ixian": {
+      "alliance": "generated/card/alliance/ixian.jpg",
+      "collections": [
+        "bribe"
+      ],
+      "colors": [
+        "Teal",
+        "Blue",
+        "Green",
+        "White"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/ixian/cammar-pilru.jpg",
+        "generated/token/leader/ixian/kailia-vernius.jpg",
+        "generated/token/leader/ixian/dominic-vernius.jpg",
+        "generated/token/leader/ixian/tessia-vernius.jpg",
+        "generated/token/leader/ixian/ctair-pilru.jpg"
+      ],
+      "logo": "generated/token/faction/ixian.jpg",
+      "sheet": "generated/sheet/ixian/ixian.pdf",
+      "shield": "generated/shield/shield/ixian.jpg",
+      "spiceCount": 10,
+      "traitors": [
+        "generated/card/traitor/ixian/cammar-pilru.jpg",
+        "generated/card/traitor/ixian/kailia-vernius.jpg",
+        "generated/card/traitor/ixian/dominic-vernius.jpg",
+        "generated/card/traitor/ixian/tessia-vernius.jpg",
+        "generated/card/traitor/ixian/ctair-pilru.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/cyborg.jpg",
+          "count": 9,
+          "front": "generated/token/troop/cyborg.jpg"
+        },
+        {
+          "back": "generated/token/troop/upgraded-cyborg.jpg",
+          "count": 9,
+          "front": "generated/token/troop/upgraded-cyborg.jpg"
+        },
+        {
+          "back": "generated/token/troop/suboid.jpg",
+          "count": 11,
+          "front": "generated/token/troop/suboid.jpg"
+        }
+      ]
+    },
+    "spacing-guild": {
+      "alliance": "generated/card/alliance/spacing-guild.jpg",
+      "collections": [
+        "bribe",
+        "income"
+      ],
+      "colors": [
+        "Orange",
+        "Brown",
+        "Red",
+        "Pink",
+        "Yellow"
+      ],
+      "decks": {
+        "left": [
+          {
+            "cards": [],
+            "name": "Discard",
+            "placeholder": "generated/card/back/traitor.jpg"
+          }
+        ],
+        "right": []
+      },
+      "extras": [],
+      "leaders": [
+        "generated/token/leader/guild/representative.jpg",
+        "generated/token/leader/guild/soo-soo-sook.jpg",
+        "generated/token/leader/guild/master-bewt.jpg",
+        "generated/token/leader/guild/esmar-tuek.jpg",
+        "generated/token/leader/guild/staban-tuek.jpg"
+      ],
+      "logo": "generated/token/faction/guild.jpg",
+      "sheet": "generated/sheet/spacingguild/spacing-guild.pdf",
+      "shield": "generated/shield/shield/guild.jpg",
+      "spiceCount": 5,
+      "traitors": [
+        "generated/card/traitor/guild/representative.jpg",
+        "generated/card/traitor/guild/soo-soo-sook.jpg",
+        "generated/card/traitor/guild/master-bewt.jpg",
+        "generated/card/traitor/guild/esmar-tuek.jpg",
+        "generated/card/traitor/guild/staban-tuek.jpg"
+      ],
+      "troops": [
+        {
+          "back": "generated/token/troop/guild.jpg",
+          "count": 20,
+          "front": "generated/token/troop/guild.jpg"
+        }
+      ]
+    }
   },
   "spice": {
     "arsunt": "generated/card/spice/arsunt.jpg",
@@ -463,77 +510,6 @@
     "sand-trout": "generated/card/spicespecial/sand-trout.jpg",
     "shai-hulud": "generated/card/spicespecial/shai-hulud.jpg"
   },
-  "treachery": {
-    "female-cheap-hero": "generated/card/treachery/cheaphero/female-cheap-hero.jpg",
-    "male-cheap-hero": "generated/card/treachery/cheaphero/male-cheap-hero.jpg",
-    "chemistry": "generated/card/treachery/defense/chemistry.jpg",
-    "deflective-shield": "generated/card/treachery/defense/deflective-shield.jpg",
-    "portable-snooper": "generated/card/treachery/defense/portable-snooper.jpg",
-    "sandtrout-membrane": "generated/card/treachery/defense/sandtrout-membrane.jpg",
-    "shield-snooper": "generated/card/treachery/defense/shield-snooper.jpg",
-    "shield": "generated/card/treachery/supplies/shield.jpg",
-    "snooper": "generated/card/treachery/defense/snooper.jpg",
-    "authority-favor": "generated/card/treachery/evidence/authority-favor.jpg",
-    "evidence": "generated/card/treachery/evidence/evidence.jpg",
-    "flying-shai-halud": "generated/card/treachery/meme/flying-shai-halud.jpg",
-    "flying-shai-hulud": "generated/card/treachery/meme/flying-shai-hulud.jpg",
-    "ha-ha-ha": "generated/card/treachery/meme/ha-ha-ha.jpg",
-    "poison-kulon": "generated/card/treachery/meme/poison-kulon.jpg",
-    "karama": "generated/card/treachery/unique/karama.jpg",
-    "signet-ring": "generated/card/treachery/richese/signet-ring.jpg",
-    "truth-or-dare": "generated/card/treachery/richese/truth-or-dare.jpg",
-    "ernoc-seed": "generated/card/treachery/supplies/ernoc-seed.jpg",
-    "phrine-pen": "generated/card/treachery/supplies/phrine-pen.jpg",
-    "trishula": "generated/card/treachery/supplies/trishula.jpg",
-    "": "generated/card/treachery/treachery/lasgun.jpg",
-    "amal": "generated/card/treachery/unique/amal.jpg",
-    "body-guard": "generated/card/treachery/unique/body-guard.jpg",
-    "break-conditioning": "generated/card/treachery/unique/break-conditioning.jpg",
-    "cone-of-silence": "generated/card/treachery/unique/cone-of-silence.jpg",
-    "distrance": "generated/card/treachery/unique/distrance.jpg",
-    "family-atomics": "generated/card/treachery/unique/family-atomics.jpg",
-    "hajr": "generated/card/treachery/unique/hajr.jpg",
-    "harvester": "generated/card/treachery/unique/harvester.jpg",
-    "juice-of-sapho-alt": "generated/card/treachery/unique/juice-of-sapho-alt.jpg",
-    "juice-of-sapho": "generated/card/treachery/unique/juice-of-sapho.jpg",
-    "mercenaries": "generated/card/treachery/unique/mercenaries.jpg",
-    "nullentropy-box": "generated/card/treachery/unique/nullentropy-box.jpg",
-    "ornithopter": "generated/card/treachery/unique/ornithopter.jpg",
-    "ornithopters": "generated/card/treachery/unique/ornithopters.jpg",
-    "residual-poison": "generated/card/treachery/unique/residual-poison.jpg",
-    "semuta-drug": "generated/card/treachery/unique/semuta-drug.jpg",
-    "supplies": "generated/card/treachery/unique/supplies.jpg",
-    "sword-master": "generated/card/treachery/unique/sword-master.jpg",
-    "thumper": "generated/card/treachery/unique/thumper.jpg",
-    "tleilaxu-ghola": "generated/card/treachery/unique/tleilaxu-ghola.jpg",
-    "truth-trance": "generated/card/treachery/unique/truth-trance.jpg",
-    "weather-control": "generated/card/treachery/unique/weather-control.jpg",
-    "artillery-strike": "generated/card/treachery/weapon/artillery-strike.jpg",
-    "basilia-weapon": "generated/card/treachery/weapon/basilia-weapon.jpg",
-    "chaumas": "generated/card/treachery/weapon/chaumas.jpg",
-    "chaumurky": "generated/card/treachery/weapon/chaumurky.jpg",
-    "crysknife": "generated/card/treachery/weapon/crysknife.jpg",
-    "ellaca-drug": "generated/card/treachery/weapon/ellaca-drug.jpg",
-    "gom-jabbar": "generated/card/treachery/weapon/gom-jabbar.jpg",
-    "hunter-seeker": "generated/card/treachery/weapon/hunter-seeker.jpg",
-    "lasgun": "generated/card/treachery/weapon/lasgun.jpg",
-    "maula-pistol": "generated/card/treachery/weapon/maula-pistol.jpg",
-    "mirror-weapon": "generated/card/treachery/weapon/mirror-weapon.jpg",
-    "poison-blade": "generated/card/treachery/weapon/poison-blade.jpg",
-    "poison-tooth": "generated/card/treachery/weapon/poison-tooth.jpg",
-    "slip-tip": "generated/card/treachery/weapon/slip-tip.jpg",
-    "slow-dart": "generated/card/treachery/weapon/slow-dart.jpg",
-    "stone-burner": "generated/card/treachery/weapon/stone-burner.jpg",
-    "stunner": "generated/card/treachery/weapon/stunner.jpg",
-    "weirding-way": "generated/card/treachery/weapon/weirding-way.jpg",
-    "baliset": "generated/card/treachery/worthless/baliset.jpg",
-    "jubba-cloak": "generated/card/treachery/worthless/jubba-cloak.jpg",
-    "kull-wahad": "generated/card/treachery/worthless/kull-wahad.jpg",
-    "kulon": "generated/card/treachery/worthless/kulon.jpg",
-    "la-la-la": "generated/card/treachery/worthless/la-la-la.jpg",
-    "orange-catholic-bible": "generated/card/treachery/worthless/orange-catholic-bible.jpg",
-    "trip-to-gamond": "generated/card/treachery/worthless/trip-to-gamond.jpg"
-  },
   "techTokens": {
     "axlotl-tanks": "generated/token/techtokens/axlotl-tanks.jpg",
     "carryalls": "generated/token/techtokens/carryalls.jpg",
@@ -544,5 +520,76 @@
     "kanly": "generated/token/techtokens/kanly.jpg",
     "spice-production": "generated/token/techtokens/spice-production.jpg",
     "water-stealing": "generated/token/techtokens/water-stealing.jpg"
+  },
+  "treachery": {
+    "": "generated/card/treachery/treachery/lasgun.jpg",
+    "amal": "generated/card/treachery/unique/amal.jpg",
+    "artillery-strike": "generated/card/treachery/weapon/artillery-strike.jpg",
+    "authority-favor": "generated/card/treachery/evidence/authority-favor.jpg",
+    "baliset": "generated/card/treachery/worthless/baliset.jpg",
+    "basilia-weapon": "generated/card/treachery/weapon/basilia-weapon.jpg",
+    "body-guard": "generated/card/treachery/unique/body-guard.jpg",
+    "break-conditioning": "generated/card/treachery/unique/break-conditioning.jpg",
+    "chaumas": "generated/card/treachery/weapon/chaumas.jpg",
+    "chaumurky": "generated/card/treachery/weapon/chaumurky.jpg",
+    "chemistry": "generated/card/treachery/defense/chemistry.jpg",
+    "cone-of-silence": "generated/card/treachery/unique/cone-of-silence.jpg",
+    "crysknife": "generated/card/treachery/weapon/crysknife.jpg",
+    "deflective-shield": "generated/card/treachery/defense/deflective-shield.jpg",
+    "distrance": "generated/card/treachery/unique/distrance.jpg",
+    "ellaca-drug": "generated/card/treachery/weapon/ellaca-drug.jpg",
+    "ernoc-seed": "generated/card/treachery/supplies/ernoc-seed.jpg",
+    "evidence": "generated/card/treachery/evidence/evidence.jpg",
+    "family-atomics": "generated/card/treachery/unique/family-atomics.jpg",
+    "female-cheap-hero": "generated/card/treachery/cheaphero/female-cheap-hero.jpg",
+    "flying-shai-halud": "generated/card/treachery/meme/flying-shai-halud.jpg",
+    "flying-shai-hulud": "generated/card/treachery/meme/flying-shai-hulud.jpg",
+    "gom-jabbar": "generated/card/treachery/weapon/gom-jabbar.jpg",
+    "ha-ha-ha": "generated/card/treachery/meme/ha-ha-ha.jpg",
+    "hajr": "generated/card/treachery/unique/hajr.jpg",
+    "harvester": "generated/card/treachery/unique/harvester.jpg",
+    "hunter-seeker": "generated/card/treachery/weapon/hunter-seeker.jpg",
+    "jubba-cloak": "generated/card/treachery/worthless/jubba-cloak.jpg",
+    "juice-of-sapho": "generated/card/treachery/unique/juice-of-sapho.jpg",
+    "juice-of-sapho-alt": "generated/card/treachery/unique/juice-of-sapho-alt.jpg",
+    "karama": "generated/card/treachery/unique/karama.jpg",
+    "kull-wahad": "generated/card/treachery/worthless/kull-wahad.jpg",
+    "kulon": "generated/card/treachery/worthless/kulon.jpg",
+    "la-la-la": "generated/card/treachery/worthless/la-la-la.jpg",
+    "lasgun": "generated/card/treachery/weapon/lasgun.jpg",
+    "male-cheap-hero": "generated/card/treachery/cheaphero/male-cheap-hero.jpg",
+    "maula-pistol": "generated/card/treachery/weapon/maula-pistol.jpg",
+    "mercenaries": "generated/card/treachery/unique/mercenaries.jpg",
+    "mirror-weapon": "generated/card/treachery/weapon/mirror-weapon.jpg",
+    "nullentropy-box": "generated/card/treachery/unique/nullentropy-box.jpg",
+    "orange-catholic-bible": "generated/card/treachery/worthless/orange-catholic-bible.jpg",
+    "ornithopter": "generated/card/treachery/unique/ornithopter.jpg",
+    "ornithopters": "generated/card/treachery/unique/ornithopters.jpg",
+    "phrine-pen": "generated/card/treachery/supplies/phrine-pen.jpg",
+    "poison-blade": "generated/card/treachery/weapon/poison-blade.jpg",
+    "poison-kulon": "generated/card/treachery/meme/poison-kulon.jpg",
+    "poison-tooth": "generated/card/treachery/weapon/poison-tooth.jpg",
+    "portable-snooper": "generated/card/treachery/defense/portable-snooper.jpg",
+    "residual-poison": "generated/card/treachery/unique/residual-poison.jpg",
+    "sandtrout-membrane": "generated/card/treachery/defense/sandtrout-membrane.jpg",
+    "semuta-drug": "generated/card/treachery/unique/semuta-drug.jpg",
+    "shield": "generated/card/treachery/supplies/shield.jpg",
+    "shield-snooper": "generated/card/treachery/defense/shield-snooper.jpg",
+    "signet-ring": "generated/card/treachery/richese/signet-ring.jpg",
+    "slip-tip": "generated/card/treachery/weapon/slip-tip.jpg",
+    "slow-dart": "generated/card/treachery/weapon/slow-dart.jpg",
+    "snooper": "generated/card/treachery/defense/snooper.jpg",
+    "stone-burner": "generated/card/treachery/weapon/stone-burner.jpg",
+    "stunner": "generated/card/treachery/weapon/stunner.jpg",
+    "supplies": "generated/card/treachery/unique/supplies.jpg",
+    "sword-master": "generated/card/treachery/unique/sword-master.jpg",
+    "thumper": "generated/card/treachery/unique/thumper.jpg",
+    "tleilaxu-ghola": "generated/card/treachery/unique/tleilaxu-ghola.jpg",
+    "trip-to-gamond": "generated/card/treachery/worthless/trip-to-gamond.jpg",
+    "trishula": "generated/card/treachery/supplies/trishula.jpg",
+    "truth-or-dare": "generated/card/treachery/richese/truth-or-dare.jpg",
+    "truth-trance": "generated/card/treachery/unique/truth-trance.jpg",
+    "weather-control": "generated/card/treachery/unique/weather-control.jpg",
+    "weirding-way": "generated/card/treachery/weapon/weirding-way.jpg"
   }
 }
