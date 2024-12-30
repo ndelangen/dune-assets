@@ -30,7 +30,7 @@ export const HaHaHa: Story = {
         scale: 0.5,
       },
     ],
-    text: 'Text goes here',
+    text: 'Play this card at mentat to win the game, you can play this after at least 1 player rage-quit.',
     subName: 'Special - Win',
   },
 };
