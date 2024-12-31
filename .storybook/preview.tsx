@@ -2,13 +2,6 @@ export const parameters = {
   layout: 'centered',
 };
 
-export const globals = {
-  backgrounds: {
-    value: '#333333',
-    grid: true,
-  },
-};
-
 export const globalTypes = {
   disc: {
     name: 'Shape',
@@ -37,3 +30,10 @@ export const decorators = [
     );
   },
 ];
+
+export const initialGlobals = {
+  backgrounds: {
+    value: '#333333',
+    grid: true,
+  },
+};

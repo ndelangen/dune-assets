@@ -13,6 +13,7 @@ import { Page } from './Page';
 import { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
+  title: 'Book/Pages/Dreamrules',
   component: Page,
   args: {
     background: true,

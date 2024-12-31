@@ -26,13 +26,13 @@ jobs:
       - run: bun run generate
       - run: bun run build-storybook --test
       - run: bun run capture
-      - name: Compress PDF
-        uses: jy95/ghostscript-action@v1
-        continue-on-error: true
-        with:
-          file: 'generated/book/rulebook/rulebook.pdf'
-          output: 'generated/book/rulebook/rulebook-optimized.pdf'
-          arbitrary-parameters: '-dCompatibilityLevel=1.4 -dEmbedAllFonts=true -dSubsetFonts=true -dColorImageDownsampleType=/Bicubic -dColorImageResolution=144 -dGrayImageDownsampleType=/Bicubic -dGrayImageResolution=144 -dMonoImageDownsampleType=/Bicubic -dMonoImageResolution=144'
+      # - name: Compress PDF
+      #   uses: jy95/ghostscript-action@v1
+      #   continue-on-error: true
+      #   with:
+      #     file: 'generated/book/rulebook/rulebook.pdf'
+      #     output: 'generated/book/rulebook/rulebook-optimized.pdf'
+      #     arbitrary-parameters: '-dCompatibilityLevel=1.4 -dEmbedAllFonts=true -dSubsetFonts=true -dColorImageDownsampleType=/Bicubic -dColorImageResolution=144 -dGrayImageDownsampleType=/Bicubic -dGrayImageResolution=144 -dMonoImageDownsampleType=/Bicubic -dMonoImageResolution=144'
       - name: Commit changes
         continue-on-error: true
         id: commit

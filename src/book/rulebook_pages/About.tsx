@@ -13,47 +13,40 @@ export function Dreams() {
     <Fragment>
       <Spaced>
         <Text>
-          <Title color={colors.blue1}>Dreamrules 2.0</Title>
-          <h1>The Origin!</h1>
+          <Title color={colors.blue1}>About Dreamrules</Title>
         </Text>
         <Text>
           <p>
-            Dreamrules 2.0 is the brainchild of about 6-8 Dune players each of whom has hundreds of hours of
-            game time under their belt.
+            The Dreamrules ruleset is the brainchild of a group of Dune players, with each of whom has
+            hundreds of hours of game time under their belt.
           </p>
           <p>
-            The original Dreamrules was for the base game and it was a rather simple mesh of GF9 rules and the
-            World Boardgames Championship rules where we mixed aspects we liked from both and tried to limit
-            what we consider broken mechanics. It was fun, but still had a few 'flaws' from the original Dune
-            and the faction changes we made were not balanced.
+            After playing the game for this long; a long list of mechanics/rules become problematic. With the
+            rulebook being open to many interpretations, that would often lead to heated debates in games, we
+            decided we wanted to rewrite the rulebook, to remove inconsistencies, clear up wording etc.
           </p>
           <p>
-            After the Ixian & Tleilaxu expansion that version of Dreamrules was abandoned as we came to
-            understand (and definitely not like) what the game was becoming. The release of the FAQ in 2020
-            also changed a lot of things, in our opinion not for the better. We decided that to continue
-            playing Dune we would have to revive Dreamrules, but where to begin.
+            After the Ixian & Tleilaxu expansion and FAQ documents being released we came to understand the
+            instead of a rulebook-rewrite, we would have to create ouw own variant of the game to fix the
+            issues we had.
           </p>
           <h1>The Design Goals were as follows:</h1>
           <ul>
-            <li>
-              Remove broken/un-fun mechanics (Harkonnen Special Karama, Guild Timeout Victory, certain
-              Treachery cards)
-            </li>
-            <li>Introduce aspects of WBC rules we enjoyed, Emperor subbing, Bene Gesserit flipping</li>
-            <li>Keep aspects of the expansion we liked, Tech Tokens, certain Treachery Cards</li>
-            <li>Balance factions, especially the Fremen</li>
-            <li>Reduce the likelihood of Early Nexus's</li>
-            <li>Make 10 turn games less likely</li>
-            <li>Make skirmishes outside strongholds more necessary and fun</li>
-            <li>
-              Treachery deck balance, remove broken cards, but keep it Dune like in power dynamics and
-              excitement about certain cards
-            </li>
+            <li>Reduce randomness to a low level.</li>
+            <li>A turn where no-one can win, is pointless.</li>
+            <li>Increase player interaction/participation.</li>
+            <li>Revealed battleplans cannot change be influenced except by traitor.</li>
+            <li>Remove un-fun mechanics. (Harkonnen Special Karama, Guild Timeout Victory, etc)</li>
+            <li>Balance factions, especially the Fremen.</li>
+            <li>Reduce the likelihood of Early Nexus's.</li>
+            <li>Make 10 turn games less likely.</li>
+            <li>Make skirmishes outside strongholds more necessary and fun.</li>
+            <li>Treachery deck balance, high powered cards are single use.</li>
           </ul>
           <h1>Then as secondary goals:</h1>
           <ul>
-            <li>Balance Ixian</li>
-            <li>Overhaul Tleilaxu completely, we honestly didn't know where to begin.</li>
+            <li>This is a living document, we update it as rules are changed.</li>
+            <li>Rules are allowed to change, feedback from players is encouraged.</li>
           </ul>
         </Text>
       </Spaced>
@@ -90,8 +83,8 @@ export function Welcome() {
               </p>
               <p>Dream Rules Dune is a game best played with Six players.</p>
               <p>
-                The ruleset has been engineered to not only increase player engagement and agency but also
-                remove as many random elements and heighten the skill ceiling.
+                The ruleset has been engineered to increase player engagement and agency as well as to remove
+                many random elements and heighten the skill ceiling.
               </p>
               <p>More information about design goals etc, can be found on the last page of this rule book.</p>
             </NonBreaking>
