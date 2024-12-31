@@ -35,6 +35,7 @@ const ListIcons = ({ pattern, type }: { pattern: string; type: keyof typeof type
 
 const meta = {
   component: ListIcons,
+  tags: ['no-screenshot'],
 } satisfies Meta<typeof ListIcons>;
 
 export default meta;
