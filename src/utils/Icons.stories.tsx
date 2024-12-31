@@ -19,10 +19,13 @@ const ListIcons = ({ pattern, type }: { pattern: string; type: keyof typeof type
         <div
           style={{
             padding: '10px',
-            background: 'yellow',
+            border: '1px solid white',
+            borderRadius: '5px',
+            backgroundColor: 'rgba(255, 255, 255, 0.2)',
             display: 'flex',
             flexDirection: 'column',
             gap: '10px',
+            color: 'white',
           }}
         >
           <img src={'/' + item} style={{ width: '100%', maxHeight: '200px', flex: '1' }} />
