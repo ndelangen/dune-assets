@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { card, disc, page, shield } from '../src/data/sizes';
 
 export const parameters = {
