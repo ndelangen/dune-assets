@@ -1,15 +1,15 @@
-import * as About from './rulebook_pages/About';
-import * as Cards from './rulebook_pages/Cards';
-import * as Deals from './rulebook_pages/Deals';
-import * as Factions from './rulebook_pages/Factions';
-import * as FAQ from './rulebook_pages/Faq';
-import * as Introduction from './rulebook_pages/Introduction';
-import * as Misc from './rulebook_pages/MiscRules';
-import * as Phases from './rulebook_pages/Phases';
-import * as Setup from './rulebook_pages/Setup';
-import * as TechTokens from './rulebook_pages/TechTokens';
-import styles from './Rulebook.module.css';
-import { Page } from './Page';
+import * as About from './About';
+import * as Cards from './Cards';
+import * as Deals from './Deals';
+import * as Factions from './Factions';
+import * as FAQ from './Faq';
+import * as Introduction from './Introduction';
+import * as Misc from './MiscRules';
+import * as Phases from './Phases';
+import * as Setup from './Setup';
+import * as TechTokens from './TechTokens';
+import styles from '../Rulebook.module.css';
+import { Page } from '../utils/Page';
 import { Meta, StoryObj } from '@storybook/react';
 
 const meta = {

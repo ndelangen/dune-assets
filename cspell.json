@@ -1,7 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "dictionaries": ["en_US", "softwareTerms", "typescript"],
+  "dictionaries": [
+    "en_US",
+    "softwareTerms",
+    "typescript"
+  ],
   "caseSensitive": true,
   "words": [
     "!combat",
@@ -445,6 +449,7 @@
     "Mnemonic+amplifier",
     "Mnemonic+flutter-system",
     "Mohalata",
+    "Mohiam",
     "Moisture+seal",
     "moisture+trap",
     "Moisture+trap",
@@ -796,7 +801,14 @@
     "Zensunni+codex",
     "Zombie-katrundo"
   ],
-  "ignoreWords": ["lockb"],
-  "ignorePaths": [".vscode", "*.lock", "*.lockb", ".github"],
+  "ignoreWords": [
+    "lockb"
+  ],
+  "ignorePaths": [
+    ".vscode",
+    "*.lock",
+    "*.lockb",
+    ".github"
+  ],
   "useGitignore": true
 }

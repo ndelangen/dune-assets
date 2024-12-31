@@ -215,7 +215,6 @@ export function Factions2() {
             treacherous opponents.
           </p>
         </FactionSynopsis>
-        "
       </Spaced>
     </Fragment>
   );
@@ -233,7 +232,6 @@ export function Factions3() {
             psychological control and a genius at achieving her ends through the efforts of others.
           </p>
         </FactionSynopsis>
-        "
         <FactionSynopsis flip image="/generated/token/faction/bene-tleilaxu.jpg">
           <h1>Bene Tleilaxu</h1>
           <p>
@@ -242,12 +240,10 @@ export function Factions3() {
             miracles they are able to produce.
           </p>
         </FactionSynopsis>
-        "
         <FactionSynopsis flip image="/generated/token/faction/harkonnen.jpg">
           <h1>House Harkonnen</h1>
           <p>led by the decadent Baron Vladimir Harkonnen — master of treachery and cruel deeds.</p>
         </FactionSynopsis>
-        "
         <Text>
           <em>There's room for more factions!</em>
         </Text>

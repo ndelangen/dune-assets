@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Book } from './Book';
+import { Book } from './utils/Book';
 
-import * as rulebook from './DreamrulesPages.stories';
+import * as rulebook from './dreamrules/Pages.stories';
 
 const meta = {
   component: Book,

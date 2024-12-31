@@ -10,8 +10,9 @@ export const FactionSynopsis: FC<PropsWithChildren<{ flip?: boolean; image: stri
   children,
 }) => (
   <div className={`${styles.base} ${flip ? styles.flipped : styles.unflipped}`}>
-    <SideBySide>
-      {[<img src={image} className={styles.image} />, <Text>{children}</Text>][flip ? 'flat' : 'reverse']()}
-    </SideBySide>
+    <div>
+      <Text>{children}</Text>
+    </div>
+    <img src={image} className={styles.image} />
   </div>
 );
