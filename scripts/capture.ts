@@ -54,6 +54,10 @@ for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
   count++;
   bar1.update(count, { entry });
 
+  if (index.entries[entry].tags.includes('no-screenshot')) {
+    continue;
+  }
+
   if (process.env.LOCAL) {
     const exists = await Bun.file(path).exists();
     if (exists) {
