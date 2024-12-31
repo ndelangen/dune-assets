@@ -177,11 +177,45 @@ export function Factions2() {
         <Text>
           <p>You will play as one of these factions:</p>
         </Text>
-        <FactionSynopsis image="/generated/token/faction/emperor.jpg" text="foo" />
-        <FactionSynopsis image="/generated/token/faction/guild.jpg" text="foo" />
-        <FactionSynopsis image="/generated/token/faction/fremen.jpg" text="foo" />
-        <FactionSynopsis image="/generated/token/faction/ixian.jpg" text="foo" />
-        <FactionSynopsis image="/generated/token/faction/atreides.jpg" text="foo" />"
+        <FactionSynopsis image="/generated/token/faction/emperor.jpg">
+          <h1>Emperor</h1>
+          <p>
+            his majesty the Padishah Emperor Shaddam IV of house Corrino — keen and efficient, yet easily
+            lulled into complacency by his own trappings of power.
+          </p>
+        </FactionSynopsis>
+        <FactionSynopsis image="/generated/token/faction/guild.jpg">
+          <h1>Spacing Guild</h1>
+          <p>
+            represented by steersman Edric (in league with smuggler bands) — monopolist of transport, yet
+            addicted to ever increasing spice flows.
+          </p>
+        </FactionSynopsis>
+        <FactionSynopsis image="/generated/token/faction/fremen.jpg">
+          <h1>Fremen</h1>
+          <p>
+            represented by the planetary ecologist Liet Kynes — commanding fierce hordes of natives, adept at
+            life and travel on the planet, and dedicated to preventing any outside control while bringing
+            about Dune’s own natural regeneration.
+          </p>
+        </FactionSynopsis>
+        <FactionSynopsis image="/generated/token/faction/ixian.jpg">
+          <h1>Ixian</h1>
+          <p>
+            led by the human cyborg Prince Rhombur Vernius possessing courage. They are technocrats who
+            specialize in production and supply chains. On Arrakis they have a movable stronghold, which is
+            hidden from space.
+          </p>
+        </FactionSynopsis>
+        <FactionSynopsis image="/generated/token/faction/atreides.jpg">
+          <h1>House Atreides</h1>
+          <p>
+            led by the youthful Paul Atreides (Muad'dib) — rightful heir to the planet, gifted with valiant
+            lieutenants and a strange partial awareness of the future, but beset by more powerful and
+            treacherous opponents.
+          </p>
+        </FactionSynopsis>
+        "
       </Spaced>
     </Fragment>
   );
@@ -192,9 +226,28 @@ export function Factions3() {
     <Fragment>
       <Spaced>
         <Text>Continued list of factions.</Text>
-        <FactionSynopsis flip image="/generated/token/faction/bene-gesserit.jpg" text="foo" />"
-        <FactionSynopsis flip image="/generated/token/faction/bene-tleilaxu.jpg" text="foo" />"
-        <FactionSynopsis flip image="/generated/token/faction/harkonnen.jpg" text="foo" />"
+        <FactionSynopsis flip image="/generated/token/faction/bene-gesserit.jpg">
+          <h1>Bene Gesserit</h1>
+          <p>
+            represented by Reverend Mother Gaius Helen Mohiam — ancient and inscrutable, carefully trained in
+            psychological control and a genius at achieving her ends through the efforts of others.
+          </p>
+        </FactionSynopsis>
+        "
+        <FactionSynopsis flip image="/generated/token/faction/bene-tleilaxu.jpg">
+          <h1>Bene Tleilaxu</h1>
+          <p>
+            led by their Masters Council. They control the Axlotl tanks, and infiltrate other factions with
+            deadly Face Dancers. Although loathed by other factions, they are tolerated because of the
+            miracles they are able to produce.
+          </p>
+        </FactionSynopsis>
+        "
+        <FactionSynopsis flip image="/generated/token/faction/harkonnen.jpg">
+          <h1>House Harkonnen</h1>
+          <p>led by the decadent Baron Vladimir Harkonnen — master of treachery and cruel deeds.</p>
+        </FactionSynopsis>
+        "
         <Text>
           <em>There's room for more factions!</em>
         </Text>
