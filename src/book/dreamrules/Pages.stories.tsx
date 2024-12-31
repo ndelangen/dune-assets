@@ -20,6 +20,11 @@ const meta = {
     pageNumber: 0,
     ratio: Math.sqrt(2),
   },
+  globals: {
+    viewport: {
+      value: 'page',
+    },
+  },
   parameters: {
     cover: (
       <div className={styles.cover}>

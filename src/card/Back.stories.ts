@@ -3,6 +3,11 @@ import { CardBack } from './Back';
 
 const meta = {
   component: CardBack,
+  globals: {
+    viewport: {
+      value: 'card',
+    },
+  },
 } satisfies Meta<typeof CardBack>;
 
 export default meta;

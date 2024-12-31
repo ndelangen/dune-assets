@@ -1,5 +1,39 @@
+import { card, disc, page, shield } from '../src/data/sizes';
+
 export const parameters = {
   layout: 'centered',
+  viewport: {
+    options: {
+      page: {
+        name: 'Page',
+        styles: {
+          width: page.width + 'px',
+          height: page.height + 'px',
+        },
+      },
+      card: {
+        name: 'Card',
+        styles: {
+          width: card.width + 'px',
+          height: card.height + 'px',
+        },
+      },
+      shield: {
+        name: 'Shield',
+        styles: {
+          width: shield.width + 'px',
+          height: shield.height + 'px',
+        },
+      },
+      disc: {
+        name: 'Disc',
+        styles: {
+          width: disc.width + 'px',
+          height: disc.height + 'px',
+        },
+      },
+    },
+  },
 };
 
 export const globalTypes = {

@@ -3,6 +3,11 @@ import { AllianceCard } from './Alliance';
 
 const meta = {
   component: AllianceCard,
+  globals: {
+    viewport: {
+      value: 'card',
+    },
+  },
 } satisfies Meta<typeof AllianceCard>;
 
 export default meta;

@@ -3,6 +3,11 @@ import { SpiceCard } from './Spice';
 
 const meta = {
   component: SpiceCard,
+  globals: {
+    viewport: {
+      value: 'card',
+    },
+  },
 } satisfies Meta<typeof SpiceCard>;
 
 export default meta;

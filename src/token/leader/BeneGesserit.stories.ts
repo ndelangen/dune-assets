@@ -10,6 +10,12 @@ const meta = {
       },
     },
   },
+  globals: {
+    viewport: {
+      value: 'disc',
+    },
+    disc: true,
+  },
 } satisfies Meta<typeof CustomToken>;
 
 export default meta;

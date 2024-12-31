@@ -3,6 +3,11 @@ import { ShieldAsset } from './Shield';
 
 const meta = {
   component: ShieldAsset,
+  globals: {
+    viewport: {
+      value: 'shield',
+    },
+  },
 } satisfies Meta<typeof ShieldAsset>;
 
 export default meta;

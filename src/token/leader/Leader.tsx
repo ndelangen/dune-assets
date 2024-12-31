@@ -73,8 +73,8 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
             fill={tint0}
             filter={'drop-shadow(0 0 1.75rem rgba(0,0,0,0.6))'}
             startOffset="50%"
-            dominant-baseline="middle"
-            text-anchor="middle"
+            dominantBaseline="middle"
+            textAnchor="middle"
             xlinkHref={`#${curvedTextPath}`}
           >
             {name}

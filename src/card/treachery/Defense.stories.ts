@@ -3,6 +3,11 @@ import { TreacheryCard } from './Treachery';
 
 const meta = {
   component: TreacheryCard,
+  globals: {
+    viewport: {
+      value: 'card',
+    },
+  },
 } satisfies Meta<typeof TreacheryCard>;
 
 export default meta;

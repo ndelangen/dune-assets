@@ -6,6 +6,11 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   },
+  globals: {
+    viewport: {
+      value: 'card',
+    },
+  },
 } satisfies Meta<typeof FactionSheet>;
 
 export default meta;

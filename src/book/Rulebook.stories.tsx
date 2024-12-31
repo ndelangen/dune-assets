@@ -6,6 +6,11 @@ import * as rulebook from './dreamrules/Pages.stories';
 const meta = {
   component: Book,
   args: {},
+  globals: {
+    viewport: {
+      value: 'page',
+    },
+  },
 } satisfies Meta<typeof Book>;
 
 export default meta;
