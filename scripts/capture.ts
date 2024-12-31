@@ -1,3 +1,4 @@
+// import { optimizePDF } from '@privyid/ghoulscript';
 import { serve } from 'bun';
 import cliProgress from 'cli-progress';
 import { chromium } from 'playwright';
@@ -180,11 +181,21 @@ for (const entry of entries.filter((entry) => entry.startsWith('book') && !entry
   await page.waitForLoadState('networkidle');
   await page.pdf({
     path,
+    scale: 2,
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
     preferCSSPageSize: true,
     displayHeaderFooter: false,
     printBackground: true,
   });
+
+  // await Bun.write(
+  //   path.replace('.pdf', '-o.pdf'),
+  //   await optimizePDF(Bun.file(path), {
+  //     noTransparency: false,
+  //     pdfSettings: 'printer',
+  //     colorImageResolution: 70,
+  //   }),
+  // );
 }
 
 bar1.stop();
