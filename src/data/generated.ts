@@ -1,4 +1,6 @@
+
 import { z } from 'zod';
+
 
 export const GENERIC = z.enum([
   'vector/generic/6star.svg',
@@ -249,7 +251,7 @@ export const GENERIC = z.enum([
   'vector/generic/why.svg',
   'vector/generic/wuurm.svg',
   'vector/generic/x.svg',
-  'vector/generic/zap.svg',
+  'vector/generic/zap.svg'
 ]);
 
 export const LOGO = z.enum([
@@ -267,7 +269,7 @@ export const LOGO = z.enum([
   'vector/logo/iduali.svg',
   'vector/logo/ixian.svg',
   'vector/logo/moritani.svg',
-  'vector/logo/richese.svg',
+  'vector/logo/richese.svg'
 ]);
 
 export const DECAL = z.enum([
@@ -430,7 +432,7 @@ export const DECAL = z.enum([
   'vector/decal/weirding-way-plus.svg',
   'vector/decal/weirding-way.svg',
   'vector/decal/wire.svg',
-  'vector/decal/zenobia.svg',
+  'vector/decal/zenobia.svg'
 ]);
 
 export const ICON = z.enum([
@@ -491,7 +493,7 @@ export const ICON = z.enum([
   'vector/icon/water.svg',
   'vector/icon/waves.svg',
   'vector/icon/worthless.svg',
-  'vector/icon/wreath.svg',
+  'vector/icon/wreath.svg'
 ]);
 
 export const LEADERS = z.enum([
@@ -613,7 +615,7 @@ export const LEADERS = z.enum([
   'image/leader/zaaf.png',
   'image/leader/zenzi.png',
   'image/leader/zirut.png',
-  'image/leader/zoal.png',
+  'image/leader/zoal.png'
 ]);
 
 export const TROOP = z.enum([
@@ -640,17 +642,18 @@ export const TROOP = z.enum([
   'vector/troop/peddler.svg',
   'vector/troop/pewpew.svg',
   'vector/troop/richese.svg',
-  'vector/troop/smuggler.svg',
+  'vector/troop/smuggler.svg'
 ]);
 
 export const TROOP_MODIFIER = z.enum([
   'vector/troop_modifier/star-left-red.svg',
   'vector/troop_modifier/star-left.svg',
   'vector/troop_modifier/star-right-red.svg',
-  'vector/troop_modifier/star-right.svg',
+  'vector/troop_modifier/star-right.svg'
 ]);
 
 export const GENERATED = z.enum([
+  'generated/book/rulebook/dreamrules.pdf',
   'generated/card/alliance/atreides.jpg',
   'generated/card/alliance/bene-gesserit.jpg',
   'generated/card/alliance/bene-tleilaxu.jpg',
@@ -964,7 +967,6 @@ export const GENERATED = z.enum([
   'generated/token/leader/emperor/hero.jpg',
   'generated/token/leader/fremen/chani.jpg',
   'generated/token/leader/fremen/hero.jpg',
-  'generated/token/leader/fremen/jamis.jpg',
   'generated/token/leader/fremen/otheym.jpg',
   'generated/token/leader/fremen/shadout-mapes.jpg',
   'generated/token/leader/fremen/stilgar.jpg',
@@ -1113,6 +1115,17 @@ export const GENERATED = z.enum([
   'generated/utils/background/traitor.jpg',
   'generated/utils/background/weapon.jpg',
   'generated/utils/background/worthless.jpg',
+  'generated/utils/icons/decals.jpg',
+  'generated/utils/icons/generics.jpg',
+  'generated/utils/icons/icons.jpg',
+  'generated/utils/icons/logos.jpg',
+  'generated/utils/icons/troops.jpg'
 ]);
 
-export const ALL = z.union([GENERIC, LOGO, DECAL, ICON, TROOP]);
+export const ALL = z.union([
+  GENERIC,
+  LOGO,
+  DECAL,
+  ICON,
+  TROOP
+]);

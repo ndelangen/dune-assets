@@ -21,7 +21,7 @@ export const Jamis: Story = {
     image: 'image/leader/jamis.png',
     logo: 'vector/logo/fremen.svg',
     name: 'Jamis',
-    strength: '1',
+    strength: '2',
     owner: 'Fremen',
   },
 };
