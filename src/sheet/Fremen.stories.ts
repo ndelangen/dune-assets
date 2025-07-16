@@ -39,7 +39,7 @@ export const Fremen: Story = {
         title: 'RALLYING',
         text: [
           `You place your starting troops after the setup, during turn 1 spice blow phase, after the spice locations are revealed.`,
-          `Your reserves are on-planet. You can deploy for free within 2 territories of the greater flat. You can not ship normally.`,
+          `Your reserves are on-planet. You can deploy for free within 2 territories of the great flat. You can not ship normally.`,
         ].join('\n\n'),
       },
       {
