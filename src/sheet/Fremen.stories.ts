@@ -86,11 +86,16 @@ export const Fremen: Story = {
         karama: `You cannot reveal your weapon and defense cards during battle. Losing the battle causes you to lose all Treachery Cards in your battle plan. **VLADIMIR'S SPITE** can be used to replace any card.`,
       },
       {
-        title: 'SPECIAL VICTORY CONDITION',
+        title: 'DESERT GUIDES',
         text: [
-          `If no faction has won by the end of turn 10 you win.`,
-          `Your ally wins if your alliance controls at least 3 strongholds.`,
+          `At the end of the Shipment & Movement phase, choose any faction (including yourself) that hasn't moved any troops this turn.`,
+          `That faction may move one stack of troops following normal movement rules.`,
         ].join('\n\n'),
+        karama: `No faction can move stacks besides when it is their turn.`,
+      },
+      {
+        title: 'SUDDEN DEATH',
+        text: `During sudden death, you are the only player that can take revivals.`,
       },
     ],
     troops: [
