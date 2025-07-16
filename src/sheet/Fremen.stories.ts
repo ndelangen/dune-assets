@@ -37,7 +37,10 @@ export const Fremen: Story = {
       },
       {
         title: 'RALLYING',
-        text: `Your reserves are on-planet. You can deploy for free within 2 territories of the greater flat. You can not ship normally.`,
+        text: [
+          `You place your starting troops after the setup, during turn 1 spice blow phase, after the spice locations are revealed.`,
+          `Your reserves are on-planet. You can deploy for free within 2 territories of the greater flat. You can not ship normally.`,
+        ].join('\n\n'),
       },
       {
         title: 'NATIVE MOVEMENT',
@@ -45,10 +48,18 @@ export const Fremen: Story = {
         karama: `You can only move 1 territory per move action. This lasts until the end of the turn.`,
       },
       {
+        title: 'NATIVE KNOWLEDGE',
+        text: [
+          `After the storm phase ended, you set aside 1 storm card at random, and may look at it; this is how much the storm will move next storm phase.`,
+          `After Revival phase you may look at the next card for both spice blow A and B.`,
+        ].join('\n\n'),
+        karama: `You cannot look at either spice blow card nor at the storm card. This lasts until the end of the turn.`,
+      },
+      {
         title: 'WORM RIDING',
         text: [
           `Shai-Hulud does not devour your troops; Instead troops co-located with Shai-Hulud can move to any other territory. `,
-          `If more than one Shai-Hulud appear during the Spice Blow phase you may choose where the additional worms appear.`,
+          `If more than one Shai-Hulud appear during the Spice Blow phase you may choose where the additional Shai-Hulud appear.`,
         ].join('\n\n'),
       },
       {
@@ -62,9 +73,9 @@ export const Fremen: Story = {
         karama: `Before any interjection happened. You must take your turn in standard order. This lasts until the end of the turn.`,
       },
       {
-        title: 'HALF STORM LOSSES',
-        text: `If your troops are caught in storm only half of them are killed *(all fractions rounded up)*. You may ship and move into/through storm by taking half losses.`,
-        karama: `When the storm moves over fremen troops, all of them are killed.`,
+        title: 'STORM IMMUNITY',
+        text: `Your forces are not affected by the storm, unless you choose to be affected. You may ship and move into/through storm.`,
+        karama: `When the storm moves over fremen troops, all of them are killed. Fremen forces cannot move into or through storm.`,
       },
       {
         title: 'FEDAYKIN',
@@ -79,18 +90,15 @@ export const Fremen: Story = {
       {
         title: 'FANATICAL TACTICS',
         text: [
-          `During battle *(step 3.1)* you may publicly announce you are playing a weapon and /or defense Treachery Card from your hand.`,
+          `During battle *(step 3.1)* you may publicly announce which weapon and/or defense Treachery Card you playing from your hand.`,
           `These cards cannot be lost unless your leader is called traitor or there is a Lasgun-Shield explosion.`,
           `Harkonnen can only replace these with cards of the same type when using **VLADIMIR'S SPITE**.`,
         ].join('\n\n'),
         karama: `You cannot reveal your weapon and defense cards during battle. Losing the battle causes you to lose all Treachery Cards in your battle plan. **VLADIMIR'S SPITE** can be used to replace any card.`,
       },
       {
-        title: 'SPECIAL VICTORY CONDITION',
-        text: [
-          `If no faction has won by the end of turn 10 you win.`,
-          `Your ally wins if your alliance controls at least 3 strongholds.`,
-        ].join('\n\n'),
+        title: 'SUDDEN DEATH',
+        text: `During sudden death, you are the only player that can take revivals.`,
       },
     ],
     troops: [

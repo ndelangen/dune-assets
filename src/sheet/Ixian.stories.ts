@@ -20,8 +20,8 @@ export const Ixian: Story = {
   args: {
     name: 'Ixian',
     logo: '/generated/token/faction/ixian.jpg',
-    start: `18 troops *(off-planet)* reserves, 1 in polar sink, 1 in any unoccupied territory.`,
-    revival: '3 troop free revival. Start with 5 spice.',
+    start: `6 cyborgs, 9 suboids *(off-planet)* reserves, 3 cyborgs and 3 suboids in HMS.`,
+    revival: '1 troop free revival. Start with 10 spice.',
     color: '#B5A359',
     alliance: {
       text: `Once per turn you and your Ally may swap or transfer a Treachery Card. *(If during battle: step 1.1)*`,
@@ -61,7 +61,7 @@ export const Ixian: Story = {
       {
         title: 'HIDDEN MOBILE SURVEYOR',
         text: [
-          `During setup place the HMS in any non-stronghold territory.`,
+          `During setup, after initial storm is revealed, place the HMS in any non-stronghold territory.`,
           `It is considered a territory within that territory.`,
           `No other factions can enter the HMS. You may ship to it like a stronghold, and move into/out of it like a normal territory.`,
           `Troops in the HMS are safe from the Storm and Shai-Hulud.`,
