@@ -53,12 +53,6 @@ export const Atreides: Story = {
         text: `You may keep written notes about Treachery Cards.`,
       },
       {
-        title: 'SPICE PRESCIENCE',
-        text: `During Ship & Move phase you may look at the next card for spice blow A and B.`,
-        karama:
-          'You can no longer look at the next card for spice blow A and B. This lasts until the end of the turn.',
-      },
-      {
         title: 'BATTLE PRESCIENCE',
         text: `During battle *(step 2.2)* you may force your opponent to reveal 1 part of their battle-plan early. *(Weapon, Defense, Leader, or Dial + Mercenaries)*.`,
         karama: `You opponent does not have to reveal a part of their battle-plan early. This lasts until the end of the turn.`,
