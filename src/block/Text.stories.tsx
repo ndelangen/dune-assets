@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Text } from './Text';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta = {
   component: Text,

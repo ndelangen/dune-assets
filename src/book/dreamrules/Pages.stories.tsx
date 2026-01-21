@@ -10,7 +10,7 @@ import * as Setup from './Setup';
 import * as TechTokens from './TechTokens';
 import styles from '../Rulebook.module.css';
 import { Page } from '../utils/Page';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta = {
   title: 'Book/Pages/Dreamrules',

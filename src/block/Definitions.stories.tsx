@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Definitions } from './Definitions';
 import { Text } from './Text';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta = {
   component: Definitions,

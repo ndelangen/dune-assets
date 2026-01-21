@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Title } from './Title';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta = {
   component: Title,

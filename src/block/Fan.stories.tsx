@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { Fan } from './Fan';
 import { FC, PropsWithChildren } from 'react';
 import { card } from '../data/sizes';
