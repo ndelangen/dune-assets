@@ -1,4 +1,4 @@
-name: Update assets
+name: Push
 on:
   push:
     branches-ignore:
