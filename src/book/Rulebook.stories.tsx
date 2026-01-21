@@ -16,10 +16,12 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+const pagesIds = ((rulebook as any).__namedExportsOrder as Exclude<keyof typeof rulebook, 'default'>[]) || Object.keys(rulebook);
+
 export const Dreamrules = {
   args: {
     cover: rulebook.default.parameters.cover,
-    pages: ((rulebook as any).__namedExportsOrder as Exclude<keyof typeof rulebook, 'default'>[])
+    pages: pagesIds
       .filter((key) => !key.match('default') && !key.startsWith('_'))
       .map((key) => rulebook[key].args.children),
 

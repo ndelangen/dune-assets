@@ -9,29 +9,29 @@ export const parameters = {
       page: {
         name: 'Page',
         styles: {
-          width: page.width + 'px',
-          height: page.height + 'px',
+          width: Math.round(page.width) + 'px',
+          height: Math.round(page.height) + 'px',
         },
       },
       card: {
         name: 'Card',
         styles: {
-          width: card.width + 'px',
-          height: card.height + 'px',
+          width: Math.round(card.width) + 'px',
+          height: Math.round(card.height) + 'px',
         },
       },
       shield: {
         name: 'Shield',
         styles: {
-          width: shield.width + 'px',
-          height: shield.height + 'px',
+          width: Math.round(shield.width) + 'px',
+          height: Math.round(shield.height) + 'px',
         },
       },
       disc: {
         name: 'Disc',
         styles: {
-          width: disc.width + 'px',
-          height: disc.height + 'px',
+          width: Math.round(disc.width) + 'px',
+          height: Math.round(disc.height) + 'px',
         },
       },
     },
