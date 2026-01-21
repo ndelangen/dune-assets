@@ -10,11 +10,6 @@ const config: StorybookConfig = {
   typescript: {
     reactDocgen: 'react-docgen-typescript',
   },
-  features: {
-    viewportStoryGlobals: true,
-    backgroundsStoryGlobals: true,
-  },
-  docs: {},
   staticDirs: [
     '../public',
     {
