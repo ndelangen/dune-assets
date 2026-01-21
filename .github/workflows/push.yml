@@ -1,0 +1,19 @@
+name: Update assets
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: npx playwright install chromium
+      - run: bun run generate
+      - run: bun run build-storybook --test
