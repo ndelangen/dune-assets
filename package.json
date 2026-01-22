@@ -20,6 +20,7 @@
     "generate": "bun run ./scripts/generate.ts",
     "hooks": "cp scripts/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",
     "test": "vitest",
+    "check": "bun run tsc --noEmit",
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {

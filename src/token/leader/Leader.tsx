@@ -2,7 +2,7 @@ import { useMemo, type FC } from 'react';
 import { z } from 'zod';
 
 import { Leader } from '../../data/objects';
-import * as styles from './Leader.module.css';
+import styles from './Leader.module.css';
 import { StrokedUse } from '../../block/StrokedUse';
 import { useCountId } from '../../utils/useCountId';
 import { tint0 } from '../../utils/colors';

@@ -5,7 +5,14 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customMatcher": "\\.module\\.css$"
+        }
+      }
+    ],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

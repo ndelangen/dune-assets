@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { z } from 'zod';
 
 import { FactionSide } from '../data/objects';
-import * as styles from './Faction.module.css';
+import styles from './Faction.module.css';
 import { StrokedUse } from '../block/StrokedUse';
 
 const foreGroundColor = '#e3dbb3';

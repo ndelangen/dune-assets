@@ -1,9 +1,8 @@
 import { FC } from 'react';
-import { jsx } from 'react/jsx-runtime';
 import { z } from 'zod';
 
 import { Background as BackGroundType, GRADIENT } from '../data/objects';
-import * as styles from './Background.module.css';
+import styles from './Background.module.css';
 
 export const Background: FC<z.infer<typeof BackGroundType>> = ({
   colors,
