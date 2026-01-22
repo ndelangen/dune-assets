@@ -49,7 +49,7 @@ export const Alliance = z.strictObject({
 export const Spice = z.strictObject({
   name: z.string(),
   subName: z.string(),
-  icon: z.enum(['spice-mine', 'spice']),
+  icon: z.enum(['spice-mine', 'spice'] as const),
   highlights: z.array(
     z.enum([
       //sand
@@ -106,7 +106,7 @@ export const Spice = z.strictObject({
       'rock',
       'strongholds',
       'sand',
-    ]),
+    ] as const),
   ),
   overlays: z
     .array(
