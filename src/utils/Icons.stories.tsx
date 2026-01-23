@@ -3,11 +3,11 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { GENERIC, ICON, TROOP, LOGO, DECAL } from '../data/generated';
 
 const types = {
-  icon: Object.keys(ICON.Values),
-  troop: Object.keys(TROOP.Values),
-  generic: Object.keys(GENERIC.Values),
-  logo: Object.keys(LOGO.Values),
-  decal: Object.keys(DECAL.Values),
+  icon: Object.keys(ICON.enum),
+  troop: Object.keys(TROOP.enum),
+  generic: Object.keys(GENERIC.enum),
+  logo: Object.keys(LOGO.enum),
+  decal: Object.keys(DECAL.enum),
 };
 
 const ListIcons = ({ pattern, type }: { pattern: string; type: keyof typeof types }) => {

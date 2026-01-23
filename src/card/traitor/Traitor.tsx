@@ -2,8 +2,8 @@ import { type FC } from 'react';
 import { z } from 'zod';
 
 import { Leader } from '../../data/objects';
-import * as styles from '../Card.module.css';
-import * as unique from './Traitor.module.css';
+import styles from '../Card.module.css';
+import unique from './Traitor.module.css';
 import { FactionToken } from '../../token/Faction';
 import { MarkdownContent } from '../../block/MarkdownContent';
 

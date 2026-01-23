@@ -2,8 +2,8 @@ import { useMemo, type FC } from 'react';
 import { z } from 'zod';
 
 import { Alliance } from '../data/objects';
-import * as styles from './Card.module.css';
-import * as unique from './Alliance.module.css';
+import styles from './Card.module.css';
+import unique from './Alliance.module.css';
 import { MarkdownContent } from '../block/MarkdownContent';
 import { useCountId } from '../utils/useCountId';
 import { StrokedUse } from '../block/StrokedUse';

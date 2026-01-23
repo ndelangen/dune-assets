@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>;
 export const Default = {
   args: {
     image: '/generated/token/faction/choam.jpg',
-    text: 'Hello',
+    children: 'Hello',
     flip: false,
   },
 } satisfies Story;
@@ -20,7 +20,7 @@ export const Default = {
 export const Flipped = {
   args: {
     image: '/generated/token/faction/choam.jpg',
-    text: 'Hello',
+    children: 'Hello',
     flip: true,
   },
 } satisfies Story;

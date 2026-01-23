@@ -2,8 +2,8 @@ import { useMemo, type FC } from 'react';
 import { z } from 'zod';
 
 import { Treachery } from '../../data/objects';
-import * as styles from '../Card.module.css';
-import * as unique from './Treachery.module.css';
+import styles from '../Card.module.css';
+import unique from './Treachery.module.css';
 import { MarkdownContent } from '../../block/MarkdownContent';
 import { useCountId } from '../../utils/useCountId';
 import { FrontDecals } from '../Decals';

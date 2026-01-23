@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { z } from 'zod';
 
 import { CardBack as CardBackType } from '../data/objects';
-import * as styles from './Back.module.css';
+import styles from './Back.module.css';
 import { useCountId } from '../utils/useCountId';
 import { card } from '../data/sizes';
 
