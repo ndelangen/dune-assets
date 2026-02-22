@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const VandoTerboli: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/moritani.svg',
     name: 'Vando Terboli',
     strength: '1',
@@ -34,7 +34,7 @@ export const VandoTerboli: Story = {
 export const TrinKronos: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/moritani.svg',
     name: 'TrinKronos',
     strength: '2',
@@ -44,7 +44,7 @@ export const TrinKronos: Story = {
 export const KrieuKronos: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/moritani.svg',
     name: 'Krieu Kronos',
     strength: '4',
@@ -54,7 +54,7 @@ export const KrieuKronos: Story = {
 export const HiihResser: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/moritani.svg',
     name: 'Riih Resser',
     strength: '4',
@@ -64,7 +64,7 @@ export const HiihResser: Story = {
 export const LupinoOrd: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/moritani.svg',
     name: 'Lupino Ord',
     strength: '5',
@@ -74,7 +74,7 @@ export const LupinoOrd: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
-    image: 'image/leader/hundro.jpg',
+    image: 'image/leader/ilya/hundro.jpg',
     logo: 'vector/logo/moritani.svg',
     name: 'Viscount Hundro Moritani',
     strength: '',

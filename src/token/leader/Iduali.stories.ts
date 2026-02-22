@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Korba: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/korba.png',
+    image: 'image/leader/ilya/korba.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Korba',
     strength: '1',
@@ -34,7 +34,7 @@ export const Korba: Story = {
 export const Smuggler: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/smuggler.png',
+    image: 'image/leader/ilya/smuggler.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Smuggler',
     strength: '3',
@@ -44,7 +44,7 @@ export const Smuggler: Story = {
 export const RatRunner: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/ratrunner.png',
+    image: 'image/leader/ilya/ratrunner.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Rat Runner',
     strength: '3',
@@ -54,7 +54,7 @@ export const RatRunner: Story = {
 export const Sabiha: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/sabiha.png',
+    image: 'image/leader/ilya/sabiha.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Sabiha',
     strength: '4',
@@ -64,7 +64,7 @@ export const Sabiha: Story = {
 export const Javid: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/javid.png',
+    image: 'image/leader/ilya/javid.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Javid',
     strength: '5',
@@ -74,7 +74,7 @@ export const Javid: Story = {
 export const KorbaAlt: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/korba.png',
+    image: 'image/leader/ilya/korba.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Korba',
     strength: '0',
@@ -84,7 +84,7 @@ export const KorbaAlt: Story = {
 export const Majorca: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/smuggler.png',
+    image: 'image/leader/ilya/smuggler.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Smuggler',
     strength: '3',
@@ -94,7 +94,7 @@ export const Majorca: Story = {
 export const MajorcaAlt: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/smuggler.png',
+    image: 'image/leader/ilya/smuggler.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Smuggler',
     strength: '1',
@@ -104,7 +104,7 @@ export const MajorcaAlt: Story = {
 export const Minorca: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/smuggler.png',
+    image: 'image/leader/ilya/smuggler.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Smuggler',
     strength: '4',
@@ -114,7 +114,7 @@ export const Minorca: Story = {
 export const MinorcaAlt: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/smuggler.png',
+    image: 'image/leader/ilya/smuggler.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Smuggler',
     strength: '2',
@@ -124,7 +124,7 @@ export const MinorcaAlt: Story = {
 export const SabihaStrong: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/sabiha.png',
+    image: 'image/leader/ilya/sabiha.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Sabiha',
     strength: '6',
@@ -134,7 +134,7 @@ export const SabihaStrong: Story = {
 export const SabihaAlt: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/sabiha.png',
+    image: 'image/leader/ilya/sabiha.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Sabiha',
     strength: '3',
@@ -144,7 +144,7 @@ export const SabihaAlt: Story = {
 export const JavidStrong: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/javid.png',
+    image: 'image/leader/ilya/javid.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Javid',
     strength: '6',
@@ -154,7 +154,7 @@ export const JavidStrong: Story = {
 export const JavidAlt: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/javid.png',
+    image: 'image/leader/ilya/javid.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Javid',
     strength: '4',
@@ -164,7 +164,7 @@ export const JavidAlt: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/namri.jpg',
+    image: 'image/leader/ilya/namri.jpg',
     logo: 'vector/logo/iduali.svg',
     name: 'Namri',
     strength: '',

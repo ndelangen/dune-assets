@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const JenWu: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
-    image: 'image/leader/jehwu.png',
+    image: 'image/leader/brainfood/jehwu.png',
     logo: 'vector/logo/ginaz.svg',
     name: 'Jen Wu',
     strength: '4',
@@ -34,7 +34,7 @@ export const JenWu: Story = {
 export const JammoReed: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
-    image: 'image/leader/jammo.png',
+    image: 'image/leader/official/jammo.png',
     logo: 'vector/logo/ginaz.svg',
     name: 'Jammo Reed',
     strength: '5',
@@ -44,7 +44,7 @@ export const JammoReed: Story = {
 export const KarstyTopper: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
-    image: 'image/leader/karsty.png',
+    image: 'image/leader/brainfood/karsty.png',
     logo: 'vector/logo/ginaz.svg',
     name: 'Karsty Topper',
     strength: '5',
@@ -54,7 +54,7 @@ export const KarstyTopper: Story = {
 export const RivvyDinari: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
-    image: 'image/leader/rivvy.png',
+    image: 'image/leader/brainfood/rivvy.png',
     logo: 'vector/logo/ginaz.svg',
     name: 'Rivvy Dinari',
     strength: '6',
@@ -64,7 +64,7 @@ export const RivvyDinari: Story = {
 export const MordCour: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
-    image: 'image/leader/mord.png',
+    image: 'image/leader/brainfood/mord.png',
     logo: 'vector/logo/ginaz.svg',
     name: 'Mord Cour',
     strength: '7',
@@ -74,7 +74,7 @@ export const MordCour: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
-    image: 'image/leader/whitemore-bludd.png',
+    image: 'image/leader/official/whitemore-bludd.png',
     logo: 'vector/logo/ginaz.svg',
     name: 'Whitmore Bludd',
     strength: '',

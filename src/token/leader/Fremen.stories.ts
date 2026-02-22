@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Jamis: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/jamis.png',
+    image: 'image/leader/official/jamis.png',
     logo: 'vector/logo/fremen.svg',
     name: 'Jamis',
     strength: '2',
@@ -34,7 +34,7 @@ export const Jamis: Story = {
 export const ShadoutMapes: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/mapes.png',
+    image: 'image/leader/official/mapes.png',
     logo: 'vector/logo/fremen.svg',
     name: 'Shadout Mapes',
     strength: '3',
@@ -44,7 +44,7 @@ export const ShadoutMapes: Story = {
 export const Otheym: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/otheym.png',
+    image: 'image/leader/official/otheym.png',
     logo: 'vector/logo/fremen.svg',
     name: 'Otheym',
     strength: '5',
@@ -54,7 +54,7 @@ export const Otheym: Story = {
 export const Chani: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/chani.png',
+    image: 'image/leader/official/chani.png',
     logo: 'vector/logo/fremen.svg',
     name: 'Chani',
     strength: '6',
@@ -64,7 +64,7 @@ export const Chani: Story = {
 export const Stilgar: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/stilgar.png',
+    image: 'image/leader/official/stilgar.png',
     logo: 'vector/logo/fremen.svg',
     name: 'Stilgar',
     strength: '7',
@@ -74,7 +74,7 @@ export const Stilgar: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/liet.jpg',
+    image: 'image/leader/official/liet.jpg',
     logo: 'vector/logo/fremen.svg',
     name: 'Liet Kynes',
     strength: '',

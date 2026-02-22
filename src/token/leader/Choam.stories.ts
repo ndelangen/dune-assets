@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Auditor: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/auditor.png',
+    image: 'image/leader/official/auditor.png',
     logo: 'vector/logo/choam.svg',
     name: 'Auditor',
     strength: '2',
@@ -34,7 +34,7 @@ export const Auditor: Story = {
 export const ViscountTull: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/viscount-tull.png',
+    image: 'image/leader/official/viscount-tull.png',
     logo: 'vector/logo/choam.svg',
     name: 'Viscount Tull',
     strength: '2',
@@ -44,7 +44,7 @@ export const ViscountTull: Story = {
 export const DukeVerdun: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/duke-verdun.png',
+    image: 'image/leader/official/duke-verdun.png',
     logo: 'vector/logo/choam.svg',
     name: 'Duke Verdun',
     strength: '3',
@@ -54,7 +54,7 @@ export const DukeVerdun: Story = {
 export const RajivLondine: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/rajiv-londine.png',
+    image: 'image/leader/official/rajiv-londine.png',
     logo: 'vector/logo/choam.svg',
     name: 'Rajiv Londine',
     strength: '3',
@@ -64,7 +64,7 @@ export const RajivLondine: Story = {
 export const FrankosAru: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/frankos-aru.png',
+    image: 'image/leader/official/frankos-aru.png',
     logo: 'vector/logo/choam.svg',
     name: 'Frankos Aru',
     strength: '4',
@@ -74,7 +74,7 @@ export const FrankosAru: Story = {
 export const LadyJalma: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/lady-yalma.png',
+    image: 'image/leader/official/lady-yalma.png',
     logo: 'vector/logo/choam.svg',
     name: 'Lady Jalma',
     strength: '4',
@@ -84,7 +84,7 @@ export const LadyJalma: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
-    image: 'image/leader/lady-yalma.png',
+    image: 'image/leader/official/lady-yalma.png',
     logo: 'vector/logo/choam.svg',
     name: 'Ur-Director Malina Aru',
     strength: '',

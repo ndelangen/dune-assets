@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const CammarPilru: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
-    image: 'image/leader/cammar.png',
+    image: 'image/leader/official/cammar.png',
     logo: 'vector/logo/ixian.svg',
     name: 'Cammar Pilru',
     strength: '1',
@@ -29,7 +29,7 @@ export const CammarPilru: Story = {
 export const KailiaVernius: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
-    image: 'image/leader/kailea.png',
+    image: 'image/leader/official/kailea.png',
     logo: 'vector/logo/ixian.svg',
     name: 'Kailia Vernius',
     strength: '2',
@@ -40,7 +40,7 @@ export const KailiaVernius: Story = {
 export const DominicVernius: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
-    image: 'image/leader/dominic.png',
+    image: 'image/leader/official/dominic.png',
     logo: 'vector/logo/ixian.svg',
     name: 'Dominic Vernius',
     strength: '3',
@@ -51,7 +51,7 @@ export const DominicVernius: Story = {
 export const TessiaVernius: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/ixian.svg',
     name: 'Tessia Vernius',
     strength: '5',
@@ -62,7 +62,7 @@ export const TessiaVernius: Story = {
 export const CtairPilru: Story = {
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
-    image: 'image/leader/ctair.png',
+    image: 'image/leader/official/ctair.png',
     logo: 'vector/logo/ixian.svg',
     name: 'Ctair Pilru',
     strength: '5',

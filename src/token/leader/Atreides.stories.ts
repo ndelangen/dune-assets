@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const DrYueh: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/dryeuh.png',
+    image: 'image/leader/official/dryeuh.png',
     logo: 'vector/logo/atreides.svg',
     name: 'Dr. Yueh',
     strength: '1',
@@ -34,7 +34,7 @@ export const DrYueh: Story = {
 export const DuncanIdaho: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/duncan.png',
+    image: 'image/leader/official/duncan.png',
     logo: 'vector/logo/atreides.svg',
     name: 'Duncan Idaho',
     strength: '2',
@@ -44,7 +44,7 @@ export const DuncanIdaho: Story = {
 export const GurneyHalleck: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/gurney.png',
+    image: 'image/leader/official/gurney.png',
     logo: 'vector/logo/atreides.svg',
     name: 'Gurney Halleck',
     strength: '4',
@@ -54,7 +54,7 @@ export const GurneyHalleck: Story = {
 export const LadyJessica: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/jessica.png',
+    image: 'image/leader/official/jessica.png',
     logo: 'vector/logo/atreides.svg',
     name: 'Lady Jessica',
     strength: '5',
@@ -64,7 +64,7 @@ export const LadyJessica: Story = {
 export const ThufirHawat: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/thufir.png',
+    image: 'image/leader/official/thufir.png',
     logo: 'vector/logo/atreides.svg',
     name: 'Thufir Hawat',
     strength: '5',
@@ -74,7 +74,7 @@ export const ThufirHawat: Story = {
 export const KwisatzHaderach: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/paul.jpg',
+    image: 'image/leader/official/paul.jpg',
     logo: 'vector/logo/atreides.svg',
     name: 'Kwisatz Haderach',
     strength: '+2',
@@ -84,7 +84,7 @@ export const KwisatzHaderach: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
-    image: 'image/leader/paul.jpg',
+    image: 'image/leader/official/paul.jpg',
     logo: 'vector/logo/atreides.svg',
     name: `Paul Muad'Dib`,
     strength: '',

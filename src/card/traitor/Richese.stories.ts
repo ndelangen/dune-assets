@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const TalisBalt: Story = {
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/richese.svg',
     name: 'Talis Balt',
     strength: '2',
@@ -29,7 +29,7 @@ export const TalisBalt: Story = {
 export const HaloaRund: Story = {
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/richese.svg',
     name: 'Haloa Rund',
     strength: '2',
@@ -40,7 +40,7 @@ export const HaloaRund: Story = {
 export const FlintoKinnis: Story = {
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/richese.svg',
     name: 'Flinto Kinnis',
     strength: '3',
@@ -51,7 +51,7 @@ export const FlintoKinnis: Story = {
 export const LadyHelena: Story = {
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
-    image: 'image/leader/helena.png',
+    image: 'image/leader/brainfood/helena.png',
     logo: 'vector/logo/richese.svg',
     name: 'Lady Helena',
     strength: '4',
@@ -62,7 +62,7 @@ export const LadyHelena: Story = {
 export const EinCalimar: Story = {
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
-    image: 'image/leader/tessia.png',
+    image: 'image/leader/official/tessia.png',
     logo: 'vector/logo/richese.svg',
     name: 'Ein Calimar',
     strength: '5',
