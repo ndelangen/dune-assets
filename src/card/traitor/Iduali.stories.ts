@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const Korba: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/korba.png',
+    image: 'image/leader/ilya/korba.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Korba',
     strength: '1',
@@ -29,7 +29,7 @@ export const Korba: Story = {
 export const Smuggler: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/smuggler.png',
+    image: 'image/leader/ilya/smuggler.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Smuggler',
     strength: '3',
@@ -40,7 +40,7 @@ export const Smuggler: Story = {
 export const RatRunner: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/ratrunner.png',
+    image: 'image/leader/ilya/ratrunner.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Rat Runner',
     strength: '3',
@@ -51,7 +51,7 @@ export const RatRunner: Story = {
 export const Sabiha: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/sabiha.png',
+    image: 'image/leader/ilya/sabiha.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Sabiha',
     strength: '4',
@@ -62,7 +62,7 @@ export const Sabiha: Story = {
 export const Javid: Story = {
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
-    image: 'image/leader/javid.png',
+    image: 'image/leader/ilya/javid.png',
     logo: 'vector/logo/iduali.svg',
     name: 'Javid',
     strength: '5',

@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const UmanKudu: Story = {
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/uman.png',
+    image: 'image/leader/official/uman.png',
     logo: 'vector/logo/harkonnen.svg',
     name: 'Uman Kudu',
     strength: '1',
@@ -29,7 +29,7 @@ export const UmanKudu: Story = {
 export const CaptainIakinNefud: Story = {
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/nafud.png',
+    image: 'image/leader/official/nafud.png',
     logo: 'vector/logo/harkonnen.svg',
     name: 'Cptn. Iakin Nefud',
     strength: '2',
@@ -40,7 +40,7 @@ export const CaptainIakinNefud: Story = {
 export const PiterDeVries: Story = {
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/piter.png',
+    image: 'image/leader/official/piter.png',
     logo: 'vector/logo/harkonnen.svg',
     name: 'Piter de Vries',
     strength: '3',
@@ -51,7 +51,7 @@ export const PiterDeVries: Story = {
 export const BeastRabban: Story = {
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/beast.png',
+    image: 'image/leader/official/beast.png',
     logo: 'vector/logo/harkonnen.svg',
     name: 'Beast Rabban',
     strength: '4',
@@ -62,7 +62,7 @@ export const BeastRabban: Story = {
 export const FeydRautha: Story = {
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
-    image: 'image/leader/feyd.png',
+    image: 'image/leader/official/feyd.png',
     logo: 'vector/logo/harkonnen.svg',
     name: 'Feyd Rautha',
     strength: '6',

@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Representative: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/guildrep.png',
+    image: 'image/leader/official/guildrep.png',
     logo: 'vector/logo/guild.svg',
     name: 'Representative',
     strength: '1',
@@ -34,7 +34,7 @@ export const Representative: Story = {
 export const SooSooSook: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/soo-soo-sook.png',
+    image: 'image/leader/official/soo-soo-sook.png',
     logo: 'vector/logo/guild.svg',
     name: 'Soo Soo Sook',
     strength: '2',
@@ -44,7 +44,7 @@ export const SooSooSook: Story = {
 export const EsmarTuek: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/esmar.png',
+    image: 'image/leader/official/esmar.png',
     logo: 'vector/logo/guild.svg',
     name: 'Esmar',
     strength: '3',
@@ -54,7 +54,7 @@ export const EsmarTuek: Story = {
 export const MasterBewt: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/bewt.png',
+    image: 'image/leader/official/bewt.png',
     logo: 'vector/logo/guild.svg',
     name: 'Master Bewt',
     strength: '3',
@@ -64,7 +64,7 @@ export const MasterBewt: Story = {
 export const StabanTuek: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/staban.png',
+    image: 'image/leader/official/staban.png',
     logo: 'vector/logo/guild.svg',
     name: 'Staban Tuek',
     strength: '5',
@@ -74,7 +74,7 @@ export const StabanTuek: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
-    image: 'image/leader/edric.jpg',
+    image: 'image/leader/official/edric.jpg',
     logo: 'vector/logo/guild.svg',
     name: 'Edric',
     strength: '',

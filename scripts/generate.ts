@@ -4,8 +4,10 @@ import { basename, join, relative } from 'node:path';
 import { recursiveReaddirFiles } from 'recursive-readdir-files';
 
 async function getFiles(path: string) {
-  const files = await readdir(join(import.meta.dirname, '..', 'public', path));
-  return files.filter((f) => !f.startsWith('.')).map((file) => join(path, file));
+  const dir = join(import.meta.dirname, '..', 'public', path);
+  return (await recursiveReaddirFiles(dir))
+    .map((f) => relative(join(dir, '..', '..'), f.path))
+    .filter((f) => f.match(/\.(png|jpg|pdf|svg)$/));
 }
 
 // images

@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Bashar: Story = {
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
-    image: 'image/leader/bashar.png',
+    image: 'image/leader/official/bashar.png',
     logo: 'vector/logo/emperor.svg',
     name: 'Bashar',
     strength: '2',
@@ -34,7 +34,7 @@ export const Bashar: Story = {
 export const Burseg: Story = {
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
-    image: 'image/leader/burseg.png',
+    image: 'image/leader/official/burseg.png',
     logo: 'vector/logo/emperor.svg',
     name: 'Burseg',
     strength: '3',
@@ -44,7 +44,7 @@ export const Burseg: Story = {
 export const Caid: Story = {
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
-    image: 'image/leader/caid.png',
+    image: 'image/leader/official/caid.png',
     logo: 'vector/logo/emperor.svg',
     name: 'Caid',
     strength: '3',
@@ -54,7 +54,7 @@ export const Caid: Story = {
 export const CaptainAramsham: Story = {
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
-    image: 'image/leader/aramsham.png',
+    image: 'image/leader/official/aramsham.png',
     logo: 'vector/logo/emperor.svg',
     name: 'Cpt. Aramsham',
     strength: '5',
@@ -64,7 +64,7 @@ export const CaptainAramsham: Story = {
 export const HasimirFenring: Story = {
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
-    image: 'image/leader/hasimir.png',
+    image: 'image/leader/official/hasimir.png',
     logo: 'vector/logo/emperor.svg',
     name: 'Hasimir Fenring',
     strength: '6',
@@ -74,7 +74,7 @@ export const HasimirFenring: Story = {
 export const Hero: Story = {
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
-    image: 'image/leader/hasimir.png',
+    image: 'image/leader/official/hasimir.png',
     logo: 'vector/logo/emperor.svg',
     name: 'Emperor Shadam IV',
     strength: '',
