@@ -1,28 +1,7 @@
-import React from 'react';
 import addonDocs from '@storybook/addon-docs';
 import { definePreview } from '@storybook/react-vite';
 
 import { card, disc, page, shield } from '../src/data/sizes';
-
-const decorators = [
-  (Story, { globals }) => {
-    const { disc } = globals;
-    return disc === 'true' ? (
-      <div style={{ overflow: 'hidden', borderRadius: '50%' }}>
-        <Story />
-      </div>
-    ) : (
-      <Story />
-    );
-  },
-];
-
-const initialGlobals = {
-  backgrounds: {
-    value: '#333333',
-    grid: true,
-  },
-};
 
 export default definePreview({
   addons: [addonDocs()],
@@ -76,6 +55,22 @@ export default definePreview({
       },
     },
   },
-  decorators,
-  initialGlobals,
+  decorators: [
+    (Story, { globals }) => {
+      const { disc } = globals;
+      return disc === 'true' ? (
+        <div style={{ overflow: 'hidden', borderRadius: '50%' }}>
+          <Story />
+        </div>
+      ) : (
+        <Story />
+      );
+    },
+  ],
+  initialGlobals: {
+    backgrounds: {
+      value: '#333333',
+      grid: true,
+    },
+  },
 });

@@ -38,5 +38,5 @@ export interface Faction {
   shield: z.infer<typeof GENERATED>;
   spiceCount: number;
   logo: z.infer<typeof GENERATED>;
-  extras: any[];
+  extras: unknown[];
 }

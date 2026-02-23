@@ -1,10 +1,9 @@
-import { useMemo, type FC } from 'react';
+import { type FC, useMemo } from 'react';
 import type { z } from 'zod';
-
-import type { TroopSide } from '../data/objects';
-import styles from './Troop.module.css';
 import { StrokedUse } from '../block/StrokedUse';
+import type { TroopSide } from '../data/objects';
 import { useCountId } from '../utils/useCountId';
+import styles from './Troop.module.css';
 
 const foreGroundColor = '#e3dbb3';
 const iconSize = { width: 73, height: 73 };
@@ -19,7 +18,7 @@ export const TroopToken: FC<z.infer<typeof TroopSide>> = ({ background, image, s
 
   return (
     <div className={styles.disc} style={{ background }}>
-      <svg className={styles.content} viewBox='0 0 100 100'>
+      <svg className={styles.content} viewBox='0 0 100 100' aria-label='Troop Token'>
         <defs>
           <mask id={stripedMask} maskUnits='userSpaceOnUse'>
             <StrokedUse

@@ -1,32 +1,30 @@
-import { Fragment } from 'react';
-
 import { Definitions } from '../../block/Definitions';
-import { Fan } from '../../block/Fan';
+// import { Fan } from '../../block/Fan';
 import { WithBottom } from '../../block/Layout';
 import { Outline } from '../../block/Outline';
 import { Spaced } from '../../block/Spaced';
 import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
-import { Wrapper } from '../../block/Wrapper';
+// import { Wrapper } from '../../block/Wrapper';
 // import { nexus_1, nexus_yes } from '../../presets/nexus_cards';
-import { card as cardSize } from '../../data/sizes';
+// import { card as cardSize } from '../../data/sizes';
 // import * as backs from '../../presets/back_cards';
 import * as colors from '../../utils/colors';
 
-const order = [
-  'face_dancer',
-  'nexus',
-  'fate_swap',
-  'bidding',
-  'revival',
-  'spice_blow',
-  'shipment',
-  'battle',
-  'mentat',
-  'collection',
-  'ixian MDP',
-  'storm',
-];
+// const order = [
+//   'face_dancer',
+//   'nexus',
+//   'fate_swap',
+//   'bidding',
+//   'revival',
+//   'spice_blow',
+//   'shipment',
+//   'battle',
+//   'mentat',
+//   'collection',
+//   'ixian MDP',
+//   'storm',
+// ];
 
 export function About() {
   return (

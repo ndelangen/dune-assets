@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import { Definitions } from '../../block/Definitions';
 import { Fan } from '../../block/Fan';
 import { SideBySide } from '../../block/Layout';
