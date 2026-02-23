@@ -20,7 +20,7 @@ const pagesIds =
 
 export const Dreamrules = meta.story({
   args: {
-    cover: rulebook.default.input.parameters.cover,
+    cover: rulebook.default.input?.parameters?.cover,
     pages: pagesIds
       .filter((key) => !key.match('default') && !key.startsWith('_'))
       .map((key) => rulebook[key].input.args.children),
