@@ -1,6 +1,4 @@
-
 import { z } from 'zod';
-
 
 export const GENERIC = z.enum([
   'vector/generic/6star.svg',
@@ -251,7 +249,7 @@ export const GENERIC = z.enum([
   'vector/generic/why.svg',
   'vector/generic/wuurm.svg',
   'vector/generic/x.svg',
-  'vector/generic/zap.svg'
+  'vector/generic/zap.svg',
 ]);
 
 export const LOGO = z.enum([
@@ -269,7 +267,7 @@ export const LOGO = z.enum([
   'vector/logo/iduali.svg',
   'vector/logo/ixian.svg',
   'vector/logo/moritani.svg',
-  'vector/logo/richese.svg'
+  'vector/logo/richese.svg',
 ]);
 
 export const DECAL = z.enum([
@@ -432,7 +430,7 @@ export const DECAL = z.enum([
   'vector/decal/weirding-way-plus.svg',
   'vector/decal/weirding-way.svg',
   'vector/decal/wire.svg',
-  'vector/decal/zenobia.svg'
+  'vector/decal/zenobia.svg',
 ]);
 
 export const ICON = z.enum([
@@ -493,7 +491,7 @@ export const ICON = z.enum([
   'vector/icon/water.svg',
   'vector/icon/waves.svg',
   'vector/icon/worthless.svg',
-  'vector/icon/wreath.svg'
+  'vector/icon/wreath.svg',
 ]);
 
 export const LEADERS = z.enum([
@@ -742,7 +740,7 @@ export const LEADERS = z.enum([
   'image/leader/official/whitmore.jpg',
   'image/leader/official/wykk.png',
   'image/leader/official/zaaf.png',
-  'image/leader/official/zoal.png'
+  'image/leader/official/zoal.png',
 ]);
 
 export const TROOP = z.enum([
@@ -769,14 +767,14 @@ export const TROOP = z.enum([
   'vector/troop/peddler.svg',
   'vector/troop/pewpew.svg',
   'vector/troop/richese.svg',
-  'vector/troop/smuggler.svg'
+  'vector/troop/smuggler.svg',
 ]);
 
 export const TROOP_MODIFIER = z.enum([
   'vector/troop_modifier/star-left-red.svg',
   'vector/troop_modifier/star-left.svg',
   'vector/troop_modifier/star-right-red.svg',
-  'vector/troop_modifier/star-right.svg'
+  'vector/troop_modifier/star-right.svg',
 ]);
 
 export const GENERATED = z.enum([
@@ -1247,13 +1245,7 @@ export const GENERATED = z.enum([
   'generated/utils/icons/generics.jpg',
   'generated/utils/icons/icons.jpg',
   'generated/utils/icons/logos.jpg',
-  'generated/utils/icons/troops.jpg'
+  'generated/utils/icons/troops.jpg',
 ]);
 
-export const ALL = z.union([
-  GENERIC,
-  LOGO,
-  DECAL,
-  ICON,
-  TROOP
-]);
+export const ALL = z.union([GENERIC, LOGO, DECAL, ICON, TROOP]);

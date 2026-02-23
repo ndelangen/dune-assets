@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
 import styles from './FactionSynopsis.module.css';
 import { Text } from './Text';
@@ -12,6 +12,6 @@ export const FactionSynopsis: FC<PropsWithChildren<{ flip?: boolean; image: stri
     <div>
       <Text>{children}</Text>
     </div>
-    <img src={image} className={styles.image} />
+    <img src={image} className={styles.image} alt='' />
   </div>
 );

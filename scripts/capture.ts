@@ -33,7 +33,7 @@ const bar1 = new cliProgress.SingleBar(
     clearOnComplete: true,
     format: 'Generating {bar} | {entry} | {value}/{total}',
   },
-  cliProgress.Presets.shades_classic,
+  cliProgress.Presets.shades_classic
 );
 let count = 0;
 
@@ -72,7 +72,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
   await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
+  await Bun.write(`storybook-static/${path}`, file);
 }
 
 for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
@@ -93,7 +93,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
   await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
+  await Bun.write(`storybook-static/${path}`, file);
 }
 
 for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
@@ -114,7 +114,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
   await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
+  await Bun.write(`storybook-static/${path}`, file);
 }
 
 for (const entry of entries.filter((entry) => entry.startsWith('shield'))) {
@@ -137,7 +137,7 @@ for (const entry of entries.filter((entry) => entry.startsWith('shield'))) {
     .screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
 
   const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
+  await Bun.write(`storybook-static/${path}`, file);
 }
 
 for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {

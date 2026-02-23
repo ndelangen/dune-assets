@@ -1,7 +1,8 @@
-import { type FC } from 'react';
-import { z } from 'zod';
+/** biome-ignore-all lint/a11y/useAltText: I don't care */
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { Leader } from '../../data/objects';
+import type { Leader } from '../../data/objects';
 import styles from '../Card.module.css';
 import unique from './Traitor.module.css';
 import { FactionToken } from '../../token/Faction';
@@ -22,8 +23,8 @@ export const TraitorCard: FC<z.infer<typeof Leader> & { owner: string; backgroun
       <div className={styles.head_shade}></div>
       <div className={styles.shape}></div>
       <div className={`${styles.type} ${unique.type}`}>
-        <img src="/vector/icon/traitor.svg" className={styles.typeOverlay} />
-        <img src="/vector/icon/traitor.svg" className={styles.typeShade} />
+        <img src='/vector/icon/traitor.svg' className={styles.typeOverlay} />
+        <img src='/vector/icon/traitor.svg' className={styles.typeShade} />
       </div>
       <div className={styles.title}>{name}</div>
       <div className={styles.subtitle}>Traitor - {owner}</div>

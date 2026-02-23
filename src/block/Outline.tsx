@@ -1,6 +1,6 @@
 // import styled from '@emotion/styled';
 // import * as colors from '../presets/colors';
-import { FC, PropsWithChildren } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
 import styles from './Outline.module.css';
 

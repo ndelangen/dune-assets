@@ -1,7 +1,8 @@
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: I don't care */
 import { useMemo, type FC } from 'react';
-import { z } from 'zod';
+import type { z } from 'zod';
 
-import { Treachery } from '../../data/objects';
+import type { Treachery } from '../../data/objects';
 import styles from '../Card.module.css';
 import unique from './Treachery.module.css';
 import { MarkdownContent } from '../../block/MarkdownContent';
@@ -49,6 +50,7 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
         }}
       >
         <img
+          alt={icon[1]}
           src={icon[1]}
           className={unique.typeOverlay}
           style={{
@@ -59,6 +61,7 @@ export const TreacheryCard: FC<z.infer<typeof Treachery>> = ({
           }}
         />
         <img
+          alt={icon[1]}
           src={icon[1]}
           className={unique.typeShade}
           style={{

@@ -1,9 +1,9 @@
 .head {
-  background: url('/generated/utils/background/spice-2.jpg') top center / cover no-repeat;
+  background: url("/generated/utils/background/spice-2.jpg") top center / cover no-repeat;
 }
 
 .shape {
-  background: url('/image/card/base-full.png');
+  background: url("/image/card/base-full.png");
 }
 
 .logo {
@@ -28,7 +28,7 @@
 }
 
 .type {
-  background: url('/generated/utils/background/striped-spice.jpg') top center / cover no-repeat;
+  background: url("/generated/utils/background/striped-spice.jpg") top center / cover no-repeat;
   filter: contrast(1.3);
 }
 
@@ -95,7 +95,7 @@
   left: 100px;
   overflow: hidden;
   position: absolute;
-  font-family: 'C_Candara';
+  font-family: "C_Candara", sans-serif;
   font-size: 45px;
   color: #0b0503;
   opacity: 0.937;
@@ -121,7 +121,7 @@
   right: 100px;
   width: 300px;
   height: 120px;
-  font-family: 'C_Advokat_Modern';
+  font-family: "C_Advokat_Modern", sans-serif;
   font-size: 160px;
   color: #0b0503;
   text-align: right;

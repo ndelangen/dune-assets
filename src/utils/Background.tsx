@@ -1,7 +1,9 @@
-import { FC } from 'react';
-import { z } from 'zod';
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: I don't care */
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: I don't care */
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { Background as BackGroundType, GRADIENT } from '../data/objects';
+import { type Background as BackGroundType, GRADIENT } from '../data/objects';
 import styles from './Background.module.css';
 
 export const Background: FC<z.infer<typeof BackGroundType>> = ({
@@ -12,20 +14,20 @@ export const Background: FC<z.infer<typeof BackGroundType>> = ({
 }) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="600px"
-      height="600px"
-      viewBox="0 0 100 100"
+      xmlns='http://www.w3.org/2000/svg'
+      width='600px'
+      height='600px'
+      viewBox='0 0 100 100'
       className={styles.container}
     >
       <defs>
-        <pattern id="texture" width="100" height="100" patternUnits="userSpaceOnUse">
+        <pattern id='texture' width='100' height='100' patternUnits='userSpaceOnUse'>
           <g filter={`invert(${1 + strength * 0.01})`}>
-            <image xlinkHref={image} width="100" height="100" filter={`brightness(${1 + opacity * 0.01})`} />
+            <image xlinkHref={image} width='100' height='100' filter={`brightness(${1 + opacity * 0.01})`} />
           </g>
         </pattern>
-        <mask id="texture-mask">
-          <rect x="0" y="0" width="100" height="100" fill="url(#texture)" />
+        <mask id='texture-mask'>
+          <rect x='0' y='0' width='100' height='100' fill='url(#texture)' />
         </mask>
         {colors.map((color, i) => {
           if (!GRADIENT.safeParse(color).success) {
@@ -63,23 +65,25 @@ export const Background: FC<z.infer<typeof BackGroundType>> = ({
               </radialGradient>
             );
           }
+
+          return null;
         })}
       </defs>
 
       <rect
-        x="0"
-        y="0"
-        width="100"
-        height="100"
+        x='0'
+        y='0'
+        width='100'
+        height='100'
         fill={typeof colors[0] === 'string' ? colors[0] : 'url(#gradient-0)'}
       />
       <rect
-        x="0"
-        y="0"
-        width="100"
-        height="100"
+        x='0'
+        y='0'
+        width='100'
+        height='100'
         fill={typeof colors[1] === 'string' ? colors[1] : 'url(#gradient-1)'}
-        mask="url(#texture-mask)"
+        mask='url(#texture-mask)'
       />
     </svg>
   );

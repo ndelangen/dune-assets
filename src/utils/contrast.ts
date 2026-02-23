@@ -7,7 +7,7 @@ export function isLight(color: string) {
     //@ts-expect-error (todo)
     [r, b, b] = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
   } else {
-    let out = +('0x' + color.slice(1).replace(color.length < 5 ? /./g : '', '$&$&'));
+    const out = +`0x${color.slice(1).replace(color.length < 5 ? /./g : '', '$&$&')}`;
     r = out >> 16;
     g = (out >> 8) & 255;
     b = out & 255;

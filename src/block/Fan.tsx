@@ -1,9 +1,10 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: I don't care */
 import {
   Children,
-  DetailedHTMLProps,
-  FC,
-  HTMLAttributes,
-  PropsWithChildren,
+  type DetailedHTMLProps,
+  type FC,
+  type HTMLAttributes,
+  type PropsWithChildren,
   useCallback,
   useState,
 } from 'react';

@@ -1,7 +1,7 @@
 import { useMemo, type FC } from 'react';
-import { z } from 'zod';
+import type { z } from 'zod';
 
-import { Leader } from '../../data/objects';
+import type { Leader } from '../../data/objects';
 import styles from './Leader.module.css';
 import { StrokedUse } from '../../block/StrokedUse';
 import { useCountId } from '../../utils/useCountId';
@@ -20,31 +20,31 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
 
   return (
     <div className={styles.disc} style={{ background }}>
-      <svg viewBox="0 0 300 300">
+      <svg viewBox='0 0 300 300'>
         <defs>
-          <path id={curvedTextPath} d="M 10 135 m 0 0 a 140 140 0 0 0 280 0" />
+          <path id={curvedTextPath} d='M 10 135 m 0 0 a 140 140 0 0 0 280 0' />
 
-          <mask id={discMask} maskUnits="userSpaceOnUse">
-            <rect width="300" height="300" fill="black" />
-            <circle cx="150" cy="131" fill={'white'} r="115"></circle>
+          <mask id={discMask} maskUnits='userSpaceOnUse'>
+            <rect width='300' height='300' fill='black' />
+            <circle cx='150' cy='131' fill={'white'} r='115'></circle>
             <StrokedUse
               xlinkHref={`${logo}#root`}
               {...iconLocation}
               {...iconSize}
-              fill="black"
-              stroke="black"
-              strokeWidth="20%"
+              fill='black'
+              stroke='black'
+              strokeWidth='20%'
             />
             <text
               className={styles.strength}
-              fill="black"
-              stroke="black"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="16.6px"
-              textAnchor="end"
-              x="276"
-              y="186"
+              fill='black'
+              stroke='black'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth='16.6px'
+              textAnchor='end'
+              x='276'
+              y='186'
             >
               {strength}
             </text>
@@ -53,17 +53,17 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
 
         <image height={230} mask={`url(#${discMask})`} width={230} x={35} xlinkHref={image} y={16.6} />
         <circle
-          cx="150"
-          cy="131"
-          fill="transparent"
-          id="mainCircle"
+          cx='150'
+          cy='131'
+          fill='transparent'
+          id='mainCircle'
           mask={`url(#${discMask})`}
-          r="115"
+          r='115'
           stroke={tint0}
           strokeWidth={6.6}
         />
 
-        <text className={styles.strength} textAnchor="end" fill={tint0} x="276" y="186">
+        <text className={styles.strength} textAnchor='end' fill={tint0} x='276' y='186'>
           {strength}
         </text>
 
@@ -72,9 +72,9 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
             className={styles.name}
             fill={tint0}
             filter={'drop-shadow(0 0 1.75rem rgba(0,0,0,0.6))'}
-            startOffset="50%"
-            dominantBaseline="middle"
-            textAnchor="middle"
+            startOffset='50%'
+            dominantBaseline='middle'
+            textAnchor='middle'
             xlinkHref={`#${curvedTextPath}`}
           >
             {name}

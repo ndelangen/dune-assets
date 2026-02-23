@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Book } from './utils/Book';
 
 import * as rulebook from './dreamrules/Pages.stories';
@@ -17,6 +17,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const pagesIds =
+  // biome-ignore lint/suspicious/noExplicitAny: storybook specific, has no types
   ((rulebook as any).__namedExportsOrder as Exclude<keyof typeof rulebook, 'default'>[]) ||
   Object.keys(rulebook);
 

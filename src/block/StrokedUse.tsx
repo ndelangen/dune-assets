@@ -1,4 +1,4 @@
-import { type FC, type SVGProps } from 'react';
+import type { FC, SVGProps } from 'react';
 
 export const StrokedUse: FC<SVGProps<SVGUseElement>> = ({ stroke, strokeWidth, ...rest }) => (
   <>

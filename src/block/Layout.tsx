@@ -1,8 +1,8 @@
-import { FC, PropsWithChildren } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
 import styled from './Layout.module.css';
 
-export const WithBottom: FC<PropsWithChildren<{}>> = ({ children }) => (
+export const WithBottom: FC<PropsWithChildren> = ({ children }) => (
   <div className={styled.withBottom}>{children}</div>
 );
 

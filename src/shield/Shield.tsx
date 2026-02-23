@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import { z } from 'zod';
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { Shield } from '../data/objects';
+import type { Shield } from '../data/objects';
 import { shield as size } from '../data/sizes';
 import { useCountId } from '../utils/useCountId';
 import styles from './Shield.module.css';
@@ -28,72 +28,72 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
 
       <svg {...size} className={styles.svg}>
         <defs>
-          <linearGradient id={gradient} x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stopColor="#faf8eb" />
-            <stop offset="100%" stopColor="#cfaf45" />
+          <linearGradient id={gradient} x1='0' x2='0' y1='0' y2='1'>
+            <stop offset='0%' stopColor='#faf8eb' />
+            <stop offset='100%' stopColor='#cfaf45' />
           </linearGradient>
-          <mask id={textMask} maskUnits="userSpaceOnUse">
-            <rect fill="black" {...size} />
+          <mask id={textMask} maskUnits='userSpaceOnUse'>
+            <rect fill='black' {...size} />
             <text
-              dominantBaseline="middle"
-              fill="white"
-              fontFamily="C_Desdemona"
-              fontSize="65"
-              letterSpacing="-0.7"
+              dominantBaseline='middle'
+              fill='white'
+              fontFamily='C_Desdemona'
+              fontSize='65'
+              letterSpacing='-0.7'
               style={{ textTransform: 'uppercase' }}
-              textAnchor="middle"
-              x="50%"
+              textAnchor='middle'
+              x='50%'
               y={size.height - 50 - 125}
             >
               {name}
             </text>
           </mask>
-          <mask id={textShadeMask} maskUnits="userSpaceOnUse">
-            <rect fill="black" {...size} />
+          <mask id={textShadeMask} maskUnits='userSpaceOnUse'>
+            <rect fill='black' {...size} />
             <text
-              dominantBaseline="middle"
-              fill="white"
-              fontFamily="C_Desdemona"
-              fontSize="65"
-              letterSpacing="-0.7"
+              dominantBaseline='middle'
+              fill='white'
+              fontFamily='C_Desdemona'
+              fontSize='65'
+              letterSpacing='-0.7'
               style={{ textTransform: 'uppercase' }}
-              textAnchor="middle"
-              x="50%"
+              textAnchor='middle'
+              x='50%'
               y={size.height - 50 - 125}
             >
               {name}
             </text>
             <text
-              dominantBaseline="middle"
-              fill="black"
-              fontFamily="C_Desdemona"
-              fontSize="65"
-              letterSpacing="-0.7"
+              dominantBaseline='middle'
+              fill='black'
+              fontFamily='C_Desdemona'
+              fontSize='65'
+              letterSpacing='-0.7'
               style={{ textTransform: 'uppercase' }}
-              textAnchor="middle"
-              x="50%"
+              textAnchor='middle'
+              x='50%'
               y={size.height - 50 - 254 / 2}
             >
               {name}
             </text>
           </mask>
 
-          <filter height="300%" id="dropshadow" width="300%" x="-100%" y="-100%">
-            <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="8" />
-            <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="4" />
-            <feDropShadow dx="0" dy="0" floodColor="#000000" floodOpacity="1" stdDeviation="2" />
+          <filter height='300%' id='dropshadow' width='300%' x='-100%' y='-100%'>
+            <feDropShadow dx='0' dy='0' floodColor='#000000' floodOpacity='1' stdDeviation='8' />
+            <feDropShadow dx='0' dy='0' floodColor='#000000' floodOpacity='1' stdDeviation='4' />
+            <feDropShadow dx='0' dy='0' floodColor='#000000' floodOpacity='1' stdDeviation='2' />
           </filter>
         </defs>
         <g filter={`url(#dropshadow)`}>
           <text
-            dominantBaseline="middle"
-            fill="black"
-            fontFamily="C_Desdemona"
-            fontSize="75"
-            letterSpacing="-0.7"
+            dominantBaseline='middle'
+            fill='black'
+            fontFamily='C_Desdemona'
+            fontSize='75'
+            letterSpacing='-0.7'
             style={{ textTransform: 'uppercase' }}
-            textAnchor="middle"
-            x="50%"
+            textAnchor='middle'
+            x='50%'
             y={size.height - 50 - 125}
           >
             {name}
@@ -108,7 +108,7 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
         />
         <g style={{ mixBlendMode: 'overlay' }}>
           <rect
-            fill="black"
+            fill='black'
             y={size.height - 55 - 150}
             {...size}
             height={70}
