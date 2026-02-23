@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { SpiceCard } from './Spice';
 
-const meta = {
+const meta = preview.meta({
   component: SpiceCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof SpiceCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Arsunt: Story = {
+export const Arsunt = meta.story({
   args: {
     name: 'Arsunt',
     subName: 'Spice mine',
@@ -21,9 +18,9 @@ export const Arsunt: Story = {
     highlights: ['arsunt'],
     amount: 3,
   },
-};
+});
 
-export const GaraKulon: Story = {
+export const GaraKulon = meta.story({
   args: {
     name: 'Gara Kulon',
     subName: 'Spice mine',
@@ -31,9 +28,9 @@ export const GaraKulon: Story = {
     highlights: ['gara-kulon'],
     amount: 5,
   },
-};
+});
 
-export const CielagoEast: Story = {
+export const CielagoEast = meta.story({
   args: {
     name: 'Cielago East',
     subName: 'Spice mine',
@@ -41,9 +38,9 @@ export const CielagoEast: Story = {
     highlights: ['cielago-east'],
     amount: 5,
   },
-};
+});
 
-export const CielagoWest: Story = {
+export const CielagoWest = meta.story({
   args: {
     name: 'Cielago West',
     subName: 'Spice mine',
@@ -51,9 +48,9 @@ export const CielagoWest: Story = {
     highlights: ['cielago-west'],
     amount: 4,
   },
-};
+});
 
-export const BightOfTheCliff: Story = {
+export const BightOfTheCliff = meta.story({
   args: {
     name: 'Bight of the Cliff',
     subName: 'Spice mine',
@@ -61,11 +58,11 @@ export const BightOfTheCliff: Story = {
     highlights: ['bight-of-the-cliff'],
     amount: 4,
   },
-};
+});
 
 // Spice blows
 
-export const BrokenLand: Story = {
+export const BrokenLand = meta.story({
   args: {
     name: 'Broken Land',
     subName: 'Spice blow',
@@ -73,9 +70,9 @@ export const BrokenLand: Story = {
     highlights: ['broken-land'],
     amount: 8,
   },
-};
+});
 
-export const CielagoNorth: Story = {
+export const CielagoNorth = meta.story({
   args: {
     name: 'Cielago North',
     subName: 'Spice blow',
@@ -83,9 +80,9 @@ export const CielagoNorth: Story = {
     highlights: ['cielago-north'],
     amount: 8,
   },
-};
+});
 
-export const CielagoSouth: Story = {
+export const CielagoSouth = meta.story({
   args: {
     name: 'Cielago South',
     subName: 'Spice blow',
@@ -93,9 +90,9 @@ export const CielagoSouth: Story = {
     highlights: ['cielago-south'],
     amount: 12,
   },
-};
+});
 
-export const FuneralPlain: Story = {
+export const FuneralPlain = meta.story({
   args: {
     name: 'Funeral Plain',
     subName: 'Spice blow',
@@ -103,9 +100,9 @@ export const FuneralPlain: Story = {
     highlights: ['funeral-plain'],
     amount: 6,
   },
-};
+});
 
-export const HabbanyaErg: Story = {
+export const HabbanyaErg = meta.story({
   args: {
     name: 'Habbanya Erg',
     subName: 'Spice blow',
@@ -113,9 +110,9 @@ export const HabbanyaErg: Story = {
     highlights: ['habbanya-erg'],
     amount: 8,
   },
-};
+});
 
-export const HabbanyaRidgeFlat: Story = {
+export const HabbanyaRidgeFlat = meta.story({
   args: {
     name: 'Habbanya Ridge Flat',
     subName: 'Spice blow',
@@ -123,9 +120,9 @@ export const HabbanyaRidgeFlat: Story = {
     highlights: ['habbanya-ridge-flat'],
     amount: 10,
   },
-};
+});
 
-export const HaggaBasin: Story = {
+export const HaggaBasin = meta.story({
   args: {
     name: 'Hagga Basin',
     subName: 'Spice blow',
@@ -133,9 +130,9 @@ export const HaggaBasin: Story = {
     highlights: ['hagga-basin'],
     amount: 6,
   },
-};
+});
 
-export const OldGap: Story = {
+export const OldGap = meta.story({
   args: {
     name: 'Old Gap',
     subName: 'Spice blow',
@@ -143,9 +140,9 @@ export const OldGap: Story = {
     highlights: ['old-gap'],
     amount: 6,
   },
-};
+});
 
-export const RedChasm: Story = {
+export const RedChasm = meta.story({
   args: {
     name: 'Red Chasm',
     subName: 'Spice blow',
@@ -153,9 +150,9 @@ export const RedChasm: Story = {
     highlights: ['red-chasm'],
     amount: 8,
   },
-};
+});
 
-export const RockOutcropppings: Story = {
+export const RockOutcropppings = meta.story({
   args: {
     name: 'Rock Outcroppings',
     subName: 'Spice blow',
@@ -163,9 +160,9 @@ export const RockOutcropppings: Story = {
     highlights: ['rock-outcroppings'],
     amount: 6,
   },
-};
+});
 
-export const SihayaRidge: Story = {
+export const SihayaRidge = meta.story({
   args: {
     name: 'Sihaya Ridge',
     subName: 'Spice blow',
@@ -173,9 +170,9 @@ export const SihayaRidge: Story = {
     highlights: ['sihaya-ridge'],
     amount: 6,
   },
-};
+});
 
-export const SouthMesa: Story = {
+export const SouthMesa = meta.story({
   args: {
     name: 'South Mesa',
     subName: 'Spice blow',
@@ -183,9 +180,9 @@ export const SouthMesa: Story = {
     highlights: ['south-mesa'],
     amount: 10,
   },
-};
+});
 
-export const TheGreatFlat: Story = {
+export const TheGreatFlat = meta.story({
   args: {
     name: 'The Great Flat',
     subName: 'Spice blow',
@@ -193,9 +190,9 @@ export const TheGreatFlat: Story = {
     highlights: ['the-great-flat'],
     amount: 10,
   },
-};
+});
 
-export const TheMinorErg: Story = {
+export const TheMinorErg = meta.story({
   args: {
     name: 'The Minor Erg',
     subName: 'Spice blow',
@@ -203,9 +200,9 @@ export const TheMinorErg: Story = {
     highlights: ['the-minor-erg'],
     amount: 8,
   },
-};
+});
 
-export const WindPassNorth: Story = {
+export const WindPassNorth = meta.story({
   args: {
     name: 'Wind Pass North',
     subName: 'Spice blow',
@@ -213,9 +210,9 @@ export const WindPassNorth: Story = {
     highlights: ['wind-pass-north'],
     amount: 6,
   },
-};
+});
 
-export const DiscoveryFuneralPlain: Story = {
+export const DiscoveryFuneralPlain = meta.story({
   args: {
     name: 'Funeral Plain',
     subName: 'Spice blow - Discovery',
@@ -224,9 +221,9 @@ export const DiscoveryFuneralPlain: Story = {
     amount: 6,
     text: `**Smuggler token** on Pasty Mesa\n+\n**6 spice** on Funeral Plain`,
   },
-};
+});
 
-export const DiscoveryHaggaBasin: Story = {
+export const DiscoveryHaggaBasin = meta.story({
   args: {
     name: 'Hagga Basin',
     subName: 'Spice blow - Discovery',
@@ -235,9 +232,9 @@ export const DiscoveryHaggaBasin: Story = {
     amount: 6,
     text: `**Hiereg token** on Gara Kulon\n+\n**6 spice** on Hagga Basin`,
   },
-};
+});
 
-export const DiscoveryOldGap: Story = {
+export const DiscoveryOldGap = meta.story({
   args: {
     name: 'Old Gap',
     subName: 'Spice blow - Discovery',
@@ -246,9 +243,9 @@ export const DiscoveryOldGap: Story = {
     amount: 6,
     text: `**Smuggler token** on False Wall West\n+\n**6 spice** on Hagga Basin`,
   },
-};
+});
 
-export const DiscoveryRockOutcroppings: Story = {
+export const DiscoveryRockOutcroppings = meta.story({
   args: {
     name: 'Rock Outcroppings',
     subName: 'Spice blow - Discovery',
@@ -257,9 +254,9 @@ export const DiscoveryRockOutcroppings: Story = {
     amount: 6,
     text: `**Hiereg token** on Meridian\n+\n**6 spice** on Hagga Basin`,
   },
-};
+});
 
-export const DiscoverySihayaRidge: Story = {
+export const DiscoverySihayaRidge = meta.story({
   args: {
     name: 'Sihaya Ridge',
     subName: 'Spice blow - Discovery',
@@ -268,9 +265,9 @@ export const DiscoverySihayaRidge: Story = {
     amount: 6,
     text: `**Hiereg token** on Cielago East\n+\n**6 spice** on Sihaya Ridge`,
   },
-};
+});
 
-export const DiscoveryWindPassNorth: Story = {
+export const DiscoveryWindPassNorth = meta.story({
   args: {
     name: 'Wind Pass North',
     subName: 'Spice blow - Discovery',
@@ -286,4 +283,4 @@ export const DiscoveryWindPassNorth: Story = {
       },
     ],
   },
-};
+});

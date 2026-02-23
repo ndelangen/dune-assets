@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { AllianceCard } from './Alliance';
 
-const meta = {
+const meta = preview.meta({
   component: AllianceCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof AllianceCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Atreides: Story = {
+export const Atreides = meta.story({
   args: {
     background: `/generated/utils/background/atreides.jpg`,
     logo: 'vector/logo/atreides.svg',
@@ -37,9 +34,9 @@ export const Atreides: Story = {
     text: "Atreides may use Battle Prescience in their ally's battles.",
     troop: 'vector/troop/atreides.svg',
   },
-};
+});
 
-export const Harkonnen: Story = {
+export const Harkonnen = meta.story({
   args: {
     background: `/generated/utils/background/harkonnen.jpg`,
     logo: 'vector/logo/harkonnen.svg',
@@ -63,9 +60,9 @@ export const Harkonnen: Story = {
     text: "Harkonnen may call traitor and use their fate in their ally's battles.",
     troop: 'vector/troop/harkonnen.svg',
   },
-};
+});
 
-export const Fremen: Story = {
+export const Fremen = meta.story({
   args: {
     background: `/generated/utils/background/fremen.jpg`,
     logo: 'vector/logo/fremen.svg',
@@ -89,9 +86,9 @@ export const Fremen: Story = {
     text: 'Fremen may protect their ally from Shai-Hulud. Any spice you pay for spice dialing goes to your bribes.',
     troop: 'vector/troop/fremen.svg',
   },
-};
+});
 
-export const Emperor: Story = {
+export const Emperor = meta.story({
   args: {
     background: `/generated/utils/background/emperor.jpg`,
     logo: 'vector/logo/emperor.svg',
@@ -115,9 +112,9 @@ export const Emperor: Story = {
     text: 'Emperor may instantly give spice to their ally at any time.',
     troop: 'vector/troop/emperor.svg',
   },
-};
+});
 
-export const SpacingGuild: Story = {
+export const SpacingGuild = meta.story({
   args: {
     background: `/generated/utils/background/guild.jpg`,
     logo: 'vector/logo/guild.svg',
@@ -134,9 +131,9 @@ export const SpacingGuild: Story = {
     text: "Spacing Guild may allow their ally to use Three Types Of Shipment. Spacing Guild may reveal spice from their hidden to pay for their ally's shipment. You may use Discount Shipping.",
     troop: 'vector/troop/guild.svg',
   },
-};
+});
 
-export const Ixian: Story = {
+export const Ixian = meta.story({
   args: {
     background: `/generated/utils/background/ixian.jpg`,
     logo: 'vector/logo/ixian.svg',
@@ -153,9 +150,9 @@ export const Ixian: Story = {
     text: 'Once per turn, you and Ixians may swap or transfer a treachery card. You cannot swap in battle after The Voice step.',
     troop: 'vector/troop/ixian.svg',
   },
-};
+});
 
-export const BeneGesserit: Story = {
+export const BeneGesserit = meta.story({
   args: {
     background: `/generated/utils/background/bene-gesserit.jpg`,
     logo: 'vector/logo/bene-gesserit.svg',
@@ -179,9 +176,9 @@ export const BeneGesserit: Story = {
     text: "Bene Gesserit may use The Voice in their ally's battles.",
     troop: 'vector/troop/bene-gesserit.svg',
   },
-};
+});
 
-export const BeneTleilaxu: Story = {
+export const BeneTleilaxu = meta.story({
   args: {
     background: `/generated/utils/background/bene-tleilaxu.jpg`,
     logo: 'vector/logo/bene-tleilaxu.svg',
@@ -205,9 +202,9 @@ export const BeneTleilaxu: Story = {
     text: 'You may revive your forces and leaders at half price.',
     troop: 'vector/troop/bene-tleilaxu.svg',
   },
-};
+});
 
-export const Choam: Story = {
+export const Choam = meta.story({
   args: {
     background: `/generated/utils/background/choam.jpg`,
     logo: 'vector/logo/choam.svg',
@@ -238,9 +235,9 @@ export const Choam: Story = {
     text: 'You may allow your ally to use any contracts instead of yourself this turn. You and your ally may help pay when one of you pays for a contract.',
     troop: 'vector/troop/choam.svg',
   },
-};
+});
 
-export const Richese: Story = {
+export const Richese = meta.story({
   args: {
     background: `/generated/utils/background/richese.jpg`,
     logo: 'vector/logo/richese.svg',
@@ -257,9 +254,9 @@ export const Richese: Story = {
     text: 'Text goes here',
     troop: 'vector/troop/richese.svg',
   },
-};
+});
 
-export const Moritani: Story = {
+export const Moritani = meta.story({
   args: {
     background: `/generated/utils/background/moritani.jpg`,
     logo: 'vector/logo/moritani.svg',
@@ -276,9 +273,9 @@ export const Moritani: Story = {
     text: 'Text goes here',
     troop: 'vector/troop/moritani.svg',
   },
-};
+});
 
-export const Ecaz: Story = {
+export const Ecaz = meta.story({
   args: {
     background: `/generated/utils/background/ecaz.jpg`,
     logo: 'vector/logo/ecaz.svg',
@@ -295,9 +292,9 @@ export const Ecaz: Story = {
     text: 'Text goes here',
     troop: 'vector/troop/ecaz.svg',
   },
-};
+});
 
-export const Iduali: Story = {
+export const Iduali = meta.story({
   args: {
     background: `/generated/utils/background/iduali.jpg`,
     logo: 'vector/logo/iduali.svg',
@@ -314,4 +311,4 @@ export const Iduali: Story = {
     text: 'Text goes here',
     troop: 'vector/troop/iduali.svg',
   },
-};
+});

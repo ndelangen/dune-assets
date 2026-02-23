@@ -1,14 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { TreacheryCard } from './treachery/Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const NoSnooper: Story = {
+export const NoSnooper = meta.story({
   args: {
     name: 'No Snooper',
     subName: 'Voice',
@@ -34,9 +31,9 @@ export const NoSnooper: Story = {
 
     head: `/generated/utils/background/bene-gesserit.jpg`,
   },
-};
+});
 
-export const MustSnooper: Story = {
+export const MustSnooper = meta.story({
   args: {
     name: 'Must Snooper',
     subName: 'Voice',
@@ -62,9 +59,9 @@ export const MustSnooper: Story = {
 
     head: `/generated/utils/background/bene-gesserit.jpg`,
   },
-};
+});
 
-export const NoShield: Story = {
+export const NoShield = meta.story({
   args: {
     name: 'No Shield',
     subName: 'Voice',
@@ -90,9 +87,9 @@ export const NoShield: Story = {
 
     head: `/generated/utils/background/bene-gesserit.jpg`,
   },
-};
+});
 
-export const MustShield: Story = {
+export const MustShield = meta.story({
   args: {
     name: 'Must Shield',
     subName: 'Voice',
@@ -118,4 +115,4 @@ export const MustShield: Story = {
 
     head: `/generated/utils/background/bene-gesserit.jpg`,
   },
-};
+});

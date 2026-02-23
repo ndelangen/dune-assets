@@ -1,26 +1,23 @@
+import preview from '../../.storybook/preview';
 import { FactionSynopsis } from './FactionSynopsis';
-import type { Meta, StoryObj } from '@storybook/react-vite';
 
-const meta = {
+const meta = preview.meta({
   component: FactionSynopsis,
   args: {},
-} satisfies Meta<typeof FactionSynopsis>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Default = {
+export const Default = meta.story({
   args: {
     image: '/generated/token/faction/choam.jpg',
     children: 'Hello',
     flip: false,
   },
-} satisfies Story;
+});
 
-export const Flipped = {
+export const Flipped = meta.story({
   args: {
     image: '/generated/token/faction/choam.jpg',
     children: 'Hello',
     flip: true,
   },
-} satisfies Story;
+});

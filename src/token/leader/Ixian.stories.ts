@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const CammarPilru: Story = {
+export const CammarPilru = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/cammar.png',
@@ -29,9 +26,9 @@ export const CammarPilru: Story = {
     name: 'Cammar Pilru',
     strength: '1',
   },
-};
+});
 
-export const KailiaVernius: Story = {
+export const KailiaVernius = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/kailea.png',
@@ -39,9 +36,9 @@ export const KailiaVernius: Story = {
     name: 'Kailia Vernius',
     strength: '2',
   },
-};
+});
 
-export const DominicVernius: Story = {
+export const DominicVernius = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/dominic.png',
@@ -49,9 +46,9 @@ export const DominicVernius: Story = {
     name: 'Dominic Vernius',
     strength: '4',
   },
-};
+});
 
-export const TessiaVernius: Story = {
+export const TessiaVernius = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -59,9 +56,9 @@ export const TessiaVernius: Story = {
     name: 'Tessia Vernius',
     strength: '5',
   },
-};
+});
 
-export const CtairPilru: Story = {
+export const CtairPilru = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/ctair.png',
@@ -69,9 +66,9 @@ export const CtairPilru: Story = {
     name: 'Ctair Pilru',
     strength: '5',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/rhombor.jpg',
@@ -79,4 +76,4 @@ export const Hero: Story = {
     name: 'Prince Rhombur Vernius',
     strength: '',
   },
-};
+});

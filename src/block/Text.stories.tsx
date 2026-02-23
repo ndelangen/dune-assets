@@ -1,8 +1,8 @@
+import preview from '../../.storybook/preview';
 import { Fragment } from 'react';
 import { Text } from './Text';
-import type { Meta, StoryObj } from '@storybook/react-vite';
 
-const meta = {
+const meta = preview.meta({
   component: Text,
   args: {
     children: (
@@ -12,20 +12,17 @@ const meta = {
       </Fragment>
     ),
   },
-} satisfies Meta<typeof Text>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Columns1 = {
+export const Columns1 = meta.story({
   args: { columns: 1 },
-} satisfies Story;
+});
 
-export const Columns2 = {
+export const Columns2 = meta.story({
   args: { columns: 2 },
-} satisfies Story;
+});
 
-export const RichContent = {
+export const RichContent = meta.story({
   args: {
     children: (
       <Fragment>
@@ -43,9 +40,9 @@ export const RichContent = {
       </Fragment>
     ),
   },
-} satisfies Story;
+});
 
-export const HeadingsContent = {
+export const HeadingsContent = meta.story({
   args: {
     children: (
       <Fragment>
@@ -58,9 +55,9 @@ export const HeadingsContent = {
       </Fragment>
     ),
   },
-} satisfies Story;
+});
 
-export const Table = {
+export const Table = meta.story({
   args: {
     children: (
       <table>
@@ -91,4 +88,4 @@ export const Table = {
       </table>
     ),
   },
-} satisfies Story;
+});

@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Alia: Story = {
+export const Alia = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/alia.png',
@@ -29,9 +26,9 @@ export const Alia: Story = {
     name: 'Alia',
     strength: '5',
   },
-};
+});
 
-export const WannaYueh: Story = {
+export const WannaYueh = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/wanna.png',
@@ -39,9 +36,9 @@ export const WannaYueh: Story = {
     name: 'Wanna Yueh',
     strength: '5',
   },
-};
+});
 
-export const MotherRamallo: Story = {
+export const MotherRamallo = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/ramallo.png',
@@ -49,9 +46,9 @@ export const MotherRamallo: Story = {
     name: 'Mother Ramallo',
     strength: '5',
   },
-};
+});
 
-export const PrincesIrulan: Story = {
+export const PrincesIrulan = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/irulan.png',
@@ -59,9 +56,9 @@ export const PrincesIrulan: Story = {
     name: 'Princes Irulan',
     strength: '5',
   },
-};
+});
 
-export const LadyFenring: Story = {
+export const LadyFenring = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/lady-fenring.png',
@@ -69,9 +66,9 @@ export const LadyFenring: Story = {
     name: 'Lady Fenring',
     strength: '5',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/mohiam.jpg',
@@ -79,4 +76,4 @@ export const Hero: Story = {
     name: 'Mother Mohiam',
     strength: '',
   },
-};
+});

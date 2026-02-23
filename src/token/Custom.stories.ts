@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { CustomToken } from './Custom';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,56 +16,53 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Decal: Story = {
+export const Decal = meta.story({
   args: {
     background: `url('/generated/utils/background/tech-red.jpg') top left / cover no-repeat`,
     image: 'vector/decal/amal.svg',
     circle: false,
     size: { width: 150, height: 150 },
   },
-};
+});
 
-export const Generic: Story = {
+export const Generic = meta.story({
   args: {
     background: `url('/generated/utils/background/tech-red.jpg') top left / cover no-repeat`,
     image: 'vector/icon/ambassador.svg',
     circle: false,
   },
-};
+});
 
-export const Top: Story = {
+export const Top = meta.story({
   args: {
     background: `url('/generated/utils/background/tech-red.jpg') top left / cover no-repeat`,
     image: 'vector/icon/ambassador.svg',
     circle: false,
     top: 'Top Text',
   },
-};
+});
 
-export const Bottom1: Story = {
+export const Bottom1 = meta.story({
   args: {
     background: `url('/generated/utils/background/tech-red.jpg') top left / cover no-repeat`,
     image: 'vector/icon/ambassador.svg',
     circle: false,
     bottom: 'Bottom text',
   },
-};
+});
 
-export const Bottom2: Story = {
+export const Bottom2 = meta.story({
   args: {
     background: `url('/generated/utils/background/tech-red.jpg') top left / cover no-repeat`,
     image: 'vector/icon/ambassador.svg',
     circle: false,
     bottom: 'Bottom text\nmultiple lines!',
   },
-};
+});
 
-export const All: Story = {
+export const All = meta.story({
   args: {
     background: `url('/generated/utils/background/tech-yellow.jpg') top left / cover no-repeat`,
     image: 'vector/troop/pewpew.svg',
@@ -74,22 +71,22 @@ export const All: Story = {
     bottom: 'pew pew\nTeam Sparlock!',
     size: { width: 160, height: 160 },
   },
-};
+});
 
-export const TechToken: Story = {
+export const TechToken = meta.story({
   args: {
     background: `url('/generated/utils/background/moss.jpg') top left / cover no-repeat`,
     image: 'vector/generic/gear.svg',
     circle: false,
     top: 'Tech Token',
   },
-};
+});
 
-export const Spice: Story = {
+export const Spice = meta.story({
   args: {
     background: `url('/generated/utils/background/spice.jpg') top left / cover no-repeat`,
     image: 'vector/icon/spice.svg',
     circle: false,
     size: { width: 190, height: 190 },
   },
-};
+});

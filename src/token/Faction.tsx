@@ -7,7 +7,10 @@ import { StrokedUse } from '../block/StrokedUse';
 
 const foreGroundColor = '#e3dbb3';
 const iconSize = { width: 60, height: 60 };
-const iconLocation = { x: 50 - iconSize.width / 2, y: 50 - iconSize.height / 2 };
+const iconLocation = {
+  x: 50 - iconSize.width / 2,
+  y: 50 - iconSize.height / 2,
+};
 
 export const FactionToken: FC<z.infer<typeof FactionSide>> = ({ background, image }) => {
   return (

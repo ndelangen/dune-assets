@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Karama: Story = {
+export const Karama = meta.story({
   args: {
     head: `/generated/utils/background/storm.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/logo/richese.svg'],
@@ -31,9 +28,9 @@ export const Karama: Story = {
     text: 'Text goes here',
     subName: 'Special - Instant',
   },
-};
+});
 
-export const SignetRing: Story = {
+export const SignetRing = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/logo/richese.svg'],
@@ -51,9 +48,9 @@ export const SignetRing: Story = {
     text: 'Text goes here',
     subName: 'Worthless - Special',
   },
-};
+});
 
-export const TruthOrDare: Story = {
+export const TruthOrDare = meta.story({
   args: {
     head: `/generated/utils/background/storm.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/logo/richese.svg'],
@@ -71,4 +68,4 @@ export const TruthOrDare: Story = {
     text: 'Text goes here',
     subName: 'Special - Instant',
   },
-};
+});

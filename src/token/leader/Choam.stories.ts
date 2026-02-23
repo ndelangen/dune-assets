@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Auditor: Story = {
+export const Auditor = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/auditor.png',
@@ -29,9 +26,9 @@ export const Auditor: Story = {
     name: 'Auditor',
     strength: '2',
   },
-};
+});
 
-export const ViscountTull: Story = {
+export const ViscountTull = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/viscount-tull.png',
@@ -39,9 +36,9 @@ export const ViscountTull: Story = {
     name: 'Viscount Tull',
     strength: '2',
   },
-};
+});
 
-export const DukeVerdun: Story = {
+export const DukeVerdun = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/duke-verdun.png',
@@ -49,9 +46,9 @@ export const DukeVerdun: Story = {
     name: 'Duke Verdun',
     strength: '3',
   },
-};
+});
 
-export const RajivLondine: Story = {
+export const RajivLondine = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/rajiv-londine.png',
@@ -59,9 +56,9 @@ export const RajivLondine: Story = {
     name: 'Rajiv Londine',
     strength: '3',
   },
-};
+});
 
-export const FrankosAru: Story = {
+export const FrankosAru = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/frankos-aru.png',
@@ -69,9 +66,9 @@ export const FrankosAru: Story = {
     name: 'Frankos Aru',
     strength: '4',
   },
-};
+});
 
-export const LadyJalma: Story = {
+export const LadyJalma = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/lady-yalma.png',
@@ -79,9 +76,9 @@ export const LadyJalma: Story = {
     name: 'Lady Jalma',
     strength: '4',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/lady-yalma.png',
@@ -89,4 +86,4 @@ export const Hero: Story = {
     name: 'Ur-Director Malina Aru',
     strength: '',
   },
-};
+});

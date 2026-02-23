@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Baliset: Story = {
+export const Baliset = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -31,9 +28,9 @@ export const Baliset: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
-};
+});
 
-export const JubbaCloak: Story = {
+export const JubbaCloak = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -51,9 +48,9 @@ export const JubbaCloak: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
-};
+});
 
-export const KullWahad: Story = {
+export const KullWahad = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -71,9 +68,9 @@ export const KullWahad: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
-};
+});
 
-export const Kulon: Story = {
+export const Kulon = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -91,9 +88,9 @@ export const Kulon: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
-};
+});
 
-export const LaLaLa: Story = {
+export const LaLaLa = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -111,9 +108,9 @@ export const LaLaLa: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
-};
+});
 
-export const TripToGamond: Story = {
+export const TripToGamond = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -131,9 +128,9 @@ export const TripToGamond: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
     subName: 'Worthless',
   },
-};
+});
 
-export const OrangeCatholicBible: Story = {
+export const OrangeCatholicBible = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/worthless.svg'],
@@ -151,4 +148,4 @@ export const OrangeCatholicBible: Story = {
     text: 'Play as part of your Battle Plan, in place of a weapon, defence or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.\nAt the start of bidding phase, before or after the amount of card up for bid is calculated, you may gift this card to any other player with room for it in their hand.',
     subName: 'Worthless - Special',
   },
-};
+});

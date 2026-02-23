@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const VandoTerboli: Story = {
+export const VandoTerboli = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -24,9 +21,9 @@ export const VandoTerboli: Story = {
     strength: '1',
     owner: 'Moritani',
   },
-};
+});
 
-export const TrinKronos: Story = {
+export const TrinKronos = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -35,9 +32,9 @@ export const TrinKronos: Story = {
     strength: '2',
     owner: 'Moritani',
   },
-};
+});
 
-export const KrieuKronos: Story = {
+export const KrieuKronos = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -46,9 +43,9 @@ export const KrieuKronos: Story = {
     strength: '4',
     owner: 'Moritani',
   },
-};
+});
 
-export const HiihResser: Story = {
+export const HiihResser = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -57,9 +54,9 @@ export const HiihResser: Story = {
     strength: '4',
     owner: 'Moritani',
   },
-};
+});
 
-export const LupinoOrd: Story = {
+export const LupinoOrd = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -68,4 +65,4 @@ export const LupinoOrd: Story = {
     strength: '5',
     owner: 'Moritani',
   },
-};
+});

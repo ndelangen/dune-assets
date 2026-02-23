@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { Book } from './utils/Book';
 
 import * as rulebook from './dreamrules/Pages.stories';
 
-const meta = {
+const meta = preview.meta({
   component: Book,
   args: {},
   globals: {
@@ -11,23 +11,20 @@ const meta = {
       value: 'page',
     },
   },
-} satisfies Meta<typeof Book>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
+});
 
 const pagesIds =
   // biome-ignore lint/suspicious/noExplicitAny: storybook specific, has no types
   ((rulebook as any).__namedExportsOrder as Exclude<keyof typeof rulebook, 'default'>[]) ||
   Object.keys(rulebook);
 
-export const Dreamrules = {
+export const Dreamrules = meta.story({
   args: {
-    cover: rulebook.default.parameters.cover,
+    cover: rulebook.default.input?.parameters?.cover,
     pages: pagesIds
       .filter((key) => !key.match('default') && !key.startsWith('_'))
-      .map((key) => rulebook[key].args.children),
+      .map((key) => rulebook[key].input.args.children),
 
-    ratio: rulebook.default.args.ratio,
+    ratio: rulebook.default.input.args.ratio,
   },
-} satisfies Story;
+});

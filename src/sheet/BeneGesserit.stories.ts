@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { FactionSheet } from './Sheet';
 
-const meta = {
+const meta = preview.meta({
   component: FactionSheet,
   parameters: {
     layout: 'fullscreen',
@@ -11,12 +11,9 @@ const meta = {
       value: 'card',
     },
   },
-} satisfies Meta<typeof FactionSheet>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const BeneGesserit: Story = {
+export const BeneGesserit = meta.story({
   args: {
     name: 'Bene Gesserit',
     logo: '/generated/token/faction/bene-gesserit.jpg',
@@ -58,7 +55,6 @@ export const BeneGesserit: Story = {
           `During Battle (step 2.1) you may force your opponent to play/not play a Treachery card in their battle plan. (Projectile Weapon, Poison Defense, Mercenaries, etc)`,
           `Special battle cards like the Lasgun and Weirding Way must be voiced by name.`,
           `If you force the use of a card the opponent does not have they may silently ignore the voice.`,
-          ,
         ].join('\n\n'),
         karama: `When the voice is karama'd, the opponent may ignore the voice. This lasts until the end of the turn.`,
       },
@@ -100,4 +96,4 @@ export const BeneGesserit: Story = {
       '/generated/token/leader/benegesserit/lady-fenring.jpg',
     ],
   },
-};
+});

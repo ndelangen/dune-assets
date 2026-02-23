@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { Fan } from './Fan';
 import type { FC, PropsWithChildren } from 'react';
 import { card } from '../data/sizes';
@@ -32,25 +32,22 @@ const DemoBlock: FC<PropsWithChildren<{ color: string; width?: number; height?: 
   </div>
 );
 
-const meta = {
+const meta = preview.meta({
   component: Fan,
   args: {
     size: card,
     children: [],
   },
-} satisfies Meta<typeof Fan>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Empty = {
+export const Empty = meta.story({
   args: {
     size: card,
     children: [],
   },
-} satisfies Story;
+});
 
-export const Default = {
+export const Default = meta.story({
   args: {
     size: card,
     children: [
@@ -71,9 +68,9 @@ export const Default = {
       </DemoBlock>,
     ],
   },
-} satisfies Story;
+});
 
-export const Size = {
+export const Size = meta.story({
   args: {
     size: squareSize,
     children: [
@@ -94,9 +91,9 @@ export const Size = {
       </DemoBlock>,
     ],
   },
-} satisfies Story;
+});
 
-export const Spacing = {
+export const Spacing = meta.story({
   args: {
     size: squareSize,
     spacing: 10,
@@ -118,9 +115,9 @@ export const Spacing = {
       </DemoBlock>,
     ],
   },
-} satisfies Story;
+});
 
-export const SpacingNegative = {
+export const SpacingNegative = meta.story({
   args: {
     size: squareSize,
     spacing: -10,
@@ -142,4 +139,4 @@ export const SpacingNegative = {
       </DemoBlock>,
     ],
   },
-} satisfies Story;
+});

@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const JenWu: Story = {
+export const JenWu = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/jehwu.png',
@@ -29,9 +26,9 @@ export const JenWu: Story = {
     name: 'Jen Wu',
     strength: '4',
   },
-};
+});
 
-export const JammoReed: Story = {
+export const JammoReed = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/jammo.png',
@@ -39,9 +36,9 @@ export const JammoReed: Story = {
     name: 'Jammo Reed',
     strength: '5',
   },
-};
+});
 
-export const KarstyTopper: Story = {
+export const KarstyTopper = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/karsty.png',
@@ -49,9 +46,9 @@ export const KarstyTopper: Story = {
     name: 'Karsty Topper',
     strength: '5',
   },
-};
+});
 
-export const RivvyDinari: Story = {
+export const RivvyDinari = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/rivvy.png',
@@ -59,9 +56,9 @@ export const RivvyDinari: Story = {
     name: 'Rivvy Dinari',
     strength: '6',
   },
-};
+});
 
-export const MordCour: Story = {
+export const MordCour = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/mord.png',
@@ -69,9 +66,9 @@ export const MordCour: Story = {
     name: 'Mord Cour',
     strength: '7',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/whitemore-bludd.png',
@@ -79,4 +76,4 @@ export const Hero: Story = {
     name: 'Whitmore Bludd',
     strength: '',
   },
-};
+});

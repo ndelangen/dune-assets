@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { CardBack } from './Back';
 
-const meta = {
+const meta = preview.meta({
   component: CardBack,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof CardBack>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Traitor: Story = {
+export const Traitor = meta.story({
   args: {
     name: 'Traitor',
     background: '/generated/utils/background/traitor.jpg',
@@ -21,9 +18,9 @@ export const Traitor: Story = {
     imageOffset: [0, 10],
     imageScale: 1.1,
   },
-};
+});
 
-export const Treachery: Story = {
+export const Treachery = meta.story({
   args: {
     name: 'Treachery',
     background: '/generated/utils/background/alliance.jpg',
@@ -31,9 +28,9 @@ export const Treachery: Story = {
     imageOffset: [-3, 5],
     imageScale: 1,
   },
-};
+});
 
-export const Prediction: Story = {
+export const Prediction = meta.story({
   args: {
     name: 'Prediction',
     background: '/generated/utils/background/defense.jpg',
@@ -41,9 +38,9 @@ export const Prediction: Story = {
     imageOffset: [-3, 5],
     imageScale: 1,
   },
-};
+});
 
-export const Storm: Story = {
+export const Storm = meta.story({
   args: {
     name: 'Storm',
     background: '/generated/utils/background/storm.jpg',
@@ -51,9 +48,9 @@ export const Storm: Story = {
     imageOffset: [0, 5],
     imageScale: 0.8,
   },
-};
+});
 
-export const Fate: Story = {
+export const Fate = meta.story({
   args: {
     name: 'Fate',
     background: '/generated/utils/background/fate.jpg',
@@ -61,9 +58,9 @@ export const Fate: Story = {
     imageOffset: [0, -5],
     imageScale: 1,
   },
-};
+});
 
-export const Spice: Story = {
+export const Spice = meta.story({
   args: {
     name: 'Spice',
     background: '/generated/utils/background/spice-3.jpg',
@@ -71,9 +68,9 @@ export const Spice: Story = {
     imageOffset: [0, 10],
     imageScale: 1,
   },
-};
+});
 
-export const Alliance: Story = {
+export const Alliance = meta.story({
   args: {
     name: 'Alliance',
     background: '/generated/utils/background/alliance.jpg',
@@ -81,9 +78,9 @@ export const Alliance: Story = {
     imageOffset: [-5, 20],
     imageScale: 1.35,
   },
-};
+});
 
-export const Stronghold: Story = {
+export const Stronghold = meta.story({
   args: {
     name: 'Stronghold',
     background: '/generated/utils/background/weapon.jpg',
@@ -91,9 +88,9 @@ export const Stronghold: Story = {
     imageOffset: [-5, 0],
     imageScale: 1,
   },
-};
+});
 
-export const Tracking: Story = {
+export const Tracking = meta.story({
   args: {
     name: 'Tracking',
     background: '/generated/utils/background/worthless.jpg',
@@ -101,9 +98,9 @@ export const Tracking: Story = {
     imageOffset: [-5, 0],
     imageScale: 1,
   },
-};
+});
 
-export const LeaderSkill: Story = {
+export const LeaderSkill = meta.story({
   args: {
     name: 'Leader Skill',
     background: '/generated/utils/background/moritani.jpg',
@@ -111,9 +108,9 @@ export const LeaderSkill: Story = {
     imageOffset: [-5, 0],
     imageScale: 1,
   },
-};
+});
 
-export const KwisatzHaderach: Story = {
+export const KwisatzHaderach = meta.story({
   args: {
     name: 'Kwisatz Haderach',
     background: '/generated/utils/background/atreides.jpg',
@@ -121,9 +118,9 @@ export const KwisatzHaderach: Story = {
     imageOffset: [0, 10],
     imageScale: 1,
   },
-};
+});
 
-export const Event: Story = {
+export const Event = meta.story({
   args: {
     name: 'Event',
     background: '/generated/utils/background/richese.jpg',
@@ -131,9 +128,9 @@ export const Event: Story = {
     imageOffset: [0, 10],
     imageScale: 0.8,
   },
-};
+});
 
-export const Message: Story = {
+export const Message = meta.story({
   args: {
     name: 'Message',
     background: '/generated/utils/background/radial-2.jpg',
@@ -141,9 +138,9 @@ export const Message: Story = {
     imageOffset: [0, 10],
     imageScale: 1,
   },
-};
+});
 
-export const Nexus: Story = {
+export const Nexus = meta.story({
   args: {
     name: 'Nexus',
     background: '/generated/utils/background/moss.jpg',
@@ -151,9 +148,9 @@ export const Nexus: Story = {
     imageOffset: [0, 10],
     imageScale: 1,
   },
-};
+});
 
-export const Voice: Story = {
+export const Voice = meta.story({
   args: {
     name: 'Voice',
     background: '/generated/utils/background/bene-gesserit.jpg',
@@ -161,9 +158,9 @@ export const Voice: Story = {
     imageOffset: [-10, 0],
     imageScale: 1.1,
   },
-};
+});
 
-export const Prescience: Story = {
+export const Prescience = meta.story({
   args: {
     name: 'Prescience',
     background: '/generated/utils/background/atreides.jpg',
@@ -171,4 +168,4 @@ export const Prescience: Story = {
     imageOffset: [0, 5],
     imageScale: 1.1,
   },
-};
+});

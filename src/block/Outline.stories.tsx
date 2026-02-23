@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { Outline } from './Outline';
 import { Text } from './Text';
 
-const meta = {
+const meta = preview.meta({
   component: Outline,
   args: {
     variant: 'normal',
@@ -16,14 +16,11 @@ const meta = {
   argTypes: {
     children: { control: false },
   },
-} satisfies Meta<typeof Outline>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Generic = {
+export const Generic = meta.story({
   args: { variant: 'normal' },
-} satisfies Story;
-export const Example = {
+});
+export const Example = meta.story({
   args: { variant: 'example' },
-} satisfies Story;
+});

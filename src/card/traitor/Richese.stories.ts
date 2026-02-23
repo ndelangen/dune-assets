@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const TalisBalt: Story = {
+export const TalisBalt = meta.story({
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -24,9 +21,9 @@ export const TalisBalt: Story = {
     strength: '2',
     owner: 'Richese',
   },
-};
+});
 
-export const HaloaRund: Story = {
+export const HaloaRund = meta.story({
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -35,9 +32,9 @@ export const HaloaRund: Story = {
     strength: '2',
     owner: 'Richese',
   },
-};
+});
 
-export const FlintoKinnis: Story = {
+export const FlintoKinnis = meta.story({
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -46,9 +43,9 @@ export const FlintoKinnis: Story = {
     strength: '3',
     owner: 'Richese',
   },
-};
+});
 
-export const LadyHelena: Story = {
+export const LadyHelena = meta.story({
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/helena.png',
@@ -57,9 +54,9 @@ export const LadyHelena: Story = {
     strength: '4',
     owner: 'Richese',
   },
-};
+});
 
-export const EinCalimar: Story = {
+export const EinCalimar = meta.story({
   args: {
     background: `url('/generated/utils/background/richese.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -68,4 +65,4 @@ export const EinCalimar: Story = {
     strength: '5',
     owner: 'Richese',
   },
-};
+});

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 
 import { GENERIC, ICON, TROOP, LOGO, DECAL } from '../data/generated';
 
@@ -37,48 +37,45 @@ const ListIcons = ({ pattern, type }: { pattern: string; type: keyof typeof type
   );
 };
 
-const meta = {
+const meta = preview.meta({
   component: ListIcons,
   tags: ['no-screenshot'],
   parameters: {
     layout: 'padded',
   },
-} satisfies Meta<typeof ListIcons>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Icons: Story = {
+export const Icons = meta.story({
   args: {
     pattern: '*',
     type: 'icon',
   },
-};
+});
 
-export const Troops: Story = {
+export const Troops = meta.story({
   args: {
     pattern: '*',
     type: 'troop',
   },
-};
+});
 
-export const Generics: Story = {
+export const Generics = meta.story({
   args: {
     pattern: '*',
     type: 'generic',
   },
-};
+});
 
-export const Logos: Story = {
+export const Logos = meta.story({
   args: {
     pattern: '*',
     type: 'logo',
   },
-};
+});
 
-export const Decals: Story = {
+export const Decals = meta.story({
   args: {
     pattern: '*',
     type: 'decal',
   },
-};
+});

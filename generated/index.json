@@ -20,15 +20,8 @@
   "factions": {
     "atreides": {
       "alliance": "generated/card/alliance/atreides.jpg",
-      "collections": [
-        "bribe"
-      ],
-      "colors": [
-        "Green",
-        "Teal",
-        "Brown",
-        "Yellow"
-      ],
+      "collections": ["bribe"],
+      "colors": ["Green", "Teal", "Brown", "Yellow"],
       "decks": {
         "left": [
           {
@@ -68,16 +61,8 @@
     },
     "bene-gesserit": {
       "alliance": "generated/card/alliance/bene-gesserit.jpg",
-      "collections": [
-        "bribe",
-        "income",
-        "reserve"
-      ],
-      "colors": [
-        "Blue",
-        "Teal",
-        "Pink"
-      ],
+      "collections": ["bribe", "income", "reserve"],
+      "colors": ["Blue", "Teal", "Pink"],
       "decks": {
         "left": [
           {
@@ -118,10 +103,7 @@
     "bene-tleilaxu": {
       "alliance": "generated/card/alliance/bene-tleilaxu.jpg",
       "collections": [],
-      "colors": [
-        "Purple",
-        "Pink"
-      ],
+      "colors": ["Purple", "Pink"],
       "decks": {
         "left": [
           {
@@ -172,16 +154,8 @@
     },
     "emperor": {
       "alliance": "generated/card/alliance/emperor.jpg",
-      "collections": [
-        "bribe",
-        "income",
-        "reserve"
-      ],
-      "colors": [
-        "Red",
-        "Orange",
-        "Brown"
-      ],
+      "collections": ["bribe", "income", "reserve"],
+      "colors": ["Red", "Orange", "Brown"],
       "decks": {
         "left": [
           {
@@ -221,15 +195,8 @@
     },
     "fremen": {
       "alliance": "generated/card/alliance/fremen.jpg",
-      "collections": [
-        "bribe"
-      ],
-      "colors": [
-        "Yellow",
-        "Brown",
-        "Orange",
-        "White"
-      ],
+      "collections": ["bribe"],
+      "colors": ["Yellow", "Brown", "Orange", "White"],
       "decks": {
         "left": [
           {
@@ -280,13 +247,8 @@
     },
     "harkonnen": {
       "alliance": "generated/card/alliance/harkonnen.jpg",
-      "collections": [
-        "bribe"
-      ],
-      "colors": [
-        "White",
-        "Brown"
-      ],
+      "collections": ["bribe"],
+      "colors": ["White", "Brown"],
       "decks": {
         "left": [],
         "right": []
@@ -320,13 +282,8 @@
     },
     "iduali": {
       "alliance": "generated/card/alliance/iduali.jpg",
-      "collections": [
-        "bribe"
-      ],
-      "colors": [
-        "Brown",
-        "Orange"
-      ],
+      "collections": ["bribe"],
+      "colors": ["Brown", "Orange"],
       "decks": {
         "left": [
           {
@@ -366,15 +323,8 @@
     },
     "ixian": {
       "alliance": "generated/card/alliance/ixian.jpg",
-      "collections": [
-        "bribe"
-      ],
-      "colors": [
-        "Teal",
-        "Blue",
-        "Green",
-        "White"
-      ],
+      "collections": ["bribe"],
+      "colors": ["Teal", "Blue", "Green", "White"],
       "decks": {
         "left": [
           {
@@ -424,17 +374,8 @@
     },
     "spacing-guild": {
       "alliance": "generated/card/alliance/spacing-guild.jpg",
-      "collections": [
-        "bribe",
-        "income"
-      ],
-      "colors": [
-        "Orange",
-        "Brown",
-        "Red",
-        "Pink",
-        "Yellow"
-      ],
+      "collections": ["bribe", "income"],
+      "colors": ["Orange", "Brown", "Red", "Pink", "Yellow"],
       "decks": {
         "left": [
           {
