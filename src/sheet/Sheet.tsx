@@ -26,6 +26,7 @@ export const FactionSheet = ({
   return (
     <>
       <style
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: I don't care
         dangerouslySetInnerHTML={{
           __html: `
             @property --header-bg-color {
@@ -45,7 +46,7 @@ export const FactionSheet = ({
         <div className={styles.page}>
           <div className={`${styles.page_title} ${styles.title}`}>{name}</div>
           <div className={styles.logo}>
-            <img src={logo} />
+            <img src={logo} alt={name} title={name} />
           </div>
           <div className={styles.start}>
             <strong className={styles.head}>At start:</strong> <MarkdownContent>{start}</MarkdownContent>
@@ -56,7 +57,7 @@ export const FactionSheet = ({
           <div className={styles.rules}>
             <div className={styles.subtitle}>Advantages</div>
             {rules.map((rule) => (
-              <div className={styles.rule}>
+              <div className={styles.rule} key={rule.title}>
                 {rule.title && (
                   <div className={styles.head}>
                     {rule.title}
@@ -95,77 +96,75 @@ export const FactionSheet = ({
           </div>
         </div>
         {hasKarama || hasTroops || hasLeaders ? (
-          <>
-            <div className={styles.page}>
-              <div className={`${styles.page_subtitle} ${styles.subtitle}`}>Karama effects</div>
-              <div className={styles.details}>
-                <div className={styles.karama}>
-                  {rulesWithKarama.map((rule) => (
-                    <div className={styles.rule}>
-                      <div className={styles.head}>{rule.title}:&nbsp;</div>
-                      <div className={styles.text}>
-                        <MarkdownContent>{rule.karama}</MarkdownContent>
-                      </div>
+          <div className={styles.page}>
+            <div className={`${styles.page_subtitle} ${styles.subtitle}`}>Karama effects</div>
+            <div className={styles.details}>
+              <div className={styles.karama}>
+                {rulesWithKarama.map((rule) => (
+                  <div className={styles.rule} key={rule.title}>
+                    <div className={styles.head}>{rule.title}:&nbsp;</div>
+                    <div className={styles.text}>
+                      <MarkdownContent>{rule.karama}</MarkdownContent>
                     </div>
-                  ))}
-                  {alliance.karama && (
-                    <div className={styles.rule}>
-                      <div className={styles.head}>{alliance.title || 'Alliance'}:&nbsp;</div>
-                      <div className={styles.text}>
-                        <MarkdownContent>{alliance.karama}</MarkdownContent>
-                      </div>
+                  </div>
+                ))}
+                {alliance.karama && (
+                  <div className={styles.rule}>
+                    <div className={styles.head}>{alliance.title || 'Alliance'}:&nbsp;</div>
+                    <div className={styles.text}>
+                      <MarkdownContent>{alliance.karama}</MarkdownContent>
                     </div>
-                  )}
-                </div>
-                {troops.length > 0 && (
-                  <>
-                    <div className={styles.subtitle}>Troops</div>
-                    <div className={styles.troops}>
-                      {troops.map((t) => (
-                        <>
-                          <div className={styles.troop}>
-                            <img src={t.image} />
-                            <section>
-                              <div className={styles.head}>{t.name}</div>
-                              <div className={styles.text}>
-                                <MarkdownContent>{t.description}</MarkdownContent>
-                              </div>
-                            </section>
-
-                            {t.back && (
-                              <>
-                                <img className={styles.icon} src='vector/icon/flip.svg' />
-                                <div>to:</div>
-                                <img src={t.back.image} />
-                                <section>
-                                  <div className={styles.head}>{t.back.name}</div>
-                                  <div className={styles.text}>
-                                    <MarkdownContent>{t.back.description}</MarkdownContent>
-                                  </div>
-                                </section>
-                              </>
-                            )}
-                          </div>
-                        </>
-                      ))}
-                    </div>
-                  </>
-                )}
-                {leaders.length > 0 && (
-                  <>
-                    <div className={styles.subtitle}>Leaders</div>
-                    <div className={styles.leaders}>
-                      {leaders.map((l) => (
-                        <div>
-                          <img src={l} />
-                        </div>
-                      ))}
-                    </div>
-                  </>
+                  </div>
                 )}
               </div>
+              {troops.length > 0 && (
+                <>
+                  <div className={styles.subtitle}>Troops</div>
+                  <div className={styles.troops}>
+                    {troops.map((t) => (
+                      <>
+                        <div className={styles.troop}>
+                          <img src={t.image} alt={t.name} />
+                          <section>
+                            <div className={styles.head}>{t.name}</div>
+                            <div className={styles.text}>
+                              <MarkdownContent>{t.description}</MarkdownContent>
+                            </div>
+                          </section>
+
+                          {t.back && (
+                            <>
+                              <img className={styles.icon} src='vector/icon/flip.svg' alt='Flip' />
+                              <div>to:</div>
+                              <img src={t.back.image} alt={t.back.name} />
+                              <section>
+                                <div className={styles.head}>{t.back.name}</div>
+                                <div className={styles.text}>
+                                  <MarkdownContent>{t.back.description}</MarkdownContent>
+                                </div>
+                              </section>
+                            </>
+                          )}
+                        </div>
+                      </>
+                    ))}
+                  </div>
+                </>
+              )}
+              {leaders.length > 0 && (
+                <>
+                  <div className={styles.subtitle}>Leaders</div>
+                  <div className={styles.leaders}>
+                    {leaders.map((l) => (
+                      <div key={l}>
+                        <img src={l} alt={l} />
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
-          </>
+          </div>
         ) : null}
         {extras && extras.length > 0 && (
           <div className={styles.page_dynamic}>
@@ -177,8 +176,8 @@ export const FactionSheet = ({
                 </div>
                 <div className={styles.extra}>
                   {extra.items.map((item) => (
-                    <div>
-                      <img src={item.url} />
+                    <div key={item.url}>
+                      <img src={item.url} alt={item.url} />
                       {item?.description && (
                         <div className={styles.text}>
                           <MarkdownContent>{item.description}</MarkdownContent>

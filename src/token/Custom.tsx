@@ -1,9 +1,8 @@
 import type { FC } from 'react';
 import type { z } from 'zod';
-
+import { StrokedUse } from '../block/StrokedUse';
 import type { FactionSide } from '../data/objects';
 import styles from './Custom.module.css';
-import { StrokedUse } from '../block/StrokedUse';
 
 const foreGroundColor = '#ffffff';
 
@@ -22,7 +21,7 @@ export const CustomToken: FC<
   const iconLocation = { x: 150 - iconSize.width / 2, y: 150 - iconSize.height / 2 };
   return (
     <div className={styles.disc} style={{ background }}>
-      <svg viewBox='0 0 300 300'>
+      <svg viewBox='0 0 300 300' aria-label='Custom Token'>
         <defs>
           {top && <path id='top-text' d='M 50 150 m 0 0 a 100 100 0 0 1 200 0' />}
           {bottom && (

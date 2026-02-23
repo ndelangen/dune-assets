@@ -17,7 +17,7 @@
     "build-storybook": "storybook build --test",
     "capture": "bun run ./scripts/capture.ts",
     "format": "biome format --write .",
-    "lint": "biome lint .",
+    "lint": "biome lint . --fix",
     "biome-check": "biome check .",
     "generate": "bun run ./scripts/generate.ts",
     "hooks": "cp scripts/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",

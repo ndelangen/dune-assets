@@ -1,7 +1,6 @@
 import preview from '../../.storybook/preview';
-import { Book } from './utils/Book';
-
 import * as rulebook from './dreamrules/Pages.stories';
+import { Book } from './utils/Book';
 
 const meta = preview.meta({
   component: Book,
@@ -23,7 +22,8 @@ export const Dreamrules = meta.story({
     cover: rulebook.default.input?.parameters?.cover,
     pages: pagesIds
       .filter((key) => !key.match('default') && !key.startsWith('_'))
-      .map((key) => rulebook[key].input.args.children),
+      // biome-ignore lint/performance/noDynamicNamespaceImportAccess: dunno
+      .map((key) => rulebook[key]?.input.args.children),
 
     ratio: rulebook.default.input.args.ratio,
   },

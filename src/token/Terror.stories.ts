@@ -12,6 +12,7 @@ const meta = preview.meta({
   },
 });
 
+// biome-ignore lint/suspicious/noShadowRestrictedNames: Dune terror token name, not the Atomics API
 export const Atomics = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,

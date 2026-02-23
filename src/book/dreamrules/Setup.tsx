@@ -9,7 +9,10 @@ import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
 import { Wrapper } from '../../block/Wrapper';
 // import { factions } from '../../presets/factions';
-import { card as cardSize, disc as discSize } from '../../data/sizes';
+import {
+  card as cardSize,
+  //  disc as discSize
+} from '../../data/sizes';
 // import { FactionToken } from '../../objects/disc/faction_token';
 // import { TroopToken } from '../../objects/disc/troop_token';
 // import * as backs from '../../presets/back_cards';

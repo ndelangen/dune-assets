@@ -18,15 +18,15 @@ export const ShieldAsset: FC<z.infer<typeof Shield>> = ({ name, leader, logo }) 
   return (
     <div className={styles.shield} style={{ ...size }}>
       <div className={[styles.logo, styles.left].join(' ')}>
-        <img src={logo} />
+        <img src={logo} alt={name} />
       </div>
       <div className={[styles.logo, styles.right].join(' ')}>
-        <img src={logo} />
+        <img src={logo} alt={name} />
       </div>
-      <img src={leader} className={styles.leader} />
+      <img src={leader} className={styles.leader} alt={name} />
       <div className={styles.overlay} />
 
-      <svg {...size} className={styles.svg}>
+      <svg {...size} className={styles.svg} aria-label={name}>
         <defs>
           <linearGradient id={gradient} x1='0' x2='0' y1='0' y2='1'>
             <stop offset='0%' stopColor='#faf8eb' />

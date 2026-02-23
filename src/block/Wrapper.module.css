@@ -1,4 +1,5 @@
 .svg {
+  /* biome-ignore lint/complexity/noImportantStyles: I don't care */
   display: block !important;
   overflow: hidden;
 }

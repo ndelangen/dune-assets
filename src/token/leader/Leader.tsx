@@ -1,11 +1,10 @@
-import { useMemo, type FC } from 'react';
+import { type FC, useMemo } from 'react';
 import type { z } from 'zod';
-
-import type { Leader } from '../../data/objects';
-import styles from './Leader.module.css';
 import { StrokedUse } from '../../block/StrokedUse';
-import { useCountId } from '../../utils/useCountId';
+import type { Leader } from '../../data/objects';
 import { tint0 } from '../../utils/colors';
+import { useCountId } from '../../utils/useCountId';
+import styles from './Leader.module.css';
 
 export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, logo, name, strength }) => {
   const iconSize = { width: 41, height: 41 };
@@ -20,7 +19,7 @@ export const CustomToken: FC<z.infer<typeof Leader>> = ({ background, image, log
 
   return (
     <div className={styles.disc} style={{ background }}>
-      <svg viewBox='0 0 300 300'>
+      <svg viewBox='0 0 300 300' aria-label={name}>
         <defs>
           <path id={curvedTextPath} d='M 10 135 m 0 0 a 140 140 0 0 0 280 0' />
 
