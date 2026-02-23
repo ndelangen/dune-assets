@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const UmanKudu: Story = {
+export const UmanKudu = meta.story({
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/uman.png',
@@ -24,9 +21,9 @@ export const UmanKudu: Story = {
     strength: '1',
     owner: 'Harkonnen',
   },
-};
+});
 
-export const CaptainIakinNefud: Story = {
+export const CaptainIakinNefud = meta.story({
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/nafud.png',
@@ -35,9 +32,9 @@ export const CaptainIakinNefud: Story = {
     strength: '2',
     owner: 'Harkonnen',
   },
-};
+});
 
-export const PiterDeVries: Story = {
+export const PiterDeVries = meta.story({
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/piter.png',
@@ -46,9 +43,9 @@ export const PiterDeVries: Story = {
     strength: '3',
     owner: 'Harkonnen',
   },
-};
+});
 
-export const BeastRabban: Story = {
+export const BeastRabban = meta.story({
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/beast.png',
@@ -57,9 +54,9 @@ export const BeastRabban: Story = {
     strength: '4',
     owner: 'Harkonnen',
   },
-};
+});
 
-export const FeydRautha: Story = {
+export const FeydRautha = meta.story({
   args: {
     background: `url('/generated/utils/background/harkonnen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/feyd.png',
@@ -68,4 +65,4 @@ export const FeydRautha: Story = {
     strength: '6',
     owner: 'Harkonnen',
   },
-};
+});

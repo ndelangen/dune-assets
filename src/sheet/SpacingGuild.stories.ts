@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { FactionSheet } from './Sheet';
 
-const meta = {
+const meta = preview.meta({
   component: FactionSheet,
   parameters: {
     layout: 'fullscreen',
@@ -11,12 +11,9 @@ const meta = {
       value: 'card',
     },
   },
-} satisfies Meta<typeof FactionSheet>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const SpacingGuild: Story = {
+export const SpacingGuild = meta.story({
   args: {
     name: 'The Spacing Guild',
     logo: '/generated/token/faction/guild.jpg',
@@ -102,4 +99,4 @@ export const SpacingGuild: Story = {
       '/generated/token/leader/guild/staban-tuek.jpg',
     ],
   },
-};
+});

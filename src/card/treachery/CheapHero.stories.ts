@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const MaleCheapHero: Story = {
+export const MaleCheapHero = meta.story({
   args: {
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
@@ -31,9 +28,9 @@ export const MaleCheapHero: Story = {
     text: 'Play as a leader with zero strength on your Battle Plan and discard after the battle.\n\nYou may also play a weapon and a defense. The cheap hero may be played in place of a leader or when you have no leaders available.',
     subName: 'Special - Leader',
   },
-};
+});
 
-export const FemaleCheapHero: Story = {
+export const FemaleCheapHero = meta.story({
   args: {
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
@@ -51,4 +48,4 @@ export const FemaleCheapHero: Story = {
     text: 'Play as a leader with zero strength on your Battle Plan and discard after the battle.\n\nYou may also play a weapon and a defense. The cheap hero may be played in place of a leader or when you have no leaders available.',
     subName: 'Special - Leader',
   },
-};
+});

@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const JenWu: Story = {
+export const JenWu = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/jehwu.png',
@@ -24,9 +21,9 @@ export const JenWu: Story = {
     strength: '4',
     owner: 'Ginaz',
   },
-};
+});
 
-export const JammoReed: Story = {
+export const JammoReed = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/jammo.png',
@@ -35,9 +32,9 @@ export const JammoReed: Story = {
     strength: '5',
     owner: 'Ginaz',
   },
-};
+});
 
-export const KarstyTopper: Story = {
+export const KarstyTopper = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/karsty.png',
@@ -46,9 +43,9 @@ export const KarstyTopper: Story = {
     strength: '5',
     owner: 'Ginaz',
   },
-};
+});
 
-export const RivvyDinari: Story = {
+export const RivvyDinari = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/rivvy.png',
@@ -57,9 +54,9 @@ export const RivvyDinari: Story = {
     strength: '6',
     owner: 'Ginaz',
   },
-};
+});
 
-export const MordCour: Story = {
+export const MordCour = meta.story({
   args: {
     background: `url('/generated/utils/background/ginaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/mord.png',
@@ -68,4 +65,4 @@ export const MordCour: Story = {
     strength: '7',
     owner: 'Ginaz',
   },
-};
+});

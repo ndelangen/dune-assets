@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Korba: Story = {
+export const Korba = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/korba.png',
@@ -29,9 +26,9 @@ export const Korba: Story = {
     name: 'Korba',
     strength: '1',
   },
-};
+});
 
-export const Smuggler: Story = {
+export const Smuggler = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/smuggler.png',
@@ -39,9 +36,9 @@ export const Smuggler: Story = {
     name: 'Smuggler',
     strength: '3',
   },
-};
+});
 
-export const RatRunner: Story = {
+export const RatRunner = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/ratrunner.png',
@@ -49,9 +46,9 @@ export const RatRunner: Story = {
     name: 'Rat Runner',
     strength: '3',
   },
-};
+});
 
-export const Sabiha: Story = {
+export const Sabiha = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/sabiha.png',
@@ -59,9 +56,9 @@ export const Sabiha: Story = {
     name: 'Sabiha',
     strength: '4',
   },
-};
+});
 
-export const Javid: Story = {
+export const Javid = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/javid.png',
@@ -69,9 +66,9 @@ export const Javid: Story = {
     name: 'Javid',
     strength: '5',
   },
-};
+});
 
-export const KorbaAlt: Story = {
+export const KorbaAlt = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/korba.png',
@@ -79,9 +76,9 @@ export const KorbaAlt: Story = {
     name: 'Korba',
     strength: '0',
   },
-};
+});
 
-export const Majorca: Story = {
+export const Majorca = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/smuggler.png',
@@ -89,9 +86,9 @@ export const Majorca: Story = {
     name: 'Smuggler',
     strength: '3',
   },
-};
+});
 
-export const MajorcaAlt: Story = {
+export const MajorcaAlt = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/smuggler.png',
@@ -99,9 +96,9 @@ export const MajorcaAlt: Story = {
     name: 'Smuggler',
     strength: '1',
   },
-};
+});
 
-export const Minorca: Story = {
+export const Minorca = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/smuggler.png',
@@ -109,9 +106,9 @@ export const Minorca: Story = {
     name: 'Smuggler',
     strength: '4',
   },
-};
+});
 
-export const MinorcaAlt: Story = {
+export const MinorcaAlt = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/smuggler.png',
@@ -119,9 +116,9 @@ export const MinorcaAlt: Story = {
     name: 'Smuggler',
     strength: '2',
   },
-};
+});
 
-export const SabihaStrong: Story = {
+export const SabihaStrong = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/sabiha.png',
@@ -129,9 +126,9 @@ export const SabihaStrong: Story = {
     name: 'Sabiha',
     strength: '6',
   },
-};
+});
 
-export const SabihaAlt: Story = {
+export const SabihaAlt = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/sabiha.png',
@@ -139,9 +136,9 @@ export const SabihaAlt: Story = {
     name: 'Sabiha',
     strength: '3',
   },
-};
+});
 
-export const JavidStrong: Story = {
+export const JavidStrong = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/javid.png',
@@ -149,9 +146,9 @@ export const JavidStrong: Story = {
     name: 'Javid',
     strength: '6',
   },
-};
+});
 
-export const JavidAlt: Story = {
+export const JavidAlt = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/javid.png',
@@ -159,9 +156,9 @@ export const JavidAlt: Story = {
     name: 'Javid',
     strength: '4',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/namri.jpg',
@@ -169,4 +166,4 @@ export const Hero: Story = {
     name: 'Namri',
     strength: '',
   },
-};
+});

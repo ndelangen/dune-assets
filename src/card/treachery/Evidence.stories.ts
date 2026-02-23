@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const AuthorityFavor: Story = {
+export const AuthorityFavor = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/keyhole.svg'],
@@ -31,9 +28,9 @@ export const AuthorityFavor: Story = {
     text: 'Text goes here',
     subName: 'Defense - Political',
   },
-};
+});
 
-export const Evidence: Story = {
+export const Evidence = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/key.svg'],
@@ -51,4 +48,4 @@ export const Evidence: Story = {
     text: 'Text goes here',
     subName: 'Weapon - Political',
   },
-};
+});

@@ -1,39 +1,36 @@
+import preview from '../../.storybook/preview';
 import { Fragment } from 'react';
 import { Title } from './Title';
-import type { Meta, StoryObj } from '@storybook/react-vite';
 
-const meta = {
+const meta = preview.meta({
   component: Title,
   args: {
     color: 'rgba(255,0,0)',
     size: 'large',
   },
-} satisfies Meta<typeof Title>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Simple = {
+export const Simple = meta.story({
   args: {
     children: 'A short title',
   },
-} satisfies Story;
+});
 
-export const Contrast = {
+export const Contrast = meta.story({
   args: {
     color: 'rgba(80,100,15)',
     children: 'A short title',
   },
-} satisfies Story;
+});
 
-export const CustomColor = {
+export const CustomColor = meta.story({
   args: {
     color: 'rgba(255,200,15)',
     children: 'A short title',
   },
-} satisfies Story;
+});
 
-export const ContrastCheck = {
+export const ContrastCheck = meta.story({
   args: {
     children: 'A short title',
   },
@@ -47,9 +44,9 @@ export const ContrastCheck = {
       <Title color={'rgb(255, 0, 255)'}>{children}</Title>
     </Fragment>
   ),
-} satisfies Story;
+});
 
-export const Sizes = {
+export const Sizes = meta.story({
   args: {
     children: 'A short title',
   },
@@ -68,4 +65,4 @@ export const Sizes = {
       </Title>
     </Fragment>
   ),
-} satisfies Story;
+});

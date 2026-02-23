@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Lasgun: Story = {
+export const Lasgun = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
@@ -37,9 +34,9 @@ export const Lasgun: Story = {
     text: "Play as part of your Battle Plan.\nAutomatically kills opponent's leader regardless of defense card used.\nYou may keep this card if you win this battle.\nIf anyone plays a Shield in this battle, all forces, leaders and spice in the battle's territory die . Any spice dialed and in the battle's territory is lost. Both players lose this battle.",
     subName: 'Weapon - Special',
   },
-};
+});
 
-export const WeirdingWay: Story = {
+export const WeirdingWay = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
@@ -56,9 +53,9 @@ export const WeirdingWay: Story = {
     text: 'Play as part of your Battle Plan.\nCounts as a projectile weapon, unless played with another weapon. In that case, it counts as a projectile defense.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Special',
   },
-};
+});
 
-export const BasiliaWeapon: Story = {
+export const BasiliaWeapon = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -75,9 +72,9 @@ export const BasiliaWeapon: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Poison',
   },
-};
+});
 
-export const Chaumas: Story = {
+export const Chaumas = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -94,9 +91,9 @@ export const Chaumas: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Poison',
   },
-};
+});
 
-export const Chaumurky: Story = {
+export const Chaumurky = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -113,9 +110,9 @@ export const Chaumurky: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Poison',
   },
-};
+});
 
-export const EllacaDrug: Story = {
+export const EllacaDrug = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -132,9 +129,9 @@ export const EllacaDrug: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Poison',
   },
-};
+});
 
-export const GomJabbar: Story = {
+export const GomJabbar = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -151,9 +148,9 @@ export const GomJabbar: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Snooper.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Poison',
   },
-};
+});
 
-export const PoisonTooth: Story = {
+export const PoisonTooth = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -170,9 +167,9 @@ export const PoisonTooth: Story = {
     text: 'Play as part of your Battle Plan.\nKills both leaders, and is not stopped by a Snooper.\nAfter seeing the battle results, you may choose not to use this weapon.',
     subName: 'Weapon - Poison',
   },
-};
+});
 
-export const PoisonBlade: Story = {
+export const PoisonBlade = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
@@ -189,9 +186,9 @@ export const PoisonBlade: Story = {
     text: 'Play as part of your Battle Plan.\nThis weapon counts as both projectile and poison.\nYou may keep this card if you win this battle.',
     subName: 'Weapon - Special',
   },
-};
+});
 
-export const ArtilleryStrike: Story = {
+export const ArtilleryStrike = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
@@ -208,9 +205,9 @@ export const ArtilleryStrike: Story = {
     text: 'Play as part of your Battle Plan.\nKills both leaders (no spice is paid for them).\nBoth players may use Shields to protect their leader against the Artillery Strike.\nSurviving (shielded) leaders do not count towards the battle total; the side that dialed higher wins the battle.',
     subName: 'Weapon - Special',
   },
-};
+});
 
-export const MaulaPistol: Story = {
+export const MaulaPistol = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
@@ -227,9 +224,9 @@ export const MaulaPistol: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Projectile',
   },
-};
+});
 
-export const Crysknife: Story = {
+export const Crysknife = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
@@ -246,9 +243,9 @@ export const Crysknife: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Projectile',
   },
-};
+});
 
-export const HunterSeeker: Story = {
+export const HunterSeeker = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
@@ -265,9 +262,9 @@ export const HunterSeeker: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Projectile',
   },
-};
+});
 
-export const SlipTip: Story = {
+export const SlipTip = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
@@ -284,9 +281,9 @@ export const SlipTip: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Projectile',
   },
-};
+});
 
-export const Stunner: Story = {
+export const Stunner = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
@@ -303,9 +300,9 @@ export const Stunner: Story = {
     text: "Play as part of your Battle Plan.\nKills opponent's leader before battle is resolved. Opponent may protect leader with a Shield.\nYou may keep this card if you win this battle.",
     subName: 'Weapon - Projectile',
   },
-};
+});
 
-export const StoneBurner: Story = {
+export const StoneBurner = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
@@ -322,9 +319,9 @@ export const StoneBurner: Story = {
     text: 'You choose after battle plans are revealed: Both leaders are killed, OR both leaders in this battle do not count their strength if they otherwise survived. In either case, the player with the higher number of undialed force tokens wins the battle. Dialed forces are lost normally. Discard after use.',
     subName: 'Weapon - Special',
   },
-};
+});
 
-export const MirrorWeapon: Story = {
+export const MirrorWeapon = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
@@ -341,9 +338,9 @@ export const MirrorWeapon: Story = {
     text: "Play as part of your Battle Plan.\nCopies your opponent's weapon, if they reveal one (and if their Treachery Card counts as a weapon).\nYou must use your weapon first if order matters. Discard after use.",
     subName: 'Weapon - Special',
   },
-};
+});
 
-export const SlowDart: Story = {
+export const SlowDart = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
@@ -360,4 +357,4 @@ export const SlowDart: Story = {
     text: 'Text goes here',
     subName: 'Weapon - Special',
   },
-};
+});

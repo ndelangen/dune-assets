@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const CammarPilru: Story = {
+export const CammarPilru = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/cammar.png',
@@ -24,9 +21,9 @@ export const CammarPilru: Story = {
     strength: '1',
     owner: 'Ixian',
   },
-};
+});
 
-export const KailiaVernius: Story = {
+export const KailiaVernius = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/kailea.png',
@@ -35,9 +32,9 @@ export const KailiaVernius: Story = {
     strength: '2',
     owner: 'Ixian',
   },
-};
+});
 
-export const DominicVernius: Story = {
+export const DominicVernius = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/dominic.png',
@@ -46,9 +43,9 @@ export const DominicVernius: Story = {
     strength: '3',
     owner: 'Ixian',
   },
-};
+});
 
-export const TessiaVernius: Story = {
+export const TessiaVernius = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -57,9 +54,9 @@ export const TessiaVernius: Story = {
     strength: '5',
     owner: 'Ixian',
   },
-};
+});
 
-export const CtairPilru: Story = {
+export const CtairPilru = meta.story({
   args: {
     background: `url('/generated/utils/background/ixian.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/ctair.png',
@@ -68,4 +65,4 @@ export const CtairPilru: Story = {
     strength: '5',
     owner: 'Ixian',
   },
-};
+});

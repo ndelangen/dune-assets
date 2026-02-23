@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { CustomToken } from './Custom';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Atomics: Story = {
+export const Atomics = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,
     image: 'vector/decal/atomics.svg',
@@ -25,9 +22,9 @@ export const Atomics: Story = {
     stroke: '#fff',
     strokeWidth: 0,
   },
-};
+});
 
-export const Assassination: Story = {
+export const Assassination = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,
     image: 'vector/decal/assassination.svg',
@@ -37,9 +34,9 @@ export const Assassination: Story = {
     stroke: '#ded4a3',
     strokeWidth: 1.2,
   },
-};
+});
 
-export const Extortion: Story = {
+export const Extortion = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,
     image: 'vector/decal/extortion.svg',
@@ -49,9 +46,9 @@ export const Extortion: Story = {
     stroke: '#ded4a3',
     strokeWidth: 8,
   },
-};
+});
 
-export const Robbery: Story = {
+export const Robbery = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,
     image: 'vector/decal/robbery.svg',
@@ -61,9 +58,9 @@ export const Robbery: Story = {
     stroke: '#ded4a3',
     strokeWidth: 8,
   },
-};
+});
 
-export const Sabotage: Story = {
+export const Sabotage = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,
     image: 'vector/decal/sabotage.svg',
@@ -73,9 +70,9 @@ export const Sabotage: Story = {
     stroke: '#ded4a3',
     strokeWidth: 5,
   },
-};
+});
 
-export const SneakAttack: Story = {
+export const SneakAttack = meta.story({
   args: {
     background: `url('/generated/utils/background/terror.jpg') top left / cover no-repeat`,
     image: 'vector/decal/ornithopter.svg',
@@ -85,4 +82,4 @@ export const SneakAttack: Story = {
     stroke: '#ded4a3',
     strokeWidth: 3,
   },
-};
+});

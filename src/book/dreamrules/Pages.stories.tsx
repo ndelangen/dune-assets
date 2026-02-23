@@ -1,3 +1,4 @@
+import preview from '../../../.storybook/preview';
 import * as About from './About';
 import * as Cards from './Cards';
 import * as Deals from './Deals';
@@ -10,9 +11,8 @@ import * as Setup from './Setup';
 import * as TechTokens from './TechTokens';
 import styles from '../Rulebook.module.css';
 import { Page } from '../utils/Page';
-import type { Meta, StoryObj } from '@storybook/react-vite';
 
-const meta = {
+const meta = preview.meta({
   title: 'Book/Pages/Dreamrules',
   component: Page,
   args: {
@@ -35,229 +35,228 @@ const meta = {
       </div>
     ),
   },
-} satisfies Meta<typeof Page>;
+});
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-export const Welcome = {
+export const Welcome = meta.story({
   args: {
     children: <About.Welcome />,
   },
-} satisfies Story;
+});
 
-export const Intro = {
+export const Intro = meta.story({
   args: {
     children: <Introduction.Board />,
   },
-} satisfies Story;
+});
 
-export const Sectors = {
+export const Sectors = meta.story({
   args: {
     children: <Introduction.Sectors />,
   },
-} satisfies Story;
+});
 
-export const Strongholds = {
+export const Strongholds = meta.story({
   args: {
     children: <Introduction.Strongholds />,
   },
-} satisfies Story;
+});
 
-export const CardsIntro = {
+export const CardsIntro = meta.story({
   args: {
     children: <Cards.Intro />,
   },
-} satisfies Story;
+});
 
-export const TreacheryCards1 = {
+export const TreacheryCards1 = meta.story({
   args: {
     children: <Cards.TreacheryCards1 />,
   },
-} satisfies Story;
+});
 
-export const TreacheryCards2 = {
+export const TreacheryCards2 = meta.story({
   args: {
     children: <Cards.TreacheryCards2 />,
   },
-} satisfies Story;
+});
 
-export const TreacheryCards3 = {
+export const TreacheryCards3 = meta.story({
   args: {
     children: <Cards.TreacheryCards3 />,
   },
-} satisfies Story;
+});
 
-export const KaramaCard = {
+export const KaramaCard = meta.story({
   args: {
     children: <Cards.KaramaCard />,
   },
-} satisfies Story;
+});
 
-export const TruthTranceCard = {
+export const TruthTranceCard = meta.story({
   args: {
     children: <Cards.TruthTranceCard />,
   },
-} satisfies Story;
+});
 
-export const TreacheryCards4 = {
+export const TreacheryCards4 = meta.story({
   args: {
     children: <Cards.TreacheryCards4 />,
   },
-} satisfies Story;
+});
 
-export const TreacheryCards5 = {
+export const TreacheryCards5 = meta.story({
   args: {
     children: <Cards.TreacheryCards5 />,
   },
-} satisfies Story;
+});
 
-export const TechTokens1 = {
+export const TechTokens1 = meta.story({
   args: {
     children: <TechTokens.About />,
   },
-} satisfies Story;
+});
 
-export const MiscRules = {
+export const MiscRules = meta.story({
   args: {
     children: <Misc.MiscRules />,
   },
-} satisfies Story;
+});
 
-export const Factions1 = {
+export const Factions1 = meta.story({
   args: {
     children: <Factions.Factions1 />,
   },
-} satisfies Story;
+});
 
-export const Factions2 = {
+export const Factions2 = meta.story({
   args: {
     children: <Factions.Factions2 />,
   },
-} satisfies Story;
+});
 
-export const Factions3 = {
+export const Factions3 = meta.story({
   args: {
     children: <Factions.Factions3 />,
   },
-} satisfies Story;
+});
 
-export const Setup1 = {
+export const Setup1 = meta.story({
   args: {
     children: <Setup.Drafting />,
   },
-} satisfies Story;
+});
 
-export const Setup2 = {
+export const Setup2 = meta.story({
   args: {
     children: <Setup.Layout />,
   },
-} satisfies Story;
+});
 
-export const Setup3 = {
+export const Setup3 = meta.story({
   args: {
     children: <Setup.StartingPhases1 />,
   },
-} satisfies Story;
+});
 
-export const Setup4 = {
+export const Setup4 = meta.story({
   args: {
     children: <Setup.StartingPhases2 />,
   },
-} satisfies Story;
+});
 
-export const Setup5 = {
+export const Setup5 = meta.story({
   args: {
     children: <Setup.StartingPhases3 />,
   },
-} satisfies Story;
+});
 
-export const PhasesIntro = {
+export const PhasesIntro = meta.story({
   args: {
     children: <Phases.About />,
   },
-} satisfies Story;
+});
 
-export const PhasesNexus = {
+export const PhasesNexus = meta.story({
   args: {
     children: <Phases.Nexus />,
   },
-} satisfies Story;
+});
 
-export const PhasesFate = {
+export const PhasesFate = meta.story({
   args: {
     children: <Phases.Fate />,
   },
-} satisfies Story;
+});
 
-export const PhasesBidding = {
+export const PhasesBidding = meta.story({
   args: {
     children: <Phases.Bidding />,
   },
-} satisfies Story;
+});
 
-export const PhasesRevival = {
+export const PhasesRevival = meta.story({
   args: {
     children: <Phases.Revival />,
   },
-} satisfies Story;
+});
 
-export const PhasesSpice = {
+export const PhasesSpice = meta.story({
   args: {
     children: <Phases.Spice />,
   },
-} satisfies Story;
+});
 
-export const PhasesMovement = {
+export const PhasesMovement = meta.story({
   args: {
     children: <Phases.Movement />,
   },
-} satisfies Story;
+});
 
-export const PhasesBattle = {
+export const PhasesBattle = meta.story({
   args: {
     children: <Phases.Battle />,
   },
-} satisfies Story;
+});
 
-export const PhasesBattleResolve = {
+export const PhasesBattleResolve = meta.story({
   args: {
     children: <Phases.BattleResolve />,
   },
-} satisfies Story;
+});
 
-export const PhasesBattleOrder = {
+export const PhasesBattleOrder = meta.story({
   args: {
     children: <Phases.BattleOrder />,
   },
-} satisfies Story;
+});
 
-export const PhasesMentat = {
+export const PhasesMentat = meta.story({
   args: {
     children: <Phases.Mentat />,
   },
-} satisfies Story;
+});
 
-export const PhasesStorm = {
+export const PhasesStorm = meta.story({
   args: {
     children: <Phases.Storm />,
   },
-} satisfies Story;
+});
 
-export const Deals1 = {
+export const Deals1 = meta.story({
   args: {
     children: <Deals.About />,
   },
-} satisfies Story;
+});
 
-export const FAQ1 = {
+export const FAQ1 = meta.story({
   args: {
     children: <FAQ.P1 />,
   },
-} satisfies Story;
+});
 
-export const AboutDreams = {
+export const AboutDreams = meta.story({
   args: {
     children: <About.Dreams />,
   },
-} satisfies Story;
+});

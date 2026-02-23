@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Bashar: Story = {
+export const Bashar = meta.story({
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/bashar.png',
@@ -24,9 +21,9 @@ export const Bashar: Story = {
     strength: '2',
     owner: 'Emperor',
   },
-};
+});
 
-export const Burseg: Story = {
+export const Burseg = meta.story({
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/burseg.png',
@@ -35,9 +32,9 @@ export const Burseg: Story = {
     strength: '3',
     owner: 'Emperor',
   },
-};
+});
 
-export const Caid: Story = {
+export const Caid = meta.story({
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/caid.png',
@@ -46,9 +43,9 @@ export const Caid: Story = {
     strength: '3',
     owner: 'Emperor',
   },
-};
+});
 
-export const CaptainAramsham: Story = {
+export const CaptainAramsham = meta.story({
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/aramsham.png',
@@ -57,9 +54,9 @@ export const CaptainAramsham: Story = {
     strength: '5',
     owner: 'Emperor',
   },
-};
+});
 
-export const HasimirFenring: Story = {
+export const HasimirFenring = meta.story({
   args: {
     background: `url('/generated/utils/background/emperor.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/hasimir.png',
@@ -68,4 +65,4 @@ export const HasimirFenring: Story = {
     strength: '6',
     owner: 'Emperor',
   },
-};
+});

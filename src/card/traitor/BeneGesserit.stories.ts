@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Alia: Story = {
+export const Alia = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/alia.png',
@@ -24,9 +21,9 @@ export const Alia: Story = {
     strength: '5',
     owner: 'Bene Gesserit',
   },
-};
+});
 
-export const WannaYueh: Story = {
+export const WannaYueh = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/wanna.png',
@@ -35,9 +32,9 @@ export const WannaYueh: Story = {
     strength: '5',
     owner: 'Bene Gesserit',
   },
-};
+});
 
-export const MotherRamolla: Story = {
+export const MotherRamolla = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/ramallo.png',
@@ -46,9 +43,9 @@ export const MotherRamolla: Story = {
     strength: '5',
     owner: 'Bene Gesserit',
   },
-};
+});
 
-export const PrincesIrulan: Story = {
+export const PrincesIrulan = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/irulan.png',
@@ -57,9 +54,9 @@ export const PrincesIrulan: Story = {
     strength: '5',
     owner: 'Bene Gesserit',
   },
-};
+});
 
-export const LadyFenring: Story = {
+export const LadyFenring = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-gesserit.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/lady-fenring.png',
@@ -68,4 +65,4 @@ export const LadyFenring: Story = {
     strength: '5',
     owner: 'Bene Gesserit',
   },
-};
+});

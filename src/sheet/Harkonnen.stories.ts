@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { FactionSheet } from './Sheet';
 
-const meta = {
+const meta = preview.meta({
   component: FactionSheet,
   parameters: {
     layout: 'fullscreen',
@@ -11,12 +11,9 @@ const meta = {
       value: 'card',
     },
   },
-} satisfies Meta<typeof FactionSheet>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Harkonnen: Story = {
+export const Harkonnen = meta.story({
   args: {
     name: 'Harkonnen',
     logo: '/generated/token/faction/harkonnen.jpg',
@@ -76,4 +73,4 @@ export const Harkonnen: Story = {
       '/generated/token/leader/harkonnen/feyd-rautha.jpg',
     ],
   },
-};
+});

@@ -1,9 +1,9 @@
+import preview from '../../.storybook/preview';
 import { Fragment } from 'react';
 import { Definitions } from './Definitions';
 import { Text } from './Text';
-import type { Meta, StoryObj } from '@storybook/react-vite';
 
-const meta = {
+const meta = preview.meta({
   component: Definitions,
   args: {
     children: (
@@ -33,11 +33,8 @@ const meta = {
       </Text>
     ),
   ],
-} satisfies Meta<typeof Definitions>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Default = {
+export const Default = meta.story({
   args: {},
-} satisfies Story;
+});

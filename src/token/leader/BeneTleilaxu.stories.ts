@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Blin: Story = {
+export const Blin = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/blin.png',
@@ -29,9 +26,9 @@ export const Blin: Story = {
     name: 'Alia',
     strength: '0',
   },
-};
+});
 
-export const Zoal: Story = {
+export const Zoal = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/zoal.png',
@@ -39,9 +36,9 @@ export const Zoal: Story = {
     name: 'Zoal',
     strength: '2',
   },
-};
+});
 
-export const Wykk: Story = {
+export const Wykk = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/wykk.png',
@@ -49,9 +46,9 @@ export const Wykk: Story = {
     name: 'Wykk',
     strength: '3',
   },
-};
+});
 
-export const MasterZaaf: Story = {
+export const MasterZaaf = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/zaaf.png',
@@ -59,9 +56,9 @@ export const MasterZaaf: Story = {
     name: 'MasterZaaf',
     strength: '4',
   },
-};
+});
 
-export const HidarFenAjidica: Story = {
+export const HidarFenAjidica = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/hidar.png',
@@ -69,9 +66,9 @@ export const HidarFenAjidica: Story = {
     name: 'Hidar Fen Ajidica',
     strength: '5',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/masters.jpg',
@@ -79,4 +76,4 @@ export const Hero: Story = {
     name: 'Masters Council',
     strength: '',
   },
-};
+});

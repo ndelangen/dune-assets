@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const DrYueh: Story = {
+export const DrYueh = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/dryeuh.png',
@@ -29,9 +26,9 @@ export const DrYueh: Story = {
     name: 'Dr. Yueh',
     strength: '1',
   },
-};
+});
 
-export const DuncanIdaho: Story = {
+export const DuncanIdaho = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/duncan.png',
@@ -39,9 +36,9 @@ export const DuncanIdaho: Story = {
     name: 'Duncan Idaho',
     strength: '2',
   },
-};
+});
 
-export const GurneyHalleck: Story = {
+export const GurneyHalleck = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/gurney.png',
@@ -49,9 +46,9 @@ export const GurneyHalleck: Story = {
     name: 'Gurney Halleck',
     strength: '4',
   },
-};
+});
 
-export const LadyJessica: Story = {
+export const LadyJessica = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/jessica.png',
@@ -59,9 +56,9 @@ export const LadyJessica: Story = {
     name: 'Lady Jessica',
     strength: '5',
   },
-};
+});
 
-export const ThufirHawat: Story = {
+export const ThufirHawat = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/thufir.png',
@@ -69,9 +66,9 @@ export const ThufirHawat: Story = {
     name: 'Thufir Hawat',
     strength: '5',
   },
-};
+});
 
-export const KwisatzHaderach: Story = {
+export const KwisatzHaderach = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/paul.jpg',
@@ -79,9 +76,9 @@ export const KwisatzHaderach: Story = {
     name: 'Kwisatz Haderach',
     strength: '+2',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/paul.jpg',
@@ -89,4 +86,4 @@ export const Hero: Story = {
     name: `Paul Muad'Dib`,
     strength: '',
   },
-};
+});

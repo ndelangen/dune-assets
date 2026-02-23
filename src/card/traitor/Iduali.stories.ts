@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Korba: Story = {
+export const Korba = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/korba.png',
@@ -24,9 +21,9 @@ export const Korba: Story = {
     strength: '1',
     owner: 'Iduali',
   },
-};
+});
 
-export const Smuggler: Story = {
+export const Smuggler = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/smuggler.png',
@@ -35,9 +32,9 @@ export const Smuggler: Story = {
     strength: '3',
     owner: 'Iduali',
   },
-};
+});
 
-export const RatRunner: Story = {
+export const RatRunner = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/ratrunner.png',
@@ -46,9 +43,9 @@ export const RatRunner: Story = {
     strength: '3',
     owner: 'Iduali',
   },
-};
+});
 
-export const Sabiha: Story = {
+export const Sabiha = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/sabiha.png',
@@ -57,9 +54,9 @@ export const Sabiha: Story = {
     strength: '4',
     owner: 'Iduali',
   },
-};
+});
 
-export const Javid: Story = {
+export const Javid = meta.story({
   args: {
     background: `url('/generated/utils/background/iduali.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/javid.png',
@@ -68,4 +65,4 @@ export const Javid: Story = {
     strength: '5',
     owner: 'Iduali',
   },
-};
+});

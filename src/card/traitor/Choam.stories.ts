@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Auditor: Story = {
+export const Auditor = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -24,9 +21,9 @@ export const Auditor: Story = {
     strength: '2',
     owner: 'CHOAM',
   },
-};
+});
 
-export const ViscountTull: Story = {
+export const ViscountTull = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -35,9 +32,9 @@ export const ViscountTull: Story = {
     strength: '2',
     owner: 'CHOAM',
   },
-};
+});
 
-export const DukeVerdun: Story = {
+export const DukeVerdun = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -46,9 +43,9 @@ export const DukeVerdun: Story = {
     strength: '3',
     owner: 'CHOAM',
   },
-};
+});
 
-export const RajivLondine: Story = {
+export const RajivLondine = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -57,9 +54,9 @@ export const RajivLondine: Story = {
     strength: '3',
     owner: 'CHOAM',
   },
-};
+});
 
-export const FrankosAru: Story = {
+export const FrankosAru = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -68,9 +65,9 @@ export const FrankosAru: Story = {
     strength: '4',
     owner: 'CHOAM',
   },
-};
+});
 
-export const LadyJalma: Story = {
+export const LadyJalma = meta.story({
   args: {
     background: `url('/generated/utils/background/choam.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -79,4 +76,4 @@ export const LadyJalma: Story = {
     strength: '4',
     owner: 'CHOAM',
   },
-};
+});

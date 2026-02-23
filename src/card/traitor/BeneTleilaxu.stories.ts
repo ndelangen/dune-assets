@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Blin: Story = {
+export const Blin = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/blin.png',
@@ -24,9 +21,9 @@ export const Blin: Story = {
     strength: '0',
     owner: 'Bene Tleilaxu',
   },
-};
+});
 
-export const Zoal: Story = {
+export const Zoal = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/zoal.png',
@@ -35,9 +32,9 @@ export const Zoal: Story = {
     strength: '2',
     owner: 'Bene Tleilaxu',
   },
-};
+});
 
-export const Wykk: Story = {
+export const Wykk = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/wykk.png',
@@ -46,9 +43,9 @@ export const Wykk: Story = {
     strength: '3',
     owner: 'Bene Tleilaxu',
   },
-};
+});
 
-export const MasterZaaf: Story = {
+export const MasterZaaf = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/zaaf.png',
@@ -57,9 +54,9 @@ export const MasterZaaf: Story = {
     strength: '4',
     owner: 'Bene Tleilaxu',
   },
-};
+});
 
-export const HidarFenAjidica: Story = {
+export const HidarFenAjidica = meta.story({
   args: {
     background: `url('/generated/utils/background/bene-tleilaxu.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/hidar.png',
@@ -68,4 +65,4 @@ export const HidarFenAjidica: Story = {
     strength: '5',
     owner: 'Bene Tleilaxu',
   },
-};
+});

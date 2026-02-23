@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const HaHaHa: Story = {
+export const HaHaHa = meta.story({
   args: {
     head: `/generated/utils/background/worthless.jpg`,
     icon: [`/generated/utils/background/striped-worthless.jpg`, 'vector/icon/traitor.svg'],
@@ -38,9 +35,9 @@ export const HaHaHa: Story = {
     text: 'Play this card at mentat to win the game, you can play this after at least 1 player rage-quit.',
     subName: 'Special - Win',
   },
-};
+});
 
-export const FlyingShaiHulud: Story = {
+export const FlyingShaiHulud = meta.story({
   args: {
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/lightning.svg'],
@@ -65,9 +62,9 @@ export const FlyingShaiHulud: Story = {
     text: 'Text goes here',
     subName: 'Special - Win',
   },
-};
+});
 
-export const PoisonKulon: Story = {
+export const PoisonKulon = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/poison.svg'],
@@ -99,4 +96,4 @@ export const PoisonKulon: Story = {
     text: 'Text goes here',
     subName: 'Special - Win',
   },
-};
+});

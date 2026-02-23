@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Jamis: Story = {
+export const Jamis = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/jamis.png',
@@ -24,9 +21,9 @@ export const Jamis: Story = {
     strength: '2',
     owner: 'Fremen',
   },
-};
+});
 
-export const ShadoutMapes: Story = {
+export const ShadoutMapes = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/mapes.png',
@@ -35,9 +32,9 @@ export const ShadoutMapes: Story = {
     strength: '3',
     owner: 'Fremen',
   },
-};
+});
 
-export const Otheym: Story = {
+export const Otheym = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/otheym.png',
@@ -46,9 +43,9 @@ export const Otheym: Story = {
     strength: '5',
     owner: 'Fremen',
   },
-};
+});
 
-export const Chani: Story = {
+export const Chani = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/chani.png',
@@ -57,9 +54,9 @@ export const Chani: Story = {
     strength: '6',
     owner: 'Fremen',
   },
-};
+});
 
-export const Stilgar: Story = {
+export const Stilgar = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/stilgar.png',
@@ -68,4 +65,4 @@ export const Stilgar: Story = {
     strength: '7',
     owner: 'Fremen',
   },
-};
+});

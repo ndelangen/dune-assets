@@ -1,19 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TreacheryCard } from './Treachery';
 
-const meta = {
+const meta = preview.meta({
   component: TreacheryCard,
   globals: {
     viewport: {
       value: 'card',
     },
   },
-} satisfies Meta<typeof TreacheryCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Shield: Story = {
+export const Shield = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/shield.svg'],
@@ -31,9 +28,9 @@ export const Shield: Story = {
     text: 'Play as part of your Battle Plan.\n\nProtects your leader from a projectile weapon in this battle.\n\nYou may keep this card if you win this battle.',
     subName: 'Defense - Projectile',
   },
-};
+});
 
-export const Snooper: Story = {
+export const Snooper = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
@@ -51,9 +48,9 @@ export const Snooper: Story = {
     text: 'Play as part of your Battle Plan.\n\nProtects your leader from a poison weapon in this battle.\n\nYou may keep this card if you win this battle.',
     subName: 'Defense - Poison',
   },
-};
+});
 
-export const PortableSnooper: Story = {
+export const PortableSnooper = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
@@ -71,9 +68,9 @@ export const PortableSnooper: Story = {
     text: 'Text goes here',
     subName: 'Defense - Poison - Special',
   },
-};
+});
 
-export const Chemistry: Story = {
+export const Chemistry = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
@@ -91,9 +88,9 @@ export const Chemistry: Story = {
     text: 'Play as part of your Battle Plan.\n\nCounts as a poison defense, unless played with another defense. In that case, it counts as a poison weapon.\n\nYou may keep this card if you win this battle.',
     subName: 'Defense - Poison - Special',
   },
-};
+});
 
-export const ShieldSnooper: Story = {
+export const ShieldSnooper = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
@@ -111,9 +108,9 @@ export const ShieldSnooper: Story = {
     text: 'Play as part of your Battle Plan.\nCounts as both a Shield (projectile defense) and Snooper (poison defense).\nYou may keep this card if you win this battle.',
     subName: 'Defense - Special',
   },
-};
+});
 
-export const SandtroutMembrane: Story = {
+export const SandtroutMembrane = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
@@ -131,9 +128,9 @@ export const SandtroutMembrane: Story = {
     text: 'Text goes here',
     subName: 'Defense - Special',
   },
-};
+});
 
-export const DeflectiveShield: Story = {
+export const DeflectiveShield = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/shield.svg'],
@@ -151,4 +148,4 @@ export const DeflectiveShield: Story = {
     text: 'Text goes here',
     subName: 'Defense - Special',
   },
-};
+});

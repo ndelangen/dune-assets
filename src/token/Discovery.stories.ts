@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { CustomToken } from './Custom';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Jacurutu: Story = {
+export const Jacurutu = meta.story({
   args: {
     background: `url('/generated/utils/background/hiereg.jpg') top left / cover no-repeat`,
     image: 'vector/icon/seitch.svg',
@@ -31,9 +28,9 @@ export const Jacurutu: Story = {
     stroke: '#fff',
     strokeWidth: 4.5,
   },
-};
+});
 
-export const Cistern: Story = {
+export const Cistern = meta.story({
   args: {
     background: `url('/generated/utils/background/hiereg.jpg') top left / cover no-repeat`,
     image: 'vector/decal/cistern.svg',
@@ -43,9 +40,9 @@ export const Cistern: Story = {
     stroke: '#fff',
     strokeWidth: 3,
   },
-};
+});
 
-export const EcologicalTestingStation: Story = {
+export const EcologicalTestingStation = meta.story({
   args: {
     background: `url('/generated/utils/background/hiereg.jpg') top left / cover no-repeat`,
     image: 'vector/decal/ecological-testing-station.svg',
@@ -55,9 +52,9 @@ export const EcologicalTestingStation: Story = {
     stroke: '#fff',
     strokeWidth: 2,
   },
-};
+});
 
-export const Shrine: Story = {
+export const Shrine = meta.story({
   args: {
     background: `url('/generated/utils/background/hiereg.jpg') top left / cover no-repeat`,
     image: 'vector/decal/shrine.svg',
@@ -67,9 +64,9 @@ export const Shrine: Story = {
     stroke: '#fff',
     strokeWidth: 2,
   },
-};
+});
 
-export const Ornithopter: Story = {
+export const Ornithopter = meta.story({
   args: {
     background: `url('/generated/utils/background/discovery.jpg') top left / cover no-repeat`,
     image: 'vector/decal/ornithopter.svg',
@@ -79,9 +76,9 @@ export const Ornithopter: Story = {
     stroke: '#fff',
     strokeWidth: 2,
   },
-};
+});
 
-export const OrgizProcessingPlant: Story = {
+export const OrgizProcessingPlant = meta.story({
   args: {
     background: `url('/generated/utils/background/discovery.jpg') top left / cover no-repeat`,
     image: 'vector/decal/orgiz-processing-station.svg',
@@ -91,9 +88,9 @@ export const OrgizProcessingPlant: Story = {
     stroke: '#fff',
     strokeWidth: 2,
   },
-};
+});
 
-export const TreacheryCash: Story = {
+export const TreacheryCash = meta.story({
   args: {
     background: `url('/generated/utils/background/discovery.jpg') top left / cover no-repeat`,
     image: 'vector/icon/treachery.svg',
@@ -103,9 +100,9 @@ export const TreacheryCash: Story = {
     stroke: '#fff',
     strokeWidth: 3,
   },
-};
+});
 
-export const SpiceCash: Story = {
+export const SpiceCash = meta.story({
   args: {
     background: `url('/generated/utils/background/discovery.jpg') top left / cover no-repeat`,
     image: 'vector/icon/spice.svg',
@@ -115,4 +112,4 @@ export const SpiceCash: Story = {
     stroke: '#fff',
     strokeWidth: 3,
   },
-};
+});

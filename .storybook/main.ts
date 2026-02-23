@@ -1,6 +1,6 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import { defineMain } from '@storybook/react-vite/node';
 
-const config: StorybookConfig = {
+export default defineMain({
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: ['@storybook/addon-docs', '@storybook/addon-vitest'],
   framework: {
@@ -17,5 +17,4 @@ const config: StorybookConfig = {
       to: 'generated',
     },
   ],
-};
-export default config;
+});

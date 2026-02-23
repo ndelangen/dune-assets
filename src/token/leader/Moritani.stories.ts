@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const VandoTerboli: Story = {
+export const VandoTerboli = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -29,9 +26,9 @@ export const VandoTerboli: Story = {
     name: 'Vando Terboli',
     strength: '1',
   },
-};
+});
 
-export const TrinKronos: Story = {
+export const TrinKronos = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -39,9 +36,9 @@ export const TrinKronos: Story = {
     name: 'TrinKronos',
     strength: '2',
   },
-};
+});
 
-export const KrieuKronos: Story = {
+export const KrieuKronos = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -49,9 +46,9 @@ export const KrieuKronos: Story = {
     name: 'Krieu Kronos',
     strength: '4',
   },
-};
+});
 
-export const HiihResser: Story = {
+export const HiihResser = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -59,9 +56,9 @@ export const HiihResser: Story = {
     name: 'Riih Resser',
     strength: '4',
   },
-};
+});
 
-export const LupinoOrd: Story = {
+export const LupinoOrd = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -69,9 +66,9 @@ export const LupinoOrd: Story = {
     name: 'Lupino Ord',
     strength: '5',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/moritani.jpg') top left / cover no-repeat`,
     image: 'image/leader/ilya/hundro.jpg',
@@ -79,4 +76,4 @@ export const Hero: Story = {
     name: 'Viscount Hundro Moritani',
     strength: '',
   },
-};
+});

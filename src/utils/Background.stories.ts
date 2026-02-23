@@ -1,41 +1,38 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../.storybook/preview';
 import { Background } from './Background';
 
-const meta = {
+const meta = preview.meta({
   component: Background,
-} satisfies Meta<typeof Background>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Duo1: Story = {
+export const Duo1 = meta.story({
   args: {
     image: 'image/texture/021.jpg',
     colors: ['red', 'blue'],
     opacity: 0,
     strength: 0,
   },
-};
+});
 
-export const Duo2: Story = {
+export const Duo2 = meta.story({
   args: {
     image: 'image/texture/021.jpg',
     colors: ['red', 'blue'],
     opacity: 120,
     strength: 0,
   },
-};
+});
 
-export const Duo3: Story = {
+export const Duo3 = meta.story({
   args: {
     image: 'image/texture/011.jpg',
     colors: ['hotpink', 'deepskyblue'],
     opacity: 70,
     strength: -100,
   },
-};
+});
 
-export const Linear1: Story = {
+export const Linear1 = meta.story({
   args: {
     image: 'image/texture/011.jpg',
     colors: [
@@ -52,8 +49,8 @@ export const Linear1: Story = {
     opacity: 70,
     strength: -100,
   },
-};
-export const Linear2: Story = {
+});
+export const Linear2 = meta.story({
   args: {
     image: 'image/texture/011.jpg',
     colors: [
@@ -70,8 +67,8 @@ export const Linear2: Story = {
     opacity: 70,
     strength: -100,
   },
-};
-export const Linear3: Story = {
+});
+export const Linear3 = meta.story({
   args: {
     image: 'image/texture/052.jpg',
     colors: [
@@ -88,8 +85,8 @@ export const Linear3: Story = {
     opacity: 40,
     strength: -100,
   },
-};
-export const Radial1: Story = {
+});
+export const Radial1 = meta.story({
   args: {
     image: 'image/texture/052.jpg',
     colors: [
@@ -106,9 +103,9 @@ export const Radial1: Story = {
     opacity: 40,
     strength: -100,
   },
-};
+});
 
-export const Radial2: Story = {
+export const Radial2 = meta.story({
   args: {
     image: 'image/texture/054.jpg',
     colors: [
@@ -131,135 +128,135 @@ export const Radial2: Story = {
     opacity: 150,
     strength: -100,
   },
-};
+});
 
-export const Atreides: Story = {
+export const Atreides = meta.story({
   args: {
     image: 'image/texture/015.jpg',
     colors: ['#4B4C0D', '#262B04'],
     opacity: 50,
     strength: 0,
   },
-};
+});
 
-export const Ixian: Story = {
+export const Ixian = meta.story({
   args: {
     image: 'image/texture/004.jpg',
     colors: ['#D4BE6B', '#A88E2A'],
     opacity: 20,
     strength: 0,
   },
-};
+});
 
-export const BeneGesserit: Story = {
+export const BeneGesserit = meta.story({
   args: {
     image: 'image/texture/020.jpg',
     colors: ['#3A4491', '#101D65'],
     opacity: 150,
     strength: -100,
   },
-};
+});
 
-export const BeneTleilaxu: Story = {
+export const BeneTleilaxu = meta.story({
   args: {
     image: 'image/texture/031.jpg',
     colors: ['#6E008F', '#2D006B'],
     opacity: 120,
     strength: -80,
   },
-};
+});
 
-export const Emperor: Story = {
+export const Emperor = meta.story({
   args: {
     image: 'image/texture/030.jpg',
     colors: ['#A40008', '#8D0006'],
     opacity: -150,
     strength: 0,
   },
-};
+});
 
-export const Fremen: Story = {
+export const Fremen = meta.story({
   args: {
     image: 'image/texture/054.jpg',
     colors: ['#F6A834', '#CF7317'],
     opacity: 120,
     strength: -100,
   },
-};
+});
 
-export const Guild: Story = {
+export const Guild = meta.story({
   args: {
     image: 'image/texture/007.jpg',
     colors: ['#D83C13', '#B41C0C'],
     opacity: 400,
     strength: -100,
   },
-};
+});
 
-export const Iduali: Story = {
+export const Iduali = meta.story({
   args: {
     image: 'image/texture/009.jpg',
     colors: ['#5B2802', '#470200'],
     opacity: 100,
     strength: -100,
   },
-};
+});
 
-export const Harkonnen: Story = {
+export const Harkonnen = meta.story({
   args: {
     image: 'image/texture/059.jpg',
     colors: ['#191311', '#000000'],
     opacity: 140,
     strength: -10,
   },
-};
+});
 
-export const Moritani: Story = {
+export const Moritani = meta.story({
   args: {
     image: 'image/texture/057.jpg',
     colors: ['#0B4D64', '#05333D'],
     opacity: 1040,
     strength: -67,
   },
-};
+});
 
-export const Ginaz: Story = {
+export const Ginaz = meta.story({
   args: {
     image: 'image/texture/056.jpg',
     colors: ['#425A61', '#273739'],
     opacity: 1400,
     strength: -10,
   },
-};
+});
 
-export const Landsraad: Story = {
+export const Landsraad = meta.story({
   args: {
     image: 'image/texture/036.jpg',
     colors: ['#520E2D', '#410D25'],
     opacity: 400,
     strength: -100,
   },
-};
+});
 
-export const Richese: Story = {
+export const Richese = meta.story({
   args: {
     image: 'image/texture/029.jpg',
     colors: ['#B5B0A5', '#7C786D'],
     opacity: 200,
     strength: -77,
   },
-};
+});
 
-export const Ecaz: Story = {
+export const Ecaz = meta.story({
   args: {
     image: 'image/texture/044.jpg',
     colors: ['#7F3D81', '#581858'],
     opacity: 250,
     strength: -85,
   },
-};
+});
 
-export const CHOAM: Story = {
+export const CHOAM = meta.story({
   args: {
     image: 'image/texture/075.jpg',
     colors: [
@@ -283,9 +280,9 @@ export const CHOAM: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const Discovery: Story = {
+export const Discovery = meta.story({
   args: {
     image: 'image/texture/052.jpg',
     colors: [
@@ -302,9 +299,9 @@ export const Discovery: Story = {
     opacity: 40,
     strength: -100,
   },
-};
+});
 
-export const Hiereg: Story = {
+export const Hiereg = meta.story({
   args: {
     image: 'image/texture/052.jpg',
     colors: [
@@ -321,9 +318,9 @@ export const Hiereg: Story = {
     opacity: 40,
     strength: -100,
   },
-};
+});
 
-export const Terror: Story = {
+export const Terror = meta.story({
   args: {
     image: 'image/texture/038.jpg',
     colors: [
@@ -340,9 +337,9 @@ export const Terror: Story = {
     opacity: 40,
     strength: 0,
   },
-};
+});
 
-export const Spice: Story = {
+export const Spice = meta.story({
   args: {
     image: 'image/texture/001.jpg',
     colors: [
@@ -359,9 +356,9 @@ export const Spice: Story = {
     opacity: 40,
     strength: 0,
   },
-};
+});
 
-export const TechTeal: Story = {
+export const TechTeal = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -378,9 +375,9 @@ export const TechTeal: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechPurple: Story = {
+export const TechPurple = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -397,9 +394,9 @@ export const TechPurple: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechYellow: Story = {
+export const TechYellow = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -416,9 +413,9 @@ export const TechYellow: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechSun: Story = {
+export const TechSun = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -435,9 +432,9 @@ export const TechSun: Story = {
     opacity: 300,
     strength: 200,
   },
-};
+});
 
-export const TechRed: Story = {
+export const TechRed = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -454,9 +451,9 @@ export const TechRed: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechMaroon: Story = {
+export const TechMaroon = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -473,9 +470,9 @@ export const TechMaroon: Story = {
     opacity: 500,
     strength: 50,
   },
-};
+});
 
-export const TechOrange: Story = {
+export const TechOrange = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -492,9 +489,9 @@ export const TechOrange: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechBlue: Story = {
+export const TechBlue = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -511,9 +508,9 @@ export const TechBlue: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechPink: Story = {
+export const TechPink = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -530,9 +527,9 @@ export const TechPink: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechWhite: Story = {
+export const TechWhite = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -549,9 +546,9 @@ export const TechWhite: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const TechGreen: Story = {
+export const TechGreen = meta.story({
   args: {
     image: 'image/texture/003.jpg',
     colors: [
@@ -568,108 +565,108 @@ export const TechGreen: Story = {
     opacity: 100,
     strength: 0,
   },
-};
+});
 
-export const Moss: Story = {
+export const Moss = meta.story({
   args: {
     image: 'image/texture/009.jpg',
     colors: ['#4E431D', '#31260D'],
     opacity: 200,
     strength: 0,
   },
-};
+});
 
-export const Traitor: Story = {
+export const Traitor = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#3D3438', '#040404'],
     opacity: 0,
     strength: -100,
   },
-};
+});
 
-export const Alliance: Story = {
+export const Alliance = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#4D4724', '#302B16'],
     opacity: 50,
     strength: -100,
   },
-};
+});
 
-export const Weapon: Story = {
+export const Weapon = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#8F2C1C', '#621D1A'],
     opacity: 50,
     strength: -100,
   },
-};
+});
 
-export const Defense: Story = {
+export const Defense = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#29335E', '#0A153C'],
     opacity: 60,
     strength: -100,
   },
-};
+});
 
-export const Storm: Story = {
+export const Storm = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#582705', '#875818'],
     opacity: 50,
     strength: 0,
   },
-};
+});
 
-export const Spice2: Story = {
+export const Spice2 = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#7A4421', '#56210B'],
     opacity: 30,
     strength: -100,
   },
-};
+});
 
-export const Spice3: Story = {
+export const Spice3 = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#3C6066', '#2A4046'],
     opacity: 80,
     strength: -100,
   },
-};
+});
 
-export const Special: Story = {
+export const Special = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#474620', '#27260C'],
     opacity: 60,
     strength: -100,
   },
-};
+});
 
-export const Worthless: Story = {
+export const Worthless = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#887849', '#6F6034'],
     opacity: 80,
     strength: -100,
   },
-};
+});
 
-export const Fate: Story = {
+export const Fate = meta.story({
   args: {
     image: 'image/texture/082.jpg',
     colors: ['#7E275A', '#C54E90'],
     opacity: 80,
     strength: -100,
   },
-};
+});
 
-export const StripedWeapon: Story = {
+export const StripedWeapon = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -693,9 +690,9 @@ export const StripedWeapon: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});
 
-export const StripedDefense: Story = {
+export const StripedDefense = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -719,9 +716,9 @@ export const StripedDefense: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});
 
-export const StripedSpecial: Story = {
+export const StripedSpecial = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -745,9 +742,9 @@ export const StripedSpecial: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});
 
-export const StripedWorthless: Story = {
+export const StripedWorthless = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -771,9 +768,9 @@ export const StripedWorthless: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});
 
-export const StripedFate: Story = {
+export const StripedFate = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -797,9 +794,9 @@ export const StripedFate: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});
 
-export const StripedAlliance: Story = {
+export const StripedAlliance = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -823,9 +820,9 @@ export const StripedAlliance: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});
 
-export const StripedSpice: Story = {
+export const StripedSpice = meta.story({
   args: {
     image: 'image/texture/076.jpg',
     colors: [
@@ -849,4 +846,4 @@ export const StripedSpice: Story = {
     opacity: 220,
     strength: 0,
   },
-};
+});

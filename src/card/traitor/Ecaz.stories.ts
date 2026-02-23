@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const BindikkVarni: Story = {
+export const BindikkVarni = meta.story({
   args: {
     background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -24,9 +21,9 @@ export const BindikkVarni: Story = {
     strength: '2',
     owner: 'Ecaz',
   },
-};
+});
 
-export const RivvyDinari: Story = {
+export const RivvyDinari = meta.story({
   args: {
     background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/brainfood/rivvy.png',
@@ -35,9 +32,9 @@ export const RivvyDinari: Story = {
     strength: '3',
     owner: 'Ecaz',
   },
-};
+});
 
-export const IlesaEcaz: Story = {
+export const IlesaEcaz = meta.story({
   args: {
     background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -46,9 +43,9 @@ export const IlesaEcaz: Story = {
     strength: '3',
     owner: 'Ecaz',
   },
-};
+});
 
-export const SantyaEcaz: Story = {
+export const SantyaEcaz = meta.story({
   args: {
     background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -57,9 +54,9 @@ export const SantyaEcaz: Story = {
     strength: '4',
     owner: 'Ecaz',
   },
-};
+});
 
-export const WhitmoreBludd: Story = {
+export const WhitmoreBludd = meta.story({
   args: {
     background: `url('/generated/utils/background/ecaz.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/tessia.png',
@@ -68,4 +65,4 @@ export const WhitmoreBludd: Story = {
     strength: '4',
     owner: 'Ecaz',
   },
-};
+});

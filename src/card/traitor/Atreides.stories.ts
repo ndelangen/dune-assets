@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const DrYueh: Story = {
+export const DrYueh = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/dryeuh.png',
@@ -24,9 +21,9 @@ export const DrYueh: Story = {
     strength: '1',
     owner: 'Atreides',
   },
-};
+});
 
-export const DuncanIdaho: Story = {
+export const DuncanIdaho = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/duncan.png',
@@ -35,9 +32,9 @@ export const DuncanIdaho: Story = {
     strength: '2',
     owner: 'Atreides',
   },
-};
+});
 
-export const GurneyHalleck: Story = {
+export const GurneyHalleck = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/gurney.png',
@@ -46,9 +43,9 @@ export const GurneyHalleck: Story = {
     strength: '4',
     owner: 'Atreides',
   },
-};
+});
 
-export const LadyJessica: Story = {
+export const LadyJessica = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/jessica.png',
@@ -57,9 +54,9 @@ export const LadyJessica: Story = {
     strength: '5',
     owner: 'Atreides',
   },
-};
+});
 
-export const ThufirHawat: Story = {
+export const ThufirHawat = meta.story({
   args: {
     background: `url('/generated/utils/background/atreides.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/thufir.png',
@@ -68,4 +65,4 @@ export const ThufirHawat: Story = {
     strength: '5',
     owner: 'Atreides',
   },
-};
+});

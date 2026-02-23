@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { CustomToken } from './Leader';
 
-const meta = {
+const meta = preview.meta({
   component: CustomToken,
   argTypes: {
     image: {
@@ -16,12 +16,9 @@ const meta = {
     },
     disc: true,
   },
-} satisfies Meta<typeof CustomToken>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Jamis: Story = {
+export const Jamis = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/jamis.png',
@@ -29,9 +26,9 @@ export const Jamis: Story = {
     name: 'Jamis',
     strength: '2',
   },
-};
+});
 
-export const ShadoutMapes: Story = {
+export const ShadoutMapes = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/mapes.png',
@@ -39,9 +36,9 @@ export const ShadoutMapes: Story = {
     name: 'Shadout Mapes',
     strength: '3',
   },
-};
+});
 
-export const Otheym: Story = {
+export const Otheym = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/otheym.png',
@@ -49,9 +46,9 @@ export const Otheym: Story = {
     name: 'Otheym',
     strength: '5',
   },
-};
+});
 
-export const Chani: Story = {
+export const Chani = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/chani.png',
@@ -59,9 +56,9 @@ export const Chani: Story = {
     name: 'Chani',
     strength: '6',
   },
-};
+});
 
-export const Stilgar: Story = {
+export const Stilgar = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/stilgar.png',
@@ -69,9 +66,9 @@ export const Stilgar: Story = {
     name: 'Stilgar',
     strength: '7',
   },
-};
+});
 
-export const Hero: Story = {
+export const Hero = meta.story({
   args: {
     background: `url('/generated/utils/background/fremen.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/liet.jpg',
@@ -79,4 +76,4 @@ export const Hero: Story = {
     name: 'Liet Kynes',
     strength: '',
   },
-};
+});

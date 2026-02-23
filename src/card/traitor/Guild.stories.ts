@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import preview from '../../../.storybook/preview';
 import { TraitorCard } from './Traitor';
 
-const meta = {
+const meta = preview.meta({
   component: TraitorCard,
   argTypes: {
     image: {
@@ -10,12 +10,9 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof TraitorCard>;
+});
 
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Representative: Story = {
+export const Representative = meta.story({
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/guildrep.png',
@@ -24,9 +21,9 @@ export const Representative: Story = {
     strength: '1',
     owner: 'Spacing Guild',
   },
-};
+});
 
-export const SooSooSook: Story = {
+export const SooSooSook = meta.story({
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/soo-soo-sook.png',
@@ -35,9 +32,9 @@ export const SooSooSook: Story = {
     strength: '2',
     owner: 'Spacing Guild',
   },
-};
+});
 
-export const EsmarTuek: Story = {
+export const EsmarTuek = meta.story({
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/esmar.png',
@@ -46,9 +43,9 @@ export const EsmarTuek: Story = {
     strength: '3',
     owner: 'Spacing Guild',
   },
-};
+});
 
-export const MasterBewt: Story = {
+export const MasterBewt = meta.story({
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/bewt.png',
@@ -57,9 +54,9 @@ export const MasterBewt: Story = {
     strength: '3',
     owner: 'Spacing Guild',
   },
-};
+});
 
-export const StabanTuek: Story = {
+export const StabanTuek = meta.story({
   args: {
     background: `url('/generated/utils/background/guild.jpg') top left / cover no-repeat`,
     image: 'image/leader/official/staban.png',
@@ -68,4 +65,4 @@ export const StabanTuek: Story = {
     strength: '5',
     owner: 'Spacing Guild',
   },
-};
+});
