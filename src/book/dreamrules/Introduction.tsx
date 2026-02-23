@@ -1,5 +1,5 @@
-/** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
-import { type FC, Fragment } from 'react';
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: I don't care */
+import type { FC } from 'react';
 
 import { Ball } from '../../block/Ball';
 import { Definitions } from '../../block/Definitions';
@@ -25,19 +25,17 @@ export function Board() {
             Mentat Pause phase.
           </p>
           <p>
-            A faction has special advantages detailed on their faction sheets that may contradict the rules.
-            A faction's particular advantages always have precedence over the rules.
+            A faction has special advantages detailed on their faction sheets that may contradict the rules. A
+            faction's particular advantages always have precedence over the rules.
           </p>
         </NonBreaking>
       </Text>
-      <Title color={colors.blue1} size="medium">
+      <Title color={colors.blue1} size='medium'>
         The board
       </Title>
       <Text>
         <NonBreaking>
-          <p>
-            Printed on the board is a map of the planet Dune. The map contains six types of territories.
-          </p>
+          <p>Printed on the board is a map of the planet Dune. The map contains six types of territories.</p>
         </NonBreaking>
         <Definitions>
           <dt>Sand</dt>
@@ -50,28 +48,28 @@ export function Board() {
           <dt>Imperial Basin</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ color: '#000', backgroundColor: '#F6D979' }} borderA="dashed" />
+              <Ball style={{ color: '#000', backgroundColor: '#F6D979' }} borderA='dashed' />
               <div>Yellow with dashed border</div>
             </SideBySide>
           </dd>
           <dt>Rock</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ color: '#000', backgroundColor: '#A67A3E' }} borderA="solid" />
+              <Ball style={{ color: '#000', backgroundColor: '#A67A3E' }} borderA='solid' />
               <div>Light brown with solid border</div>
             </SideBySide>
           </dd>
           <dt>Shieldwall</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ color: '#000', backgroundColor: '#A67A3E' }} borderA="solid" />
+              <Ball style={{ color: '#000', backgroundColor: '#A67A3E' }} borderA='solid' />
               <div>Light brown with solid border</div>
             </SideBySide>
           </dd>
           <dt>Polar Sink</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ color: '#000', backgroundColor: '#ffffff' }} borderA="solid" />
+              <Ball style={{ color: '#000', backgroundColor: '#ffffff' }} borderA='solid' />
               <div>White</div>
             </SideBySide>
           </dd>
@@ -80,8 +78,8 @@ export function Board() {
             <SideBySide gap={1}>
               <Ball
                 style={{ color: '#F7BA7A', backgroundColor: '#F7BA7A' }}
-                borderA="dashed"
-                borderB="#67371C"
+                borderA='dashed'
+                borderB='#67371C'
               />
               <div>Dark Brown, with dashed border</div>
             </SideBySide>
@@ -89,7 +87,7 @@ export function Board() {
           <dt>Seitch stronghold</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ color: '#F7BA7A' }} borderA="solid" borderB="#67371C" />
+              <Ball style={{ color: '#F7BA7A' }} borderA='solid' borderB='#67371C' />
               <div>Dark Brown, with solid border</div>
             </SideBySide>
           </dd>
@@ -100,10 +98,10 @@ export function Board() {
           <svg
             style={{ borderRadius: '50%', boxShadow: '0 0 4vw 0 rgba(0, 0, 0, 0.5)' }}
             width={'100%'}
-            viewBox="0 0 487.06 487.06"
-            xmlSpace="preserve"
-            fillRule="evenodd"
-            clipRule="evenodd"
+            viewBox='0 0 487.06 487.06'
+            xmlSpace='preserve'
+            fillRule='evenodd'
+            clipRule='evenodd'
           >
             <use xlinkHref={'/page/map.svg#root'}></use>
           </svg>
@@ -120,8 +118,8 @@ export function Sectors() {
         <NonBreaking>
           <h1>Sectors</h1>
           <p>
-            The map is also divided by longitude lines into 18 sectors which extend from the edge of the
-            Polar Sink to the horizon.
+            The map is also divided by longitude lines into 18 sectors which extend from the edge of the Polar
+            Sink to the horizon.
           </p>
           <p>Sectors are important in 3 ways:</p>
           <ol>
@@ -135,32 +133,32 @@ export function Sectors() {
         </NonBreaking>
 
         <svg
-          viewBox="0 0 487.06 487.06"
-          xmlSpace="preserve"
-          fillRule="evenodd"
-          clipRule="evenodd"
+          viewBox='0 0 487.06 487.06'
+          xmlSpace='preserve'
+          fillRule='evenodd'
+          clipRule='evenodd'
           style={{ borderRadius: '50%' }}
         >
           <use xlinkHref={'/page/map.svg#root'}></use>
           <use
             xlinkHref={'/page/map.svg#sectors'}
-            fill="none"
-            stroke="black"
-            clipRule="evenodd"
-            display="inline"
-            opacity="1"
-            fillRule="nonzero"
-            strokeWidth="7px"
+            fill='none'
+            stroke='black'
+            clipRule='evenodd'
+            display='inline'
+            opacity='1'
+            fillRule='nonzero'
+            strokeWidth='7px'
           />
           <use
             xlinkHref={'/page/map.svg#sectors'}
-            fill="none"
-            stroke="white"
-            clipRule="evenodd"
-            display="inline"
-            opacity="1"
-            fillRule="nonzero"
-            strokeWidth="4px"
+            fill='none'
+            stroke='white'
+            clipRule='evenodd'
+            display='inline'
+            opacity='1'
+            fillRule='nonzero'
+            strokeWidth='4px'
           />
         </svg>
       </Text>
@@ -170,10 +168,10 @@ export function Sectors() {
       <Text columns={2}>
         <svg
           style={{ borderRadius: '50%' }}
-          viewBox="0 0 487.06 487.06"
-          xmlSpace="preserve"
-          fillRule="evenodd"
-          clipRule="evenodd"
+          viewBox='0 0 487.06 487.06'
+          xmlSpace='preserve'
+          fillRule='evenodd'
+          clipRule='evenodd'
         >
           <use xlinkHref={'/page/map.svg#root'}></use>
         </svg>
@@ -186,8 +184,7 @@ export function Sectors() {
           </ul>
           <p>
             <em>
-              TODO: the map on the left should show the locations of the Spice-blows and Spice-mines,
-              clearly.
+              TODO: the map on the left should show the locations of the Spice-blows and Spice-mines, clearly.
             </em>
           </p>
         </NonBreaking>
@@ -274,8 +271,8 @@ export function Strongholds() {
           <li>It can still be blown up by Family Atomics.</li>
         </ul>
         <p>
-          When the Shieldwall territory is partially under storm, only the larger part (upper left) counts
-          as the stronghold.
+          When the Shieldwall territory is partially under storm, only the larger part (upper left) counts as
+          the stronghold.
         </p>
         <StrongholdsMap />
       </Text>
@@ -287,52 +284,52 @@ const StrongholdsMap: FC = () => (
     <div className={styles.strongholdsMap}>
       <svg
         style={{ borderRadius: '50%', opacity: 0.5 }}
-        viewBox="0 0 487.06 487.06"
-        xmlSpace="preserve"
-        fillRule="evenodd"
-        clipRule="evenodd"
+        viewBox='0 0 487.06 487.06'
+        xmlSpace='preserve'
+        fillRule='evenodd'
+        clipRule='evenodd'
       >
         <use xlinkHref={'/page/map.svg#root'}></use>
       </svg>
       <svg
         style={{ borderRadius: '50%' }}
-        viewBox="0 0 487.06 487.06"
-        xmlSpace="preserve"
-        fillRule="evenodd"
-        clipRule="evenodd"
+        viewBox='0 0 487.06 487.06'
+        xmlSpace='preserve'
+        fillRule='evenodd'
+        clipRule='evenodd'
       >
         <defs>
-          <mask id="arrakeen">
-            <rect width="100%" height="100%" fill="black" />
+          <mask id='arrakeen'>
+            <rect width='100%' height='100%' fill='black' />
             <use xlinkHref={'/page/map.svg#arrakeen'}></use>
           </mask>
-          <mask id="carthag">
-            <rect width="100%" height="100%" fill="black" />
+          <mask id='carthag'>
+            <rect width='100%' height='100%' fill='black' />
             <use xlinkHref={'/page/map.svg#carthag'}></use>
           </mask>
-          <mask id="tabr">
-            <rect width="100%" height="100%" fill="black" />
+          <mask id='tabr'>
+            <rect width='100%' height='100%' fill='black' />
             <use xlinkHref={'/page/map.svg#tabr'}></use>
           </mask>
-          <mask id="habbanya">
-            <rect width="100%" height="100%" fill="black" />
+          <mask id='habbanya'>
+            <rect width='100%' height='100%' fill='black' />
             <use xlinkHref={'/page/map.svg#habbanya'}></use>
           </mask>
-          <mask id="tueks">
-            <rect width="100%" height="100%" fill="black" />
+          <mask id='tueks'>
+            <rect width='100%' height='100%' fill='black' />
             <use xlinkHref={'/page/map.svg#tueks'}></use>
           </mask>
-          <mask id="shield-wall">
-            <rect width="100%" height="100%" fill="black" />
+          <mask id='shield-wall'>
+            <rect width='100%' height='100%' fill='black' />
             <use xlinkHref={'/page/map.svg#shield-wall'}></use>
           </mask>
         </defs>
-        <rect width="100%" height="100%" fill="red" mask="url(#arrakeen)" />
-        <rect width="100%" height="100%" fill="orange" mask="url(#carthag)" />
-        <rect width="100%" height="100%" fill="yellow" mask="url(#tabr)" />
-        <rect width="100%" height="100%" fill="green" mask="url(#habbanya)" />
-        <rect width="100%" height="100%" fill="blue" mask="url(#tueks)" />
-        <rect width="100%" height="100%" fill="purple" mask="url(#shield-wall)" />
+        <rect width='100%' height='100%' fill='red' mask='url(#arrakeen)' />
+        <rect width='100%' height='100%' fill='orange' mask='url(#carthag)' />
+        <rect width='100%' height='100%' fill='yellow' mask='url(#tabr)' />
+        <rect width='100%' height='100%' fill='green' mask='url(#habbanya)' />
+        <rect width='100%' height='100%' fill='blue' mask='url(#tueks)' />
+        <rect width='100%' height='100%' fill='purple' mask='url(#shield-wall)' />
       </svg>
     </div>
     <Definitions>

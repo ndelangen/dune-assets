@@ -1,4 +1,3 @@
-
 import { Spaced } from '../../block/Spaced';
 import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
@@ -7,7 +6,7 @@ import * as colors from '../../utils/colors';
 export function MiscRules() {
   return (
     <Spaced>
-      <Title color={colors.blue1} size="medium">
+      <Title color={colors.blue1} size='medium'>
         Miscellaneous rules
       </Title>
       <Text columns={2}>

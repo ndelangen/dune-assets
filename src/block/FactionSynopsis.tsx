@@ -12,6 +12,6 @@ export const FactionSynopsis: FC<PropsWithChildren<{ flip?: boolean; image: stri
     <div>
       <Text>{children}</Text>
     </div>
-    <img src={image} className={styles.image} alt="" />
+    <img src={image} className={styles.image} alt='' />
   </div>
 );

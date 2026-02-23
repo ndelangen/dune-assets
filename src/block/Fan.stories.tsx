@@ -54,19 +54,19 @@ export const Default = {
   args: {
     size: card,
     children: [
-      <DemoBlock key="1" color="red">
+      <DemoBlock key='1' color='red'>
         1
       </DemoBlock>,
-      <DemoBlock key="2" color="orange">
+      <DemoBlock key='2' color='orange'>
         2
       </DemoBlock>,
-      <DemoBlock key="3" color="yellow">
+      <DemoBlock key='3' color='yellow'>
         3
       </DemoBlock>,
-      <DemoBlock key="4" color="green">
+      <DemoBlock key='4' color='green'>
         4
       </DemoBlock>,
-      <DemoBlock key="5" color="blue">
+      <DemoBlock key='5' color='blue'>
         5
       </DemoBlock>,
     ],
@@ -77,19 +77,19 @@ export const Size = {
   args: {
     size: squareSize,
     children: [
-      <DemoBlock key="1" color="red" {...squareSize}>
+      <DemoBlock key='1' color='red' {...squareSize}>
         1
       </DemoBlock>,
-      <DemoBlock key="2" color="orange" {...squareSize}>
+      <DemoBlock key='2' color='orange' {...squareSize}>
         2
       </DemoBlock>,
-      <DemoBlock key="3" color="yellow" {...squareSize}>
+      <DemoBlock key='3' color='yellow' {...squareSize}>
         3
       </DemoBlock>,
-      <DemoBlock key="4" color="green" {...squareSize}>
+      <DemoBlock key='4' color='green' {...squareSize}>
         4
       </DemoBlock>,
-      <DemoBlock key="5" color="blue" {...squareSize}>
+      <DemoBlock key='5' color='blue' {...squareSize}>
         5
       </DemoBlock>,
     ],
@@ -101,19 +101,19 @@ export const Spacing = {
     size: squareSize,
     spacing: 10,
     children: [
-      <DemoBlock key="1" color="red" {...squareSize}>
+      <DemoBlock key='1' color='red' {...squareSize}>
         1
       </DemoBlock>,
-      <DemoBlock key="2" color="orange" {...squareSize}>
+      <DemoBlock key='2' color='orange' {...squareSize}>
         2
       </DemoBlock>,
-      <DemoBlock key="3" color="yellow" {...squareSize}>
+      <DemoBlock key='3' color='yellow' {...squareSize}>
         3
       </DemoBlock>,
-      <DemoBlock key="4" color="green" {...squareSize}>
+      <DemoBlock key='4' color='green' {...squareSize}>
         4
       </DemoBlock>,
-      <DemoBlock key="5" color="blue" {...squareSize}>
+      <DemoBlock key='5' color='blue' {...squareSize}>
         5
       </DemoBlock>,
     ],
@@ -125,19 +125,19 @@ export const SpacingNegative = {
     size: squareSize,
     spacing: -10,
     children: [
-      <DemoBlock key="1" color="red" {...squareSize}>
+      <DemoBlock key='1' color='red' {...squareSize}>
         1
       </DemoBlock>,
-      <DemoBlock key="2" color="orange" {...squareSize}>
+      <DemoBlock key='2' color='orange' {...squareSize}>
         2
       </DemoBlock>,
-      <DemoBlock key="3" color="yellow" {...squareSize}>
+      <DemoBlock key='3' color='yellow' {...squareSize}>
         3
       </DemoBlock>,
-      <DemoBlock key="4" color="green" {...squareSize}>
+      <DemoBlock key='4' color='green' {...squareSize}>
         4
       </DemoBlock>,
-      <DemoBlock key="5" color="blue" {...squareSize}>
+      <DemoBlock key='5' color='blue' {...squareSize}>
         5
       </DemoBlock>,
     ],

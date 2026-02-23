@@ -9,7 +9,7 @@ interface Size {
 }
 
 export const Svg: FC<PropsWithChildren & React.SVGProps<SVGSVGElement>> = ({ children, ...props }) => (
-  <svg className={styles.svg} {...props} >
+  <svg className={styles.svg} {...props}>
     {children}
   </svg>
 );
@@ -20,7 +20,7 @@ export const Wrapper: FC<PropsWithChildren<{ size: Size }> & React.SVGProps<SVGS
   ...props
 }) => (
   <Svg {...props} viewBox={`0 0 ${size.width} ${size.height}`}>
-    <foreignObject x="0" y="0" {...size}>
+    <foreignObject x='0' y='0' {...size}>
       {children}
     </foreignObject>
   </Svg>

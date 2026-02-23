@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import { Spaced } from '../../block/Spaced';
 import { NonBreaking, Text } from '../../block/Text';
 import { Title } from '../../block/Title';
@@ -23,7 +21,7 @@ export function P1() {
   return (
     <Spaced>
       <Title color={colors.blue2}>FAQ</Title>
-      <Text className="text-columns" columns={2} size={1.5} style={{ position: 'relative' }}>
+      <Text className='text-columns' columns={2} size={1.5} style={{ position: 'relative' }}>
         <FloatingInset />
         <NonBreaking>
           <h2>
@@ -66,8 +64,8 @@ export function P1() {
             The player gives this Spice directly to the Guild (or the bank if the Guild is not in the game).
           </p>
           <p>
-            If the player giving the Spice is the Spacing Guild, then the Spice is still given to the
-            Spacing Guild.
+            If the player giving the Spice is the Spacing Guild, then the Spice is still given to the Spacing
+            Guild.
           </p>
         </NonBreaking>
         <NonBreaking>
@@ -130,8 +128,8 @@ export function P1() {
         </NonBreaking>
         <NonBreaking>
           <h2>
-            Can a player ship cross-planet if either the origin territory or destination territory are in
-            the Storm?
+            Can a player ship cross-planet if either the origin territory or destination territory are in the
+            Storm?
           </h2>
           <p>No.</p>
         </NonBreaking>

@@ -55,15 +55,15 @@ export const Sizes = {
   },
   render: ({ children }) => (
     <Fragment>
-      <Title color="#000000" size="large">
+      <Title color='#000000' size='large'>
         {children}
       </Title>
       <hr />
-      <Title color="#000000" size="medium">
+      <Title color='#000000' size='medium'>
         {children}
       </Title>
       <hr />
-      <Title color="#000000" size="small">
+      <Title color='#000000' size='small'>
         {children}
       </Title>
     </Fragment>

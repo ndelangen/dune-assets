@@ -19,5 +19,5 @@ export const Title: FC<PropsWithChildren<{ color: string; size?: Sizes }>> = ({
 );
 
 export const MediumTitle: FC<Omit<ComponentProps<typeof Title>, 'size'>> = (props) => (
-  <Title size="medium" {...props} />
+  <Title size='medium' {...props} />
 );

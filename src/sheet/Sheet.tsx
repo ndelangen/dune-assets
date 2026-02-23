@@ -134,7 +134,7 @@ export const FactionSheet = ({
 
                             {t.back && (
                               <>
-                                <img className={styles.icon} src="vector/icon/flip.svg" />
+                                <img className={styles.icon} src='vector/icon/flip.svg' />
                                 <div>to:</div>
                                 <img src={t.back.image} />
                                 <section>

@@ -1,4 +1,4 @@
-/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: I don't care */
 import {
   Children,
   type DetailedHTMLProps,
@@ -28,7 +28,7 @@ const Relative: FC<PropsWithChildren & DetailedHTMLProps<HTMLAttributes<HTMLDivE
 
 export const Fan: FC<
   PropsWithChildren<{ spacing?: number; size: Size }> &
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+    DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 > = ({ children, spacing = -2, size, ...props }) => {
   const [isHovered, setHovered] = useState(false);
   const exponent = isHovered ? 1.6 : 1;
@@ -59,7 +59,7 @@ export const Fan: FC<
 
 const FanItem: FC<
   PropsWithChildren<{ rotation: number; isAbsolute: boolean }> &
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+    DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 > = ({ rotation, isAbsolute, children, style, ...props }) => (
   <div
     className={isAbsolute ? styles.itemAbsolute : styles.itemRelative}

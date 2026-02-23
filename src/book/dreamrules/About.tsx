@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import { Definitions } from '../../block/Definitions';
 import { SideBySide, WithBottom } from '../../block/Layout';
 import { Outline } from '../../block/Outline';
@@ -16,8 +14,8 @@ export function Dreams() {
       </Text>
       <Text>
         <p>
-          The Dreamrules ruleset is the brainchild of a group of Dune players, with each of whom has
-          hundreds of hours of game time under their belt.
+          The Dreamrules ruleset is the brainchild of a group of Dune players, with each of whom has hundreds
+          of hours of game time under their belt.
         </p>
         <p>
           After playing the game for this long; a long list of mechanics/rules become problematic. With the
@@ -26,8 +24,8 @@ export function Dreams() {
         </p>
         <p>
           After the Ixian & Tleilaxu expansion and FAQ documents being released we came to understand the
-          instead of a rulebook-rewrite, we would have to create ouw own variant of the game to fix the
-          issues we had.
+          instead of a rulebook-rewrite, we would have to create ouw own variant of the game to fix the issues
+          we had.
         </p>
         <h1>The Design Goals were as follows:</h1>
         <ul>
@@ -88,7 +86,7 @@ export function Welcome() {
         </Text>
       </Spaced>
       <Spaced>
-        <Outline variant="normal" center>
+        <Outline variant='normal' center>
           <Text>
             <h1>Credits</h1>
             <Definitions>

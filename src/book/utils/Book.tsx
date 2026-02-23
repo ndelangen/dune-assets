@@ -1,4 +1,4 @@
-/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: I don't care */
 import './Book.module.css';
 
 import { type FC, Fragment, type ReactNode } from 'react';
@@ -18,7 +18,7 @@ export const Book: FC<{
   return (
     <Fragment>
       <style
-        media="print"
+        media='print'
         // biome-ignore lint/security/noDangerouslySetInnerHtml: it's okay here
         dangerouslySetInnerHTML={{
           __html: `

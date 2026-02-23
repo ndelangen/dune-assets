@@ -50,7 +50,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 3vw;
-  font-family: "Caladea";
+  font-family: "Caladea", serif;
 }
 
 .page_title {
@@ -72,7 +72,7 @@
 }
 
 .title {
-  font-family: "C_Copperplate_Gothic";
+  font-family: "C_Copperplate_Gothic", sans-serif;
   font-size: 4.5vw;
   text-transform: uppercase;
 
@@ -91,7 +91,7 @@
 }
 
 .subtitle {
-  font-family: "C_Copperplate_Gothic";
+  font-family: "C_Copperplate_Gothic", sans-serif;
   font-size: 2.5vw;
   text-transform: uppercase;
 
@@ -111,7 +111,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 3vw;
-  font-family: "Caladea";
+  font-family: "Caladea", serif;
 
   & > .head {
     text-transform: uppercase;
@@ -127,7 +127,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 3vw;
-  font-family: "Caladea";
+  font-family: "Caladea", serif;
 
   & > .head {
     text-transform: uppercase;
@@ -174,7 +174,7 @@
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.4vw;
-  font-family: "Caladea";
+  font-family: "Caladea", serif;
 
   & > .head {
     float: left;
@@ -193,7 +193,7 @@
   left: 3vw;
   right: 3vw;
   bottom: 3vw;
-  font-family: "C_Copperplate_Gothic";
+  font-family: "C_Copperplate_Gothic", sans-serif;
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.2vw;
@@ -229,7 +229,7 @@
     border-radius: 50%;
   }
 
-  font-family: "Caladea";
+  font-family: "Caladea", serif;
   font-size: 2vw;
   color: #0b0503;
   line-height: 2.2vw;

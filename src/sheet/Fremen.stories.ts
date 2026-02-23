@@ -68,7 +68,6 @@ export const Fremen: Story = {
           `You start the game with two thumper-tokens.`,
           `During the spice blow phase you may discard one token to summon a riding worm in any sand territory *(or the polar sink)* where you have troops.`,
           `Riding worms don't cause a nexus and cannot eat troops; They always count as the first worm to appear in the phase *(so you can move other worms with thumpers using your* **WORM RIDING** *advantage)*.`,
-          ,
         ].join('\n\n'),
         karama: `Before any interjection happened. You must take your turn in standard order. This lasts until the end of the turn.`,
       },

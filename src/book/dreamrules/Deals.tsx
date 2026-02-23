@@ -1,4 +1,3 @@
-
 import { Outline } from '../../block/Outline';
 import { Spaced } from '../../block/Spaced';
 import { Text } from '../../block/Text';
@@ -8,13 +7,13 @@ import * as colors from '../../utils/colors';
 export function About() {
   return (
     <Spaced>
-      <Title color={colors.blue2} size="large">
+      <Title color={colors.blue2} size='large'>
         Binding Deals
       </Title>
       <Text columns={2} size={1.8}>
         <p>
-          Players can make any kind of verbal deals or bribes between one another. Once made, these deals
-          and bribes may be stated aloud and must be honored. A player cannot renege on a deal or bribe.
+          Players can make any kind of verbal deals or bribes between one another. Once made, these deals and
+          bribes may be stated aloud and must be honored. A player cannot renege on a deal or bribe.
         </p>
         <h2>VALID:</h2>
         <ul>
@@ -59,7 +58,7 @@ export function About() {
           Collection phase.
         </p>
 
-        <Outline variant="example">
+        <Outline variant='example'>
           <h1>"Thrown fights"</h1>
           <p>
             An very common binding deal revolves around "blocking" strongholds in order to prevent other

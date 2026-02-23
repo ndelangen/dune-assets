@@ -1,6 +1,4 @@
-/** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
-import { Fragment } from 'react';
-
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: I don't care */
 import { Ball } from '../../block/Ball';
 import { Definitions } from '../../block/Definitions';
 import { Fan } from '../../block/Fan';
@@ -21,72 +19,71 @@ export const mapSize = { width: 487.06, height: 487.06 };
 
 export function Drafting() {
   return (
-    <Fragment>
-      <WithBottom>
-        <Spaced>
-          <Title color={colors.blue1}>Setup</Title>
-          <Text>
-            <p>This section describes how to setup a game of dune.</p>
-          </Text>
-          <Title color={colors.blue2} size="small">
-            Setup Part 1 : Drafting
-          </Title>
-          <Text columns={2}>
-            <ol>
-              <li>
-                <p>
-                  Place the board on the center of a table (seating at least 6). A recommended minimum size
-                  for the table is 60cm by 60cm.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Sit around a table. It's best if players don't sit directly parallel next to each other, but
-                  sit in a circle.
-                  <br />
-                  If you want to randomize seating, you can randomly deal the first 6 numbered prediction
-                  cards to players. Then have players sit in storm order starting from the "storm start"
-                  denoted on the board.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Each player drafts the faction-token of 1 faction they wish have in play, by places it in
-                  the center of the board.{' '}
-                  <em>Drafting a faction does not mean you'll be playing as that faction.</em>
-                </p>
-              </li>
-              <li>
-                <p>
-                  Collect all the faction-tokens from the center of the board, and shuffle them thoroughly.
-                  Place the faction-tokens as evenly spaced as possible around the board on the storm track.
-                </p>
-                <p>
-                  The result should be that every player around the table has a faction-token placed in front
-                  of them.
-                </p>
-              </li>
-            </ol>
-            <ol>
-              <li>
-                <p>Players may now trade faction-tokens, but they are not allowed to swap seats.</p>
-                <p>What faction-token is in front of you, that faction is the one you'll be playing as.</p>
-              </li>
-              <li>
-                <p>
-                  Every players takes all the items specific to the faction they are playing, out of the box.
-                </p>
-                <p>They take their initial Spice out of the Spice bank.</p>
-                <p>
-                  Place the faction-shield in such a way that the shield is clear to see for other places and
-                  it obscures your personal Spice stash.
-                </p>
-                <p>There should be ample room in front of your shield for bribes and Tech Tokens.</p>
-              </li>
-            </ol>
-          </Text>
-        </Spaced>
-        {/* <div style={{ display: 'flex', gap: '1vw' }}>
+    <WithBottom>
+      <Spaced>
+        <Title color={colors.blue1}>Setup</Title>
+        <Text>
+          <p>This section describes how to setup a game of dune.</p>
+        </Text>
+        <Title color={colors.blue2} size='small'>
+          Setup Part 1 : Drafting
+        </Title>
+        <Text columns={2}>
+          <ol>
+            <li>
+              <p>
+                Place the board on the center of a table (seating at least 6). A recommended minimum size for
+                the table is 60cm by 60cm.
+              </p>
+            </li>
+            <li>
+              <p>
+                Sit around a table. It's best if players don't sit directly parallel next to each other, but
+                sit in a circle.
+                <br />
+                If you want to randomize seating, you can randomly deal the first 6 numbered prediction cards
+                to players. Then have players sit in storm order starting from the "storm start" denoted on
+                the board.
+              </p>
+            </li>
+            <li>
+              <p>
+                Each player drafts the faction-token of 1 faction they wish have in play, by places it in the
+                center of the board.{' '}
+                <em>Drafting a faction does not mean you'll be playing as that faction.</em>
+              </p>
+            </li>
+            <li>
+              <p>
+                Collect all the faction-tokens from the center of the board, and shuffle them thoroughly.
+                Place the faction-tokens as evenly spaced as possible around the board on the storm track.
+              </p>
+              <p>
+                The result should be that every player around the table has a faction-token placed in front of
+                them.
+              </p>
+            </li>
+          </ol>
+          <ol>
+            <li>
+              <p>Players may now trade faction-tokens, but they are not allowed to swap seats.</p>
+              <p>What faction-token is in front of you, that faction is the one you'll be playing as.</p>
+            </li>
+            <li>
+              <p>
+                Every players takes all the items specific to the faction they are playing, out of the box.
+              </p>
+              <p>They take their initial Spice out of the Spice bank.</p>
+              <p>
+                Place the faction-shield in such a way that the shield is clear to see for other places and it
+                obscures your personal Spice stash.
+              </p>
+              <p>There should be ample room in front of your shield for bribes and Tech Tokens.</p>
+            </li>
+          </ol>
+        </Text>
+      </Spaced>
+      {/* <div style={{ display: 'flex', gap: '1vw' }}>
           {Object.entries(factions).map(([k, v]) => (
             <Fragment key={k}>
               <Wrapper key={k} isCircle={true} size={discSize} style={{ flex: 1, maxWidth: '100%' }}>
@@ -99,15 +96,14 @@ export function Drafting() {
             </Fragment>
           ))}
         </div> */}
-      </WithBottom>
-    </Fragment>
+    </WithBottom>
   );
 }
 
 export function Layout() {
   return (
     <Spaced>
-      <Title color={colors.blue2} size="small">
+      <Title color={colors.blue2} size='small'>
         Setup Part 2 : Table layout & Decks
       </Title>
       <Text columns={2}>
@@ -138,8 +134,8 @@ export function Layout() {
                   <strong>Pb</strong>.
                 </p>
                 <p>
-                  Finally add the remaining Sha-Hulud cards and shuffle the deck. Place this deck (face
-                  down) on <strong>D</strong>.
+                  Finally add the remaining Sha-Hulud cards and shuffle the deck. Place this deck (face down)
+                  on <strong>D</strong>.
                 </p>
               </li>
               <li>
@@ -227,10 +223,10 @@ export function Layout() {
           <Wrapper size={mapSize} style={{ flex: 1, maxWidth: '100%' }}>
             <svg
               {...mapSize}
-              viewBox="0 0 487.06 487.06"
-              xmlSpace="preserve"
-              fillRule="evenodd"
-              clipRule="evenodd"
+              viewBox='0 0 487.06 487.06'
+              xmlSpace='preserve'
+              fillRule='evenodd'
+              clipRule='evenodd'
             >
               <use xlinkHref={'/page/table.svg#root'}></use>
             </svg>
@@ -243,110 +239,104 @@ export function Layout() {
 
 export function StartingPhases1() {
   return (
-    <Fragment>
-      <WithBottom>
-        <Spaced>
-          <Title color={colors.blue2} size="small">
-            Setup Part 3 : Prediction
-          </Title>
-          <Text>
-            <p>
-              If the Bene Gesserit faction is in the game, they must do their prediction immediately before
-              any card are distributed.
-            </p>
-            <p>If the Bene Gesserit faction was not drafted, skip this phase.</p>
-          </Text>
-          <Title color={colors.blue2} size="small">
-            Setup Part 4 : Traitors
-          </Title>
-          <Text columns={2}>
-            <NonBreaking>
-              <Text>
-                <ol>
-                  <li>
-                    <p>
-                      Deal 4 Traitor cards from the Traitor deck to every player except the player playing as
-                      the Bene Tleilaxu faction.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Every player except the one playing as Harkonnen must chose 1 out of the 4 as their
-                      Traitor.
-                      <br />
-                      Harkonnen keeps all 4.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      If Bene Tleilaxu was not one of the drafted factions, then remove the non-chosen and
-                      remaining Traitor cards from the game.
-                    </p>
-                  </li>
-                </ol>
-                <blockquote>
-                  <p>I have Stilgar as my traitor.</p>
-                  <p style={{ float: 'right' }}>~ Aidym</p>
-                </blockquote>
-              </Text>
-            </NonBreaking>
-            <Outline variant="normal">
-              <Text>
-                <h1>With Bene Tleilaxu</h1>
-                <p>If the Bene Tleilaxu was one of the drafted factions:</p>
-                <ol>
-                  <li>
-                    Instead of removing from the game, each player (except Bene Tleilaxu themselves) places
-                    their non-chosen Traitor cards on their faction-token.
-                  </li>
-                  <li>
-                    The player playing as the Bene Tleilaxu faction shuffles each pile on every faction-token
-                    & and takes 1 card from each pile.
-                  </li>
-                  <li>
-                    If this results in less then 5 Traitor cards in their hand, they draw from the remaining
-                    Traitor deck, until they have exactly 5.
-                  </li>
-                  <li>
-                    When they have 5 Traitor cards, they pick one of them to be their Traitor, by placing
-                    their Traitor card (face down) behind their shield.
-                  </li>
-                  <li>
-                    All Traitor cards that other factions didn't chose are collected into a deck, and this
-                    becomes the Bene Tleilaxu FaceDancer draw deck.
-                  </li>
-                </ol>
-              </Text>
-            </Outline>
-          </Text>
-        </Spaced>
-        <div style={{ width: '35vw', marginLeft: '4vw' }}>
-          <Fan
-            size={cardSize}
-            spacing={-3}
-            style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
-          >
-            <img
-              width={cardSize.width}
-              src="/generated/card/traitor/atreides/dr-yueh.jpg"
-              alt="maula-pistol"
-            />
-            <img
-              width={cardSize.width}
-              src="/generated/card/traitor/guild/representative.jpg"
-              alt="maula-pistol"
-            />
-            <img
-              width={cardSize.width}
-              src="/generated/card/traitor/ixian/cammar-pilru.jpg"
-              alt="maula-pistol"
-            />
-            <img width={cardSize.width} src="/generated/card/traitor/fremen/jamis.jpg" alt="maula-pistol" />
-            <img width={cardSize.width} src="/generated/card/traitor/emperor/bashar.jpg" alt="maula-pistol" />
-          </Fan>
-        </div>
-      </WithBottom>
-    </Fragment>
+    <WithBottom>
+      <Spaced>
+        <Title color={colors.blue2} size='small'>
+          Setup Part 3 : Prediction
+        </Title>
+        <Text>
+          <p>
+            If the Bene Gesserit faction is in the game, they must do their prediction immediately before any
+            card are distributed.
+          </p>
+          <p>If the Bene Gesserit faction was not drafted, skip this phase.</p>
+        </Text>
+        <Title color={colors.blue2} size='small'>
+          Setup Part 4 : Traitors
+        </Title>
+        <Text columns={2}>
+          <NonBreaking>
+            <Text>
+              <ol>
+                <li>
+                  <p>
+                    Deal 4 Traitor cards from the Traitor deck to every player except the player playing as
+                    the Bene Tleilaxu faction.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Every player except the one playing as Harkonnen must chose 1 out of the 4 as their
+                    Traitor.
+                    <br />
+                    Harkonnen keeps all 4.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If Bene Tleilaxu was not one of the drafted factions, then remove the non-chosen and
+                    remaining Traitor cards from the game.
+                  </p>
+                </li>
+              </ol>
+              <blockquote>
+                <p>I have Stilgar as my traitor.</p>
+                <p style={{ float: 'right' }}>~ Aidym</p>
+              </blockquote>
+            </Text>
+          </NonBreaking>
+          <Outline variant='normal'>
+            <Text>
+              <h1>With Bene Tleilaxu</h1>
+              <p>If the Bene Tleilaxu was one of the drafted factions:</p>
+              <ol>
+                <li>
+                  Instead of removing from the game, each player (except Bene Tleilaxu themselves) places
+                  their non-chosen Traitor cards on their faction-token.
+                </li>
+                <li>
+                  The player playing as the Bene Tleilaxu faction shuffles each pile on every faction-token &
+                  and takes 1 card from each pile.
+                </li>
+                <li>
+                  If this results in less then 5 Traitor cards in their hand, they draw from the remaining
+                  Traitor deck, until they have exactly 5.
+                </li>
+                <li>
+                  When they have 5 Traitor cards, they pick one of them to be their Traitor, by placing their
+                  Traitor card (face down) behind their shield.
+                </li>
+                <li>
+                  All Traitor cards that other factions didn't chose are collected into a deck, and this
+                  becomes the Bene Tleilaxu FaceDancer draw deck.
+                </li>
+              </ol>
+            </Text>
+          </Outline>
+        </Text>
+      </Spaced>
+      <div style={{ width: '35vw', marginLeft: '4vw' }}>
+        <Fan
+          size={cardSize}
+          spacing={-3}
+          style={{ boxShadow: '0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5)', borderRadius: '1vw' }}
+        >
+          <img width={cardSize.width} src='/generated/card/traitor/atreides/dr-yueh.jpg' alt='maula-pistol' />
+          <img
+            width={cardSize.width}
+            src='/generated/card/traitor/guild/representative.jpg'
+            alt='maula-pistol'
+          />
+          <img
+            width={cardSize.width}
+            src='/generated/card/traitor/ixian/cammar-pilru.jpg'
+            alt='maula-pistol'
+          />
+          <img width={cardSize.width} src='/generated/card/traitor/fremen/jamis.jpg' alt='maula-pistol' />
+          <img width={cardSize.width} src='/generated/card/traitor/emperor/bashar.jpg' alt='maula-pistol' />
+        </Fan>
+      </div>
+    </WithBottom>
   );
 }
 
@@ -354,11 +344,11 @@ export function StartingPhases2() {
   return (
     <WithBottom>
       <Spaced>
-        <Title color={colors.blue2} size="small">
+        <Title color={colors.blue2} size='small'>
           Setup Part 5 : Treachery & Fates
         </Title>
         <Text columns={2}>
-          <Outline variant="normal">
+          <Outline variant='normal'>
             <Text>
               <h1>With Ixians</h1>
               <p>If the Ixians was one of the drafted factions:</p>
@@ -446,48 +436,47 @@ export function StartingPhases2() {
 
 export function StartingPhases3() {
   return (
-    <Fragment>
-      <Spaced>
-        <Title color={colors.blue2} size="small">
-          Setup Part 6 : Storm Placement
-        </Title>
-        <Text>
-          <p>
-            The Storm Marker is placed at a random location along the map edge using either a D18 dice
-            (recommended) or using the following procedure:
-          </p>
-          <ol>
-            <li>
-              The two players whose player circles are nearest on either side of the Storm Start Sector will
-              secretly dial a number from 0 to 20 on the battle wheels.
-            </li>
-            <li>The two numbers are simultaneously revealed</li>
-            <li>
-              move Storm Marker from the Storm Start sector counterclockwise around the map for the sum total
-              of the 2 number.
-            </li>
-          </ol>
-        </Text>
-        <Title color={colors.blue2} size="small">
-          Setup Part 6 : Troop Placement
-        </Title>
-        <Text columns={2}>
-          <NonBreaking>
-            <Text>
-              <p>Faction now place their starting troops on the board.</p>
-              <p>This happens in a set order of priority:</p>
-              <ol>
-                <li>Atreides & Harkonnen & the Spacing Guild</li>
-                <li>
-                  Ixian (<em>place their Mobile Deployment Platform</em>)
-                </li>
-                <li>Fremen</li>
-                <li>Bene Gesserit</li>
-              </ol>
-              <p>Highest priority deploys first.</p>
-            </Text>
-          </NonBreaking>
-          {/* <div
+    <Spaced>
+      <Title color={colors.blue2} size='small'>
+        Setup Part 6 : Storm Placement
+      </Title>
+      <Text>
+        <p>
+          The Storm Marker is placed at a random location along the map edge using either a D18 dice
+          (recommended) or using the following procedure:
+        </p>
+        <ol>
+          <li>
+            The two players whose player circles are nearest on either side of the Storm Start Sector will
+            secretly dial a number from 0 to 20 on the battle wheels.
+          </li>
+          <li>The two numbers are simultaneously revealed</li>
+          <li>
+            move Storm Marker from the Storm Start sector counterclockwise around the map for the sum total of
+            the 2 number.
+          </li>
+        </ol>
+      </Text>
+      <Title color={colors.blue2} size='small'>
+        Setup Part 6 : Troop Placement
+      </Title>
+      <Text columns={2}>
+        <NonBreaking>
+          <Text>
+            <p>Faction now place their starting troops on the board.</p>
+            <p>This happens in a set order of priority:</p>
+            <ol>
+              <li>Atreides & Harkonnen & the Spacing Guild</li>
+              <li>
+                Ixian (<em>place their Mobile Deployment Platform</em>)
+              </li>
+              <li>Fremen</li>
+              <li>Bene Gesserit</li>
+            </ol>
+            <p>Highest priority deploys first.</p>
+          </Text>
+        </NonBreaking>
+        {/* <div
             style={{
               display: 'grid',
               gap: '0.5vw',
@@ -529,8 +518,7 @@ export function StartingPhases3() {
                 </Fragment>
               ))}
           </div> */}
-        </Text>
-      </Spaced>
-    </Fragment>
+      </Text>
+    </Spaced>
   );
 }

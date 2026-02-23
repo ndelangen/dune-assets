@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: I don't care */
 import { type FC, type SVGProps, useMemo } from 'react';
 import type { z } from 'zod';
 
@@ -35,36 +36,34 @@ export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[
       <defs>
         {nonFadedDecals.length > 0 && (
           <filter id={decalsFilter}>
-            <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="6"></feMorphology>
-            <feFlood floodColor={foreGroundColor} floodOpacity="1" result="PINK"></feFlood>
-            <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
+            <feMorphology in='SourceAlpha' result='DILATED' operator='dilate' radius='6'></feMorphology>
+            <feFlood floodColor={foreGroundColor} floodOpacity='1' result='PINK'></feFlood>
+            <feComposite in='PINK' in2='DILATED' operator='in' result='OUTLINE'></feComposite>
             <feMerge>
-              <feMergeNode in="OUTLINE" />
-              <feMergeNode in="SourceGraphic" />
+              <feMergeNode in='OUTLINE' />
+              <feMergeNode in='SourceGraphic' />
             </feMerge>
           </filter>
         )}
         {fadedDecals.length > 0 && (
-          <>
-            <mask id={decalsMask} maskUnits="userSpaceOnUse">
-              <rect fill="black" {...card} x={0} y={0} />
-              {fadedDecals.map((d, i) => {
-                const width = decalSize.width * d.scale;
-                const height = decalSize.height * d.scale;
-                return (
-                  <image
-                    key={i}
-                    x={card.width / 2 - width / 2 + d.offset[0]}
-                    y={940 / 2 - height / 2 + d.offset[1]}
-                    width={width}
-                    height={height}
-                    filter="invert(100%)"
-                    xlinkHref={d.id}
-                  />
-                );
-              })}
-            </mask>
-          </>
+          <mask id={decalsMask} maskUnits='userSpaceOnUse'>
+            <rect fill='black' {...card} x={0} y={0} />
+            {fadedDecals.map((d, i) => {
+              const width = decalSize.width * d.scale;
+              const height = decalSize.height * d.scale;
+              return (
+                <image
+                  key={i}
+                  x={card.width / 2 - width / 2 + d.offset[0]}
+                  y={940 / 2 - height / 2 + d.offset[1]}
+                  width={width}
+                  height={height}
+                  filter='invert(100%)'
+                  xlinkHref={d.id}
+                />
+              );
+            })}
+          </mask>
         )}
       </defs>
       {fadedDecals.length > 0 && <rect fill={middleColor} {...card} mask={`url(#${decalsMask})`} />}
