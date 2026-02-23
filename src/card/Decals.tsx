@@ -1,7 +1,7 @@
-import { FC, SVGProps, useMemo } from 'react';
-import { z } from 'zod';
+import { type FC, type SVGProps, useMemo } from 'react';
+import type { z } from 'zod';
 
-import { Decal } from '../data/objects';
+import type { Decal } from '../data/objects';
 import { card } from '../data/sizes';
 
 const foreGroundColor = '#e3dbb3';

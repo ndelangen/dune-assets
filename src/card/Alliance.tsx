@@ -1,7 +1,9 @@
+/** biome-ignore-all lint/a11y/useAltText: <explanation> */
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
 import { useMemo, type FC } from 'react';
-import { z } from 'zod';
+import type { z } from 'zod';
 
-import { Alliance } from '../data/objects';
+import type { Alliance } from '../data/objects';
 import styles from './Card.module.css';
 import unique from './Alliance.module.css';
 import { MarkdownContent } from '../block/MarkdownContent';

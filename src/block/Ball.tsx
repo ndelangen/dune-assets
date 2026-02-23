@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, FC, HTMLAttributes, PropsWithChildren } from 'react';
+import type { DetailedHTMLProps, FC, HTMLAttributes, PropsWithChildren } from 'react';
 
 import styles from './Ball.module.css';
 

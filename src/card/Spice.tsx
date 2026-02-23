@@ -1,7 +1,7 @@
-import { type FC } from 'react';
-import { z } from 'zod';
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { Spice } from '../data/objects';
+import type { Spice } from '../data/objects';
 import styles from './Card.module.css';
 import unique from './Spice.module.css';
 import { MarkdownContent } from '../block/MarkdownContent';

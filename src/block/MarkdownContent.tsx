@@ -1,5 +1,5 @@
 import Markdown from 'markdown-to-jsx';
-import { FC, PropsWithChildren } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 import onlyText from 'react-children-utilities/lib/onlyText';
 
 export const MarkdownContent: FC<

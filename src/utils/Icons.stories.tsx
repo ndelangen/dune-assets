@@ -17,6 +17,7 @@ const ListIcons = ({ pattern, type }: { pattern: string; type: keyof typeof type
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
       {list.map((item) => (
         <div
+          key={item}
           style={{
             padding: '10px',
             border: '1px solid white',
@@ -28,7 +29,7 @@ const ListIcons = ({ pattern, type }: { pattern: string; type: keyof typeof type
             color: 'white',
           }}
         >
-          <img src={'/' + item} style={{ width: '100%', maxHeight: '200px', flex: '1' }} />
+          <img src={`/${item}`} style={{ width: '100%', maxHeight: '200px', flex: '1' }} alt={item} />
           <div style={{ textAlign: 'center' }}>/{item}</div>
         </div>
       ))}

@@ -1,7 +1,7 @@
-import { type FC } from 'react';
-import { z } from 'zod';
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { FactionSide } from '../data/objects';
+import type { FactionSide } from '../data/objects';
 import styles from './Custom.module.css';
 import { StrokedUse } from '../block/StrokedUse';
 

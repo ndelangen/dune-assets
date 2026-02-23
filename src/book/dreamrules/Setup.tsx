@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
 import { Fragment } from 'react';
 
 import { Ball } from '../../block/Ball';
@@ -105,140 +106,138 @@ export function Drafting() {
 
 export function Layout() {
   return (
-    <Fragment>
-      <Spaced>
-        <Title color={colors.blue2} size="small">
-          Setup Part 2 : Table layout & Decks
-        </Title>
-        <Text columns={2}>
-          <NonBreaking>
-            <Spaced>
-              <ol>
-                <li>
-                  <p>
-                    Create a Treachery deck (<strong>D1</strong>)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Create a Fate deck (<strong>D2</strong>)
-                  </p>
-                </li>
-                <li>
-                  <p>Take all Spice cards, and separate all the Shai-Halud cards.</p>
-                  <p>
-                    The non-Shai-Halud cards are shuffled, then place 1 card (face down) from this deck on{' '}
-                    <strong>A</strong> and 1 card (face down) on <strong>B</strong>.
-                  </p>
-                  <p>
-                    From the same deck place 1 card (face down) on <strong>Pa</strong>.
-                  </p>
-                  <p>
-                    Add 2 Shai-Halud cards and shuffle the deck. Then place 1 (face down) card on{' '}
-                    <strong>Pb</strong>.
-                  </p>
-                  <p>
-                    Finally add the remaining Sha-Hulud cards and shuffle the deck. Place this deck (face
-                    down) on <strong>D</strong>.
-                  </p>
-                </li>
-                <li>
-                  <p>Randomize Tech Tokens, and place them in a Stack (face down),</p>
-                </li>
-                <li>
-                  <p>
-                    Create a Traitor deck by gathering all the Traitor card from the faction that have been
-                    drafted. (<strong>C</strong>)
-                  </p>
-                </li>
-              </ol>
-              <Definitions></Definitions>
-            </Spaced>
-          </NonBreaking>
-          <NonBreaking>
-            <Definitions>
-              <dt>
-                <Ball style={{ color: '#000', backgroundColor: '#CCC' }} />
-              </dt>
-              <dd>Table</dd>
-              <dt>
-                <Ball style={{ color: '#000', backgroundColor: '#E2CC87' }} />
-              </dt>
-              <dd>Board</dd>
-              <dt>
-                <Ball style={{ color: '#000', backgroundColor: '#F1E3B8' }} />
-              </dt>
-              <dd>Player faction-token location</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#1B2C43' }}>T</Ball>
-              </dt>
-              <dd>Turn tracker</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#1B2C43' }}>1..</Ball>
-              </dt>
-              <dd>Phase tracker</dd>
-              <dt style={{ marginTop: '2vw' }}>
-                <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>D1</Ball>
-              </dt>
-              <dd style={{ marginTop: '2vw' }}>Draw Treachery deck.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>D2</Ball>
-              </dt>
-              <dd>Discard Treachery deck.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>P1</Ball>
-              </dt>
-              <dd>Pile 1: cards to draw new auction cards from.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>P2</Ball>
-              </dt>
-              <dd>Pile 2: cards to draw new auction cards from, after P1 is exhausted.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>C</Ball>
-              </dt>
-              <dd>
-                <p>The single card, currently up for auction.</p>
-              </dd>
-              <dt style={{ marginTop: '2vw' }}>
-                <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>D</Ball>
-              </dt>
-              <dd style={{ marginTop: '2vw' }}>Draw Spice deck.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>Pa</Ball>
-              </dt>
-              <dd>Prescience for A.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>Pb</Ball>
-              </dt>
-              <dd>Prescience for B.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>A</Ball>
-              </dt>
-              <dd>Spice location A.</dd>
-              <dt>
-                <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>B</Ball>
-              </dt>
-              <dd>Spice location B.</dd>
-            </Definitions>
-          </NonBreaking>
-        </Text>
-        <div style={{ position: 'relative', width: '90%', marginLeft: '5%' }}>
-          <div style={{ position: 'absolute', width: '100%' }}>
-            <Wrapper size={mapSize} style={{ flex: 1, maxWidth: '100%' }}>
-              <svg
-                {...mapSize}
-                viewBox="0 0 487.06 487.06"
-                xmlSpace="preserve"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <use xlinkHref={'/page/table.svg#root'}></use>
-              </svg>
-            </Wrapper>
-          </div>
+    <Spaced>
+      <Title color={colors.blue2} size="small">
+        Setup Part 2 : Table layout & Decks
+      </Title>
+      <Text columns={2}>
+        <NonBreaking>
+          <Spaced>
+            <ol>
+              <li>
+                <p>
+                  Create a Treachery deck (<strong>D1</strong>)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Create a Fate deck (<strong>D2</strong>)
+                </p>
+              </li>
+              <li>
+                <p>Take all Spice cards, and separate all the Shai-Halud cards.</p>
+                <p>
+                  The non-Shai-Halud cards are shuffled, then place 1 card (face down) from this deck on{' '}
+                  <strong>A</strong> and 1 card (face down) on <strong>B</strong>.
+                </p>
+                <p>
+                  From the same deck place 1 card (face down) on <strong>Pa</strong>.
+                </p>
+                <p>
+                  Add 2 Shai-Halud cards and shuffle the deck. Then place 1 (face down) card on{' '}
+                  <strong>Pb</strong>.
+                </p>
+                <p>
+                  Finally add the remaining Sha-Hulud cards and shuffle the deck. Place this deck (face
+                  down) on <strong>D</strong>.
+                </p>
+              </li>
+              <li>
+                <p>Randomize Tech Tokens, and place them in a Stack (face down),</p>
+              </li>
+              <li>
+                <p>
+                  Create a Traitor deck by gathering all the Traitor card from the faction that have been
+                  drafted. (<strong>C</strong>)
+                </p>
+              </li>
+            </ol>
+            <Definitions></Definitions>
+          </Spaced>
+        </NonBreaking>
+        <NonBreaking>
+          <Definitions>
+            <dt>
+              <Ball style={{ color: '#000', backgroundColor: '#CCC' }} />
+            </dt>
+            <dd>Table</dd>
+            <dt>
+              <Ball style={{ color: '#000', backgroundColor: '#E2CC87' }} />
+            </dt>
+            <dd>Board</dd>
+            <dt>
+              <Ball style={{ color: '#000', backgroundColor: '#F1E3B8' }} />
+            </dt>
+            <dd>Player faction-token location</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#1B2C43' }}>T</Ball>
+            </dt>
+            <dd>Turn tracker</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#1B2C43' }}>1..</Ball>
+            </dt>
+            <dd>Phase tracker</dd>
+            <dt style={{ marginTop: '2vw' }}>
+              <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>D1</Ball>
+            </dt>
+            <dd style={{ marginTop: '2vw' }}>Draw Treachery deck.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>D2</Ball>
+            </dt>
+            <dd>Discard Treachery deck.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>P1</Ball>
+            </dt>
+            <dd>Pile 1: cards to draw new auction cards from.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>P2</Ball>
+            </dt>
+            <dd>Pile 2: cards to draw new auction cards from, after P1 is exhausted.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#4B1F1B' }}>C</Ball>
+            </dt>
+            <dd>
+              <p>The single card, currently up for auction.</p>
+            </dd>
+            <dt style={{ marginTop: '2vw' }}>
+              <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>D</Ball>
+            </dt>
+            <dd style={{ marginTop: '2vw' }}>Draw Spice deck.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>Pa</Ball>
+            </dt>
+            <dd>Prescience for A.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>Pb</Ball>
+            </dt>
+            <dd>Prescience for B.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>A</Ball>
+            </dt>
+            <dd>Spice location A.</dd>
+            <dt>
+              <Ball style={{ color: '#fff', backgroundColor: '#2A4270' }}>B</Ball>
+            </dt>
+            <dd>Spice location B.</dd>
+          </Definitions>
+        </NonBreaking>
+      </Text>
+      <div style={{ position: 'relative', width: '90%', marginLeft: '5%' }}>
+        <div style={{ position: 'absolute', width: '100%' }}>
+          <Wrapper size={mapSize} style={{ flex: 1, maxWidth: '100%' }}>
+            <svg
+              {...mapSize}
+              viewBox="0 0 487.06 487.06"
+              xmlSpace="preserve"
+              fillRule="evenodd"
+              clipRule="evenodd"
+            >
+              <use xlinkHref={'/page/table.svg#root'}></use>
+            </svg>
+          </Wrapper>
         </div>
-      </Spaced>
-    </Fragment>
+      </div>
+    </Spaced>
   );
 }
 

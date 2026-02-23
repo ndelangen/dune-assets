@@ -1,7 +1,9 @@
-import { FC } from 'react';
-import { z } from 'zod';
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { Background as BackGroundType, GRADIENT } from '../data/objects';
+import { type Background as BackGroundType, GRADIENT } from '../data/objects';
 import styles from './Background.module.css';
 
 export const Background: FC<z.infer<typeof BackGroundType>> = ({
@@ -63,6 +65,8 @@ export const Background: FC<z.infer<typeof BackGroundType>> = ({
               </radialGradient>
             );
           }
+
+          return null;
         })}
       </defs>
 

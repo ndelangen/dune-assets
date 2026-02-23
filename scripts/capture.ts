@@ -1,9 +1,9 @@
 // import { optimizePDF } from '@privyid/ghoulscript';
-import { serve } from 'bun';
-import cliProgress from 'cli-progress';
-import { chromium } from 'playwright';
+import { serve } from "bun";
+import cliProgress from "cli-progress";
+import { chromium } from "playwright";
 
-const BASE_PATH = './storybook-static';
+const BASE_PATH = "./storybook-static";
 
 const server = await serve({
   port: 3000,
@@ -23,39 +23,39 @@ const entries = Object.keys(index.entries);
 const browser = await chromium.launch({ headless: !process.env.DEBUG });
 const context = await browser.newContext({
   deviceScaleFactor: 2,
-  locale: 'en-US',
-  timezoneId: 'UTC',
+  locale: "en-US",
+  timezoneId: "UTC",
 });
 const page = await context.newPage();
 
 const bar1 = new cliProgress.SingleBar(
   {
     clearOnComplete: true,
-    format: 'Generating {bar} | {entry} | {value}/{total}',
+    format: "Generating {bar} | {entry} | {value}/{total}",
   },
-  cliProgress.Presets.shades_classic
+  cliProgress.Presets.shades_classic,
 );
 let count = 0;
 
 const mapToPath = (entry: string) => {
   return (
     index.entries[entry].importPath
-      .replace('./src/', '')
-      .replace(/\.stories\..*$/, '')
+      .replace("./src/", "")
+      .replace(/\.stories\..*$/, "")
       .toLowerCase() +
-    '/' +
-    entry.replace(/^.*--/, '')
+    "/" +
+    entry.replace(/^.*--/, "")
   );
 };
 
 bar1.start(entries.length, count);
 
-for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
+for (const entry of entries.filter((entry) => entry.startsWith("util"))) {
   const path = `generated/${mapToPath(entry)}.jpg`;
   count++;
   bar1.update(count, { entry });
 
-  if (index.entries[entry].tags.includes('no-screenshot')) {
+  if (index.entries[entry].tags.includes("no-screenshot")) {
     continue;
   }
 
@@ -67,80 +67,86 @@ for (const entry of entries.filter((entry) => entry.startsWith('util'))) {
   }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
-  await page.waitForSelector('#storybook-root');
-  await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
-
-  const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
-}
-
-for (const entry of entries.filter((entry) => entry.startsWith('token'))) {
-  const path = `generated/${mapToPath(entry)}.jpg`;
-  count++;
-  bar1.update(count, { entry });
-
-  if (process.env.LOCAL) {
-    const exists = await Bun.file(path).exists();
-    if (exists) {
-      continue;
-    }
-  }
-
-  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
-  await page.waitForSelector('#storybook-root');
-  await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
-
-  const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
-}
-
-for (const entry of entries.filter((entry) => entry.startsWith('card'))) {
-  const path = `generated/${mapToPath(entry)}.jpg`;
-  count++;
-  bar1.update(count, { entry });
-
-  if (process.env.LOCAL) {
-    const exists = await Bun.file(path).exists();
-    if (exists) {
-      continue;
-    }
-  }
-
-  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
-  await page.waitForSelector('#storybook-root');
-  await page.waitForLoadState('networkidle');
-  await page.locator('#storybook-root').screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
-
-  const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
-}
-
-for (const entry of entries.filter((entry) => entry.startsWith('shield'))) {
-  const path = `generated/${mapToPath(entry)}.jpg`;
-  count++;
-  bar1.update(count, { entry });
-
-  if (process.env.LOCAL) {
-    const exists = await Bun.file(path).exists();
-    if (exists) {
-      continue;
-    }
-  }
-
-  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
-  await page.waitForSelector('#storybook-root');
-  await page.waitForLoadState('networkidle');
+  await page.waitForSelector("#storybook-root");
+  await page.waitForLoadState("networkidle");
   await page
-    .locator('#storybook-root > *:first-child')
-    .screenshot({ type: 'jpeg', path, scale: 'device', quality: 80 });
+    .locator("#storybook-root")
+    .screenshot({ type: "jpeg", path, scale: "device", quality: 80 });
 
   const file = Bun.file(path);
-  await Bun.write('storybook-static/' + path, file);
+  await Bun.write(`storybook-static/${path}`, file);
 }
 
-for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
+for (const entry of entries.filter((entry) => entry.startsWith("token"))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
+  count++;
+  bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector("#storybook-root");
+  await page.waitForLoadState("networkidle");
+  await page
+    .locator("#storybook-root")
+    .screenshot({ type: "jpeg", path, scale: "device", quality: 80 });
+
+  const file = Bun.file(path);
+  await Bun.write(`storybook-static/${path}`, file);
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith("card"))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
+  count++;
+  bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector("#storybook-root");
+  await page.waitForLoadState("networkidle");
+  await page
+    .locator("#storybook-root")
+    .screenshot({ type: "jpeg", path, scale: "device", quality: 80 });
+
+  const file = Bun.file(path);
+  await Bun.write(`storybook-static/${path}`, file);
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith("shield"))) {
+  const path = `generated/${mapToPath(entry)}.jpg`;
+  count++;
+  bar1.update(count, { entry });
+
+  if (process.env.LOCAL) {
+    const exists = await Bun.file(path).exists();
+    if (exists) {
+      continue;
+    }
+  }
+
+  await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
+  await page.waitForSelector("#storybook-root");
+  await page.waitForLoadState("networkidle");
+  await page
+    .locator("#storybook-root > *:first-child")
+    .screenshot({ type: "jpeg", path, scale: "device", quality: 80 });
+
+  const file = Bun.file(path);
+  await Bun.write(`storybook-static/${path}`, file);
+}
+
+for (const entry of entries.filter((entry) => entry.startsWith("sheet"))) {
   const path = `generated/${mapToPath(entry)}.pdf`;
   count++;
   bar1.update(count, { entry });
@@ -153,8 +159,8 @@ for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
   }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
-  await page.waitForSelector('#storybook-root');
-  await page.waitForLoadState('networkidle');
+  await page.waitForSelector("#storybook-root");
+  await page.waitForLoadState("networkidle");
   await page.pdf({
     path,
     margin: { top: 0, right: 0, bottom: 0, left: 0 },
@@ -164,7 +170,9 @@ for (const entry of entries.filter((entry) => entry.startsWith('sheet'))) {
   });
 }
 
-for (const entry of entries.filter((entry) => entry.startsWith('book') && !entry.includes('page'))) {
+for (const entry of entries.filter(
+  (entry) => entry.startsWith("book") && !entry.includes("page"),
+)) {
   const path = `generated/${mapToPath(entry)}.pdf`;
   count++;
   bar1.update(count, { entry });
@@ -177,8 +185,8 @@ for (const entry of entries.filter((entry) => entry.startsWith('book') && !entry
   // }
 
   await page.goto(`${server.url}iframe.html?id=${entry}&viewMode=story`);
-  await page.waitForSelector('#storybook-root');
-  await page.waitForLoadState('networkidle');
+  await page.waitForSelector("#storybook-root");
+  await page.waitForLoadState("networkidle");
   await page.pdf({
     path,
     scale: 2,

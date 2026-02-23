@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import { z } from 'zod';
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { Shield } from '../data/objects';
+import type { Shield } from '../data/objects';
 import { shield as size } from '../data/sizes';
 import { useCountId } from '../utils/useCountId';
 import styles from './Shield.module.css';

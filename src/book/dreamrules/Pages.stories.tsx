@@ -10,7 +10,7 @@ import * as Setup from './Setup';
 import * as TechTokens from './TechTokens';
 import styles from '../Rulebook.module.css';
 import { Page } from '../utils/Page';
-import { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta = {
   title: 'Book/Pages/Dreamrules',
@@ -29,7 +29,7 @@ const meta = {
     cover: (
       <div className={styles.cover}>
         <h1>A GAME OF CONQUEST, DIPLOMACY & BETRAYAL</h1>
-        <img src="/page/dune_logo.svg" />
+        <img src="/page/dune_logo.svg" alt="Dune logo" />
         <h2>THE SPICE MUST FLOW</h2>
         <div></div>
       </div>

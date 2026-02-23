@@ -1,4 +1,4 @@
-import { ComponentProps, FC, PropsWithChildren } from 'react';
+import type { ComponentProps, FC, PropsWithChildren } from 'react';
 
 import { isLight } from '../utils/contrast';
 import styles from './Title.module.css';

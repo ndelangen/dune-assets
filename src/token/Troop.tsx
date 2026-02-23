@@ -1,7 +1,7 @@
 import { useMemo, type FC } from 'react';
-import { z } from 'zod';
+import type { z } from 'zod';
 
-import { TroopSide } from '../data/objects';
+import type { TroopSide } from '../data/objects';
 import styles from './Troop.module.css';
 import { StrokedUse } from '../block/StrokedUse';
 import { useCountId } from '../utils/useCountId';

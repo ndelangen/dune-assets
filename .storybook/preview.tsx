@@ -33,29 +33,29 @@ export default definePreview({
         page: {
           name: 'Page',
           styles: {
-            width: Math.round(page.width) + 'px',
-            height: Math.round(page.height) + 'px',
+            width: `${Math.round(page.width)}px`,
+            height: `${Math.round(page.height)}px`,
           },
         },
         card: {
           name: 'Card',
           styles: {
-            width: Math.round(card.width) + 'px',
-            height: Math.round(card.height) + 'px',
+            width: `${Math.round(card.width)}px`,
+            height: `${Math.round(card.height)}px`,
           },
         },
         shield: {
           name: 'Shield',
           styles: {
-            width: Math.round(shield.width) + 'px',
-            height: Math.round(shield.height) + 'px',
+            width: `${Math.round(shield.width)}px`,
+            height: `${Math.round(shield.height)}px`,
           },
         },
         disc: {
           name: 'Disc',
           styles: {
-            width: Math.round(disc.width) + 'px',
-            height: Math.round(disc.height) + 'px',
+            width: `${Math.round(disc.width)}px`,
+            height: `${Math.round(disc.height)}px`,
           },
         },
       },

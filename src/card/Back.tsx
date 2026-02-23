@@ -1,7 +1,7 @@
-import { type FC } from 'react';
-import { z } from 'zod';
+import type { FC } from 'react';
+import type { z } from 'zod';
 
-import { CardBack as CardBackType } from '../data/objects';
+import type { CardBack as CardBackType } from '../data/objects';
 import styles from './Back.module.css';
 import { useCountId } from '../utils/useCountId';
 import { card } from '../data/sizes';

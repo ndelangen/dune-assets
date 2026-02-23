@@ -1,7 +1,7 @@
-import { z } from 'zod';
+import type { z } from 'zod';
 
 import { MarkdownContent } from '../block/MarkdownContent';
-import { Sheet } from '../data/objects';
+import type { Sheet } from '../data/objects';
 import { isLight } from '../utils/contrast';
 import styles from './Sheet.module.css';
 

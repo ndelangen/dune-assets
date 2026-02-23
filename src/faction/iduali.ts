@@ -1,4 +1,4 @@
-import { Faction } from '../data/faction';
+import type { Faction } from '../data/faction';
 
 export default {
   logo: 'generated/token/faction/iduali.jpg',
