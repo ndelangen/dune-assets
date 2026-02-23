@@ -1,5 +1,5 @@
 .head {
-  background: url('/generated/utils/background/traitor.jpg') top center / cover no-repeat;
+  background: url("/generated/utils/background/traitor.jpg") top center / cover no-repeat;
 }
 
 .face {
@@ -17,7 +17,7 @@
 }
 
 .face::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -28px;
   left: -28px;
@@ -36,7 +36,7 @@
 }
 
 .logo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -17px;
   left: -17px;
@@ -65,11 +65,11 @@
   width: 640px;
   height: 140px;
   text-align: right;
-  font-family: 'Caladea';
+  font-family: "Caladea";
   letter-spacing: -20px;
   font-size: 200px;
 }
 
 .type {
-  background: url('/generated/utils/background/striped-special.jpg') top center / cover no-repeat;
+  background: url("/generated/utils/background/striped-special.jpg") top center / cover no-repeat;
 }

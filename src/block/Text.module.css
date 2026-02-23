@@ -1,5 +1,5 @@
 .main {
-  font-family: 'Caladea';
+  font-family: "Caladea";
   color: #0b0503;
 
   & > * {
@@ -52,13 +52,13 @@
   & h5 & h6 {
     margin: 0;
     padding: 0;
-    font-family: 'C_Trebuchet';
+    font-family: "C_Trebuchet";
   }
 
   & h1 {
     margin: 0;
     padding: 0;
-    font-family: 'C_Copperplate_Gothic';
+    font-family: "C_Copperplate_Gothic";
     font-size: 3vw;
   }
   & h2 {
@@ -99,5 +99,5 @@
 }
 
 .nonBreaking {
-  break-inside: 'avoid-column';
+  break-inside: "avoid-column";
 }

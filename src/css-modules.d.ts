@@ -13,4 +13,3 @@ declare module '*.module.css' {
   namespace classes {}
   export = classes;
 }
-

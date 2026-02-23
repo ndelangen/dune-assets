@@ -41,10 +41,8 @@ export function Intro() {
             <dd>
               <p>
                 15 Spice-blow cards.
-                <br />
-                5 Spice-mine cards.
-                <br />
-                5 Shai-Halud cards.
+                <br />5 Spice-mine cards.
+                <br />5 Shai-Halud cards.
                 <br />
                 Tells where Spice Blows will create treasure troves of Spice waiting to be harvested, and when
                 the giant sandworms known as Shai-Hulud will turn up.

@@ -33,7 +33,7 @@ const bar1 = new cliProgress.SingleBar(
     clearOnComplete: true,
     format: 'Generating {bar} | {entry} | {value}/{total}',
   },
-  cliProgress.Presets.shades_classic,
+  cliProgress.Presets.shades_classic
 );
 let count = 0;
 

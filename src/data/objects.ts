@@ -106,7 +106,7 @@ export const Spice = z.strictObject({
       'rock',
       'strongholds',
       'sand',
-    ] as const),
+    ] as const)
   ),
   overlays: z
     .array(
@@ -114,7 +114,7 @@ export const Spice = z.strictObject({
         image: URL,
         offset: OFFSET,
         scale: SCALE,
-      }),
+      })
     )
     .optional(),
   text: z.string().optional(),
@@ -156,7 +156,7 @@ export const Troop = z.intersection(
   TroopSide,
   z.strictObject({
     back: TroopSide.optional(),
-  }),
+  })
 );
 
 export const GRADIENT = z.discriminatedUnion('type', [
@@ -199,7 +199,7 @@ export const Sheet = z.strictObject({
           description: z.string(),
         })
         .optional(),
-    }),
+    })
   ),
   leaders: z.array(URL),
   start: z.string(),
@@ -213,7 +213,7 @@ export const Sheet = z.strictObject({
         name: z.string(),
         description: z.string().optional(),
         items: z.array(z.object({ url: URL, description: z.string().optional() })),
-      }),
+      })
     )
     .optional(),
 });

@@ -17,11 +17,11 @@ const StrokedUse: FC<SVGProps<SVGUseElement>> = ({ filter, ...rest }) => (
 export function FrontDecals({ prefix, decals }: { decals: z.infer<typeof Decal>[]; prefix: string }) {
   const fadedDecals = useMemo(
     () => decals.filter((d) => typeof d !== 'string' && d.muted === true),
-    [decals],
+    [decals]
   );
   const nonFadedDecals = useMemo(
     () => decals.filter((d) => typeof d === 'string' || d.muted !== true),
-    [decals],
+    [decals]
   );
   const decalsMask = `${prefix}decals-mask`;
   const decalsFilter = `${prefix}decals-filter`;

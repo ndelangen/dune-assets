@@ -10,7 +10,7 @@
 }
 
 .shape {
-  background: url('/image/card/base-decal.png');
+  background: url("/image/card/base-decal.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/image/card/head-shade.png');
+  background: url("/image/card/head-shade.png");
   mix-blend-mode: soft-light;
   opacity: 0.8;
 }
@@ -43,7 +43,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/image/card/front-decal-bg.jpg') top center / cover no-repeat;
+  background: url("/image/card/front-decal-bg.jpg") top center / cover no-repeat;
 }
 
 .title {
@@ -53,7 +53,7 @@
   height: 86px;
   overflow: hidden;
   position: absolute;
-  font-family: 'C_Copperplate_Gothic';
+  font-family: "C_Copperplate_Gothic";
   font-size: 60px;
   color: white;
   line-height: 86px;
@@ -67,7 +67,7 @@
   height: 67px;
   overflow: hidden;
   position: absolute;
-  font-family: 'C_Trebuchet';
+  font-family: "C_Trebuchet";
   font-weight: bold;
   font-size: 40px;
   color: #0b0503;
@@ -82,7 +82,7 @@
   left: 89px;
   overflow: hidden;
   position: absolute;
-  font-family: 'C_Candara';
+  font-family: "C_Candara";
   font-size: 40px;
   color: #0b0503;
   opacity: 0.937;
@@ -124,7 +124,7 @@
 }
 
 .body h1 {
-  font-family: 'C_Copperplate_Gothic';
+  font-family: "C_Copperplate_Gothic";
   font-size: 35px;
 }
 
@@ -133,7 +133,7 @@
 .body h4,
 .body h5,
 .body h6 {
-  font-family: 'C_Trebuchet';
+  font-family: "C_Trebuchet";
 }
 
 .body hr {

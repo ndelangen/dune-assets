@@ -49,14 +49,14 @@ export const ${name.toUpperCase()} = z.enum([
     .sort()
     .map((file) => `'${file}'`)
     .join(',\n  ')}
-]);`,
+]);`
   )
   .join('\n')}
 
 export const ALL = z.union([
   ${['GENERIC', 'LOGO', 'DECAL', 'ICON', 'TROOP'].join(',\n  ')}
 ]);
-`,
+`
 );
 
 const files = await readdir(join(import.meta.dirname, '../src/faction'));
@@ -66,8 +66,8 @@ const factions = Object.fromEntries(
       const { default: faction } = await import(`../src/faction/${file}`);
 
       return [file.replace('.ts', ''), faction];
-    }),
-  ),
+    })
+  )
 );
 
 const backs = generated
@@ -133,6 +133,6 @@ await Bun.write(
       techTokens,
     }),
     null,
-    2,
-  ),
+    2
+  )
 );

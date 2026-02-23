@@ -167,10 +167,8 @@ export function Nexus() {
               <Definitions>
                 <dt>No Nexus</dt>
                 <dd>
-                  4 cards with the number: 4<br />
-                  5 cards with the number: 5<br />
-                  6 cards with the number: 6<br />
-                  4 cards with the number: 7<br />
+                  4 cards with the number: 4<br />5 cards with the number: 5<br />6 cards with the number: 6
+                  <br />4 cards with the number: 7<br />
                 </dd>
                 <dt>Perform Nexus</dt>
                 <dd>1 card</dd>

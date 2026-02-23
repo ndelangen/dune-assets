@@ -20,13 +20,13 @@
 }
 
 .h1 {
-  font-family: 'C_Copperplate_Gothic';
+  font-family: "C_Copperplate_Gothic";
   font-size: 28px;
   fill: white;
   text-transform: uppercase;
 }
 .h2 {
-  font-family: 'C_Copperplate_Gothic_Heavy';
+  font-family: "C_Copperplate_Gothic_Heavy";
   font-size: 12px;
   fill: white;
   text-transform: uppercase;

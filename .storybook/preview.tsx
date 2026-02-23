@@ -4,8 +4,6 @@ import { definePreview } from '@storybook/react-vite';
 
 import { card, disc, page, shield } from '../src/data/sizes';
 
-
-
 const decorators = [
   (Story, { globals }) => {
     const { disc } = globals;
