@@ -66,15 +66,15 @@ export const PortableSnooper = meta.story({
       },
     ],
     text: 'Text goes here',
-    subName: 'Defense - Poison - Special',
+    subName: 'Defense - Poison',
   },
 });
 
 export const Chemistry = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
-    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
-    iconOffset: [0, 8],
+    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
+    iconOffset: [0, 0],
     name: 'Chemistry',
     decals: [
       {
@@ -86,7 +86,7 @@ export const Chemistry = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan.\n\nCounts as a poison defense, unless played with another defense. In that case, it counts as a poison weapon.\n\nYou may keep this card if you win this battle.',
-    subName: 'Defense - Poison - Special',
+    subName: 'Defense - Weapon - Special',
   },
 });
 

@@ -39,7 +39,7 @@ export const Lasgun = meta.story({
 export const WeirdingWay = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
-    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
+    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
     name: 'Weirding Way',
     decals: [
       {
@@ -51,7 +51,7 @@ export const WeirdingWay = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan.\nCounts as a projectile weapon, unless played with another weapon. In that case, it counts as a projectile defense.\nYou may keep this card if you win this battle.',
-    subName: 'Weapon - Special',
+    subName: 'Weapon - Defense - Special',
   },
 });
 
@@ -165,7 +165,7 @@ export const PoisonTooth = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan.\nKills both leaders, and is not stopped by a Snooper.\nAfter seeing the battle results, you may choose not to use this weapon.',
-    subName: 'Weapon - Poison',
+    subName: 'Weapon - Poison - Special',
   },
 });
 
