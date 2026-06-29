@@ -265,7 +265,7 @@ export const WeatherControl = meta.story({
         scale: 0.9,
       },
     ],
-    text: 'After the first game turn, play during the Storm Phase after seeing how far the storm moves. You control the storm this turn instead. Pick a number from 0 to 10 and move the storm that far.',
+    text: 'After the first game turn, play during the Storm Phase after seeing how far the storm moves.You control the storm this turn instead. Pick a number from 0 to 10 and move the storm that far.',
     subName: 'Special - Storm',
   },
 });
