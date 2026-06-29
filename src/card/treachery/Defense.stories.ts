@@ -65,7 +65,7 @@ export const PortableSnooper = meta.story({
         scale: 0.6,
       },
     ],
-    text: 'Text goes here',
+    text: 'Protects your leader from a poison weapon. You may play this after revealing your Battle Plan if you did not play a defense (unless prevented by the Bene Gesserit Voice). You may not play this if you played a weapon and a worthless card in your Battle Plan. Discard after use.',
     subName: 'Defense - Poison - Special',
   },
 });
