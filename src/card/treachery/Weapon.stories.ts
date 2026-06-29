@@ -39,7 +39,7 @@ export const Lasgun = meta.story({
 export const WeirdingWay = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
-    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
+    icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/lightning.svg'],
     name: 'Weirding Way',
     decals: [
       {
@@ -287,7 +287,7 @@ export const Stunner = meta.story({
   args: {
     head: `/generated/utils/background/weapon.jpg`,
     icon: [`/generated/utils/background/striped-weapon.jpg`, 'vector/icon/projectile.svg'],
-    name: 'Slip Tip',
+    name: 'Stunner',
     decals: [
       {
         id: 'vector/decal/stunner.svg',

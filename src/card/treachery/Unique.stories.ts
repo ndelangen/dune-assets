@@ -135,7 +135,7 @@ export const Hajr = meta.story({
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
     iconOffset: [0, 2],
-    name: 'Family Atomics',
+    name: 'Hajr',
     decals: [
       {
         id: 'vector/decal/hajr.svg',
@@ -235,7 +235,7 @@ export const TruthTrance = meta.story({
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
     iconOffset: [0, 2],
-    name: 'Truth Trance',
+    name: 'Truthtrance',
     decals: [
       {
         id: 'vector/decal/truth-trance.svg',
@@ -265,7 +265,7 @@ export const WeatherControl = meta.story({
         scale: 0.9,
       },
     ],
-    text: 'After the first game turn, play during the Storm Phase after seeing how far the storm moves.You control the storm this turn instead. Pick a number from 0 to 10 and move the storm that far.',
+    text: 'After the first game turn, play during the Storm Phase after seeing how far the storm moves. You control the storm this turn instead. Pick a number from 0 to 10 and move the storm that far.',
     subName: 'Special - Instant',
   },
 });
@@ -450,7 +450,7 @@ export const NullentropyBox = meta.story({
   },
 });
 
-export const Distrance = meta.story({
+export const Distrans = meta.story({
   args: {
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
@@ -458,7 +458,7 @@ export const Distrance = meta.story({
     name: 'Distrans',
     decals: [
       {
-        id: 'vector/decal/distrance.svg',
+        id: 'vector/decal/distrans.svg',
         muted: false,
         offset: [0, 0],
         outline: false,

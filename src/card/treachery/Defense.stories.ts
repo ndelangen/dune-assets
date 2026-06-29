@@ -73,8 +73,8 @@ export const PortableSnooper = meta.story({
 export const Chemistry = meta.story({
   args: {
     head: `/generated/utils/background/defense.jpg`,
-    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/snooper.svg'],
-    iconOffset: [0, 8],
+    icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
+    iconOffset: [0, 0],
     name: 'Chemistry',
     decals: [
       {
@@ -95,7 +95,7 @@ export const ShieldSnooper = meta.story({
     head: `/generated/utils/background/defense.jpg`,
     icon: [`/generated/utils/background/striped-defense.jpg`, 'vector/icon/lightning.svg'],
     iconOffset: [0, 0],
-    name: 'ShieldSnooper',
+    name: 'Shield Snooper',
     decals: [
       {
         id: 'vector/decal/shield-snooper.svg',
