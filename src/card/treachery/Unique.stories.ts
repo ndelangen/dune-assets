@@ -479,7 +479,9 @@ export const HarassAndWithdraw = meta.story({
     decals: [
       {
         id: 'vector/decal/harass-and-withdraw.svg',
+        muted: false,
         offset: [30, -1],
+        outline: false,
         scale: 1.1,
       },
     ],
