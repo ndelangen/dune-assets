@@ -135,7 +135,7 @@ export const Hajr = meta.story({
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
     iconOffset: [0, 2],
-    name: 'Family Atomics',
+    name: 'Hajr',
     decals: [
       {
         id: 'vector/decal/hajr.svg',
@@ -235,7 +235,7 @@ export const TruthTrance = meta.story({
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
     iconOffset: [0, 2],
-    name: 'Truth Trance',
+    name: 'Truthtrance',
     decals: [
       {
         id: 'vector/decal/truth-trance.svg',
@@ -265,7 +265,7 @@ export const WeatherControl = meta.story({
         scale: 0.9,
       },
     ],
-    text: 'After the first game turn, play during the Storm Phase after seeing how far the storm moves.You control the storm this turn instead. Pick a number from 0 to 10 and move the storm that far.',
+    text: 'After the first game turn, play during the Storm Phase after seeing how far the storm moves. You control the storm this turn instead. Pick a number from 0 to 10 and move the storm that far.',
     subName: 'Special - Storm',
   },
 });
@@ -450,7 +450,7 @@ export const NullentropyBox = meta.story({
   },
 });
 
-export const Distrance = meta.story({
+export const Distrans = meta.story({
   args: {
     head: `/generated/utils/background/special.jpg`,
     icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
@@ -458,7 +458,7 @@ export const Distrance = meta.story({
     name: 'Distrans',
     decals: [
       {
-        id: 'vector/decal/distrance.svg',
+        id: 'vector/decal/distrans.svg',
         muted: false,
         offset: [0, 0],
         outline: false,
@@ -466,6 +466,66 @@ export const Distrance = meta.story({
       },
     ],
     text: "Give another player a Treachery Card from your hand (if that player's hand is not full). Play at any time (other than during a bid). Discard after use.",
+    subName: 'Special',
+  },
+});
+
+export const HarassAndWithdraw = meta.story({
+  args: {
+    head: `/generated/utils/background/special.jpg`,
+    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
+    iconOffset: [0, 2],
+    name: 'Harass & Withdraw',
+    decals: [
+      {
+        id: 'vector/decal/harass-and-withdraw.svg',
+        muted: false,
+        offset: [30, -1],
+        outline: false,
+        scale: 1.1,
+      },
+    ],
+    text: 'Play as part of your Battle Plan in place of a weapon or defense.\n\nYour undialed forces return to your reserves. Your leader may still be killed normally. If your opponent calls Traitor, this effect is canceled. A Face Dancer called on your leader has no effect on your undialed forces. Do not use when on your Homeworld. Discard after use.',
+    subName: 'Special',
+  },
+});
+
+export const Recruits = meta.story({
+  args: {
+    head: `/generated/utils/background/special.jpg`,
+    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
+    iconOffset: [0, 2],
+    name: 'Recruits',
+    decals: [
+      {
+        id: 'vector/decal/recruit.svg',
+        muted: false,
+        offset: [0, 15],
+        outline: true,
+        scale: 0.9,
+      },
+    ],
+    text: 'Play during Revival.\n\nAll factions double their current Free Revival rates. The normal revival limit is increased to 7.\n\nDiscard after use.',
+    subName: 'Special - Revival',
+  },
+});
+
+export const Reinforcements = meta.story({
+  args: {
+    head: `/generated/utils/background/special.jpg`,
+    icon: [`/generated/utils/background/striped-special.jpg`, 'vector/icon/hand-alt.svg'],
+    iconOffset: [0, 2],
+    name: 'Reinforcements',
+    decals: [
+      {
+        id: 'vector/decal/reinforcements.svg',
+        muted: false,
+        offset: [10, 20],
+        outline: true,
+        scale: 0.9,
+      },
+    ],
+    text: 'Play as part of your Battle Plan in place of a weapon or defense.\n\nAdd +2 to your dialed number, then send 3 forces from your reserves to the Tanks.\n\nYou may not use this card if you do not have at least 3 forces in your reserves. Discard after use.',
     subName: 'Special',
   },
 });
