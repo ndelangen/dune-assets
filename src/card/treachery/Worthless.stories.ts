@@ -26,7 +26,7 @@ export const Baliset = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
-    subName: 'Worthless',
+    subName: 'Worthless Card',
   },
 });
 
@@ -46,7 +46,7 @@ export const JubbaCloak = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
-    subName: 'Worthless',
+    subName: 'Worthless Card',
   },
 });
 
@@ -66,7 +66,7 @@ export const KullWahad = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
-    subName: 'Worthless',
+    subName: 'Worthless Card',
   },
 });
 
@@ -86,7 +86,7 @@ export const Kulon = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
-    subName: 'Worthless',
+    subName: 'Worthless Card',
   },
 });
 
@@ -106,7 +106,7 @@ export const LaLaLa = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
-    subName: 'Worthless',
+    subName: 'Worthless Card',
   },
 });
 
@@ -126,7 +126,7 @@ export const TripToGamond = meta.story({
       },
     ],
     text: 'Play as part of your Battle Plan, in place of a weapon, defense, or both.\nThis card has no value in play, and you can discard it only by playing it in your Battle Plan.',
-    subName: 'Worthless',
+    subName: 'Worthless Card',
   },
 });
 
